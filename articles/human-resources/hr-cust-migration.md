@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733461"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760370"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Migracja klienta rozwiązania Dynamics 365 Human Resources
 
@@ -38,13 +38,12 @@ Migracja klientów jest migracją metodą „lift-and-shift” (przeniesienie) b
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Środowisko zapasowe usługi Dataverse (piaskownica)
 
-1. Opcjonalne, ale zalecane: odśwież istniejące środowisko piaskownicy Human Resources, używając kopii środowiska produkcyjnego Human Resources.
-2. [Utwórz nowe środowisko Dataverse](/power-platform/admin/create-environment#create-an-environment-with-a-database), używając centrum administracyjnego platformy Power Platform.
+ - Opcjonalne, ale zalecane: odśwież istniejące środowisko piaskownicy Human Resources, używając kopii środowiska produkcyjnego Human Resources.
+ - Utwórz nowe środowisko Dataverse, używając centrum administracyjnego platformy Power Platform.
+ - Skopiuj istniejące środowisko Dataverse, które jest połączone ze autonomiczną aplikacją Human Resources, do środowiska utworzonego w poprzednim kroku.
 
-    > [!NOTE]
-    > Podczas dodawania bazy danych upewnij się, że opcja **Włącz aplikacje Dynamics 365** ma wartość **Tak**.
-
-3. [Skopiuj istniejące środowisko Dataverse](/power-platform/admin/copy-environment), które jest połączone ze autonomiczną aplikacją Human Resources, do środowiska utworzonego w poprzednim kroku.
+> [!NOTE]
+> Podczas dodawania bazy danych upewnij się, że opcja **Włącz aplikacje Dynamics 365** ma wartość **Tak**. Aby uzyskać szczegółowe informacje, zobacz temat [Przygotowywanie środowiska Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Pojemność Dataverse
 
@@ -89,9 +88,9 @@ Po utworzeniu nowego projektu usługi Lifecycle Services i zakończeniu procesu 
 #### <a name="prepare-a-power-platform-environment"></a>Przygotowanie środowiska Power Platform
 
 > [!NOTE]
-> Ten krok jest stosowany tylko do migracji środowiska piaskownicy. Podczas migrowania środowiska produkcyjnego istniejące środowisko centrum administracyjnego Power Platform dołączone do środowiska produkcyjnego zostanie przeniesione naprzód.
+> Ten krok jest stosowany tylko do migracji środowiska piaskownicy. Podczas migrowania środowiska produkcyjnego istniejące środowisko centrum administracyjnego Power Platform dołączone do środowiska produkcyjnego zostanie przeniesione naprzód. Podczas dodawania bazy danych upewnij się, że przycisk **Włącz aplikacje Dynamics 365** ma wartość **Tak**. 
 
-- W centrum administratora platformy Power Platform [utwórz środowisko platformy Power Platform](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), które będzie umożliwiało migrację piaskownicy, lub wybierz istniejące środowisko.
+- W centrum administratora platformy Power Platform [utwórz środowisko z bazą danych](/power-platform/admin/create-environment#create-an-environment-with-a-database), które będzie umożliwiało migrację piaskownicy, lub wybierz istniejące środowisko.
 - [Skopiuj środowisko](/power-platform/admin/copy-environment), aby odświeżyć środowisko Power Platform używane do mapowania.
 
 #### <a name="migrate-the-sandbox-environment"></a>Migracja środowiska piaskownicy

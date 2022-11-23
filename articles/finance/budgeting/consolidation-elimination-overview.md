@@ -2,13 +2,13 @@
 title: Omówienie konsolidacji i eliminacji
 description: Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
 author: panolte
-ms.date: 01/11/2018
+ms.date: 11/11/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom:
 - "13151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 757c7634fc929ead018d1ddcca4cc223c1a95638
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871399"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779915"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Omówienie konsolidacji i eliminacji
 
@@ -46,49 +46,38 @@ Eliminacje można raportować na wiele sposobów:
 Istnieje wiele scenariuszy konsolidacji, a każda z tych metod może obsługiwać scenariusze na różne sposoby.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-1. Wolę księgować eliminacje w bazie danych. Jakie mam dostępne opcje?
+Wolę księgować eliminacje w bazie danych. Jakie mam dostępne opcje?
+ - Masz do wyboru kilka opcji. Możesz użyć opcji **Konsolidacja online** i uwzględniać eliminacje podczas procesu lub jako propozycję. Transakcje będą księgowane w konsolidowanej firmie. Alternatywnie możesz mieć oddzielną firmę, w której ręcznie tworzysz eliminacje, a następnie używasz jej w raporcie finansowym lub procesie konsolidacji.
 
-Masz do wyboru kilka opcji. Możesz użyć opcji **Konsolidacja online** i uwzględniać eliminacje podczas procesu lub jako propozycję. Transakcje będą księgowane w konsolidowanej firmie. Alternatywnie możesz mieć oddzielną firmę, w której ręcznie tworzysz eliminacje, a następnie używasz jej w raporcie finansowym lub procesie konsolidacji.
+Musimy mieć wyniki skonsolidowane w wielu walutach raportowania.
+ - Opcja **Raport finansowy** oferuje obsługę nieograniczonej liczby walut raportowania. Dane są przeliczane podczas generowania raportu na podstawie kursu wymiany i metody przeliczania waluty ustawionych na koncie głównym. Jednak ponieważ opcja **Konsolidacja online** obsługuje tylko jedną walutę raportowania, konsolidowana firma jest wymagana dla każdej waluty raportowania, jeśli używasz tej opcji. Opcja **Raport finansowy** jest metodą zalecaną.
 
-2.  Musimy mieć wyniki skonsolidowane w wielu walutach raportowania.
+Chcę wyświetlić szczegóły na poziomie transakcji dla każdej firmy.
+ - Opcja **Raport finansowy** jest rozwiązaniem, ponieważ można wyświetlić szczegóły na poziomie transakcji dla tylu firm, ile jest w definicji drzewa raportowania.
 
-Opcja **Raport finansowy** oferuje obsługę nieograniczonej liczby walut raportowania. Dane są przeliczane podczas generowania raportu na podstawie kursu wymiany i metody przeliczania waluty ustawionych na koncie głównym. Jednak ponieważ opcja **Konsolidacja online** obsługuje tylko jedną walutę raportowania, konsolidowana firma jest wymagana dla każdej waluty raportowania, jeśli używasz tej opcji. Opcja **Raport finansowy** jest metodą zalecaną.
+Używamy planowania budżetu lub kontroli budżetu i dane muszą być skonsolidowane.
+ - Opcja **Raport finansowy** jest rozwiązaniem do konsolidacji planowania budżetu lub danych kontroli budżetu.
 
-3. Chcę wyświetlić szczegóły na poziomie transakcji dla każdej firmy.
+Nasze oddziały są rozproszone po całym świece i mamy wiele planów kont. Jaka jest najlepsza metoda do konsolidowania naszych danych?
+- Dostępne są różne opcje do obsługi wielu planów kont. Można użyć opcji **Konsolidacja online**, a następnie użyć konta konsolidacji zdefiniowanego na koncie głównym lub w grupie kont konsolidacyjnych. Można też użyć opcji **Raport finansowy**, aby uwzględnić wiele łączy w wymiarach finansowych w definicji wiersza i zmapować konta.
 
-Opcja **Raport finansowy** jest rozwiązaniem, ponieważ można wyświetlić szczegóły na poziomie transakcji dla tylu firm, ile jest w definicji drzewa raportowania.
+Potrzebujemy wielu poziomów konsolidacji. Innymi słowy najpierw konsolidujemy wszystkie nasze oddziałów w Europie do funta szterlinga (GBP). Następnie na podstawie tych danych przeliczamy skonsolidowane kwoty na dolary amerykańskie (USD). Jak możemy to zrobić?
+- Gdy wymaganych jest wiele poziomów konsolidacji i różne waluty są używane na każdym poziomie, trzeba skorzystać z opcji **Konsolidacja online**. Należy utworzyć wiele konsolidowanych, które różnią się od siebie walutami księgowania i raportowania. Następnie należy uruchomić konsolidację wiele razy. Opcja **Raport finansowy** zawsze przelicza z waluty księgowania firmy źródłowej na walutę wybranej firmy.
 
-4. Używamy planowania budżetu lub kontroli budżetu i dane muszą być skonsolidowane.
+Mamy oddziały w innym systemie. Jak je skonsolidować?
+- Należy użyć funkcji **Konsolidacja z importem**, aby przenieść salda do konsolidowanej firmy.
 
-Opcja **Raport finansowy** jest rozwiązaniem do konsolidacji planowania budżetu lub danych kontroli budżetu.
+Niektóre z naszych oddziałów są naszą własnością tylko częściowo. Jaka jest najlepsza metoda do ich konsolidowania?
+- Dostępnych jest wiele opcji dla oddziałów będących częściową własnością. Za pomocą opcji **Raport finansowy** można zdefiniować definicję drzewa raportowania i własność. Można też obliczyć wiersz lub kolumnę do reprezentowania kwoty częściowej własności. Można nawet wyświetlać udziały mniejszościowe jako oddzielny wiersz raportu. Można również użyć opcji **Konsolidacja online**. Na karcie **Firmy** w kolumnie **Własność**, w której można zdefiniować procent, jaki jest w posiadaniu firmy nadrzędnej.
 
-5. Nasze oddziały są rozproszone po całym świece i mamy wiele planów kont. Jaka jest najlepsza metoda do konsolidowania naszych danych?
+Nasza organizacja musi wskazywać konsolidacje według jednostki biznesowej lub chce używać hierarchii organizacyjnej.
+- Rozwiązaniem jest opcja **Raport finansowy**. Hierarchie organizacji zawierające firmy lub wymiary finansowe mogą być raportowane za pomocą Raportu finansowego. Można również tworzyć własne wielopoziomowe hierarchie przy użyciu definicji drzewa raportowania z kombinacją firm i wartości wymiarów.
 
-Dostępne są różne opcje do obsługi wielu planów kont. Można użyć opcji **Konsolidacja online**, a następnie użyć konta konsolidacji zdefiniowanego na koncie głównym lub w grupie kont konsolidacyjnych. Można też użyć opcji **Raport finansowy**, aby uwzględnić wiele łączy w wymiarach finansowych w definicji wiersza i zmapować konta.
+Mamy więcej niż jedną instancję systemu.
+- Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej instancji, a następnie przy użyciu opcji **Konsoliduj z importu** w drugiej instancji można skonsolidować dane.
 
-6. Potrzebujemy wielu poziomów konsolidacji. Innymi słowy najpierw konsolidujemy wszystkie nasze oddziałów w Europie do funta szterlinga (GBP). Następnie na podstawie tych danych przeliczamy skonsolidowane kwoty na dolary amerykańskie (USD). Jak możemy to zrobić?
-
-Gdy wymaganych jest wiele poziomów konsolidacji i różne waluty są używane na każdym poziomie, trzeba skorzystać z opcji **Konsolidacja online**. Należy utworzyć wiele konsolidowanych, które różnią się od siebie walutami księgowania i raportowania. Następnie należy uruchomić konsolidację wiele razy. Opcja **Raport finansowy** zawsze przelicza z waluty księgowania firmy źródłowej na walutę wybranej firmy.
-
-7. Mamy oddziały w innym systemie. Jak je skonsolidować?
-
-Należy użyć funkcji **Konsolidacja z importem**, aby przenieść salda do konsolidowanej firmy.
-
-8. Niektóre z naszych oddziałów są naszą własnością tylko częściowo. Jaka jest najlepsza metoda do ich konsolidowania?
-
-Dostępnych jest wiele opcji dla oddziałów będących częściową własnością. Za pomocą opcji **Raport finansowy** można zdefiniować definicję drzewa raportowania i własność. Można też obliczyć wiersz lub kolumnę do reprezentowania kwoty częściowej własności. Można nawet wyświetlać udziały mniejszościowe jako oddzielny wiersz raportu. Można również użyć opcji **Konsolidacja online**. Na karcie **Firmy** w kolumnie **Własność**, w której można zdefiniować procent, jaki jest w posiadaniu firmy nadrzędnej.
-
-9. Nasza organizacja musi wskazywać konsolidacje według jednostki biznesowej lub chce używać hierarchii organizacyjnej.
-
-Rozwiązaniem jest opcja **Raport finansowy**. Hierarchie organizacji zawierające firmy lub wymiary finansowe mogą być raportowane za pomocą Raportu finansowego. Można również tworzyć własne wielopoziomowe hierarchie przy użyciu definicji drzewa raportowania z kombinacją firm i wartości wymiarów.
-
-10. Mamy więcej niż jedną instancję systemu.
-
-Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej instancji, a następnie przy użyciu opcji **Konsoliduj z importu** w drugiej instancji można skonsolidować dane.
-
-11. Czy można wykonać konsolidację z budżetem w stanie **Wersja robocza**? 
-            
-W konsolidowanej firmie nie będzie można przetwarzać ani tworzyć budżetów. Zalecane jest korzystanie z funkcji Financial Reporting w celu konsolidacji wersji roboczej budżetów.
+Czy można wykonać konsolidację z budżetem w stanie **Wersja robocza**? 
+- W konsolidowanej firmie nie będzie można przetwarzać ani tworzyć budżetów. Zalecane jest korzystanie z funkcji Financial Reporting w celu konsolidacji wersji roboczej budżetów.
 
 Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](../general-ledger/currency-revaluation-consolidation-company.md).
 

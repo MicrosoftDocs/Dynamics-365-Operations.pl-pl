@@ -2,7 +2,7 @@
 title: Konfiguracja dodatku Inventory Visibility
 description: W tym artykule opisano sposób konfigurowania dodatku Widoczność magazynu.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542294"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9765713"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-
 
 W tym artykule opisano sposób konfigurowania widoczności magazynu za pomocą aplikacji Widoczność magazynu w usłudze Power Apps.
 
@@ -53,18 +52,23 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 |---|---|
 | *OnHandReservation* | Ta funkcja umożliwia tworzenie rezerwacji, rezerwacje zużycia i/lub anulowanie rezerwacji określonych ilości zapasów za pomocą funkcji Widoczność zapasów. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Domyślna częstotliwość synchronizacji jest ustawiana co 15 minut i może być ustawiana tak wysoko, jak co 5 minut. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Ta funkcja umożliwia wstępne ładowanie zapytań dotyczących dostępnych zapasów w celu stworzenia list dostępnych zapasów ze wstępnie wybranymi wymiarami. Domyślna częstotliwość synchronizacji jest raz na 15 minut. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
+| *onHandIndexQueryPreloadBackgroundService* | Ta funkcja umożliwia wstępne ładowanie zapytań dotyczących dostępnych zapasów w celu stworzenia list dostępnych zapasów ze wstępnie wybranymi wymiarami. Domyślna częstotliwość synchronizacji jest raz na 15 minut. Aby uzyskać więcej informacji, zobacz [Wstępnie załaduj ujednolicone zapytanie dostępnych zapasów](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Ta opcjonalna funkcja umożliwia korzystanie z funkcji harmonogramu zmian w stanie gotowości do pracy oraz dostępności do przyrzeczenia (ATP). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogram i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
-| *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ringfencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
+| *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ring fencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
 | *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do procesów magazynowych (pozycje WMS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WMS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
 
-Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż punkt końcowy usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi.
+Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż szczegóły usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi. Punkt końcowy można także znaleźć w u Microsoft Dynamics Lifecycle Services, w sposób opisany w [Znajdowanie punktu końcowego zgodnie ze środowiskiem usługi Lifecycle Services](inventory-visibility-api.md#endpoint-lcs).
+
+> [!NOTE]
+> Użycie nieprawidłowego punktu końcowego może spowodować niepowodzenie instalacji programu Inventory Visibility i błędy podczas synchronizacji programu Supply Chain Management z widocznością zapasów. Jeśli nie wiesz, jaki jest twój punkt końcowy, skontaktuj się z administratorem systemu. Adresy URL punktów końcowych mają następujący format:
+>
+> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguracja źródła danych
 
-Każde źródło danych reprezentuje system, z których pochodzą dane. Przykładowe nazwy źródła danych to `fno` (co oznacza „aplikacje finansowe i operacyjne Dynamics 365”) i `pos` (co oznacza „punkt sprzedaży”). System Supply Chain Management jest ustawiany jako domyślne źródło danych (`fno`) w aplikacji Widoczność magazynu.
+Każde źródło danych reprezentuje system, z których pochodzą dane. Przykładowe nazwy źródła danych to `fno` (co oznacza Supply Chain Management) i `pos` (co oznacza „punkt sprzedaży”). System Supply Chain Management jest ustawiany jako domyślne źródło danych (`fno`) w aplikacji Widoczność magazynu.
 
 > [!NOTE]
 > Źródło danych `fno` jest zarezerwowane dla Supply Chain Management. Jeśli dodatek Widoczność magazynu jest zintegrowany ze środowiskiem Supply Chain Management, nie zaleca się usuwania konfiguracji związanych z `fno` w źródle danych.
@@ -73,7 +77,7 @@ Procedura dodawania źródła danych jest następująca.
 
 1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
-1. Na karcie **Źródło danych** wybierz pozycję **Nowe źródło danych**, aby dodać źródło danych.
+1. Na karcie **Źródło danych** wybierz pozycję **Nowe źródło danych**, aby dodać źródło danych (na przykład `ecommerce` lub inny zrozumiały identyfikator źródła danych).
 
 > [!NOTE]
 > Podczas dodawania źródła danych należy sprawdzić poprawność nazwy źródła danych, fizycznych miar i mapowań wymiarów przed zaktualizowaniem konfiguracji dla usługi Widoczność magazynu. Po wybraniu opcji **Aktualizuj konfigurację** nie będzie można zmodyfikować tych ustawień.
@@ -88,11 +92,11 @@ Konfiguracja źródła danych składa się z następujących części:
 
 Celem konfiguracji wymiarów jest ujednolicenie integracji wielosystemowej dla księgowania zdarzeń i zapytań na podstawie kombinacji wymiarów Widoczność magazynu zawiera listę wymiarów podstawowych, które można mapować na podstawie wymiarów źródła danych. Do mapowania są dostępne 33 wymiary.
 
-- Jeśli jednym ze źródeł danych jest Supply Chain Management, domyślnie 13 wymiarów jest mapowanych na standardowe wymiary Supply Chain Management. Pozostałych 12 wymiarów (od `inventDimension1` do `inventDimension12`) jest mapowanych na niestandardowe wymiary w Supply Chain Management. Pozostałe osiem wymiarów to wymiary rozszerzone, które można mapować na zewnętrzne źródła danych.
+- Jeśli jednym ze źródeł danych jest Supply Chain Management, domyślnie 13 wymiarów jest mapowanych na standardowe wymiary Supply Chain Management. Pozostałych 12 wymiarów (od `inventDimension1` do `inventDimension12`) jest mapowanych na niestandardowe wymiary w Supply Chain Management. Pozostałe osiem wymiarów (`ExtendedDimension1` do `ExtendedDimension8`) to wymiary rozszerzone, które można mapować na zewnętrzne źródła danych.
 - Jeśli Supply Chain Management nie jest jednym ze źródeł danych, można swobodnie mapować wymiary. W poniższej tabeli pokazano pełną listę dostępnych wymiarów.
 
 > [!NOTE]
-> Jeśli wymiar nie znajduje się na liście domyślnych wymiarów i jest wykorzystywane zewnętrzne źródło danych, zaleca się mapowanie przy użyciu wymiaru od `ExtendedDimension1` do `ExtendedDimension8`.
+> Jeśli używasz Supply Chain Management i zmienisz domyślne mapowania wymiarów między Supply Chain Management i widoczność magazynu, zmieniony wymiar nie będzie synchronizował danych. Jeśli wymiar nie znajduje się na liście domyślnych wymiarów i jest wykorzystywane zewnętrzne źródło danych, zaleca się mapowanie przy użyciu wymiaru od `ExtendedDimension1` do `ExtendedDimension8`.
 
 | Typ wymiaru | Wymiar podstawowy |
 |---|---|
@@ -118,7 +122,7 @@ Celem konfiguracji wymiarów jest ujednolicenie integracji wielosystemowej dla k
 >
 > Na potrzeby Supply Chain Management mogą być zarezerwowane wymiary magazynu (niestandardowe). W takim przypadku można używać wymiarów rozszerzonych.
 
-Systemy zewnętrzne mogą uzyskać dostęp do dodatku Widoczność magazynu za pośrednictwem swoich interfejsów API RESTful. Na potrzeby integracji dodatek Widoczność magazynu umożliwia konfigurowanie _zewnętrznego źródła danych_ oraz mapowania _wymiarów zewnętrznych_ na _wymiary podstawowe_. Oto przykład tabeli mapowania wymiarów.
+Systemy zewnętrzne mogą uzyskać dostęp do dodatku Widoczność magazynu za pośrednictwem swoich interfejsów API RESTful. Na potrzeby integracji dodatek Widoczność magazynu umożliwia konfigurowanie *zewnętrznego źródła danych* oraz mapowania *wymiarów zewnętrznych* na *wymiary podstawowe*. Oto przykład tabeli mapowania wymiarów.
 
 | Wymiar zewnętrzny | Wymiar podstawowy |
 |---|---|
@@ -134,20 +138,21 @@ Procedura dodawania mapowań wymiaru jest następująca.
 
 1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
-1. Na karcie **Źródło danych**, w sekcji **Mapowania wymiarów** wybierz pozycję **Dodaj**, aby dodać mapowania wymiarów.
+1. Na karcie **Źródło danych** wybierz źródło danych, do którego chcesz wykonać mapowanie wymiarów. W sekcji **Mapowania wymiarów** wybierz pozycję **Dodaj**, aby dodać mapowania wymiarów.
+
     ![Dodawanie mapowań wymiarów](media/inventory-visibility-dimension-mapping.png "Dodawanie mapowań wymiarów")
 
 1. W polu **Nazwa wymiaru** określ źródłowy wymiar.
 1. W polu **Na wymiar podstawowy** wybierz wymiar w aplikacji Widoczność zapasów, który chcesz mapować.
 1. Wybierz opcję **Zapisz**.
 
-Jeśli źródło danych zawiera na przykład wymiar koloru produktu, można je mapować na wymiar podstawowy `ColorId`, aby dodać wymiar niestandardowy `ProductColor` w źródle danych `exterchannel`. Jest on wtedy mapowany na wymiar podstawowy `ColorId`.
+Na przykład masz już utworzone źródło danych o nazwie `ecommerce`, które zawiera wymiar koloru produktu. W takim przypadku, aby wykonać mapowanie, możesz najpierw dodać `ProductColor` do pola **Nazwa wymiaru** w źródle danych `ecommerce`, a następnie wybrać `ColorId` w pole **Na wymiar podstawowy**.
 
 ### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fizyczne miary
 
 Gdy źródło danych księguje zmianę stanu zapasów do aplikacji Widoczność magazynu, zmiana ta jest księgowana przy użyciu *fizycznych miar*. Fizyczne miary modyfikują ilość i odzwierciedlają stan zapasów. W zależności od wymagań można zdefiniować własne fizyczne miary. Zapytania mogą być oparte na fizycznych miarach.
 
-Dodatek Widoczność magazynu zawiera listę domyślnych fizycznych miar połączonych z Supply Chain Management (źródło danych `fno`). Te domyślne fizyczne miary są brane pod uwagę w stanach transakcji magazynowych na stronie **Lista dostępnych** w Supply Chain Management (**Zarządzanie zapasami \> Zapytania i raporty \> Lista dostępnych**). Przykładowe fizyczne miary są przedstawione w następującej tabeli.
+Dodatek Widoczność magazynu zawiera listę domyślnych fizycznych miar zmapowanych z Supply Chain Management (źródło danych `fno`). Te domyślne fizyczne miary są brane pod uwagę w stanach transakcji magazynowych na stronie **Lista dostępnych** w Supply Chain Management (**Zarządzanie zapasami \> Zapytania i raporty \> Lista dostępnych**). Przykładowe fizyczne miary są przedstawione w następującej tabeli.
 
 | Nazwa fizycznej miary | opis |
 |---|---|
@@ -172,7 +177,7 @@ Jeśli źródłem danych jest Supply Chain Management, nie trzeba ponownie tworz
 
 1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
-1. Na karcie **Źródło danych**, w sekcji **Miary fizyczne** wybierz opcję **Dodaj**, określ nazwę miary źródła i zapisz zmiany.
+1. Na karcie **Źródło danych** wybierz źródło danych, do których chcesz dodać miary fizyczne (na przykład źródło danych `ecommerce`). Następnie w sekcji **Miary fizyczne** wybierz opcję **Dodaj** i określ nazwę miary (na przykład `Returned` jeśli chcesz rejestrować zwracane ilości z tego źródła danych do widoczności zapasów). Zapisz zmiany.
 
 ### <a name="calculated-measures"></a>Obliczone miary
 
@@ -181,7 +186,7 @@ Za pomocą aplikacji Widoczność magazynu można dokonywać zapytań zarówno n
 > [!IMPORTANT]
 > Obliczona miara jest złożeniem miar fizycznych. Jego formuła może zawierać tylko miary fizyczne bez duplikatów, a nie miary obliczone.
 
-Konfiguracja umożliwia zdefiniowanie zestawu modyfikatorów, które są dodawane lub odejmowane w celu uzyskania łącznej zagregowanej ilości wynikowej.
+Konfiguracja umożliwia zdefiniowanie zestawu obliczonych formuł miar, które zawierają modyfikatory dodawania lub odejmowania w celu uzyskania całkowitej zagregowanej wielkości wyjściowej.
 
 Aby skonfigurować niestandardową miarę obliczaną, należy wykonać następujące czynności.
 
@@ -191,7 +196,7 @@ Aby skonfigurować niestandardową miarę obliczaną, należy wykonać następuj
 1. Ustaw następujące pola dla nowej miary wyliczanej:
 
     - **Nazwa nowej miary obliczanej** — wprowadź nazwę miary obliczanej.
-    - **Źródło danych** – wybierz źródło danych skojarzone z nowym modyfikatorem. Źródłem danych jest system wykonujący zapytanie.
+    - **Źródło danych** – Wybierz źródło danych, w którym ma zostać uwzględniona nowa miara obliczeniowa. Źródłem danych jest system wykonujący zapytanie.
 
 1. Wybierz **przycisk Dodaj**, aby dodać modyfikator do nowej miary obliczanej.
 1. Ustaw następujące pola dla nowego modyfikatora:
@@ -200,15 +205,21 @@ Aby skonfigurować niestandardową miarę obliczaną, należy wykonać następuj
     - **Źródło danych** – wybierz źródło danych, w którym ma zostać znaleziona miara dostarczana wartości modyfikatora.
     - **Miara** — umożliwia wybór nazwy miary (z wybranego źródła danych), która dostarcza wartość modyfikatora.
 
-1. Powtarzaj kroki od 5 do 6, dopóki nie zostaną dodane wszystkie wymagane modyfikatory.
+1. Powtarzaj kroki od 5 do 6, aż dodasz wszystkie wymagane modyfikatory i uzupełnisz formułę obliczonej miary.
 1. Wybierz opcję **Zapisz**.
 
-Na przykład wynik zapytania może być następujący.
+Na przykład firma odzieżowa działa w trzech różnych źródłach danych:
+
+- `pos` — odpowiada kanałowi sklepu.
+- `fno` — Odpowiada Supply Chain Management.
+- `ecommerce` — odpowiada kanałowi sieci web.
+
+Bez obliczonych miar, podczas zapytania o produkt D0002 (Szafka) w lokalizacji 1, magazynie 11 i wartości wymiaru `ColorID` o wartości `Red`, możesz otrzymać następujący wynik zapytania, który pokazuje ilości zapasów w ramach każdej wstępnie skonfigurowanej fizycznej mierzyć. Nie masz jednak wglądu w łączną ilość dostępną dla ilości rezerwacji w źródłach danych.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -224,7 +235,7 @@ Na przykład wynik zapytania może być następujący.
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
@@ -239,22 +250,22 @@ Następnie należy skonfigurować obliczoną miarę o nazwie `MyCustomAvailablef
 
 | System zużycia | Obliczona miara | Źródło danych | Fizyczna miara | Typ obliczania |
 |---|---|---|---|---|
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `received` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `scheduled` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `issued` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `reserved` | `Subtraction` |
 
 Po użyciu tej formuły obliczeń nowy wynik zapytania będzie zawierał dostosowane miary.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -270,13 +281,13 @@ Po użyciu tej formuły obliczeń nowy wynik zapytania będzie zawierał dostoso
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
                 "reserved": 40.0
             },
-            "CustomChannel": {
+            "CrossChannel": {
                 "MyCustomAvailableforReservation": 220.0
             }
         }
@@ -304,7 +315,7 @@ Rozwiązanie domyślnie zawiera tę konfigurację partycji. Dlatego *nie trzeba 
 
 Przez większość czasu zapytanie o dostępne zapasy nie będzie zwracane tylko na najwyższym poziomie „suma” Zamiast tego można także chcieć zobaczyć wyniki zagregowane na podstawie wymiarów magazynowych.
 
-Dodatek Widoczność magazynu jest o tyle elastyczny, że umożliwia konfigurowanie _indeksów_ w celu poprawy wydajności zapytań. Indeksy te są oparte na wymiarze lub kombinacji wymiarów. Indeks składa się z *numeru zestawu*, *wymiaru* i *hierarchii*, zgodnie z następującą tabelą.
+Dodatek Widoczność magazynu jest o tyle elastyczny, że umożliwia konfigurowanie *indeksów* w celu poprawy wydajności zapytań. Indeksy te są oparte na wymiarze lub kombinacji wymiarów. Indeks składa się z *numeru zestawu*, *wymiaru* i *hierarchii*, zgodnie z następującą tabelą.
 
 | Imię i nazwisko | opis |
 |---|---|
@@ -336,13 +347,13 @@ W poniższej tabeli przedstawiono listę dostępnych zapasów w tym przykładzie
 
 | Pozycja | ColorId | SizeId | StyleId | Ilość |
 |---|---|---|---|---|
-| Koszulka | Czarny | Mały | Szeroki | 1 |
-| Koszulka | Czarny | Mały | Normalne | 2 |
-| Koszulka | Czarny | Duży | Szeroki | 3 |
-| Koszulka | Czarny | Duży | Normalne | 4 |
-| Koszulka | Czerwony | Mały | Szeroki | 5 |
-| Koszulka | Czerwony | Mały | Normalne | 6 |
-| Koszulka | Czerwony | Duży | Normalne | 7 |
+| D0002 | Czarny | Mały | Szeroki | 1 |
+| D0002 | Czarny | Mały | Normalne | 2 |
+| D0002 | Czarny | Duży | Szeroki | 3 |
+| D0002 | Czarny | Duży | Normalne | 4 |
+| D0002 | Czerwony | Mały | Szeroki | 5 |
+| D0002 | Czerwony | Mały | Normalne | 6 |
+| D0002 | Czerwony | Duży | Normalne | 7 |
 
 W poniższej tabeli przedstawiono konfigurację hierarchii indeksów.
 
@@ -356,29 +367,29 @@ Indeks umożliwia wykonywanie następujących zapytań o dostępne zapasy:
 
 - `()`— pogrupowane według wszystkich
 
-    - T-shirt, 28
+    - D0002, 28
 
 - `(ColorId)`— pogrupowane według `ColorId`
 
-    - T-shirt, czarny, 10
-    - T-shirt, czerwony, 18
+    - D0002, Czarny, 10
+    - D0002, Czerwony, 18
 
 - `(ColorId, SizeId)`— pogrupowane według kombinacji `ColorId` i `SizeId`
 
-    - T-shirt, czarny, S, 3
-    - T-shirt, czarny, L, 7
-    - T-shirt, czerwony, S, 11
-    - T-shirt, czerwony, L, 7
+    - D0002, czarny, mały, 3
+    - D0002, czarny, duży, 7
+    - D0002, czerwony, mały, 11
+    - D0002, czerwony, duży, 7
 
 - `(ColorId, SizeId, StyleId)`— pogrupowane według kombinacji `ColorId`, `SizeId` i `StyleId`
 
-    - T-shirt, czarny, S, szeroki, 1
-    - T-shirt, czarny, S, zwykły, 2
-    - T-shirt, czarny, L, szeroki, 3
-    - T-shirt, czarny, L, zwykły, 4
-    - T-shirt, czerwony, S, szeroki, 5
-    - T-shirt, czerwony, S, zwykły, 6
-    - T-shirt, czerwony, L, zwykły, 7
+    - D0002, czarny, mały, szeroki, 1
+    - D0002, Czarny, Mały, Regularny, 2
+    - D0002, czarny, duży, szeroki, 3
+    - D0002, Czarny, Duży, Regularny, 4
+    - D0002, czerwony, mały, szeroki, 5
+    - D0002, czerwony, mały, zwykły, 6
+    - D0002, czerwony, duży, zwykły, 7
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguracja rezerwacji (opcjonalna)
 
@@ -397,35 +408,35 @@ Przed skonfigurowaniem tego mapowania fizyczne miary, obliczone miary i ich źr�
 
 Procedura definiowania mapowania rezerwacji wstępnej jest następująca.
 
-1. Zdefiniuj fizyczną miarę pełniącą rolę miary rezerwacji miękkiej (na przykład `SoftReservOrdered`).
-1. Na karcie **Obliczona miara** na stronie **Konfiguracja** zdefiniuj obliczoną miarę *dostępne do rezerwacji* (AFR), zawierającą formułę obliczeń AFR, która ma zostać zmapowana na fizyczną miarę. Na przykład można skonfigurować miarę `AvailableToReserve` (dostępne do rezerwacji), aby była ona mapowana na wcześniej zdefiniowaną fizyczną miarę `SoftReservOrdered`. W ten sposób można stwierdzić, jakie ilości ze stanem zapasów `SoftReservOrdered` będą dostępne do rezerwacji. Poniższa tabela przedstawia formułę obliczeń AFR.
+1. Zdefiniuj fizyczną miarę pełniącą rolę miary rezerwacji miękkiej (na przykład `SoftReservPhysical`).
+1. Na karcie **Obliczona miara** na stronie **Konfiguracja** zdefiniuj obliczoną miarę *dostępne do rezerwacji* (AFR), zawierającą formułę obliczeń AFR, która ma zostać zmapowana na fizyczną miarę. Na przykład można skonfigurować miarę `AvailableToReserve` (dostępne do rezerwacji), aby była ona mapowana na wcześniej zdefiniowaną fizyczną miarę `SoftReservPhysical`. W ten sposób można stwierdzić, jakie ilości ze stanem zapasów `SoftReservPhysical` będą dostępne do rezerwacji. Poniższa tabela przedstawia formułę obliczeń AFR.
 
     | Typ obliczania | Źródło danych | Fizyczna miara |
     |---|---|---|
     | Dodanie | `fno` | `AvailPhysical` |
     | Dodanie | `pos` | `Inbound` |
     | Odejmowanie | `pos` | `Outbound` |
-    | Odejmowanie | `iv` | `SoftReservOrdered` |
+    | Odejmowanie | `iv` | `SoftReservPhysical` |
 
-    Zaleca się skonfigurowanie miary obliczanej, tak aby zawierała miarę fizyczną, na której opiera się miara rezerwacji. W ten sposób na ilość miary obliczanej będzie wpływać ilość miary rezerwacji. Dlatego w tym przykładzie obliczona miara `AvailableToReserve` źródła danych `iv` powinna zawierać jako składnik miarę fizyczną `SoftReservOrdered` ze źródła `iv`.
+    Zaleca się skonfigurowanie miary obliczanej, tak aby zawierała miarę fizyczną, na której opiera się miara rezerwacji. W ten sposób na ilość miary obliczanej będzie wpływać ilość miary rezerwacji. Dlatego w tym przykładzie obliczona miara `AvailableToReserve` źródła danych `iv` powinna zawierać jako składnik miarę fizyczną `SoftReservPhysical` ze źródła `iv`.
 
 1. Otwórz stronę **Konfiguracja**.
-1. Na karcie **Mapowanie rezerwacji wstępnej** należy skonfigurować mapowanie rezerwacji fizycznej na obliczoną miarę. W przypadku poprzedniego przykładu można użyć następujących ustawień, aby mapować `AvailableToReserve` na wcześniej zdefiniowaną fizyczną miarę `SoftReservOrdered`.
+1. Na karcie **Mapowanie rezerwacji wstępnej** należy skonfigurować mapowanie rezerwacji fizycznej na obliczoną miarę. W przypadku poprzedniego przykładu można użyć następujących ustawień, aby mapować `AvailableToReserve` na wcześniej zdefiniowaną fizyczną miarę `SoftReservPhysical`.
 
     | Źródło danych fizycznej miary | Fizyczna miara | Dostępne dla źródła danych rezerwacji | Dostępne dla obliczonej miary rezerwacji |
     |---|---|---|---|
-    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > Jeśli nie możesz edytować karty **Mapowanie rezerwacji wstępnej**, być może trzeba włączyć funkcję *OnHandReservation* na karcie **Zarządzanie funkcjami**.
 
-Teraz podczas dokonywania rezerwacji na `SoftReservOrdered` dodatek Widoczność magazynu będzie automatycznie znajdować `AvailableToReserve` i jego powiązaną formułę obliczeń w celu sprawdzania poprawności rezerwacji.
+Teraz podczas dokonywania rezerwacji na `SoftReservPhysical` dodatek Widoczność magazynu będzie automatycznie znajdować `AvailableToReserve` i jego powiązaną formułę obliczeń w celu sprawdzania poprawności rezerwacji.
 
 W dodatku Widoczność magazynu mogą być widoczne na przykład następujące dostępne zapasy.
 
 ```json
 {
-    "productId": "T-shirt",
+    "productId": "D0002",
     "dimensions": {
         "SiteId": "1",
         "LocationId": "11",
@@ -433,7 +444,7 @@ W dodatku Widoczność magazynu mogą być widoczne na przykład następujące d
     },
     "quantities": {
         "iv": {
-            "SoftReservOrdered": 90
+            "SoftReservPhysical": 90
         },
         "fno": {
             "availphysical": 70.0,
@@ -448,14 +459,14 @@ W dodatku Widoczność magazynu mogą być widoczne na przykład następujące d
 
 W takim przypadku ma zastosowanie następujące obliczenie:
 
-`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservOrdered`  
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservPhysical`  
 = 70 + 50 – 20 – 90  
 = 10
 
-Jeśli zatem po próbie dokonania rezerwacji na `iv.SoftReservOrdered` ilość jest mniejsza lub równa `AvailableToReserve` (10), można wykonać rezerwację.
+Jeśli zatem po próbie dokonania rezerwacji na `iv.SoftReservPhysical` ilość jest mniejsza lub równa `AvailableToReserve` (10), żądanie miękkiej rezerwacji powiedzie się.
 
 > [!NOTE]
-> Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana. Wartością domyślną jest `True`.
+> Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana (chociaż możesz otrzymać ujemną ilość `AvailableToReserve`, system nadal pozwoli do miękkiej rezerwy). Wartością domyślną jest `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarchia rezerwacji wstępnej
 
@@ -488,18 +499,21 @@ Widoczność zapasów można skonfigurować, aby było można zaplanować przysz
 
 ## <a name="complete-and-update-the-configuration"></a>Kończenie i aktualizowanie konfiguracji
 
-Po zakończeniu konfiguracji należy zatwierdzić wszystkie zmiany w aplikacji Widoczność magazynu. Aby zatwierdzić zmiany, wybierz pozycję **Aktualizuj konfigurację** w prawym górnym rogu strony **Konfiguracja** w Power Apps.
+Po zakończeniu konfiguracji należy zatwierdzić wszystkie zmiany w aplikacji Widoczność magazynu. Aby zatwierdzić zmiany, należy wykonać następujące kroki.
 
-Po pierwszym wybraniu opcji **Aktualizuj konfigurację** system zażąda poświadczeń.
+1. W Power Apps na stronie **Konfiguracja** wybierz opcję **Aktualizuj konfigurację** w prawym górnym rogu. 
+1. System żąda poświadczeń logowania. Wprowadź następujące wartości:
 
-- **Identyfikator klienta** — identyfikator aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
-- **Identyfikator dzierżawcy** — identyfikator dzierżawcy systemu Azure.
-- **Klucz tajny klienta** — klucz tajny aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
+    - **Identyfikator klienta** — identyfikator aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
+    - **Identyfikator dzierżawcy** — identyfikator dzierżawcy systemu Azure.
+    - **Klucz tajny klienta** — klucz tajny aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
 
-Po zalogowaniu konfiguracja zostanie zaktualizowana w usłudze Widoczność magazynu.
+    Aby uzyskać więcej informacji na temat tych poświadczeń i sposobu ich znajdowania, zobacz [Instalowanie i konfiguracja dodatku Widoczność zapasów](inventory-visibility-setup.md).
 
-> [!NOTE]
-> Należy pamiętać o sprawdzeniu poprawności nazwy źródła danych, fizycznych miar i mapowań wymiarów przed zaktualizowaniem konfiguracji dla usługi Widoczność magazynu. Po wybraniu opcji **Aktualizuj konfigurację** nie będzie można zmodyfikować tych ustawień.
+    > [!IMPORTANT]
+    > Należy pamiętać o sprawdzeniu poprawności nazwy źródła danych, fizycznych miar i mapowań wymiarów przed zaktualizowaniem konfiguracji. Po zaktualizowaniu nie będzie można zmienić tych ustawień.
+
+1. Po zalogowaniu ponownie wybierz opcję **Aktualizuj konfigurację**. System stosuje te ustawienia i pokazuje, co zostało zmienione.
 
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Przykład konfiguracji standardowej
 
@@ -694,13 +708,19 @@ Mapowania wymiarów wyszczególnione w następującej tabeli są skonfigurowane 
 
 Dla źródła danych `fno` są skonfigurowane następujące fizyczne miary:
 
-- `Ordered`
 - `Arrived`
-- `AvailPhysical`
 - `PhysicalInvent`
 - `ReservPhysical`
+- `onorder`
+- `notspecified`
+- `availordered`
+- `availphysical`
+- `picked`
+- `postedqty`
+- `quotationreceipt`
+- `received`
+- `ordered`
 - `ReservOrdered`
-- `OnOrder`
 
 #### <a name="configuration-of-the-pos-data-source"></a>Konfiguracja źródła danych „pos”
 
@@ -766,7 +786,7 @@ Domyślne mapowanie rezerwacji jest przedstawione w następującej tabeli.
 
 | Źródło danych fizycznej miary | Fizyczna miara | Dostępne dla źródła danych rezerwacji | Dostępne dla obliczonej miary rezerwacji |
 |---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+| `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
 #### <a name="reservation-hierarchy"></a>Hierarchia rezerwacji
 
@@ -778,35 +798,5 @@ Domyślna hierarchia rezerwacji jest przedstawiona w następującej tabeli.
 | `LocationId` | 2 |
 | `ColorId` | 3 |
 | `SizeId` | 4 |
-| `StyleId` | 5 |
-| `BatchId` | 6 |
-| `SerialId` | 7 |
-| `StatusId` | 8 |
-| `LicensePlateId` | 9 |
-| `WMSLocationId` | 10 |
-| `WMSPalletId` | 11 |
-| `ConfigId` | 12 |
-| `VersionId` | 13 |
-| `CustomDimension1` | 14 |
-| `CustomDimension2` | 15 |
-| `CustomDimension3` | 16 |
-| `CustomDimension4` | 17 |
-| `CustomDimension5` | 18 |
-| `CustomDimension6` | 19 |
-| `CustomDimension7` | 20 |
-| `CustomDimension8` | 21 |
-| `CustomDimension9` | 22 |
-| `CustomDimension10` | 23 |
-| `CustomDimension11` | 24 |
-| `CustomDimension12` | 25 |
-| `ExtendedDimension1` | 26 |
-| `ExtendedDimension2` | 27 |
-| `ExtendedDimension3` | 28 |
-| `ExtendedDimension4` | 29 |
-| `ExtendedDimension5` | 30 |
-| `ExtendedDimension6` | 31 |
-| `ExtendedDimension7` | 32 |
-| `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

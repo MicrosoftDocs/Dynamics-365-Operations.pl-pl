@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910266"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778392"
 ---
 # <a name="create-sales-order-invoices"></a>Tworzenie faktur zamówienia sprzedaży
 
@@ -32,12 +32,12 @@ W tym artykule opisano sposób fakturowania zamówienia sprzedaży, łącznie ze
 2. Zaznacz zamówienie sprzedaży na liście. 
 3. W **okienku akcji** kliknij pozycję **Faktura > Generuj > Faktura**. Należy zauważyć, że z tym zamówieniem sprzedaży jest skojarzonych wiele dokumentów dostawy. Zamiast numeru dokumentu dostawy będzie wyświetlane tylko słowo *wiele*.  
 4. Rozwiń sekcję **Parametry**.
-    - W celu zaksięgowania faktury w ustawieniu Księgowanie musi być ustawiona wartość Tak. Można także wyłączyć księgowania i tylko wydrukować fakturę. Jednak ten sam efekt można osiągnąć przez utworzenie faktury pro forma zamiast regularnej faktury.  
+    - W celu zaksięgowania faktury w ustawieniu Księgowanie musi być ustawiona wartość **Tak**. Można także wyłączyć księgowania i tylko wydrukować fakturę. Jednak ten sam efekt można osiągnąć przez utworzenie faktury pro forma zamiast regularnej faktury.  
     - Ta opcja jest używana do zadań wsadowych. Kwerenda jest uruchamiana po uruchomieniu zadania wsadowego.
-5. W polu **Drukuj** wybierz opcję „Po”.
+5. W polu **Drukuj** wybierz opcję **Po**.
 6. W obszarze **Drukuj fakturę** zaznacz opcję **Tak**. Funkcja Zarządzanie drukowaniem może wydrukować wiele kopii faktury i również wysłać ją pocztą e-mail jako plik PDF.  
-7. W polu **Drukuj opłaty** zaznacz opcję „Podsumowanie”.
-8. W polu **Sprawdzanie limitu kredytu** zaznacz opcję „Saldo”.
+7. W polu **Drukuj opłaty** zaznacz opcję **Podsumowanie**.
+8. W polu **Sprawdzanie limitu kredytu** zaznacz opcję **Saldo**.
 9. Kliknij **Anuluj**.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Łączenie zamówień w jedną fakturę
@@ -46,8 +46,8 @@ W tym artykule opisano sposób fakturowania zamówienia sprzedaży, łącznie ze
 3. Umożliwia wybór wielu otwartych zamówień sprzedaży od tego samego odbiorcy.
 4. W **okienku akcji** kliknij pozycję **Faktura > Generuj > Faktura**.
 5. Rozwiń sekcję **Parametry**.
-6. W polu **Ilość** zaznacz opcję „Wszystko”. Należy zwrócić uwagę, że w sekcji Przegląd widać dwie faktury. Scalmy je teraz w jedną fakturę.  
-7. W pola **Aktualizacja zbiorcza dla** zaznacz opcję „Konto płatnika”.
+6. W polu **Ilość** zaznacz opcję **Wszystko**. Należy zwrócić uwagę, że w sekcji Przegląd widać dwie faktury. Scalmy je teraz w jedną fakturę.  
+7. W pola **Aktualizacja zbiorcza** dla zaznacz opcję **Konto płatnika**.
 8. Kliknij przycisk **Rozmieść**, aby scalić zamówienia sprzedaży w jedną fakturę. Dwa zamówienia sprzedaży są teraz scalone w jedną fakturę.   
 9. Kliknij **Anuluj**.
 10. Kliknij przycisk **Tak**.

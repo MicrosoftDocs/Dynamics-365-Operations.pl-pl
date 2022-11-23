@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262307"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785107"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -51,7 +51,7 @@ W ramach pracy [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Żądania obsługi | Nr | Tak | Tak: [Wdrożenia samoobsługowe](../deployment/infrastructure-stack.md) |
 | Integracja usługi SharePoint | Tak | Tak | Nr |
 | Menedżer konfiguracji i danych | Nr | Tak | Nr |
-| Pakiety danych procesów | Nr | Tak | Tak: struktura importu i eksportu danych (DIXF) |
+| Pakiety danych procesów | Nr | Tak | Tak: [struktura importu i eksportu danych (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Uaktualnij środowisko | Nr | Tak | Tak:dostępne aktualizacje [One Version](../lifecycle-services/oneversion-overview.md). |
 | Narzędzie do szacowania infrastruktury | Tak | Nr | Nr |
 | Szacowanie zapotrzebowania na licencje | Tak | Nr | Nr |
@@ -71,10 +71,10 @@ W ramach pracy [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Usuwamy poniższą listę zestawów szyfrowania, aby zapewnić zgodność z naszymi obecnymi protokołami bezpieczeństwa.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Zamieniona przez inną funkcję?**   | Począwszy od 30 listopada 2022 roku odbiorcy mogą używać tylko naszego [standardowego szyfrowania](/power-platform/admin/server-cipher-tls-requirements). Ta zmiana ma wpływ na Twoich klientów i serwery, które komunikują się z naszymi serwerami, na przykład może wpłynąć na integracje z innymi firmami, które nie są zgodne z naszymi standardowymi zestawami szyfrowania. |
+| **Zamieniona przez inną funkcję?**   | Począwszy od 31 stycznia 2023 roku odbiorcy mogą używać tylko naszego [standardowego szyfrowania](/power-platform/admin/server-cipher-tls-requirements). Ta zmiana ma wpływ na Twoich klientów i serwery, które komunikują się z naszymi serwerami, na przykład może wpłynąć na integracje z innymi firmami, które nie są zgodne z naszymi standardowymi zestawami szyfrowania. |
 | **Powiązane obszary produktów**         | Aplikacje finansowe i operacyjne |
 | **Opcja wdrażania**              | Wdrożenia w chmurze |
-| **Stan**                         | Wycofane. Odbiorcy muszą uaktualnić swoje serwery przed 30 listopada 2022. Aby uzyskać więcej informacji dotyczących konfigurowania zamówienia w pakiecie TLS Cipher Suite, zobacz temat [Zarządzanie zabezpieczeniami warstw transportu (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Stan**                         | Wycofane. Odbiorcy muszą uaktualnić swoje serwery przed 31 stycznia 2023. Aby uzyskać więcej informacji dotyczących konfigurowania zamówienia w pakiecie TLS Cipher Suite, zobacz temat [Zarządzanie zabezpieczeniami warstw transportu (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Wycofanie funkcji z użytku w czerwcu 2022 r.

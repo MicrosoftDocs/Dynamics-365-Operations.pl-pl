@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405446"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757175"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -50,7 +50,7 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Zamknij kartę w okienku akcji lub menu        | Esc                              |
 | Symulacja kliknięcia prawym przyciskiem myszy                          | Shift+F10                        |
 | Otwórz menu kontekstowe    | Ctrl+F10                         |
-| Naciśnij domyślny przycisk formularza/okna dialogowego | Alt+Enter                        |
+| Naciśnij domyślny przycisk strony/okna dialogowego | Alt+Enter                        |
 | Kliknij przycisk lub kafelek                          | Enter lub Spacja                   |
 | Wyświetl odświeżone informacje dla kafelka liczenia       | Alt+strzałka w górę                     |
 | Wyświetl aktualnie dostępne skróty              | Alt+Shift+K                      |
@@ -85,36 +85,36 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Otwórz filtrowanie siatki dla bieżącej kolumny                                                                          | Ctrl+G                   |
 | Zamknij filtrowanie siatki dla bieżącej kolumny                                                                         | Esc                      |
-| Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i formularzem głównym, jeśli okienku Filtr jest już otwarte) | Alt+M, F lub Ctrl+F3       |
+| Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i stroną główną, jeśli okienku Filtr jest już otwarte) | Alt+M, F lub Ctrl+F3       |
 | Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)                                                               | Esc                      |
 | Otwórz filtrowanie/sortowanie zaawansowane                                                                                        | Ctrl+Shift+F3            |
 | Zastosuj szybki filtr (gdy fokusem jest w szybki filtr)                                                              | Enter                    |
 | Zastosuj filtr siatki (jeśli fokus jest w polu filtru nagłówka kolumny)                                             | Enter                    |
 
-## <a name="form-shortcuts"></a>Skróty formularza
+## <a name="page-shortcuts"></a>Skróty strony
 
-| Funkcja                                    | Naciśnij klawisz             |
+| Funkcja                                    | Naciśnij klawisz              |
 |-----------------------------------------------|-------------------|
 | Utwórz nowy rekord                           | Alt+N             |
 | Usuwanie rekordu                               | Alt+Del lub Alt+F9 |
 | Zapisz rekord                                   | Alt+S lub Ctrl+S   |
 | Przywróć (przywracanie)                              | Ctrl+Shift+F5     |
 | Odśwież dane                                  | Shift+F5          |
-| Przejdź do widocznego pierwszego pola na formularzu   | Alt+Shift+F       |
+| Przejdź do widocznego pierwszego pola na stronie   | Alt+Shift+F       |
 | Przełącz tryb edycji                              | F2                |
-| Dołączanie dokumentu                             | Ctrl+Shift+A      |
+| Dołącz dokument                             | Ctrl+Shift+A      |
 | Eksportuj do programu Excel                               | Ctrl+Shift+E      |
 | Przejdź do poprzedniego rekordu (poza siatką)  | Ctrl+strzałka w górę     |
 | Przejdź do następnego rekordu (poza siatką)      | Ctrl+strzałka w dół   |
 | Przejdź do pierwszego rekordu (poza siatką)     | CTRL+Home         |
 | Przejdź do ostatniego rekordu (poza siatką)      | CTRL+End          |
-| Zamknij formularz (kliknij Wstecz)                   | Esc               |
-| Zamknij formularz z zapisaniem             | Shift+Esc         |
-| Zamknij formularz bez zapisywania zmian | Alt+Shift+Q       |
+| Zamknij stronę (wybierz przycisk Wstecz)<br><br>**Uwaga:** Jeśli jest otwarte okno podręczne (etykietka narzędzia, wybór daty, lista rozwijana itp.), pierwsze użycie klawisza Esc spowoduje zwolnienie okna podręcznego.       | Esc               |
+| Zamknij stronę z zapisaniem             | Shift+Esc         |
+| Zamknij stronę, odrzucając wszelkie niezapisane zmiany | Alt+Shift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Skróty nawigacji formularza
+## <a name="page-navigation-shortcuts"></a>Skróty nawigacji strony
 
-| Funkcja                                          | Klawisze                                        |
+| Funkcja                                          | Naciśnij klawisz                                         |
 |-----------------------------------------------------|----------------------------------------------|
 | Przejdź do następnego/poprzedniego pola                     | Tab / Shift+Tab                              |
 | Przejdź do następnej/poprzedniej karty                       | Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo |
@@ -192,13 +192,13 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Otwórz okienko pomocy                                                            | Ctrl+?                     |
 | Otwórz analizator śledzenia                                                         | Alt+Shift+T                |
 | Przejdź do okienka nawigacji                                                   | Alt + F1                     |
-| Dodaj/usuń formularz jako ulubiony (z fokusem ustawionym na formularz w okienku nawigacji)   | Shift+F                    |
+| Dodaj/usuń stronę jako ulubioną (z fokusem na stronie w okienku nawigacji)   | Shift+F                    |
 | Przejdź do standardowego okienka akcji                                              | Alt+M, A lub Ctrl+F6         |
 | Przejdź do okienka filtru (może obejmować jego otwarcie)                        | Alt+M, F lub Ctrl+F3         |
 | Przenieś fokus do zawartości strony (gdy fokus znajduje się w okienku filtru)                | Alt+M, M lub Ctrl+F3         |
-| Przejdź do listy nawigacji w formularzu Szczegóły (może obejmować jego otwarcie)    | Alt+M, S lub Ctrl+F8         |
+| Przejdź do listy nawigacji (co może obejmować jej otwarcie)    | Alt+M, S lub Ctrl+F8         |
 | Przenieś fokus do zawartości strony (gdy fokus znajduje się na liście nawigacyjnej)            | Alt+M, M lub Ctrl+F8         |
-| Zamknij listę nawigacji w formularzu Szczegóły (z wyróżnieniem na liście nawigacji) | Esc                        |
+| Zamknij listę nawigacji (z wyróżnieniem na liście nawigacji) | Esc                        |
 | Przejdź do zawartości strony głównej (gdy fokus jest w innym okienku)                    | Alt+M, M                    |
 | Przejdź do okienka pola informacji (może obejmować jego otwarcie)                       | Alt+M, B lub Ctrl+F2         |
 | Przechodzenie do następnego objaśnienia funkcji                                              | Alt+M,C                    |

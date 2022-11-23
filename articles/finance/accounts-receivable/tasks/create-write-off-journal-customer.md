@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713679"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775307"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Tworzenie arkusza odpisów dla odbiorcy
 
@@ -48,9 +48,9 @@ W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametr
 7. Otwórz **Okienko nawigacji > Moduły > Księga główna > Wpisy w arkuszu > Arkusze finansowe**.
 8. Wybierz numer partii arkuszy z arkuszem, który zawiera odpis. Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy. Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.  
 9. Zamknij stronę.
-10. Zamknij stronę.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Odpisywanie transakcji z formularza windykacji
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Odpisywanie transakcji ze strony windykacji
 1. Wybierz kolejno opcje **Kredyty i windykacja > Windykacja > Wiekowane salda**.
 2. Zaznacz nazwę odbiorcy mającego transakcje, które chcesz odpisać. Na przykład wybierz Cave Wholesales (US-004).
 3. Zaznacz wiersz pierwszej transakcji.
@@ -63,7 +63,7 @@ W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametr
 10. Wybierz kolejno opcje **Księga główna > Wpisy w arkuszu > Arkusze finansowe**.
 11. Wybierz numer partii arkuszy z arkuszem, który zawiera odpis. Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy. Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.  
 12. Zamknij stronę.
-13. Zamknij stronę.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Odpisywanie faktury ze strony Otwarte faktury odbiorców
 1. W okienku nawigacji otwórz **Moduły > Rozrachunki z odbiorcami > Faktury > Otwarte faktury dla odbiorców**.

@@ -2,7 +2,7 @@
 title: Zbiorowe zamykanie okresów obrachunkowych
 description: W tym artykule pokazano sposób zawieszania okresu lub trwałego zamykania okresu albo więcej niż jednej firmy na raz.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872449"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779834"
 ---
 # <a name="mass-financial-period-close"></a>Zbiorowe zamykanie okresów obrachunkowych
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872449"
 
 W tym artykule pokazano sposób zawieszania okresu lub trwałego zamykania okresu albo więcej niż jednej firmy na raz. Ponadto w zadaniu zostanie pokazane, jak ograniczyć księgowanie przez grupę użytkowników do określonych modułów.
 
-1. W okienku nawigacji przejdź do **Księga główna > Zamykanie okresu > Kalendarze księgi**. Należy zauważyć, że wyświetlana lista firm zależy od kalendarza obrachunkowego wybranego na stronie. Zostaną wyświetlone tylko firmy używające wybranego kalendarza obrachunkowego.
+1. W okienku nawigacji przejdź do **Księga główna > Zamykanie okresu > Kalendarze księgi**. 
+
+>[!NOTE]
+> Wyświetlana lista firm zależy od kalendarza obrachunkowego wybranego na stronie. Zostaną wyświetlone tylko firmy używające wybranego kalendarza obrachunkowego.
+
 2. Wybierz opcję **Edycja**.
 3. Wybierz okres, dla którego chcesz zmodyfikować stan.
 4. Wybierz firmy, dla których chcesz zaktualizować stan. Możesz szybko wybrać wszystkie firmy zaznaczając znacznik wyboru w lewej górnej części siatki.  

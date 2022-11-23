@@ -2,28 +2,23 @@
 title: Omówienie obsługi relacji z klientami
 description: Ten artykuł zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "260624"
 - intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc7daeb27c25efa21fd34b0456af8892074056d5
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885618"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785053"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -31,6 +26,11 @@ ms.locfileid: "8885618"
 
 
 Wielu sprzedawców detalicznych, w szczególności najlepszych specjalistycznych sprzedawców detalicznych, chce, aby ich sprzedaż była oparta na formie długoterminowych relacji z klientami. Pracownicy powinni wiedzieć o upodobaniach tych klientów, historii zakupów, preferencjach dotyczących produktów oraz ważnych datach, takich jak rocznice i urodziny. Sprzedawcy muszą mieć miejsce, w którym mogą przechwytywać te informacje i łatwo znajdować je w razie potrzeby. Jeśli te informacje są dostępne w jednym widoku, klienci mogą łatwo kierować klientów, którzy spełniają określone kryteria. Na przykład mogą znaleźć wszystkich klientów, którzy preferują kupować torebki, lub odbiorców, którzy mają ważne zdarzenia, takie jak urodziny czy rocznice.
+
+Poniższy film pokazuje przykładowy scenariusz obsługi klienta w Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
 
 ## <a name="client-book"></a>Książka adresowa klientów
 

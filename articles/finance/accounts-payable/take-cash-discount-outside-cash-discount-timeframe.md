@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1abf6722348b57594509e90ca0defc07783a112b
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 26b1eb5e542acf7496d1a0cf7196716a5de75e4e
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715891"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780596"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 
@@ -37,13 +37,13 @@ Oznacza fakturę do płatności. Rabat gotówkowy nie jest pobierany, ponieważ 
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data rabatu gotówkowego | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Wybrano | Zawsze            | Inv-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2000,00                      | USD      | -1980,00        |
+| Wybrane | Zawsze            | Inv-10030 | 3052    | 28/06/2020          | 12/07/2020 | 10030   | -2000,00                      | USD      | -1980,00        |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie transakcji**.
 
 | Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu           | 12/07/2020 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Zawsze    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -52,16 +52,16 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie tran
 ## <a name="date-to-use-for-calculating-discounts--selected-date"></a>Data używana do obliczania rabatów = Wybrana data
 Po zaksięgowaniu faktury i płatności rabat gotówkowego nadal może zostać pobrany, gdy transakcje są rozliczone na stronie **Rozliczenia transakcji**. April zmienia wartość w polu **Data używana do obliczania rabatów** na **Wybrana data**. Następnie wprowadza datę czerwca 28, która znajduje się w okresie rabatu gotówkowego dla faktury. Ta data jest używana do obliczania rabatu gotówkowego dla transakcji. Na stronie **Rozliczanie otwartych transakcji** April widzi, że domyślnie pojawia się pełny rabat w wysokości 20,00. Wiersz faktury wskazuje, że kwota do rozliczenia wynosi 1980,00.
 
-| Zaznacz                     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data rabatu gotówkowego | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
-|--------------------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Zaznaczone i wyróżnione | Normalna            | Inv-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2000,00                      | USD      | -1980,00        |
-| Wybrano                 | Normalna            | APP-10030 | 3052    | 7/15/2015          | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
+| Zaznacz          | Użyj rabatu gotówkowego | Załącznik   | Konto | Data rabatu gotówkowego | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
+|--------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
+| Zaznaczone i wyróżnione | Normalna    | Inv-10030 | 3052    | 28/06/2020         | 12/07/2020 | 10030   | -2000,00                      | USD      | -1980,00        |
+| Wybrane                 | Normalna    | APP-10030 | 3052    | 15/07/2020          | 15/07/2020 |         | 500.00                         | USD      | 500.00           |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Kwota pobranego rabatu gotówkowego wynosi 20.00, ponieważ kwota do rozliczenia dla faktury jest wartością domyślną: 1,980.00.
 
 | Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu           | 12/07/2020 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -71,14 +71,14 @@ April zmienia wartość w polu **Kwota do rozliczenia** na **500.00**. Wartość
 
 | Zaznacz                     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Zaznaczone i wyróżnione | Normalna            | Inv-10030 | 3052    | 6/28/2015 | 7/12/2015 | 10030   | 2000,00                       | USD      | -500,00          |
-| Wybrano                 | Normalna            | APP-10030 | 3052    | 7/15/2015 | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
+| Zaznaczone i wyróżnione | Normalna            | Inv-10030 | 3052    | 28/06/2020 | 12/07/2020 | 10030   | 2,000.00                       | USD      | -500,00          |
+| Wybrane                 | Normalna            | APP-10030 | 3052    | 15/07/2020 | 15/07/2020 |         | 500.00                         | USD      | 500.00           |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **5,05**, ponieważ kwota do rozliczenia dla faktury została zmieniona na kwotę płatności, 500,00.
 
 | Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu           | 12/07/2020 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |

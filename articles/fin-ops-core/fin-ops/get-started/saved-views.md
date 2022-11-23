@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220341"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757229"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -107,7 +107,7 @@ Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też
 
 Okno dialogowe **Zarządzaj moimi widokami** zawiera podstawowe funkcje obsługi widoków osobistych i kolejności widoków w selektorze widoków. Jeśli chcesz otworzyć tę stronę, wybierz nazwę widoku, aby otworzyć menu rozwijane selektora widoków, wybierz opcję **Więcej**, a następnie wybierz opcję **Zarządzaj moimi widokami**.
 
-**Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w sekcji **Moje widoki** okna dialogowego **Zarządzaj moimi widokami** są wyświetlane dostępne widoki dla strony w sekcjach. Wszystkie widoki specyficzne dla bieżącej firmy są pokazywane w osobnej sekcji. Sekcja **Widoki globalne** jest zawsze wyświetlana, dzięki czemu można zarządzać widokami dostępnymi dla strony we wszystkich firmach. 
+Jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w sekcji **Moje widoki** okna dialogowego **Zarządzaj moimi widokami** są wyświetlane dostępne widoki dla strony w sekcjach. Wszystkie widoki specyficzne dla bieżącej firmy są pokazywane w osobnej sekcji. Sekcja **Widoki globalne** jest zawsze wyświetlana, dzięki czemu można zarządzać widokami dostępnymi dla strony we wszystkich firmach. 
 
 Dostępny zestaw akcji dla listy dostępnych widoków tej strony jest następujący.
 
@@ -138,9 +138,9 @@ Aby opublikować widok, należy wykonać następujące kroki:
 
 1. Utwórz i zapisz osobistą kopię widoku, który chcesz opublikować. 
 2. Po załadowaniu tego widoku wybierz nazwę widoku, aby otworzyć menu rozwijane selektora widoków. 
-3. Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Publikuj**. Zostanie otwarte okno dialogowe Publikowanie.
+3. Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Publikuj**. Zostanie otwarte okno dialogowe **Publikowanie**.
 4. Wprowadź nazwę widoku. Wpisaną nazwę użytkownicy otrzymujący ten widok będą widzieć w selektorach widoku. Nazwy opublikowanych widoków strony muszą być unikatowe. Nazwy publikowanych widoków nie mogą się powtarzać, nawet jeśli są stosowane do różnych list ról lub firm.
-5. **Aktualizacja 10.0.17 lub nowsza wersja**: jeśli jest włączona funkcja **(Wersja zapoznawcza) Obsługa tłumaczeń dla widoków organizacyjnych**, można dodawać tłumaczenia dla swojej nazwy widoku w wielu językach wymaganych przez organizację, wybierając przycisk **Tłumaczenia** obok pola **Nazwa**. Nazwa widoku będzie wyświetlana użytkownikom w ich bieżącym języku. Można również ustawić język domyślny, aby określić tłumaczenie, które będzie wyświetlane użytkownikom, dla których są uruchomione języki bez zdefiniowanego tłumaczenia.
+5. Jeśli jest włączona funkcja **Obsługa tłumaczeń dla widoków organizacyjnych**, można dodawać tłumaczenia dla swojej nazwy widoku w wielu językach wymaganych przez organizację, wybierając przycisk **Tłumaczenia** obok pola **Nazwa**. Nazwa widoku będzie wyświetlana użytkownikom w ich bieżącym języku. Można również ustawić język domyślny, aby określić tłumaczenie, które będzie wyświetlane użytkownikom, dla których są uruchomione języki bez zdefiniowanego tłumaczenia.
 5. Opcjonalnie: wprowadź opis widoku, dzięki czemu użytkownicy otrzymujący ten widok mogą lepiej zrozumieć jego przeznaczenie. 
 6. Określ, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Gdy widok zostanie ustawiony jako widok domyślny, użytkownicy zobaczą go następnym razem, gdy otworzą stronę docelową. Zostanie zmieniony jeden domyślny widok globalny każdego docelowego użytkownika. Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po jego opublikowaniu.
 
@@ -150,9 +150,10 @@ Aby opublikować widok, należy wykonać następujące kroki:
     > - Jeśli widok jest publikowany jako domyślny dla niektórych lub wszystkich firm, zachowanie jest następujące:
     >
     >    - Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, pojedynczy globalny widok domyślny będzie zmieniany dla każdego docelowego użytkownika. 
-    >    - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy** i opublikujesz widok dla podzbioru firm, domyślny widok dla tych firm będzie zmieniany dla każdego docelowego użytkownika.
+    >    - Jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy** i opublikujesz widok dla podzbioru firm, domyślny widok dla tych firm będzie zmieniany dla każdego docelowego użytkownika.
     >
     > - Jeśli użytkownik ma role, w których wiele widoków jest opublikowanych jako widok domyślny, ostatni opublikowany widok będzie używany jako widok domyślny użytkownika. 
+    > - Publikowanie nie będzie działać dla przypisań ról wykonanych przy użyciu grup AAD. 
 
 8. Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok. 
 9. Określ, czy chcesz opublikować widok dla ról podrzędnych każdej wybranej roli zabezpieczeń. Jeśli tak, zaznacz pole wyboru **Uwzględnij role podrzędne** w wierszu odpowiednich ról zabezpieczeń. Należy zauważyć, że to pole wyboru jest niedostępne w przypadku ról, które nie mają ról podrzędnych.
@@ -162,7 +163,7 @@ Aby opublikować widok, należy wykonać następujące kroki:
     > Podczas publikowania widoku dla określonej firmy, ale bez publikowania widoku jako widoku domyślnego, należy wziąć pod uwagę następujące zachowanie:
     >
     > - Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, w selektorze widoku użytkownika dla strony początkowo będzie wyświetlany tylko widok dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze wyświetlany w selektorze widoków użytkownika dla strony, niezależnie od firmy.
-    > - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm.
+    > - Jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm.
 
 11. Wybierz opcję **Publikuj**.
 
@@ -259,7 +260,7 @@ W przypadku stron z dużymi selektorami widoku zarówno (personalizacje i kweren
 Jeśli publikujesz widok dla określonej firmy, ale bez publikowania widoku jako widoku domyślnego, zachowanie jest następujące:
 
 - Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, w selektorze widoku użytkownika dla strony początkowo będzie wyświetlany tylko widok dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze wyświetlany w selektorze widoków użytkownika dla strony, niezależnie od firmy. To zachowanie występuje, ponieważ użytkownicy uzyskują własną osobistą kopię opublikowanego widoku po jego załadowaniu, a widoki osobiste są widokami globalnymi.
-- **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm. To zachowanie występuje, ponieważ funkcja umożliwia łączenie widoków (w tym widoków osobistych) z określonymi firmami.
+- Jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm. To zachowanie występuje, ponieważ funkcja umożliwia łączenie widoków (w tym widoków osobistych) z określonymi firmami.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: e4ccc8ac9b5374ca0713167a17b8704727c687fd
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643693"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775249"
 ---
 # <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy
 
@@ -31,9 +31,10 @@ Informacje z migawek wiekowania są wyświetlane na stronie z listą **Wiekowane
 W obszarze roboczym **Kredyty i windykacja odbiorcy** jest także widać wiekowanie odbiorcy. Aby uzyskać więcej informacji, zobacz temat [Zarządzanie kredytami i windykacjami. Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
-> Aby skrócić czas wymagany do utworzenia migawki wiekowania, włącz następujące funkcje w obszarze roboczym **Zarządzanie funkcjami**: **Zwiększenie wydajności wiekowania odbiorcy** 
-> **Ulepszenie wydajności wiekowania klientów z pulami klientów**  
-> Gdy są włączone obie funkcje, **Pule klientów** mogą być używane podczas tworzenia migawki wiekowania. 
+> Aby skrócić czas potrzebny do utworzenia migawki starzenia, włącz następujące funkcje w obszarze roboczym **Zarządzanie funkcjami**. 
+> - **Zwiększenie wydajności wiekowania odbiorcy** 
+> - **Ulepszenie wydajności wiekowania klientów z pulami klientów**  
+>Gdy są włączone obie funkcje, **Pule klientów** mogą być używane podczas tworzenia migawki wiekowania. 
 
 Podczas tworzenia migawki wiekowania odbiorcy można wprowadzić informacje w następujących polach:
 

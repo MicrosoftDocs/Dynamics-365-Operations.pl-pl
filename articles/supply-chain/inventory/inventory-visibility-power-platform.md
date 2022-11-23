@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 674adb70cc4372a8c5ca8c75ed3ef840d8ec7b79
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520872"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762708"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Używanie aplikacji Inventory Visibility
 
@@ -30,44 +30,73 @@ Widoczność magazynu to aplikacja oparta na modelu służąca do wizualizacji. 
 - Obsługuje zapytania o dostępne zapasy w czasie rzeczywistym dla różnych kombinacji wymiarów.
 - Zawiera interfejs użytkownika do księgowania żądań rezerwacji.
 - Zapewnia widok dostępnych zapasów produktów wraz ze wszystkimi wymiarami.
-- Zapewnia widok listy dostępnych zapasów produktów wraz ze wstępnie zdefiniowanymi wymiarami.
-
+- Zapewnia widok listy dostępnych zapasów produktów wraz ze wstępnie zdefiniowanymi wymiarami. Widok dostępnej listy może być pełnym podsumowaniem lub wstępnie załadowanym wynikiem dostępnego zapytania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Przed rozpoczęciem należy zainstalować i skonfigurować dodatek Widoczność zapasów w sposób opisany w temacie [Instalowanie i ustawianie dodatku Widoczność magazynu](inventory-visibility-setup.md).
 
-## <a name="open-the-inventory-visibility-app"></a>Otwieranie aplikacji Widoczność magazynu
+## <a name="open-and-authenticate-the-inventory-visibility-app"></a><a name="open-authenticate"></a>Otwieranie i uwierzytelnianie aplikacji Widoczność zapasów
 
-Aby otworzyć aplikację Widoczność magazynu, zaloguj się do środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+Aby otworzyć i uwierzytelnić aplikację Widoczność zapasów, wykonaj następujące kroki.
 
-## <a name="configuration"></a><a name="configuration"></a>Konfiguracja
+1. Zaloguj się do swojego środowiska Power Apps.
+1. Otwieranie aplikacji **Widoczność magazynu**.
+1. Otwórz stronę **Widoczność operacyjną** z lewego okienka.
+1. Kliknij przycisk **Ustawienia** (symbol koła zębatego) w prawym górnym rogu strony.
+1. W oknie dialogowym **Ustawienia** wprowadź **identyfikator klienta**, **identyfikator dzierżawy** i **tajny klucz klienta**, [które zostały odnotowane podczas instalacji i skonfigurowania widoczności zapasów](inventory-visibility-setup.md).
+1. Wybierz przycisk **Odśwież** obok **pola Token okaziciela**. Na podstawie wprowadzonych informacji system wygeneruje nowy token na okaziciela.
 
-Strona **Konfiguracja** aplikacji Widoczność magazynu ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja obejmuje domyślne ustawienia z aplikacji Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienie domyślne można przejrzeć. Następnie na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach.
+    ![Ustawienia zapytania o dostępne zapasy.](media/inventory-visibility-query-settings.png "Ustawienia zapytania o dostępne zapasy")
+
+1. Po otrzymaniu prawidłowego tokenu na okaziciela zamknij okno dialogowe. Token na okaziciela wygaśnie za jakiś czas. Dlatego konieczne jest sporadycznie odświeżenie danych, gdy konieczne jest aktualizowanie konfiguracji, księgować dane lub kwerendy.
+
+## <a name="configure-the-inventory-visibility-app"></a><a name="configuration"></a>Skonfiguruj aplikację Widoczność magazynu
+
+Strona **Konfiguracja** aplikacji Widoczność magazynu pomaga skonfigurować ogólną konfigurację zarządzania danymi i konfigurację funkcji. Po zainstalowaniu tego dodatku domyślna konfiguracja obejmuje domyślne ustawienia z aplikacji Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienie domyślne można przejrzeć. Następnie na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach.
 
 Aby uzyskać pełne informacje o konfigurowaniu rozwiązania, zobacz temat [Konfiguracja aplikacji Widoczność magazynu](inventory-visibility-configuration.md).
 
 ## <a name="operational-visibility"></a>Widoczność operacyjna
 
-Strona **Widoczność operacyjna** zawiera wyniki zapytania o dostępne zapasy w czasie rzeczywistym oparte na różnych kombinacjach wymiarów. Po włączeniu funkcji *OnHandReservation* można również księgować żądania rezerwacji ze strony **Widoczność operacyjna**.
+Strona **Widoczność operacyjna** zawiera wyniki kwerendy dostępnych zapasów w czasie rzeczywistym, księgowania rezerwacji i alokacji w oparciu o różne kombinacje wymiarów. Po [włączeniu](inventory-visibility-configuration.md) funkcji *OnHandReservation* można również księgować żądania rezerwacji ze strony **Widoczność operacyjna**.
 
 ### <a name="on-hand-query"></a>Zapytanie o dostępne zapasy
 
-Na karcie **Zapytanie o dostępne zapasy** są wyświetlane wyniki zapytania o dostępne zapasy w czasie rzeczywistym.
+Karta **Obecne zapytanie** na stronie **Widoczność operacyjna** umożliwia wysyłanie zapytań o dostępne zapasy w czasie rzeczywistym. Wykonaj poniższe kroki, aby skonfigurować i uruchomić zapytanie.
 
-Po otwarciu karty **Zapytanie o dostępne zapasy** strony **Widoczność operacyjna** system żąda poświadczeń użytkownika, aby uzyskać token elementu nośnego wymagany do wykonywania zapytania w usłudze widoczności magazynu. Token elementu nośnego można po prostu wkleić w polu **Token elementu nośnego** i zamknąć okno dialogowe. Następnie można zaksięgować żądanie zapytania o dostępne zapasy.
+1. Otwieranie aplikacji **Widoczność magazynu**.
+1. Otwórz stronę **Widoczność operacyjną** z lewego okienka.
+1. Na karcie **Zapytanie bieżące** wprowadź wartości **Identyfikator organizacji**, **Identyfikator witryny** i **Identyfikator lokalizacji**, o które chcesz zapytać.
+1. W polu **Identyfikator produktu** wprowadź jeden lub więcej identyfikatorów produktów, aby dokładnie dopasować je do kwerendy. Jeśli pole Identyfikator **produktu jest** puste, zostaną w nich wymienione wszystkie produkty w określonej lokalizacji i w określonej lokalizacji.
+1. Aby uzyskać bardziej szczegółowych wyników (na przykład: widok według wartości wymiarów, takich jak kolor i rozmiar), wybierz wymiary grupuj według w polu **Wynik grupy według**.
+1. Aby znaleźć towary o określonej wartości wymiaru (np. kolor = czerwony), wybierz wymiar w polu **Filtruj wymiary**, a następnie wprowadź wartość wymiaru.
+1. Wybierz **kwerendę**. Zostanie wyświetlony komunikat o błędzie (zielony) lub komunikat o błędzie (czerwony). Jeśli kwerenda nie powiedzie się, sprawdź kryteria kwerendy i upewnij się, [że token okaziciela](#open-authenticate) nie wygasł.
 
-Jeśli token elementu nośnego jest nieprawidłowy lub wygasł, należy wkleić nowy w polu **Token elementu nośnego**. Wprowadź poprawne wartości w polach **Identyfikator klienta**, **Identyfikator dzierżawcy** i **Klucz tajny klienta**, a następnie wybierz opcję **Odśwież**. System automatycznie otrzyma nowy, prawidłowy token elementu nośnego.
-
-Aby zaksięgować zapytanie o dostępne zapasy, wprowadź zapytanie w treści żądania. Użyj wzorca opisanego w temacie [Zapytanie przy użyciu metody księgowania](inventory-visibility-api.md#query-with-post-method).
-
-![Ustawienia zapytania o dostępne zapasy](media/inventory-visibility-query-settings.png "Ustawienia zapytania o dostępne zapasy")
+Innym sposobem wykonywania kwerendy są bezpośrednie żądania interfejsu API. Można użyć `/api/environment/{environmentId}/onhand/indexquery` albo `/api/environment/{environmentId}/onhand`. Więcej informacji zawiera temat [Publiczne interfejsy API widoczności zasobów reklamowych](inventory-visibility-api.md).
 
 ### <a name="reservation-posting"></a>Księgowanie rezerwacji
 
 Użyj karty **Księgowanie rezerwacji** strony **Widoczność operacyjna**, aby zaksięgować żądanie rezerwacji. Aby można było zaksięgować żądanie rezerwacji, należy włączyć funkcję *OnHandReservation*. Więcej informacji na temat tej funkcji i jak ją włączyć zawiera temat [Rezerwacje dodatku Widoczność zapasów](inventory-visibility-reservations.md).
 
-Aby zaksięgować żądanie rezerwacji, musisz wprowadzić wartość w treści żądania. Użyj wzorca opisanego w temacie [Tworzenie jednego zdarzenia rezerwacji](inventory-visibility-api.md#create-one-reservation-event). Następnie kliknij przycisk **Zaksięguj**. Aby wyświetlić szczegóły odpowiedzi na żądanie, wybierz opcję **Pokaż szczegóły**. Wartość `reservationId` można odczytać również ze szczegółów odpowiedzi.
+> [!NOTE]
+> Możliwość dokonywania rezerwacji programowej za pomocą interfejsu użytkownika jest przeznaczona do testowania funkcji. Każdy wniosek o rezerwację programową powinien być skojarzony ze zmianą wiersza zamówienia transakcji (tworzenie, modyfikowanie, usuwanie itd.). Dlatego zaleca się, aby dokonać tylko rezerwacji miękkich, które są połączone z zamówieniem za back-end. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md).
+
+Aby zakłać wniosek o rezerwację programną za pomocą interfejsu użytkownika, należy wykonać następujące kroki.
+
+1. Otwieranie aplikacji **Widoczność magazynu**.
+1. Otwórz stronę **Widoczność operacyjną** z lewego okienka.
+1. Na karcie **Księgowanie rezerwacji** w polu **Ilość** określ ilość, która ma zostać zarezerwowana wcześniej.
+1. Wyczyść pole wyboru **Włącz ujemny stan** magazynu, aby zapobiec nadsprzedarzeniu lub zarezerwowaniu zapasów.
+1. W polu **Operator** wybierz źródło danych i miarę fizyczną, które mają zastosowanie do ilości zarezerwowanej programowo.
+1. Wprowadź wartości **Identyfikator organizacji**, **Identyfikator witryny**, **Identyfikator lokalizacji** i **Identyfikator produktu**, o które chcesz zapytać.
+1. Aby uzyskać bardziej szczegółowych wyników, wybierz źródło danych, wymiary i wartości wymiarów.
+
+Innym sposobem zaksięgowania rezerwacji programowej jest bezpośrednie żądania interfejsu API. Użyj wzorca opisanego w temacie [Tworzenie jednego zdarzenia rezerwacji](inventory-visibility-api.md#create-one-reservation-event). Następnie kliknij przycisk **Zaksięguj**. Aby wyświetlić szczegóły odpowiedzi na żądanie, wybierz opcję **Pokaż szczegóły**. Wartość `reservationId` można odczytać również ze szczegółów odpowiedzi.
+
+### <a name="allocation"></a>Alokacja
+
+Aby uzyskać informacje dotyczące zarządzania alokacjami z interfejsu użytkownika i interfejsów API, zobacz alokacje [zapasów widoczności zapasów](inventory-visibility-allocation.md).
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Podsumowanie zapasów
 
@@ -84,19 +113,15 @@ Aby włączyć stronę **Podsumowanie zapasów** i ustawić częstotliwość syn
 
 1. Wybierz opcję **Aktualizuj konfigurację**, aby zapisać wszystkie zmiany.
 
-
 > [!NOTE]
 > Funkcja *OnHandMostSpecificBackgroundService* śledzi tylko zmiany w dostępnych zapasach, które wystąpiły po włączeniu tej funkcji. Dane produktów, które nie zostały zmienione od czasu włączeniu tej funkcji, nie będą synchronizowane z pamięci podręcznej usługi magazynowej do środowiska Dataverse. Jeśli strona **Podsumowanie zapasów** nie pokazuje wszystkich oczekiwanych informacji o stanie zapasów, otwórz rozwiązanie Supply Chain Management, przejdź do menu **Zarządzanie zapasami > Zadania okresowe > Integracja widoczności zapasów**, wyłącz zadanie wsadowe i włącz je ponownie. W ciągu najbliższych 15 minut wszystkie dane zostaną zsynchronizowane z jednostką *Łącznie dostępnych zapasów*. Jeśli chcesz korzystać z funkcji *OnHandMostSpecificBackgroundService*, zalecamy jej włączenie przed utworzeniem jakichkolwiek zmian w stanie inwentaryzacji oraz włączenie zadania wsadowego **Integracja widoczności zapasów**.
 
-## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-the-inventory-visibility-onhand-query"></a>Wstępnie załaduj ujednolicone zapytanie dostępnych zapasów
+## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-streamlined-onhand-query"></a>Wstępnie załaduj ujednolicone zapytanie dostępnych zapasów
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 W rozwiązaniu Supply Chain Management przechowywanych jest wiele informacji o bieżących dostępnych zapasach i udostępnia je ono do różnych celów. Jednak wiele codziennych operacji i integracji innych firm wymaga jedynie małych podzestawów tych szczegółów, a zapytania systemowe dla wszystkich tych elementów mogą spowodować tworzenie dużych zestawów danych, które czas wymagają połączenia i przeniesienia. Dzięki temu usługa widoczności zapasów może okresowo pobierać i przechowywać ujednolicony zestaw dostępnych danych magazynowych, co zapewnia ciągły dostęp do zoptymalizowanych informacji. Przechowywane szczegóły dotyczące dostępnych zapasów są filtrowane na podstawie konfigurowalnych kryteriów biznesowych, aby zagwarantować, że będą uwzględniane tylko najważniejsze informacje. Ponieważ filtrowane listy dostępnych zapasów są przechowywane lokalnie w usłudze widoczności magazynu i są regularnie aktualizowane, obsługują szybki dostęp, eksport danych na żądanie oraz lepszej integracji z systemami zewnętrznymi.
-
-> [!NOTE]
-> Bieżąca wersja zapoznawcza tej funkcji może dostarczać tylko wstępnie załadowane wyniki, które obejmują witrynę i lokalizację. Ostateczna wersja funkcji ma umożliwiać wybór innych wymiarów do wstępnego ładowania za pomocą wyników.
 
 Strona **Wstępne załadowanie podsumowania widoczności magazynu** zawiera widok jednostki *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów*. W przeciwieństwie do jednostki *Podsumowanie zapasów*, jednostka *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów* zawiera listę dostępnych zapasów produktów wraz z wybranymi wymiarami. Widoczność magazynu synchronizuje wstępnie załadowane dane zbiorcze co 15 minut.
 

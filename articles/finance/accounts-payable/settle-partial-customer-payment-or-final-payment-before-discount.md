@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-ms.openlocfilehash: ee11647f6f700042e11133181de919e13f16c018
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: a8da366b1e770ea649603ae85d4acc5e377ed9fb
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715972"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780559"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Rozlicz w całości płatności częściowe i końcowe przed datą rabatu
 
@@ -35,19 +35,19 @@ Firma Fabrikam sprzedaje towary odbiorcy 4028. Fabrikam oferuje rabat gotówkowy
 
 | Załącznik   | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo  | Waluta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10010 | Faktura          | 6/25/2015 | 10010   | 1000,00                             |                                       | 1000,00 | USD      |
+| FTI-10010 | Faktura          | 25/06/2020 | 10010   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 Na stronie **Odbiorcy** lub **Transakcje odbiorcy** Arnie może otworzyć stronę **Rozlicz transakcje** w celu wyświetlenia daty i kwoty rabatów gotówkowych, które są dostępne dla faktury. Datą należności jest 25 lipca, a rabat gotówkowy w wysokości 10,00 jest dostępny, jeśli faktura zostanie zapłacona do 9 lipca.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Wybrano | Normalna            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1000,00                       | USD      | 990,00           |
+| Wybrane | Normalna            | FTI-10010 | 4028    | 25/06/2020 | 25/07/2020 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Informacje o rabacie dla oznaczonej faktury pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
 |    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 9/07/2020 |
 | Kwota rabatu gotówkowego         | 10,00     |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -57,8 +57,8 @@ Arnie klika kartę **Rabat gotówkowy**, aby wyświetlić kwotę rabatu.
 
 | Data rabatu gotówkowego | Kwota rabatu gotówkowego | Kwota w walucie transakcji |
 |--------------------|----------------------|--------------------------------|
-| 7/9/2015           | 10,00                | 990,00                         |
-| 7/25/2015          | 0,00                 | 1000,00                       |
+| 9/07/2020           | 10,00                | 990.00                         |
+| 25/07/2020          | 0,00                 | 1,000.00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Płatność częściowa przy użyciu strony Wprowadzanie płatności odbiorcy
 Odbiorca 4028 wysyła płatność w kwocie 500,00 w dniu 1 lipca. Aby wprowadzić tę płatność, Arnie nie klika pozycji **Wiersze**. Zamiast tego Arnie rejestruje płatność, tworząc nowy arkusz płatności, a następnie otwierając stronę **Wprowadzanie płatności odbiorcy**. Arnie wprowadza informacje o płatności i oznacza wprowadzoną fakturę. Gdy Arnie wprowadza **500,00** jako kwotę, wprowadza także **500,00** w polu **Kwota do zapłaty** w siatce. Ponieważ Fabrikam zezwala na stosowanie rabatu gotówkowego do płatności częściowych, Arnie zauważa, że zostanie także uwzględniony częściowy rabat gotówkowy w wysokości 5,05. Wzór do obliczeń dla tego rabatu: 500,00 ÷ 0,99 x 0,01 = 5,05. (W tych obliczeniach kwota 500,00 jest dzielona przez 0,99, ponieważ rabat wynosi 1%. W związku z tym odbiorca płaci 99 procent faktury. Wynik jest następnie mnożony przez procent rabatu, który wynosi 1% lub 0,01. Jeśli odbiorca skorzysta z rabatu w pełnej wysokości 10,00, kwotą, która musi zostać rozliczona, będzie 990,00). Informacja o rabacie zostanie wyświetlona w siatce w dolnej części strony **Wprowadzanie płatności odbiorcy**.
@@ -72,13 +72,13 @@ Zamiast otwierania strony **Wprowadzanie płatności odbiorcy** w arkuszu płatn
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Wybrano | Normalna            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1000,00                       | USD      | 500,00           |
+| Wybrane | Normalna            | FTI-10010 | 4028    | 25/06/2020 | 25/07/2020 | 10010   | 1,000.00                       | USD      | 500.00           |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
 |        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 9/07/2020 |
 | Kwota rabatu gotówkowego         | 10,00     |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -88,13 +88,13 @@ Jeśli odbiorca chce rozliczyć dokładnie pół faktury, przesyła płatność 
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Wybrano | Normalna            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1000,00                       | USD      | 495,00           |
+| Wybrane | Normalna            | FTI-10010 | 4028    | 25/06/2020 | 25/07/2020 | 10010   | 1,000.00                       | USD      | 495.00           |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
 |     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 9/07/2020 |
 | Kwota rabatu gotówkowego         | 10,00     |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -104,9 +104,9 @@ Arnie zamyka stronę **Rozliczenie transakcji**. W arkuszu tworzony jest wiersz 
 
 | Załącznik    | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo | Waluta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 6/25/2015 | 10010   | 1000,00                             |                                       | 500,00  | USD      |
-| ARP-10010  |  Płatność         | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10010 |  Rabat gotówkowy   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 25/06/2020 | 10010   | 1,000.00                             |                                       | 500.00  | USD      |
+| ARP-10010  |  Płatność         | 7/1/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| DISC-10010 |  Rabat gotówkowy   | 7/1/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Płatność pozostałej kwoty
 Odbiorca 4028 zapłacił pozostałą kwotę 495,00 8 lipca, czyli w okresie rabatu gotówkowego. Arnie tworzy arkusz płatności 8 lipca i oznacza transakcję do rozliczenia. Arnie stwierdza, że kwota, która musi zostać rozliczona, wynosi 495,00. Wartość w polu **Szacowany rabat gotówkowy** wynosi **5,00**, ponieważ poprzednio został podjęty rabat gotówkowy w wysokości 5,00.
@@ -120,13 +120,13 @@ Informacja o zaznaczonej transakcji pojawia się na siatce na stronie **Rozlicza
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Wybrano | Normalna            | FTI-10010 | 4028    | 6/25/2015 | 7/25/2015 | 10010   | 1000,00                       | USD      | 495,00           |
+| Wybrane | Normalna            | FTI-10010 | 4028    | 25/06/2020 | 25/07/2020 | 10010   | 1,000.00                       | USD      | 495.00           |
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 9/07/2020 |
 | Kwota rabatu gotówkowego         | 10,00     |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 5,00      |
@@ -136,11 +136,11 @@ Arnie księguje arkusz i sprawdza transakcję odbiorcy na stronie **Transakcje o
 
 | Załącznik    | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo | Waluta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 6/25/2015 | 10010   | 1000,00                             |                                       | 0,00    | USD      |
-| ARP-10010  | Płatność          | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10010 | Rabat gotówkowy    | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
-| ARP-10011  | Płatność          | 7/8/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10011 | Rabat gotówkowy    | 7/8/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 25/06/2020 | 10010   | 1,000.00                             |                                       | 0,00    | USD      |
+| ARP-10010  | Płatność          | 7/1/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| DISC-10010 | Rabat gotówkowy    | 7/1/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
+| ARP-10011  | Płatność          | 8/07/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| DISC-10011 | Rabat gotówkowy    | 8/07/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 
 

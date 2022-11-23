@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716811"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775197"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Wpisywanie danych faktury w AP za pomocą faktury od dostawcy
 
@@ -68,7 +68,10 @@ Ten przewodnik zadania pomoże utworzyć fakturę od dostawcy na podstawie zamó
 17. W polu **Cena jednostkowa** wpisz liczbę. Teraz, gdy cena jednostkowa jest zgodna, stan został zaktualizowany na Powodzenie. Jeśli zasady pozwalają na rozbieżności lub gdy uzgadnianie jest traktowane jedynie jako ostrzeżenie, można zaksięgować fakturę.  
 18. Zamknij stronę.
 19. Kliknij przycisk **Księguj**.
-20. Zamknij formularz. Zwróć uwagę, że zamówienie zakupu nie jest już wyświetlane jako otrzymane, ale niezafakturowane.  
+20. Zamknij stronę. 
+
+>[!Note] 
+>Zamówienie zakupu nie jest już wyświetlane jako otrzymane, ale niezafakturowane.  
 
 
 

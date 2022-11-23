@@ -2,7 +2,7 @@
 title: Instalowanie dodatku Widoczność magazynu
 description: W tym artykule opisano sposób instalowania i konfigurowania dodatku Widoczność magazynu dla systemu Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
-ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
+ms.openlocfilehash: c08568b14d7f5c79a1d3609107a88f905498ce2b
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388549"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762789"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Inventory Visibility
 
@@ -24,7 +24,7 @@ ms.locfileid: "9388549"
 
 W tym artykule opisano sposób instalowania i konfigurowania dodatku Widoczność magazynu dla systemu Microsoft Dynamics 365 Supply Chain Management.
 
-Musisz korzystać z Microsoft Dynamics Lifecycle Services (LCS), aby zainstalować dodatek Widoczność magazynu. LCS to portal współpracy, który zapewnia środowisko i zbiór regularnie zaktualizowanych usług ułatwiających zarządzanie cyklem życia aplikacji w aplikacjach Finanse i Działania. Aby uzyskać więcej informacji, zobacz [Zasoby w Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+Musisz korzystać z [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), aby zainstalować dodatek Widoczność magazynu. Lifecycle Services to portal współpracy, który zapewnia środowisko i zbiór regularnie zaktualizowanych usług ułatwiających zarządzanie cyklem życia aplikacji w aplikacjach Finanse i Działania. Aby uzyskać więcej informacji, zobacz [Zasoby w Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
 > Zalecamy dołączenie do grupy użytkowników dodatku Widoczność magazynu, gdzie możesz znaleźć przydatne przewodniki, otrzymywać nasze najnowsze aktualizacje oraz zadawać pytania dotyczące korzystania z Widoczności magazynu. Aby dołączyć, wyślij e-mail do zespołu produktu Widoczność magazynu na adres [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) i podaj swój identyfikator środowiska Supply Chain Management.
@@ -33,7 +33,7 @@ Musisz korzystać z Microsoft Dynamics Lifecycle Services (LCS), aby zainstalowa
 
 Aby można było zainstalować dodatek Widoczność magazynu, musisz wykonać następujące zadania:
 
-- Uzyskaj projekt implementacji usługi LCS z co najmniej jednym wdrożonym środowiskiem.
+- Uzyskaj projekt implementacji usługi Lifecycle Services z co najmniej jednym wdrożonym środowiskiem.
 - Upewnij się, że wymagania wstępne konfigurowania dodatków są spełnione. Więcej informacji o tych wymaganiach wstępnych zawiera temat [Omówienie dodatków](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Widoczność zapasów nie wymaga podwójnego łączenia.
 
 > [!NOTE]
@@ -46,23 +46,23 @@ Jeśli masz jakiekolwiek pytania dotyczące tych wymagań wstępnych, skontaktuj
 Przed zainstalowaniem tego dodatku zarejestruj aplikację i dodaj klucz tajny klienta do Azure Active Directory (Azure AD) w swojej subskrypcji Azure. Stosowne instrukcje zawierają tematy [Rejestrowanie aplikacji](/azure/active-directory/develop/quickstart-register-app) i [Dodawanie klucza tajnego klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Pamiętaj o zanotowaniu wartości pól **Identyfikator aplikacji (klienta)**, **Klucz tajny klienta** i **Identyfikator dzierżawy**, ponieważ będą potrzebne później.
 
 > [!IMPORTANT]
-> Jeśli masz więcej niż jedno środowisko usługi LCS, utwórz inną aplikację Azure AD dla każdego z nich. Jeśli do zainstalowania dodatku Widoczność magazynu dla różnych środowisk używasz tego samego identyfikatora aplikacji i identyfikatora dzierżawcy, wystąpi problem z tokenem w starszych środowiskach. W związku z tym ważna będzie tylko ostatnia instalacja.
+> Jeśli masz więcej niż jedno środowisko usługi Lifecycle Services, utwórz inną aplikację Azure AD dla każdego z nich. Jeśli do zainstalowania dodatku Widoczność magazynu dla różnych środowisk używasz tego samego identyfikatora aplikacji i identyfikatora dzierżawcy, wystąpi problem z tokenem w starszych środowiskach. W związku z tym ważna będzie tylko ostatnia instalacja.
 
 Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykonaj następujące kroki, aby zainstalować dodatek Widoczność magazynu.
 
-1. Zaloguj się w [LCS](https://lcs.dynamics.com/Logon/Index).
+1. Zaloguj się do [Lifecycle Services](https://lcs.dynamics.com/Logon/Index).
 1. Na stronie głównej wybierz projekt, w którym jest wdrożone środowisko.
 1. Na stronie projektu wybierz środowisko, w którym chcesz zainstalować dodatek.
 1. Przewijaj stronę środowiska w dół do momentu, aż znajdziesz sekcję **Dodatki środowiska** w sekcji **Integracja Power Platform**. Tam znajdziesz nazwę środowiska Dataverse. Potwierdź, że nazwa środowiska Dataverse jest nazwą, której chcesz używać dla widoczności zapasów.
 
     > [!NOTE]
-    > Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi LCS. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego PowerApps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw naprawić problem mapowania, zanim zostanie zainstalowany dodatek Widoczność magazynu.
+    > Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi Lifecycle Services. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego PowerApps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw naprawić problem mapowania, zanim zostanie zainstalowany dodatek Widoczność magazynu.
     >
-    > Możliwe, że twoje środowisko podwójnego zapisu jest połączone z instancją Dataverse, a LCS nie jest ustawiony na integrację z Power Platform. Ten błąd w łączeniu może spowodować nieoczekiwane zachowanie. Zalecamy, by szczegóły środowiska LCS pasowały do tego, co jest podłączone w podwójnym zapisie, więc to samo połączenie może być używane przez zdarzenia biznesowe, tabele wirtualne i dodatki. Zobacz [Niezgodne połączenie](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch), aby uzyskać informacje na temat naprawiania problemów z mapowaniem. Po rozwiązanie problemu z mapowaniem można kontynuować instalację widoczności magazynu.
+    > Możliwe, że twoje środowisko podwójnego zapisu jest połączone z instancją Dataverse, a Lifecycle Services nie jest ustawiony na integrację z Power Platform. Ten błąd w łączeniu może spowodować nieoczekiwane zachowanie. Zalecamy, by szczegóły środowiska Lifecycle Services pasowały do tego, co jest podłączone w podwójnym zapisie, więc to samo połączenie może być używane przez zdarzenia biznesowe, tabele wirtualne i dodatki. Zobacz [Niezgodne połączenie](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch), aby uzyskać informacje na temat naprawiania problemów z mapowaniem. Po rozwiązanie problemu z mapowaniem można kontynuować instalację widoczności magazynu.
 
 1. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 
-    ![Strona środowiska w LCS](media/inventory-visibility-environment.png "Strona środowiska w LCS")
+    ![Strona środowiska w Lifecycle Services](media/inventory-visibility-environment.png "Strona środowiska w Lifecycle Services")
 
 1. Wybierz opcję **Zainstaluj nowy dodatek**. Zostanie otwarta lista dostępnych dodatków.
 1. Z listy wybierz opcję **Widoczność magazynu**.
@@ -78,9 +78,11 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 1. W Dataverse zaznacz sekcję **Aplikacje** w lewej nawigacji i sprawdź, czy **widoczność zapasów** Power Apps została zainstalowana pomyślnie. Jeśli sekcja **Aplikacje** nie istnieje, skontaktuj się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!NOTE]
-> Jeśli instalacja ze strony LCS trwa dłużej niż godzinę, to prawdopodobnie na Twoim koncie użytkownika brakuje uprawnień do instalowania rozwiązań w środowisku Dataverse. Wykonaj następujące czynności, aby rozwiązać problem:
+> Jeśli system ostrzega, że nie masz uprawnienia do instalowania widoczności zapasów w usługach Lifecycle Services, skontaktuj się z administratorem, aby zmodyfikować Twoje uprawnienia.
 >
-> 1. Anuluj proces instalacji dodatku Inventory visibility na stronie LCS.
+> Jeśli instalacja ze strony Lifecycle Services trwa dłużej niż godzinę, to prawdopodobnie na Twoim koncie użytkownika brakuje uprawnień do instalowania rozwiązań w środowisku Dataverse. Wykonaj następujące czynności, aby rozwiązać problem:
+>
+> 1. Anuluj proces instalacji dodatku Inventory visibility na stronie Lifecycle Services.
 > 1. Zaloguj się do [centrum administracyjnego Microsoft 365](https://admin.microsoft.com) i upewnij się, że konto użytkownika, którego chcesz używać do zainstalowania tego dodatku, ma przypisaną licencję „Dynamics 365 Unified Operations Plan”. W razie potrzeby przypisz licencję.
 > 1. Zaloguj się do [centrum administracyjnego Power Platform,](https://admin.powerplatform.microsoft.com) używając odpowiedniego konta użytkownika. Następnie zainstaluj dodatek Widoczność inwentarza, wykonując następujące czynności:
 >     1. Wybierz środowisko, w którym chcesz zainstalować dodatek.
@@ -88,13 +90,13 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 >     1. Wybierz **Zainstaluj aplikację**.
 >     1. Wybierz **Widoczność magazynu**
 >
-> 1. Po zakończeniu instalacji wróć na stronę usługi LCS i spróbuj ponownie zainstalować dodatek **Widoczność magazynu**.
+> 1. Po zakończeniu instalacji wróć na stronę usługi Lifecycle Services i spróbuj ponownie zainstalować dodatek **Widoczność magazynu**.
 
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurowanie widoczności zapasów w aplikacji Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Wdróż pakiet integracyjny Widoczność magazynu
 
-Jeśli korzystasz z rozwiązania Supply Chain Management w wersji 10.0.17 lub starszej, skontaktuj się z pokładowym zespołem pomocy technicznej ds. Widoczności zapasów pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby uzyskać paczkę z plikami. Następnie wdróż pakiet w LCS.
+Jeśli korzystasz z rozwiązania Supply Chain Management w wersji 10.0.17 lub starszej, skontaktuj się z pokładowym zespołem pomocy technicznej ds. Widoczności zapasów pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby uzyskać paczkę z plikami. Następnie wdróż pakiet w usługach Lifecycle Services.
 
 > [!NOTE]
 > Jeśli podczas wdrażania wystąpi błąd niezgodności wersji, należy ręcznie zaimportować projekt X ++ do środowiska programistycznego. Następnie utwórz pakiet do wdrożenia w swoim środowisku programistycznym i wdróż go w środowisku produkcyjnym.
@@ -135,18 +137,18 @@ Aby odinstalować dodatek Widoczność magazynu, trzeba:
 
 1. Zaloguj się do modułu Supply Chain Management.
 1. Przejdź do **Zarządzanie zapasami \> Okresowe \> Integracja widoczności magazynu** i wyłącz zadanie.
-1. Przejdź do usługi LCS i otwórz stronę środowiska, z którego chcesz odinstalować ten dodatek (zobacz też [Instalowanie dodatku Widoczność zapasów](#install-add-in)).
+1. Przejdź do usługi Lifecycle Services i otwórz stronę środowiska, z którego chcesz odinstalować ten dodatek (zobacz też [Instalowanie dodatku Widoczność zapasów](#install-add-in)).
 1. Wybierz **Odinstaluj**.
-1. Proces odinstalowywania powoduje teraz zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi LCS i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów, które zostały zsynchronizowane w subskrypcji Dataverse, pozostają. Aby usunąć te dane, wykonaj resztę procedury.
+1. Proces odinstalowywania powoduje teraz zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi Lifecycle Services i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów, które zostały zsynchronizowane w subskrypcji Dataverse, pozostają. Aby usunąć te dane, wykonaj resztę procedury.
 1. Otwórz [Power Apps](https://make.powerapps.com).
-1. Wybierz **środowisko** na pasku nawigacji
-1. Wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS.
+1. Wybierz **środowisko** na pasku nawigacji.
+1. Wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi Lifecycle Services.
 1. Przejdź do obszaru **Rozwiązania** i usuń następujące rozwiązania w następującej kolejności:
     1. Dynamics 365 Inventory Visibility — kotwica
+    1. Dynamics 365 Inventory Visibility — wtyczki
     1. Dynamics 365 Inventory Visibility — aplikacja
     1. Dynamics 365 Inventory Visibility — formanty
-    1. Dynamics 365 Inventory Visibility — wtyczki
-    1. Dynamics 365 Inventory Visibility — podstawa
+    1. Dynamics 365 Inventory Visibility — podstawa 
 
     Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
 

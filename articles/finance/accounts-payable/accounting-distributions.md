@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
-ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
+ms.openlocfilehash: 4330c86ee9ae35ce0f2c7bb85db533a39eafac46
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588961"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779589"
 ---
 # <a name="accounting-distributions"></a>Zasady podziału księgowań
 
@@ -51,7 +51,7 @@ Ogólne funkcje zasad podziału księgowań oferują następujące opcje przetwa
     -   Można wyświetlić bieżący stan księgowania dokumentu w menu **Odwołanie**. Stan dotyczy całego dokumentu i wskazuje, czy dokument jest w toku, czy też został zakończony.
 -   **Wyświetl dystrybucje** – Wyświetlanie zasad podziału księgowań dla wszystkich wierszy i kwot pieniężnych w dokumencie. Nie można zmodyfikować zasad podziału księgowań w tym widoku.
 
-W wersji 10.0.13 dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Ta funkcja będzie domyślnie włączona w wersji 10.0.29. 
+Dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Ta funkcja została domyślnie włączona w wersji 10.0.29. 
 
 Aby uzyskać więcej informacji, zobacz [Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 

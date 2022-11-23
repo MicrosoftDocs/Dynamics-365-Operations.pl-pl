@@ -1,35 +1,37 @@
 ---
 title: Realizacja zamówienia w sklepie
-description: Ten artykuł zawiera omówienie modułu realizacji zamówienia w sklepie.
+description: Ten artykuł zawiera omówienie modułu realizacji zamówienia w sklepie w Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854985"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785080"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
 [!include [banner](includes/banner.md)]
+
+Ten artykuł zawiera omówienie modułu realizacji zamówienia w sklepie w Microsoft Dynamics 365 Commerce.
 
 Wielu sprzedawców chciałoby zoptymalizować realizację zamówień, umożliwiając to sklepom. Realizacja zamówienia na poziomie sklepu może ułatwić ograniczenie powstania zbyt dużych zapasów w określonym sklepie lub może być wymagana z logistycznego punktu widzenia w przypadkach, gdy sklep dysponuje dodatkowym miejscem lub znajduje się z mniejszej odległości wysyłki do klienta. Aby spełnić to wymaganie w punkcie sprzedaży dostępna jest ujednolicona operacja realizacji zamówienia.
 
 Zamówienia do realizacji w określonym sklepie mają wyznaczony magazyn sklepu w nagłówku lub wierszach zamówienia.
 
 Operacja realizacji zamówienia w punkcie sprzedaży zapewnia jeden obszar roboczy w punkcie sprzedaży, którego można użyć do realizacji zamówień. Obejmie to wszystkie aspekty od przyjęcia zamówienia do oznaczenia go jako wysłane lub zainicjowania odbioru w sklepie.
+
+Poniższy film zawiera omówienie i prezentację możliwości realizacji zakupów w sklepie Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Dostęp do ujednoliconej realizacji zamówienia w punkcie sprzedaży
 

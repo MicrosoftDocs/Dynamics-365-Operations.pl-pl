@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752306"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775409"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -112,7 +112,7 @@ Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych region
 | Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
 | Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
 | Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
+| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 15 listopada do 18 listopada 2022 roku |
 | Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.30

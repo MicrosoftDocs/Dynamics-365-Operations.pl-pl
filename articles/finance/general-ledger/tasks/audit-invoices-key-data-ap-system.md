@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 76c45133091a86da773d7f63addd460abd92aae7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4525534f906322c7fe4c232f0f6da5b308829087
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868365"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775223"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Wykonywanie audytu faktur i najważniejszych danych w module rozrachunków z dostawcami
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868365"
 
 Po otrzymaniu od dostawcy faktury za towary lub usługi na zamówieniu zakupu w procesach biznesowych firmy może być wymagane, aby towary lub usługi zostały dostarczone przed zatwierdzeniem płatności za fakturę. Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur. 
 
-Na stronie **Parametry modułu rozrachunków z dostawcami** upewnij się, że zaznaczono opcję Włącz weryfikację uzgadniania faktur, w polu **Księguj fakturę z rozbieżnościami** zaznaczono opcję **Wymagaj zatwierdzania**, a pole **Zasady uzgadniania wierszy** ma wartość **Uzgadnianie trzyelementowe**.
+Na stronie **Parametry modułu rozrachunków** z dostawcami upewnij się, że zaznaczono opcję **Włącz weryfikację uzgadniania faktur**, w polu **Księguj fakturę z rozbieżnościami** zaznaczono opcję **Wymagaj zatwierdzania**, a pole **Zasady uzgadniania wierszy** ma wartość **Uzgadnianie trzyelementowe**.
 
 Ta procedura wykorzystuje firmę demonstracyjną USMF. Czynności te wykonuje menedżer ds. rozrachunków z dostawcami lub menedżer księgowości.
 

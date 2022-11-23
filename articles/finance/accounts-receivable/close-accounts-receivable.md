@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 59372
 ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c73c4fef561bc6d6640d4d20dec05b2ca68f1c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 801f086cb0a7c7269abad720c848d2b1ab09cd76
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855470"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778006"
 ---
 # <a name="close-accounts-receivable"></a>Zamykanie rozrachunków z odbiorcami
 
@@ -36,15 +36,15 @@ Zamkniętych okresów w księdze głównej
 
 | Nazwa strony                            | Użycie                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|Zadanie przetwarzania wsadowego                             | Umożliwia wyświetlanie lub tworzenie zadań wsadowych. Zadania wsadowe nie mogą być ukończone i trzeba się upewnić, czy wszystkie księgowania zostały ukończone.                                                                                                               |
-|Potwierdź zamówienie sprzedaży                   | Umożliwia aktualizowanie zamówień sprzedaży.                                                                       |
-|Przeszacowanie w walucie obcej          | Umożliwia wygenerowanie transakcji, które aktualizują wartość otwartych transakcji odbiorców w walutach obcych.                                                                                                                         |
-| W arkuszu                              | Służy do księgowania faktur, płatności i skryptów dłużnych.                                             |
-| Załącznik arkusza                      |<ul><li>**Arkusz płatności** — umożliwia generowanie, przetwarzanie i księgowanie płatności.</li><li>**Arkusz wystawiania weksli** — umożliwia księgowanie weksli.</li><li>**Arkusz protestowania weksli** — umożliwia księgowanie oprotestowanych weksli.</li><li>**Arkusz ponownego wystawiania weksli** — umożliwia księgowanie ponownie wystawionych weksli.</li><li>**Arkusz przekazów** — służy do księgowania przekazów.</li><li>**Arkusz rozliczania weksli** — umożliwia księgowanie rozliczonych weksli</li></ul>                   |
-| Księgowanie dokumentu dostawy                 | Umożliwia aktualizowanie dokumentów dostawy związanych z zamówieniami sprzedaży.                                                     |
-| Księgowanie faktury niezależnej               | Umożliwia księgowanie faktur niezależnych.                                                                   |
-| Księgowanie faktury                      | Umożliwia księgowanie faktur związanych z zamówieniami sprzedaży.                                                            |
-| Księgowanie listy pobrań                 |Umożliwia aktualizowanie list pobrania związanych z zamówieniami sprzedaży.                                                      |
+|**Zadanie przetwarzania wsadowego**                          | Umożliwia wyświetlanie lub tworzenie zadań wsadowych. Zadania wsadowe nie mogą być ukończone i trzeba się upewnić, czy wszystkie księgowania zostały ukończone.     |
+|**Potwierdź zamówienie sprzedaży**                   | Umożliwia aktualizowanie zamówień sprzedaży.                                                                       |
+|**Przeszacowanie w walucie obcej**    | Umożliwia wygenerowanie transakcji, które aktualizują wartość otwartych transakcji odbiorców w walutach obcych.                          |
+| **W arkuszu**                              | Służy do księgowania faktur, płatności i skryptów dłużnych.                                             |
+| **Załącznik arkusza**                      |<ul><li>**Arkusz płatności** — umożliwia generowanie, przetwarzanie i księgowanie płatności.</li><li>**Arkusz wystawiania weksli** — umożliwia księgowanie weksli.</li><li>**Arkusz protestowania weksli** — umożliwia księgowanie oprotestowanych weksli.</li><li>**Arkusz ponownego wystawiania weksli** — umożliwia księgowanie ponownie wystawionych weksli.</li><li>**Arkusz przekazów** — służy do księgowania przekazów.</li><li>**Arkusz rozliczania weksli** — umożliwia księgowanie rozliczonych weksli</li></ul>                   |
+| **Księgowanie dokumentu dostawy**                 | Umożliwia aktualizowanie dokumentów dostawy związanych z zamówieniami sprzedaży.                                                     |
+| **Księgowanie faktury niezależnej**               | Umożliwia księgowanie faktur niezależnych.                                                                   |
+| **Księgowanie faktury**                      | Umożliwia księgowanie faktur związanych z zamówieniami sprzedaży.                                                            |
+| **Księgowanie listy pobrań**                 |Umożliwia aktualizowanie list pobrania związanych z zamówieniami sprzedaży.                                                      |
 
 **Zadanie składnika procesu biznesowego**   
 
@@ -52,7 +52,7 @@ Tworzenie i przesyłanie listy sprzedaży do Unii Europejskiej
 
 | Nazwa strony                            | Użycie                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|Lista sprzedaży do UE                         | Raport dotyczący sprzedaży w Unii Europejskiej (UE) do urzędu skarbowego na potrzeby deklaracji podatku VAT.                                                                                                                           |
+|**Lista sprzedaży do UE**                        | Raport dotyczący sprzedaży w Unii Europejskiej (UE) do urzędu skarbowego na potrzeby deklaracji podatku VAT.               |
 
 
 

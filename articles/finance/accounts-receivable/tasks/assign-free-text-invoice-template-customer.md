@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e8330e26f1450dac27bb837bb56f8bbffefc9bc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 49074c11659ae30fd2decdb93b4721441edff2c5
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712210"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780583"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Przypisywanie szablonu faktury niezależnej do odbiorcy
 
@@ -36,15 +36,16 @@ To zadanie przedstawia sposób przypisywania szablonu faktury niezależnej do od
 8. Na liście kliknij łącze w wybranym wierszu.
 9. W polu **Data rozpoczęcia fakturowania** wprowadź datę, kiedy zostanie wygenerowana pierwsza faktura.
 10. W sekcji **Koniec cyklu** wprowadź cykliczną datę zakończenia.  
-    * Wybierz jedną z następujących opcje: Brak daty zakończenia — Faktury będą generowane bezterminowo do czasu usunięcia szablonu z konta odbiorcy.
-    * Data zakończenia fakturowania — Zaznacz tę opcję i wprowadź ostatni dzień, w którym fakturę można wygenerować.  
+    Należy wybrać jedną z następujących opcji: 
+    - **Brak daty zakończenia** — Faktury będą generowane bezterminowo do czasu usunięcia szablonu z konta odbiorcy.
+    - **Data zakończenia fakturowania** — Zaznacz tę opcję i wprowadź ostatni dzień, w którym fakturę można wygenerować.  
 11. W polu **Maksymalna kwota skumulowana** wprowadź maksymalną skumulowaną kwotę, po której zostanie zatrzymane tworzenie faktury. Wprowadź maksymalną kwotę skumulowaną, jaką można osiągnąć za pomocą wybranego szablonu. Na przykład wprowadzenie wartości 1 000,00 i generowanie faktur miesięcznych dla każdej kwoty 100,00 spowoduje, że faktury przestaną być generowane po wygenerowaniu dziesiątej faktury.  
 12. W sekcji **Generuj cykliczne faktury przy użyciu wartości domyślnych** wybierz szablon faktury niezależnej lub konto odbiorcy. Umożliwia określenie, czy ma być używany szablon faktury niezależnej czy konto odbiorcy do określania wartości domyślnych języka, profilu księgowania, grupy podatków, grupy podatków towaru, kodu listy, kraju/regionu dostawy, waluty, warunków płatności, metody płatności, specyfikacji płatności, harmonogramu płatności, rabatu gotówkowego, wymiarów finansowych oraz przekazu GIRO podczas tworzenia faktur.  
 13. W polu **Wzorzec cyklu** wybierz wzorzec cyklu.
-    + Dziennie — Wybierz tę opcję i podaj liczbę dni w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 15, co 15 dni będzie generowana faktura dla tego odbiorcy.
-    + Tygodniowo — Wybierz tę opcję i podaj liczbę tygodni w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 tygodnie będzie generowana faktura dla tego odbiorcy.
-    + Miesięcznie — Wybierz tę opcję i podaj liczbę miesięcy w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 6, co 6 miesięcy będzie generowana faktura dla tego odbiorcy.
-    + Rocznie — Wybierz tę opcję i podaj liczbę lat w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 lata będzie generowana faktura dla tego odbiorcy.  
+    - **Dziennie** — Wybierz tę opcję i podaj liczbę dni w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 15, co 15 dni będzie generowana faktura dla tego odbiorcy.
+    - **Tygodniowo** — Wybierz tę opcję i podaj liczbę tygodni w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 tygodnie będzie generowana faktura dla tego odbiorcy.
+    - **Miesięcznie** — Wybierz tę opcję i podaj liczbę miesięcy w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 6, co 6 miesięcy będzie generowana faktura dla tego odbiorcy.
+    - **Rocznie** — Wybierz tę opcję i podaj liczbę lat w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 lata będzie generowana faktura dla tego odbiorcy.  
 14. W polu **Na** wprowadź liczbę.
 
 

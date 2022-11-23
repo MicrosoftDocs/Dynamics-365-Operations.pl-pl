@@ -2,23 +2,23 @@
 title: Eksportowanie danych oddziałów do plików
 description: W tym artykule wyjaśniono, jak przygotować się do wyeksportowania danych z Microsoft Dynamics 365 Finance, a następnie zaimportowania ich do skonsolidowanej firmy.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876161"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779969"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Eksportowanie danych oddziałów do plików
 
@@ -32,14 +32,14 @@ Strona **Eksportu** umożliwia (**Administrowanie systemem \> Obszary robocze \>
 
     | Pole                             | opis |
     |-----------------------------------|-------|
-    | Konto główne                      | Określ konta do konsolidacji. Aby uwzględnić wszystkie konta, należy pozostawić to pole puste. |
-    | Użyj konta konsolidacji         | Jeśli określono konta konsolidacji, ustaw tę opcję na wartość **Tak**. |
-    | Wybierz konto konsolidacji z | Wybierz **Konto główne** lub **Grupę kont konsolidacji**. |
-    | Grupa kont konsolidacji       | Wybierz grupę kont konsolidacyjnych dla wybranego konta konsolidacyjnego. |
-    | Okres konsolidacji              | Określ daty „od” i „do” konsolidacji. |
-    | Uwzględnij kwoty rzeczywiste            | Ustaw dla tej opcji wartość **Tak**, aby uwzględnić dokładne wartości rzeczywiste. |
-    | Uwzględnij kwoty budżetu            | Ustaw dla tej opcji wartość **Tak**, aby uwzględnić kwoty budżetu w konsolidacjach. |
-    | Modele budżetu                     | Określ model budżetu, który ma być uwzględniany. |
+    | **Konto główne**                      | Określ konta do konsolidacji. Aby uwzględnić wszystkie konta, należy pozostawić to pole puste. |
+    | **Użyj konta konsolidacji**         | Jeśli określono konta konsolidacji, ustaw tę opcję na wartość **Tak**. |
+    | **Wybierz konto konsolidacji z** | Wybierz **Konto główne** lub **Grupę kont konsolidacji**. |
+    | **Grupa kont konsolidacji**       | Wybierz grupę kont konsolidacyjnych dla wybranego konta konsolidacyjnego. |
+    | **Okres konsolidacji**              | Określ daty „od” i „do” konsolidacji. |
+    | **Uwzględnij kwoty rzeczywiste**            | Ustaw dla tej opcji wartość **Tak**, aby uwzględnić dokładne wartości rzeczywiste. |
+    | **Uwzględnij kwoty budżetu**            | Ustaw dla tej opcji wartość **Tak**, aby uwzględnić kwoty budżetu w konsolidacjach. |
+    | **Modele budżetu**                     | Określ model budżetu, który ma być uwzględniany. |
 
 3. Na karcie **Wymiary finansowe** podaj szczegóły konsolidacji:
 

@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712294"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778419"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Zasady podziału księgowań i wpisy księgi podrzędnej dla faktur niezależnych
 
@@ -30,9 +30,9 @@ Zasady podziału księgowań służą do określania sposobu księgowania kwot, 
 
 ## <a name="accounting-distributions"></a>Zasady podziału księgowań
 
-Za pomocą następujących przycisków na stronie Faktura niezależna, możesz wyświetlać i ewentualnie zmienić zasady podziału księgowań dla faktury niezależnej.
+Za pomocą następujących przycisków na stronie **Faktura niezależna**, możesz wyświetlać i ewentualnie zmienić zasady podziału księgowań dla faktury niezależnej.
 
--   **Rozdziel kwoty** — Wyświetlanie i modyfikowanie zasad podziału księgowań dla pojedynczego wiersza i wszystkich wierszy podrzędnych, takich jak podatki lub opłaty. Można również wyświetlać i modyfikować zasady podziału księgowań dla wiersza podrzędnego bezpośrednio ze strony Transakcje podatkowe lub Transakcje opłat.
+-   **Rozdziel kwoty** — Wyświetlanie i modyfikowanie zasad podziału księgowań dla pojedynczego wiersza i wszystkich wierszy podrzędnych, takich jak podatki lub opłaty. Można również wyświetlać i modyfikować zasady podziału księgowań dla wiersza podrzędnego bezpośrednio ze strony **Transakcje podatkowe** lub **Transakcje opłat**.
     -   Zmienianie kwot nagłówka faktury niezależnej, takich jak opłaty lub kwoty zaokrąglenia.
     -   Zmienianie kwot wiersza faktury niezależnej.
 -   **Wyświetl dystrybucje** — Wyświetlanie zasad podziału księgowań dla wszystkich wierszy w dokumencie. Nie można zmienić zasad podziału księgowań w tym widoku.
@@ -120,7 +120,7 @@ Podczas wprowadzania faktury niezależnej, każda kwota będzie podzielona w nas
 </table>
 
 ## <a name="distributing-taxes"></a>Dystrybuowanie podatków
-Zasady podziału księgowań dla podatków można utworzyć dopiero po obliczeniu podatków. Aby obliczyć podatek, należy wykonać jedną z następujących czynności w formularzu Faktura od dostawcy:
+Zasady podziału księgowań dla podatków można utworzyć dopiero po obliczeniu podatków. Aby obliczyć podatek, należy wykonać jedną z następujących czynności na stronie **Faktura od dostawcy**:
 -   Wyświetlanie podatku.
 -   Wyświetl sumę faktury.
 -   Wyświetl przepływy pieniężne.

@@ -2,25 +2,25 @@
 title: Zamknięcie roku
 description: W tym artykule opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883221"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779751"
 ---
 # <a name="year-end-close"></a>Zamknięcie roku
 
@@ -62,7 +62,7 @@ Na stronie **Konfiguracja szablonu zamknięcia na koniec roku**:
 
 ## <a name="define-year-end-close-templates"></a>Definiowanie szablonów zamknięcia roku
 
-Po skonfigurowaniu systemu można uruchomić proces zamknięcia roku. Na stronie **Konfiguracja szablonu zamknięcia na koniec roku** można zdefiniować szablon dla grupy firm, dla których będzie wykonywany proces zamknięcia roku. Szablon będzie używany dla każdego wystąpienia procesu zamknięcia roku, ale można go zmodyfikować w razie pojawienia się zmian w organizacji.
+Po zakończeniu konfiguracji można uruchomić proces zamknięcia roku. Na stronie **Konfiguracja szablonu zamknięcia na koniec roku** można zdefiniować szablon dla grupy firm, dla których będzie wykonywany proces zamknięcia roku. Szablon będzie używany dla każdego wystąpienia procesu zamknięcia roku, ale można go zmodyfikować w razie pojawienia się zmian w organizacji.
 
 Najpierw należy zdefiniować pole **Nazwa grupy** dla szablonu i wybrać kalendarz obrachunkowy. Nazwa grupy powinna identyfikować grupę firm, do których ma być stosowany szablon. Podczas określania grup podmiotów prawnych pamiętaj, że podmioty prawne można uwzględnić w tej samej grupie tylko wtedy, gdy wybrano dla nich ten sam kalendarz obrachunkowy. Na przykład szablony można konfigurować na podstawie lokalizacji geograficznej i można tworzyć oddzielne grupy dla podmiotów prawnych z Ameryki Północnej, podmiotów prawnych z Europy, Bliskiego Wschodu i Afryki (EMEA) oraz podmiotów prawnych Azji i Pacyfiku (APAC).
 
