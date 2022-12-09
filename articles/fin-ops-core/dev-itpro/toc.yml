@@ -1048,7 +1048,9 @@
               href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
-                - name: Omówienie Dynamics 365 Translation Service
+                - name: Co nowego w rozwiązaniu Dynamics Translation Service
+                  href: lifecycle-services/dts-announcements.md
+                - name: Omówienie rozwiązania Dynamics 365 Translation Service
                   href: lifecycle-services/translation-service-overview.md
                 - name: Tłumaczenie plików interfejsu użytkownika
                   href: lifecycle-services/use-translation-service.md

@@ -1,26 +1,21 @@
 ---
 title: Zarządzanie zamówieniami rozdzielonymi (DOM)
-description: W tym artykule opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Commerce.
+description: W tym artykule opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: cfb89544580141ed397d27886f51fd0f1ac138d2
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764188"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785189"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -32,11 +27,16 @@ Zarządzanie DOM to rozwiązanie optymalizacji realizacji zamówień zakupu obs�
 
 Zarządzanie DOM używa programowania mieszanych liczb całkowitych (MIP) i modeli analizy predykcyjnej przed wykonaniem optymalizacji zarówno na poziomie partii, jak i na poziomie poszczególnych zamówień. Te możliwości umożliwiają sprzedawcom detalicznym używanie zdefiniowanych reguł w celu równoważenia wielu powodujących konflikt potrzeb w zakresie realizacji zamówień. W nowoczesnej sieci dostaw, w której realizacja produktów może pochodzić z wielu kanałów, organizacje muszą szybko dostosowywać się do zmian w zamówieniach, problemów z dostępnością dostawców oraz wahań popytu. Zarządzanie DOM pomaga maksymalizować realizację zamówień i znajdować poprawne źródła dostawy produktów na podstawie ograniczeń biznesowych i zamierzeń, takich jak minimalizowanie kosztów przez realizację zamówień z najbliższych źródeł. Zarządzanie DOM wykorzystuje odległość między źródłami realizacji produktów a miejscami docelowymi wysyłki, współczynnikami kosztów zdefiniowanymi jako zamierzenia optymalizacji oraz regułami zdefiniowanymi jako ograniczenia, takimi jak zapasy w węzłach realizacji w celu optymalizowania realizacji zamówień. Zarządzanie DOM umożliwia definiowanie wielu profilów, które pomagają firmom uruchamiać różne strategie optymalizacji w zależności od typu segmentu branży lub konsumenta. 
 
-Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w zarządzaniu DOM.
+Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie zarządzania DOM.
 
-![Cykl życia zamówienia sprzedaży w kontekście systemu DOM.](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
+![Cykl życia zamówienia sprzedaży w kontekście zarządzania DOM.](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
 
-## <a name="set-up-dom"></a>Ustaw format DOM
+Poniższy film wideo zawiera omówienie możliwości zarządzania DOM w rozwiązaniu Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
+## <a name="set-up-dom"></a>Ustaw zarządzanie DOM
 
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
 2. Na karcie **Klucze konfiguracji** rozwiń węzeł **Commerce**, a następnie wybierz pole wyboru **Zarządzanie zamówieniami rozdzielonymi**.

@@ -566,10 +566,12 @@
               href: hr-leave-and-absence-enroll.md
             - name: Naliczanie planów urlopów i nieobecności
               href: hr-leave-and-absence-accrue.md
-            - name: Wstrzymywanie urlopu
+            - name: Wstrzymywanie urlopów
               href: hr-leave-and-absence-suspend-leave.md
             - name: Wniosek o nieobecność
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Tworzenie otwartej nieobecności
+              href: hr-create-open-leave-absence.md
             - name: Zarządzanie urlopem pracownika etatowego
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Wyświetlanie analizy urlopu i nieobecności

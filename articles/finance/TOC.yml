@@ -1606,7 +1606,9 @@
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Polski
                           href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Arabii Saudyjskiej
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Arabii Saudyjskiej — pierwszy etap
+                          href: localizations/e-invoicing-sa-get-started-phase-one.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Arabii Saudyjskiej — drugi etap
                           href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: Dołączanie fakturowania elektronicznego w Arabii Saudyjskiej
                           href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance

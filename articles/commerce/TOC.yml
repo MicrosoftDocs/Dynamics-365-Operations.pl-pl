@@ -1010,11 +1010,27 @@
                   href: manage-robots-txt-files.md
                 - name: Zbiorowe przekazanie przekierowań adresów URL
                   href: upload-bulk-redirects.md
-                - name: Konfigurowanie dzierżawy B2C w module Commerce
-                  href: set-up-B2C-tenant.md
-                - name: Konfiguracja stron niestandardowych do logowań użytkowników
+                - name: Konfigurowanie dzierżawcy B2C w module Commerce
+                  items:
+                    - name: Konfigurowanie dzierżawcy B2C
+                      href: set-up-B2C-tenant.md
+                    - name: Tworzenie lub łączenie z istniejącym dzierżawcą B2C usługi Azure AD
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Tworzenie aplikacji B2C
+                      href: create-b2c-app.md
+                    - name: Tworzenie zasad przepływów użytkownika
+                      href: create-user-flow-policies.md
+                    - name: Dodawanie dostawców tożsamości społecznościowych
+                      href: add-social-identity-providers.md
+                    - name: Aktualizowanie centrali Commerce headquarters informacjami B2C usługi Azure AD
+                      href: update-hq-aad-b2c-info.md
+                    - name: Konfigurowanie dzierżawcy B2C w konstruktorze witryn
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Informacje dodatkowe B2C
+                      href: additional-b2c-info.md
+                - name: Konfiguracja stron niestandardowych dla logowań użytkowników
                   href: custom-pages-user-logins.md
-                - name: Włączanie automatycznego łączenia rekordów tożsamości z kontami odbiorcy
+                - name: Włączanie automatycznego łączenia rekordów tożsamości z kontami klienta
                   href: identity-record-linking.md
                 - name: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
                   href: configure-multi-B2C-tenants.md
@@ -1570,6 +1586,8 @@
               items:
                 - name: Generowanie kodów QR i drukowanie ich na paragonach dla Arabii Saudyjskiej
                   href: localizations/emea-sau-qr-code.md
+                - name: Generowanie i przesyłanie uproszczonych faktur elektronicznych dla Arabii Saudyjskiej
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
@@ -2988,7 +3006,7 @@
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Podatki od zamówień online są niepoprawnie obliczone
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Błąd synchronizacji zamówienia związany z domyślną usługą płatności
+                - name: Problemy z synchronizacją asynchroniczną zamówienia
                   href: troubleshoot/synchronization-error.md
             - name: Przetwarzanie płatności
               items:
