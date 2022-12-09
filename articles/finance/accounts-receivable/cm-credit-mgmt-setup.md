@@ -2,7 +2,7 @@
 title: Ustawienia parametrów modułu Zarządzanie kredytami
 description: W tym artykule opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876362"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799553"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
@@ -46,7 +46,7 @@ Istnieją cztery karty skrócone w sekcji **Kredyt**, w których można zmienić
 
 Można określić chronometraż używany do sprawdzania zamówień sprzedaży dla rozchodów kredytowych. Na skróconej karcie **Punkt kontrolny zarządzania kredytami** określa procesy księgowania dokumentów, które obejmują przetwarzanie reguł zarządzania kredytami. Reguły kredytowe można również sprawdzać podczas księgowania pro-forma lub pełnego zaksięgowania zamówienia sprzedaży. Zaznacz pola wyboru, aby zdefiniować procesy księgowania, które powinny wstrzymać zamówienie, jeśli zostanie wykryty błąd po przetworzeniu reguł blokowania zarządzania kredytami.
 
-Można również zdefiniować liczbę dni prolongaty przed ponownym sprawdzeniem reguł kredytu. Mimo że reguły zarządzania kredytami można określić przy księgowaniu, reguły nie będą sprawdzane w odniesieniu do określonej liczby dni prolongaty. Na przykład można potwierdzić zamówienie sprzedaży w dniu 1., a następnie określić dwa dni prolongaty dla kroku potwierdzenia. W takim przypadku reguły kredytowe nie będą sprawdzane w kolejnym kroku księgowania (na przykład: Utworzenie dokumentu dostawy lub zafakturowanie zamówienia) do dnia 4. Po dniu 4 lub później po zaksięgowaniu zostaną ponownie sprawdzone reguły, a liczba dni prolongaty zostanie zmieniona na wartość określoną dla następnego punktu kontrolnego księgowania.
+Można również zdefiniować liczbę dni prolongaty przed ponownym sprawdzeniem reguł kredytu. Mimo że reguły zarządzania kredytami można określić przy księgowaniu, reguły nie będą sprawdzane w odniesieniu do określonej liczby dni prolongaty. Na przykład można potwierdzić zamówienie sprzedaży w dniu pierwszym, a następnie określić dwa dni prolongaty dla kroku potwierdzenia. W takim przypadku reguły kredytowe nie będą sprawdzane w kolejnym kroku księgowania (na przykład: Utworzenie dokumentu dostawy lub zafakturowanie zamówienia) do dnia czwartego. Po dniu czwartym lub później po zaksięgowaniu zostaną ponownie sprawdzone reguły, a liczba dni prolongaty zostanie zmieniona na wartość określoną dla następnego punktu kontrolnego księgowania.
 
 Jeśli liczba dni prolongaty nie zostanie określona, reguły kredytu będą sprawdzane przy każdym kroku księgowania skonfigurowanym do uruchamiania reguł zarządzania kredytami. Jeśli zamówienie sprzedaży zostanie zwolnione bez księgowania, a następnie ponownie uruchomiony ten sam krok przetwarzania zamówienia, reguły kredytu zostaną ponownie sprawdzone. Zamówienie jest na przykład wstrzymywane po potwierdzeniu, a zwolnienie jest możliwe przy księgowaniu lub bez niego. W takim przypadku zamówienie zostanie wstrzymane ponownie, jeśli zostanie ponownie potwierdzone. Należy używać dni prolongaty, jeśli zamówienie powinno zostać przeniesione do następnego kroku przetwarzania bez konieczności ponownego przetrzymywania.
 
@@ -73,7 +73,7 @@ W polu informacji **Statystyki zarządzania kredytami odbiorców** znajduje się
 
 - W module zarządzania kredytem limit kredytu odbiorcy jest pokazywany w walucie odbiorcy. Należy zdefiniować typ kursu wymiany dla limitu kredytu w walucie odbiorcy. W polu **Typ kursu wymiany limitu kredytu** wybierz typ kursu wymiany, który ma zostać użyty do przekonwertowania podstawowego limitu kredytu na limit kredytu odbiorcy.
 - Ustawienie opcji **Zezwalaj na ręczne edytowanie limitów kredytu** na wartość **nie** powoduje, że użytkownicy nie będą mogli edytować limitów kredytowych na stronie **Odbiorcy**. Jeśli ta opcja jest ustawiona na wartość **nie**, zmiany w limicie kredytu odbiorcy mogą być wprowadzane tylko przez księgowanie transakcji korekty limitu kredytu.
-- Ustaw dla opcji **Pomiń rezerwacje zapasów** wartość **Tak**, aby pomijać rezerwacje zapasów podczas sprawdzania reguł blokowania zarządzania kredytami. W takim przypadku system sprawdza pełne ilości w wierszach i włącza okresy prolongaty punktów kontrolnych niezależnie od ilości rezerwacji zapasów.
+- Ustaw dla opcji **Pomiń rezerwacje zapasów** wartość **Tak**, aby pomijać rezerwacje zapasów podczas sprawdzania reguł blokowania zarządzania kredytami. W takim przypadku ilości zostaną sprawdzone, a okresy prolongaty punktu kontrolnego zostaną włączone, niezależnie od ilości rezerwacji zapasów.
 - Po włączeniu opcji Zarządzanie kredytami ustawienie z pola **Komunikat przy przekroczeniu limitu kredytu** jest używane tylko do przetwarzania faktur niezależnych. Komunikaty są nadal dodawane do zamówień sprzedaży, gdy odbiorcy przekroczyli limit kredytu, ale obecność tych komunikatów nie spowoduje zablokowania potwierdzenia, wydrukowania list pobrania i dokumentów dostawy ani księgowania faktur.
 
     Funkcja Zarządzanie kredytami jest włączona domyślnie, ale możesz ją wyłączyć. Jeśli jest włączona, możesz używać reguł blokowania oraz punktów kontrolnych zarządzania kredytami w celu ustalania, kiedy odbiorcy przekroczyli swój limit kredytu. Jeśli jest wyłączona, komunikaty dodawane do zamówień sprzedaży na podstawie ustawienia w polu **Komunikat przy przekroczeniu limitu kredytu** mogą ułatwić ustalanie, kiedy odbiorcy przekroczyli limit kredytu.

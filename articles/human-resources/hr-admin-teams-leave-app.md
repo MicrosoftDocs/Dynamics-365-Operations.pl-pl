@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ff576efbfeb0c5383a48756fdd7e79f1abdba2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d29802bdf3411c93f20d710e1f26e541e5022d57
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902264"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812194"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -112,7 +112,7 @@ Aplikacja Dynamics 365 Human Resources w Teams obsługuje następujące języki:
 | it-IT | Włoski (Włochy) |
 | nl-NL | Holenderski (Holandia) |
 | pt-BR | Portugalski (Brazylia) |
-| tr-TR | Turecki (Turcja) |
+| tr-TR | Turecki (Türkiye) |
 | zh-CN | Chiński (Uproszczony) |
 
 ## <a name="notes"></a>Notatki

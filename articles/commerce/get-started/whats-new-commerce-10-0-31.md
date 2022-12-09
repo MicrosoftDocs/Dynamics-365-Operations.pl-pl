@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709863"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787534"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Podgląd Dynamics 365 Commerce 10.0.31 (luty 2023 r.)
 
@@ -38,6 +38,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 | Płatności | [Włączanie Apple Pay z Dynamics 365 Payment Connector dla Adyen](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | Korzystając z obsługiwanych urządzeń lub przeglądarki, klienci handlu elektronicznego mogą używać Apple Pay w koszyku i na stronach wyewidencjonowania. | Zgoda dewelopera |
 | Płatności  |  Dzięki usługom Commerce można ograniczyć sposób interakcji użytkowników z tokenami płatności cyklicznych w interfejsie użytkownika programu Commerce headquarters. Formularze płatności, takie jak strona **Zamówienia sprzedaży dla centrum obsługi**, nie wyświetlają już wcześniej wykorzystanego przez klienta cyklicznego tokenu płatności, który ma być wykorzystywany w nowej transakcji. Podczas przetwarzania płatności za nową transakcję, tylko określona „karta w pliku” wejściowa na ekran płatności odbiorcy w portalu Commerce **Płatności klienta** lub za zgodą klienta w przypadku płatności przy użyciu zamówienia sprzedaży będzie przedstawiana użytkownikom działu obsługi lub centrali Commerce headquarters. | [Limit użycia tokenu płatności](../dev-itpro/limit-token-usage.md)  |  Zarządzanie funkcjami<p>*Ogranicz użycie tokenu płatności do kontekstu zamówienia*  |
 | Punkt sprzedaży | [Tworzenie zamówień zakupu w punkcie sprzedaży](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Poprawione przychodzące operacje magazynowe w aplikacji punktu sprzedaży (POS) umożliwiają użytkownikom tworzenie, edytowanie i potwierdzanie żądań zamówienia zakupu. |  Zarządzanie funkcjami<p>*Możliwość tworzenia żądania zamówienia zakupu w punkcie sprzedaży*   |
+| Dostępne są dodatkowe języki | Dostępne są cztery dodatkowe języki | Na liście języków preferowanych dostępne są cztery nowe języki do wyboru przez użytkownika: Koreański, Portugalski ( Portugalia), Wietnamski i Chiński (Tradycyjny). Aby wybrać tę opcję, przejdź do **Opcje użytkownika \> Preferencje \> Preferencje dotyczące języka i kraju/regionu**. | Zlokalizowane preferencje |  
 
 
 

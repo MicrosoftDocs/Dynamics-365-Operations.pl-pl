@@ -2,7 +2,7 @@
 title: Organizowanie składników raportu w programie Report Designer
 description: W tym artykule wyjaśniono, jak organizować istniejące raporty, bloki konstrukcyjne i obiekty w projektancie raportów.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135888"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802696"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organizowanie składników raportu w projektancie raportów
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135888"
 
 Po zaprojektowaniu bloków konstrukcyjnych i wygenerowaniu raportów przydatne jest zorganizowania tych obiektów, tak aby użytkownicy mogli je łatwiej znaleźć. W tym artykule wyjaśniono, jak organizować istniejące raporty, bloki konstrukcyjne i obiekty w projektancie raportów.
 
-Można zmieniać nazwy folderów, raportów, bloków konstrukcyjnych i innych obiektów w projektancie raportów, aby ułatwić organizowanie plików. W zależności od typu obiektu, którego nazwa jest zmieniana, może być konieczna aktualizacja skojarzeń z tym obiektem.
+Można zmieniać nazwy folderów, raportów, bloków konstrukcyjnych i innych obiektów w Report Designer, aby ułatwić organizowanie plików. W zależności od typu obiektu, którego nazwa jest zmieniana, może być konieczna aktualizacja skojarzeń z tym obiektem.
 
-## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub bloku konstrukcyjnego w Projektancie raportów
-W Projektancie raportów można zmieniać nazwy folderów, definicji raportów, definicji wierszy, definicji kolumn i definicji drzew raportowania.
+## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub bloku konstrukcyjnego w Report Designer
+W Report Designer można zmieniać nazwy folderów, definicji raportów, definicji wierszy, definicji kolumn i definicji drzew raportowania.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub modułu konstrukcyjnego w Projektancie raportów
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub bloku konstrukcyjnego w Report Designer
 
-1. W Projektancie raportów użyj okienka nawigacji, aby zlokalizować folder lub obiekt, którego nazwę chcesz zmienić.
+1. W Report Designer użyj okienka nawigacji, aby zlokalizować folder lub obiekt, którego nazwę chcesz zmienić.
 2. Kliknij prawym przyciskiem myszy folder lub obiekt, a następnie kliknij przycisk **Zmień nazwę**. Pole **Nazwa** w okienku nawigacji staje się dostępne.
-3. Wpisz nową nazwę, a następnie naciśnij klawisz Enter.
+3. Wpisz nową nazwę, a następnie naciśnij klawisz **Enter**.
 4. Jeśli blok konstrukcyjny jest definicją wiersza, kolumny lub drzewa raportowania, należy zaktualizować pozostałe skojarzone z nim bloki konstrukcyjne. Kliknij prawym przyciskiem myszy blok konstrukcyjny, którego nazwa została zmieniona w kroku 3, wybierz opcję **Skojarzenia**, a następnie wybierz pozycję na liście, aby ją zaktualizować.
 5. Powtórz krok 4, dopóki nie zostaną zaktualizowane wszystkie powiązane elementy.
 
@@ -46,7 +46,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 
 ### <a name="create-a-report-group"></a>Tworzenie grupy raportów
 
-1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
+1. W Report Designer w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. W menu **Plik** kliknij kolejno opcje **Nowy** &gt; **Definicja grupy raportów**, aby otworzyć nową grupę raportów w oknie podglądu. Alternatywnie kliknij przycisk **Grupa raportów** ![Grupa raportów](media/report-group.gif "Grupa raportów") na pasku narzędzi.
 3. Kliknij kartę **Grupa raportów**. Aby zastąpić informacje o definicjach poszczególnych raportów do generowania tego raportu, zaznacz pole wyboru **Zastąp ustawienia firmy, szczegółów i daty z poszczególnych definicji raportów**. Nazwa firmy, poziom szczegółowości, ustawienie tymczasowości i informacje o datach są wypełniane automatycznie, ale można je aktualizować.
 4. Aby wygenerować wiele raportów z walutami raportowania, zaznacz pole wyboru **Uwzględnij wszystkie waluty raportowania**. Następnie podczas oglądania raportów w przeglądarce sieci web można kliknąć przycisk **Waluta**, a będzie dostępnych wiele widoków.
@@ -55,22 +55,22 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 
 ### <a name="modify-a-report-group"></a>Modyfikowanie grupy raportów
 
-1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
+1. W Report Designer w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Kliknij dwukrotnie grupę raportów, którą chcesz zmodyfikować.
 3. Na karcie **Grupa raportów** wprowadź żądane zmiany.
 4. W menu **Plik** kliknij polecenie **Zapisz**, aby zapisać zmodyfikowaną grupę raportów. Alternatywnie kliknij przycisk **Zapisz** ![Zapisz](media/save.gif "Zapisz") na pasku narzędzi.
 
-> Jeśli masz zaplanowane raporty do generowania w ustalonych odstępach czasu, można zastąpić te ustawienia i natychmiast wygenerować raport.
+> [NOTE] Jeśli masz zaplanowane raporty do generowania w ustalonych odstępach czasu, można zastąpić te ustawienia i natychmiast wygenerować raport.
 
 ### <a name="generate-a-report-group-report"></a>Generowanie raportu grupy raportów
 
-1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
+1. W Report Designer w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Otwórz grupę raportów do wygenerowania.
 3. Kliknij przycisk **Generuj raport** ![Generuj raport](media/generate-report.gif "Generuj raport"), aby wygenerować raporty.
 
 ### <a name="delete-a-report-group"></a>Usuwanie grupy raportu
 
-1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
+1. W Report Designer w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Kliknij prawym przyciskiem myszy grupę raportów, którą chcesz usunąć, i wybierz polecenie **Usuń**.
 3. Gdy pojawi się komunikat potwierdzający, kliknij przycisk **Tak**.
 
@@ -80,13 +80,13 @@ W poniższej tabeli opisano formanty istniejące na karcie **Grupa raportów**.
 <table>
 <thead>
 <tr>
-<th>Kontrola</th>
+<th>Control</th>
 <th>Opis</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Zastępowanie firmy, szczegółów i ustawień danych z indywidualnych definicji raportów</td>
+<td>Zastąp firmę, szczegół i ustawienia daty z definicji raportu indywidualnego</td>
 <td>Zaznaczenie tego pola wyboru umożliwia zastąpienie indywidualnych definicji raportów w danej grupie raportów tylko pod kątem generowania tych raportów.</td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ W poniższej tabeli opisano formanty istniejące na karcie **Grupa raportów**.
 </tr>
 <tr>
 <td>Uwzględnij wszystkie waluty raportowania</td>
-<td>W tym miejscu są wyświetlone wszelkie dodatkowe waluty raportowania skonfigurowane w systemie Microsoft Dynamics ERP. Zaznacz to pole wyboru, aby generować dodatkowe raporty we wskazanych walutach. Aby wyświetlić te raporty w Podglądzie sieci Web, kliknij przycisk <strong>Waluta</strong> i wybierz walutę.</td>
+<td>W tym miejscu są wyświetlone wszelkie dodatkowe waluty raportowania skonfigurowane w systemie Microsoft Dynamics 365 Finance. Zaznacz to pole wyboru, aby generować dodatkowe raporty we wskazanych walutach. Aby wyświetlić te raporty w Podglądzie sieci Web, kliknij przycisk <strong>Waluta</strong> i wybierz walutę.</td>
 </tr>
 <tr>
 <td>Informacje o dacie niezapisane w definicji raportu</td>

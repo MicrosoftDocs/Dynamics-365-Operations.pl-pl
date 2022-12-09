@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f79ef3ed5db7583eb44b99e49c010778ce8524d1
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: e68b28bfde35b51605aa0b653265da6261b69a90
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733472"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819250"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge"></a>Scalanie infrastruktury Dynamics 365 Human Resources 
 
@@ -85,11 +85,12 @@ W procesie automatycznym następujące akcje zostały zakończone i muszą zosta
 
     - Konfiguracje
     - Role zabezpieczeń (w tym role niestandardowe)
-    - Przepływy pracy
+    - Przepływy pracy (w tym powiadomienia)
     - Personalizacja i zapisane widoki
     - Transakcje
     - Pola niestandardowe
     - Załączniki
+    - Alerty
 
 - Zarządzanie danymi — używanie własnej bazy danych (BYOD)
 - Zarządzanie funkcjami — włączone/wyłączone funkcje.

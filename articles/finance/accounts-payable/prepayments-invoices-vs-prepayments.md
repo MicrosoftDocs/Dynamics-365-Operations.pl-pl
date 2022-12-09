@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715837"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804271"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
@@ -65,12 +65,13 @@ Konto przedpłaty musi być zdefiniowane na karcie **Zamówienie zakupu** na str
 
 Przeciwstawne konto rozrachunkowe rozrachunków z dostawcami jest zdefiniowane w profilu **księgowania dostawcy**. Aby zdefiniować domyślny profil księgowania, kliknij opcję **Rozrachunki z odbiorcami \> ustawienia \> parametry rozrachunków z odbiorcami \> karta Księga i podatek \> Księgowanie profili z wcześniej opłaconą fakurą dostawcy**.
 
-**Zasady stosowania przedpłat** wskazuje, czy system automatycznie zastosuje rozliczone faktury zaliczkowe do ostatecznej faktury utworzonej ręcznie. Faktury tworzone przy użyciu jednostki danych nie będą się odwoływać do zasad **stosowania przedpłat**. Należy ręcznie zastosować rozliczone faktury zaliczkowe do faktur utworzonych przy użyciu jednostki danych. Aby zdefiniować zasady, przejdź do **Rozrachunki z dostawcami \>Ustawienia \> Parametry rozrachunków z dostawcami \> Karta księgi i podatku \> ZAsady stosowania przedpłaty**. Jeśli w polu **Zasady rozliczania przedpłaty** została ustawiona wartość **Automatycznie**, faktura zaliczkowa zostanie automatycznie zaznaczona do rozliczenia z fakturą końcową. Jeśli to pole jest ustawione na **Powiadomienie**, podczas tworzenia faktury końcowej jest wyświetlana graficzna informacja o tym, że faktura zaliczkowa jest dostępna w aplikacji.
+Polityka **Zastosowania przedpłat** określa, czy rozliczone faktury zaliczkowe zostaną automatycznie zastosowane do faktury końcowej, która została utworzona ręcznie. Faktury tworzone przy użyciu jednostki danych nie będą się odwoływać do zasad **stosowania przedpłat**. Należy ręcznie zastosować rozliczone faktury zaliczkowe do faktur utworzonych przy użyciu jednostki danych. Aby zdefiniować zasady, przejdź do **Rozrachunki z dostawcami \>Ustawienia \> Parametry rozrachunków z dostawcami \> Karta księgi i podatku \> ZAsady stosowania przedpłaty**. Jeśli w polu **Zasady rozliczania przedpłaty** została ustawiona wartość **Automatycznie**, faktura zaliczkowa zostanie automatycznie zaznaczona do rozliczenia z fakturą końcową. Jeśli to pole jest ustawione na **Powiadomienie**, podczas tworzenia faktury końcowej jest wyświetlana graficzna informacja o tym, że faktura zaliczkowa jest dostępna w aplikacji.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Tworzenie zamówienia zakupu zawierającego informacje o fakturze zaliczkowej
 Jeśli dostawca informuje Użytkownika, że wymaga przedpłaty za towary i usługi zawarte w zamówieniu zakupu, należy zdefiniować wartość przedpłaty dla skojarzonego zamówienia zakupu. Przejdź do **Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**, a następnie znajdź zamówienie zakupu dostawcy. W okienku akcji wybierz kartę **Zakup** i wybierz opcję **Zapłata**. Służy do wprowadzania informacji o zaliczce, w tym opisu, wartości przedpłaty, czy przedpłata to kwota stała czy procent oraz identyfikator kategorii przedpłaty. 
 
-Należy zauważyć, że definicje wielu przedpłat na zamówieniu zakupu są niedozwolone. Jeśli jest konieczne zezwalanie na wiele przedpłat na zamówieniu zakupu, księguj płatności za pomocą arkusza płatności zamiast faktury zaliczkowej.
+> [!Note] 
+> Definicje wielu przedpłat na zamówieniu zakupu są niedozwolone. Jeśli jest konieczne zezwalanie na wiele przedpłat na zamówieniu zakupu, księguj płatności za pomocą arkusza płatności zamiast faktury zaliczkowej.
 
 Przedpłatę można usunąć z zamówienia zakupu, chyba że wcześniej rozliczona została płatność z zaksięgowaną fakturą zaliczkową lub zaksięgowano standardową fakturę. Aby usunąć z zamówienia zakupu informacje o przedpłatze, wybierz opcję **Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> wszystkie zamówienia zakupu** i znajdź zamówienie zakupu dostawcy. W okienku akcji wybierz kartę **Zakup** i wybierz opcję **Usuń przedpłatę**.
 

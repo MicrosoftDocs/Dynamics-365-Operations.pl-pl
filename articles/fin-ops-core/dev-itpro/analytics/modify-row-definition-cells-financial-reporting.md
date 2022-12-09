@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: 1c125369a5b2134759bf3650175276acf42b69e0
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135548"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802831"
 ---
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
@@ -51,12 +51,12 @@ Oto przykłady prawidłowych kodów wiersza:
 
 ### <a name="change-a-row-code-in-a-row-definition"></a>Zmienianie kodu wiersza w definicji wiersza
 
-1. W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. W odpowiednim wierszu wpisz nową wartość w komórce w kolumnie **Kod wiersza**.
 
 ### <a name="reset-numeric-row-codes"></a>Resetowanie numerycznych kodów wiersza
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. W menu **Edycja** kliknij **Zmień numerację wierszy**.
 3. W oknie dialogowym **Zmiana numeracji wierszy** określ nowe wartości dla początkowego kodu wiersza i przyrostu kodu wiersza. Kody numeryczne wierszy można zresetować do równomiernie rozłożonych wartości. Projektant raportów zmienia numerację tylko dla kodów wierszy, które zaczynają się od numerów (np. 130 lub 246). Nie zmienia kodów wierszy numerycznych zaczynających się od liter (np. INCOME\_93 lub TP0693).
 
@@ -71,19 +71,19 @@ Komórka opisu zawiera opis danych finansowych w wierszu raportu, na przykład �
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Dodawanie opisu dla wiersza w raporcie
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Wybierz komórkę **Opis**, a następnie wprowadź nazwę wiersza raportu.
 3. Zastosuj formatowanie.
 
 ### <a name="add-additional-text-from-a-reporting-tree-in-the-description"></a>Dodawanie tekstu dodatkowego z drzewa raportowania w opisie
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Wprowadź kod dodatkowego tekstu i dowolny tekst w odpowiedniej komórce **Opis**.
 3. Zastosuj formatowanie.
 
 ### <a name="limit-the-additional-text-to-a-specific-reporting-unit"></a>Ograniczanie dodatkowego tekstu do określonej jednostki raportowania
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Znajdź wiersz, gdzie dodatkowy tekst ma zostać utworzony, a następnie kliknij dwukrotnie komórkę w kolumnie **Powiązane formuły/wiersze/jednostki**.
 3. W oknie dialogowym **Wybór jednostki raportowania** w polu **Drzewo raportowania** wybierz drzewo raportowania.
 4. W polu **Wybieranie jednostki raportowania do ograniczenia** rozwiń lub zwiń drzewo raportowania, a następnie wybierz jednostkę raportowania.
@@ -96,14 +96,14 @@ Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawarto
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Dodawanie kodu formatu do wiersza raportu
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie wybierz wiersz do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wiersza**, a następnie wybierz wiersz do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Kod formatu**.
 3. Wybierz kod formatu z listy. Poniższa tabela opisuje kody formatów i związane z nimi akcje.
 
     | Kod formatu                   | Interpretacja kodu formatu | Akcja |
     |-------------------------------|-----------------------------------|--------|
     | (Brak)                        |                                   | Usuwa zawartość komórki **Kod formatu**. |
-    | TOT                           | Suma                             | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Sumy zawierają proste operatory, takie jak **+** lub **-**. |
+    | TOT                           | Razem                             | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Sumy zawierają proste operatory, takie jak **+** lub **-**. |
     | CAL                           | Obliczenie                       | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Obliczenia zawierają złożone operatory, takie jak **+**, **-**, **\**_, _*/**, oraz instrukcje **IF/THEN/ELSE**. |
     | DES                           | opis                       | Określa wiersz nagłówka lub pusty wiersz w raporcie. |
     | LFT RGT CEN                   | Lewo Prawo Środek                 | Wyrównuje tekst opisu wiersza na stronie raportu, niezależnie od miejsca tego tekstu w definicji kolumny. |
@@ -149,7 +149,7 @@ Podczas tworzenia formuły sumy wierszy należy za pomocą kodów wierszy wskaza
 
 ### <a name="create-a-row-total"></a>Tworzenie sumy wierszy
 
-1. W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Kliknij dwukrotnie komórkę **Kod formatu** w definicji wiersza, a następnie wybierz opcję **TOT**.
 3. W komórce **Powiązane formuły/wiersze/jednostki** wpisz formułę sumy.
 
@@ -162,7 +162,7 @@ W kolumnie **Kod formatu** w definicji wiersza kody formatu **DES**, **LFT**, **
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Wiązanie wiersza formatu z wierszem kwoty
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie wybierz wiersz do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wiersza**, a następnie wybierz wiersz do zmodyfikowania.
 2. W wierszu formatowania w komórce **Powiązane formuły/wiersze/jednostki** wpisz kod wiersza kwoty, który ma być pomijany.
 
     > [!NOTE]
@@ -192,13 +192,13 @@ W definicji kolumn typ kolumny **CALC** wskazuje kolumnę określającą formuł
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Wybieranie wiersza podstawowego w definicji wiersza dla obliczenia kolumny
 
-1. W Projektancie raportów kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny dla rachunku wyników.
+1. W Report Designer kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny dla rachunku wyników.
 2. Dodaj nową kolumnę do definicji kolumny i ustaw typ kolumny na **CALC**.
 3. W komórce **Formuła** dla nowej kolumny wpisz formułę **X/BASEROW**, gdzie **X** jest typem kolumny **FD**, której procent ma być widoczny.
 4. Kliknij dwukrotnie komórkę **Zmiana formatu/waluty**.
 5. W oknie dialogowym **Zmiana Format** na liście **Kategoria formatu** wybierz **Procent**, a następnie kliknij przycisk **OK**.
 6. W menu **Plik** kliknij **Zapisz jako**, aby zapisać definicję kolumny pod nową nazwą. Dołącz **CBR** do bieżącej nazwy pliku (na przykład **CUR\_YTD\_CBR**). Ta definicja kolumny jest definicją kolumny wiersza podstawowego.
-7. W Projektancie raportów kliknij przycisk **Definicje wierszy**, a następnie otwórz definicję wiersza do zmiany za pomocą obliczenia wiersza podstawowego.
+7. W Report Designer kliknij przycisk **Definicje wierszy**, a następnie otwórz definicję wiersza do zmiany za pomocą obliczenia wiersza podstawowego.
 8. Wstaw nowy wiersz powyżej wiersza, gdzie powinno rozpoczynać się obliczenie wiersza podstawowego.
 9. Kliknij dwukrotnie komórkę **Kod formatu** w definicji wiersza, a następnie wybierz opcję **CBR**.
 10. W komórce **Powiązane formuły/wiersze/jednostki** wpisz wprowadzić numer kodu wiersza dla wiersza podstawowego.
@@ -227,7 +227,7 @@ Kody sortowania sortują konta lub wartości, sortują raport odchyleń rzeczywi
 
 ### <a name="select-a-sorting-code"></a>Wybieranie kodu sortowania
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję kod sortowania.
 3. W komórce **Powiązane formuły/wiersze/jednostki** należy określić zakres kodów wiersza do sortowania. Aby określić zakres, należy wprowadzić kod pierwszego wiersza, dwukropek (:) i kod ostatniego wiersza. Na przykład wpisz **160:490**, aby określić, że zakres obejmuje wiersze od 160 do 490.
 4. W komórce **Ograniczenia kolumny** należy wprowadzić literę kolumny raportu, która ma być użyta do sortowania.
@@ -239,21 +239,21 @@ Kody sortowania sortują konta lub wartości, sortują raport odchyleń rzeczywi
 
 W poniższym przykładzie wartości w kolumnie D raportu zostaną posortowane rosnąco dla wierszy od 160 do 490. Ponadto wartości bezwzględne w kolumnie G raportu zostaną posortowane w kolejności malejącej od wiersza 610 do 940.
 
-| Kod wiersza | Opis                                         | Kod formatu | Powiązane formuły/wiersze/jednostki | Saldo zwykłe | Ograniczenie kolumny | Łącze do Wymiary finansowe |
-|----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
-| 100      | Posortowane według miesięcznego odchylenia w kolejności rosnącej       | DES         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Sprzedaż                                               |             |                             | C              |                    | 4100                         |
-| 190      | Zwroty sprzedaży                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Przychody z tytułu odsetek                                     |             |                             | C              |                    | 7000                         |
-| 520      |                                                     | DES         |                             |                |                    |                              |
-| 550      | Posortowane według odchylenia bezwzględnego od początku roku w kolejności malejącej | DES         |                             |                |                    |                              |
-| 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Sprzedaż                                               |             |                             | F              |                    | 4 100                         |
-| 640      | Zwroty sprzedaży                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Dochód z odsetek                                     |             |                             | F              |                    | 7 000                         |
+| Kod wiersza | Opis                             | Kod formatu | Powiązane formuły/wiersze/jednostki | Saldo zwykłe | Ograniczenie kolumny | Łącze do wymiarów finansowych |
+|----------|-----------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
+| 100      | Posortowane według miesięcznego odchylenia w kolejności rosnącej       | DES         |                |                |                    |                              |
+| 130      |                                        | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Sprzedaż                                   |             |                             | C              |                    | 4100                         |
+| 190      | Zwroty sprzedaży                        |             |                             |                |                    | 4110                         |
+|          | ...                             |             |                             |                |                    |                              |
+| 490      | Przychody z tytułu odsetek              |             |                             | C              |                    | 7000                         |
+| 520      |                                     | DES         |                             |                |                    |                              |
+| 550      | Posortowane według odchylenia bezwzględnego od początku roku w kolejności malejącej | DES         |             |                |                    |                              |
+| 580      |                              | ASORTDESC   | 610:940                     |                | G                  |                              |
+| 610      | Sprzedaż                     |             |                             | F              |                    | 4 100                         |
+| 640      | Zwroty sprzedaży                |             |                             |                |                    | 4110                         |
+|          | ...                       |             |                             |                |                    |                              |
+| 940      | Dochód z odsetek               |             |                             | C              |                    | 7 000                         |
 
 
 ## <a name="specify-a-format-override-cell"></a>Określanie komórki Zmiana formatu
@@ -266,7 +266,7 @@ Komórka **Zmiana formatu** określa format, który jest używany dla wiersza po
 
 ### <a name="override-cell-formatting"></a>Zmiana formatu komórki
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. W wierszu, w którym ma być zmieniony format, kliknij dwukrotnie komórkę w kolumnie **Zmiana formatu**.
 3. W oknie dialogowym **Zmiana formatu** wybierz opcje formatowania dla tego wiersza w raporcie.
 4. Kliknij przycisk **OK**
@@ -327,7 +327,7 @@ Typ powinien być przestawiać wartość dodatnią, a następnie wartość ujemn
 | 0,00%;(0,00%)                  | 123456,00% | (123456,00%) | 0,00%   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Określanie komórki zwykłego salda
-Komórka **Zwykłe saldo** w definicji wiersza określa znak kwoty w wierszu. Aby zmienić znak wiersza lub jeśli zwykłe saldo konta jest transakcją kredytową, wpisz **C** w komórce **Zwykłe saldo** tego wiersza. Projektant raportów odwraca znak dla wszystkich kont z saldami kredytowymi w tym wierszu. Gdy projektant raportów konwertuje te konta, usuwa cechę debet/kredyt ze wszystkich kwot, co upraszcza sumowanie. Na przykład aby obliczyć zysk netto, odejmuje się wydatki od przychodów. Zwykle sumowane i obliczone wiersze nie są uwzględnione w kodzie **C**. Jednak formant drukowania **XCR** w definicji kolumny odwraca znak każdego wiersza zawierającego **C** w kolumnie **Zwykłe saldo**. To formatowanie jest szczególnie ważne, jeśli chce się pokazać wszystkie niekorzystna odchylenia jako kwoty ujemne. Jeśli zsumowana lub obliczona liczba ma zły znak, wpisz **C** w komórce **Zwykłe saldo** dla wiersza, aby go odwrócić.
+Komórka **Zwykłe saldo** w definicji wiersza określa znak kwoty w wierszu. Aby zmienić znak wiersza lub jeśli zwykłe saldo konta jest transakcją kredytową, wpisz **C** w komórce **Zwykłe saldo** tego wiersza. Projektant raportów odwraca znak dla wszystkich kont z saldami kredytowymi w tym wierszu. Gdy Report Designer konwertuje te konta, usuwa cechę debet/kredyt ze wszystkich kwot, co upraszcza sumowanie. Na przykład aby obliczyć zysk netto, odejmuje się wydatki od przychodów. Zwykle sumowane i obliczone wiersze nie są uwzględnione w kodzie **C**. Jednak formant drukowania **XCR** w definicji kolumny odwraca znak każdego wiersza zawierającego **C** w kolumnie **Zwykłe saldo**. To formatowanie jest szczególnie ważne, jeśli chce się pokazać wszystkie niekorzystna odchylenia jako kwoty ujemne. Jeśli zsumowana lub obliczona liczba ma zły znak, wpisz **C** w komórce **Zwykłe saldo** dla wiersza, aby go odwrócić.
 
 ## <a name="specify-a-row-modifier-cell"></a>Określ komórkę Modyfikator wiersza
 Zawartość komórki **Modyfikator wiersza** w definicji wiersza zastępuje lata obrachunkowe, okresy obrachunkowe i informacje określone w definicji kolumny dla tego wiersza. Wybrany modyfikator ma zastosowanie do każdego konta w wierszu. Każdy wiersz można zmodyfikować przy użyciu następujących typów modyfikacji:
@@ -338,7 +338,7 @@ Zawartość komórki **Modyfikator wiersza** w definicji wiersza zastępuje lata
 
 ### <a name="override-a-column-definition"></a>Zastępowanie definicji kolumny
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. W wierszu, w którym chcesz zastąpić definicję kolumny, kliknij dwukrotnie komórkę **Modyfikator wiersza**.
 3. W oknie dialogowym **Modyfikator wiersza** wybierz opcję w polu **Modyfikator konta**. Opis opcji znajdziesz w sekcji „Modyfikatory konta”.
 4. W polu **Modyfikator kodu księgi** wybierz kod księgi dla wiersza.
@@ -386,7 +386,7 @@ Niektóre systemy księgowe obsługują atrybuty konta i atrybuty transakcji w d
 Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiarów. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**.
 
 > [!NOTE]
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Aby określić informacje dla wiersza, który jest już wymieniony w definicji wierszy, należy dodać informacje w komórce **Łącze do Wymiary finansowe**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
+> Report Designer nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics 365 Finance, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Aby określić informacje dla wiersza, który jest już wymieniony w definicji wierszy, należy dodać informacje w komórce **Łącze do Wymiary finansowe**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
 
 | Typ łącza, które jest zaznaczone       | Opis kolumny Łącze zmienia się na ten tekst |
 |----------------------------------|----------------------------------------------------|
@@ -395,7 +395,7 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 
 ### <a name="specify-a-dimension-or-range"></a>Określanie wymiaru lub zakresu
 
-1. W Projektancie raportów otwórz definicję wierszy, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę w kolumnie **Łącze do Wymiary finansowe**.
 3. W oknie dialogowym **Wymiary** kliknij dwukrotnie komórkę pod nazwą wymiaru.
 4. W oknie dialogowym wymiaru wybierz **Pojedynczy lub zakres**.
@@ -408,7 +408,7 @@ Domyślnie projektant raportów nie drukuje wierszy, które nie mają odnośnego
 
 ### <a name="modify-zero-balance-settings"></a>Modyfikowanie ustawień salda zerowego
 
-1. W Projektancie raportu otwórz definicję raportu do zmodyfikowania.
+1. W Report Designer otwórz definicję raportu do zmodyfikowania.
 2. Na karcie **Ustawienia** w obszarze **Inne formatowanie** wybierz opcję dla definicji wiersza, która jest używana w definicji raportu.
 3. W menu **Plik** kliknij **Zapisz**, aby zapisać zmiany.
 
@@ -423,32 +423,32 @@ Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** mo
 Można określić zakres wartości segmentów lub wartości wymiarów. Zaletą określania zakresu jest to, że nie trzeba aktualizować definicji wiersza za każdym razem, gdy do danych finansowych dodawana jest nowa wartość segmentu lub wartość wymiaru. Na przykład zakres **+Konto=\[6100:6900\]** pobiera wartości z kont od 6100 do 6900 do kwoty wiersza. Gdy zakres zawiera symbol wieloznaczny (?), projektant raportów nie ocenia zakresu na zasadzie znak po znaku. Zamiast tego określane są niższe i wyższe krańce zakresu, a następnie uwzględniane są wartości krańcowe i wszystkie wartości między nimi.
 
 > [!NOTE]
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+> Report Designer nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics 365 Finance, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Zakresy z wieloma segmentami lub wieloma wymiarami
 
 Jeśli wprowadzany jest zakres przy użyciu kombinacji wielu wartości wymiaru, porównanie zakresu jest wykonywane na ..\\wymiarach finansowych\\zasadzie wymiar po wymiarze. Porównanie zakresu nie może być wykonywane ani na zasadzie znak po znaku ani na podstawie segmentu częściowego. Na przykład zakres **+Konto=\[5000:6000\], Dział=\[1000:2000\], Centrum kosztu=\[00\]** zawiera tylko konta, które pasują do każdego segmentu. W tym scenariuszu pierwszy wymiar musi mieścić się w zakresie od 5000 do 6000, drugi wymiar musi mieścić się w zakresie od 1000 do 2000, a ostatni wymiar musi mieć wartość 00. Na przykład **+Konto=\[5100\], Dział=\[1100\], Centrum kosztu=\[01\]** nie jest uwzględniony w raporcie, ponieważ ostatni segment nie mieści się w określonym zakresie. Jeśli wartość segmentu zawiera spacje, należy umieścić tę wartość w nawiasach kwadratowych (\[ \]). Następujące wartości są prawidłowe dla segmentu złożonego z czterech znaków: **\[ 234\], \[123 \], \[1 34\]**. Wartości wymiarów powinny być ujęte w nawiasy kwadratowe (\[ \]), a projektant raportów dodaje te nawiasy samodzielnie. Jeśli zakres obejmujący wiele segmentów lub wiele wymiarów zawiera symbole wieloznaczne (? lub \*), określane są górne i dolne krańce całego zakresu złożonego z wielu segmentów lub wielu wymiarów, a następnie dodawane są wartości krańcowe i wszystkie wartości między nimi. Jeśli zakres jest duży, np. cały zakres kont od 40000 do 99999, należy określić prawidłowe konto początkowe i końcowe, jeśli jest to możliwe.
 
 > [!NOTE] 
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+> Report Designer nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics 365 Finance, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Dodawanie i odejmowanie z innych kont w definicji wiersza
 Aby dodać lub odjąć kwoty pieniężne na jednym koncie z kwot pieniężnych na innym koncie, można użyć znaku plus (+) i znaku minus (-) w komórce **Łącze do wymiarów finansowych**. W poniższej tabeli przedstawiono dopuszczalne formaty dla dodawania i odejmowania łącz do danych finansowych.
 
-| Operacja                                                                               | Użyj następującego formatu                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Dodaj dwa konta w pełni kwalifikowane.                                                       | +Oddział=\[000\], Konto=\[1205\], Dział=\[00\]+Oddział=\[100\], Konto=\[1205\], Dział=\[00\] |
-| Dodaj dwie wartości segmentów.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
-| Dodaj wartości segmentów zawierające symbole wieloznaczne.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
-| Dodaj zakres kont w pełni kwalifikowanych.                                                | +Oddział=\[000:100\], Konto=\[1205\], Dział=\[00\]                                                   |
-| Dodaj zakres wartości segmentów.                                                          | +Konto=\[1200:1205\]                                                                                       |
-| Dodaj zakres wartości segmentów z symbolami wieloznacznymi.                         | +Konto=\[120?:130?\]                                                                                       |
+| Operacja                                            | Użyj następującego formatu                                                                                              |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Dodaj dwa konta w pełni kwalifikowane.      | +Oddział=\[000\], Konto=\[1205\], Dział=\[00\]+Oddział=\[100\], Konto=\[1205\], Dział=\[00\] |
+| Dodaj dwie wartości segmentów.                    | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
+| Dodaj wartości segmentów zawierające symbole wieloznaczne.  | +Konto=\[120?+Konto=\[11??\]                                                                     |
+| Dodaj zakres kont w pełni kwalifikowanych.              | +Oddział=\[000:100\], Konto=\[1205\], Dział=\[00\]                                           |
+| Dodaj zakres wartości segmentów.                | +Konto=\[1200:1205\]                                                                                       |
+| Dodaj zakres wartości segmentów z symbolami wieloznacznymi.         | +Konto=\[120?:130?\]                                                           |
 | Odejmij jedno konto w pełni kwalifikowane od innego konta w pełni kwalifikowanego.              | +Oddział=\[000\], Konto=\[1205\], Dział=\[00\]-Oddział=\[100\], Konto=\[1205\], Dział=\[00\] |
-| Odejmij wartość jednego segmentu od wartości innego segmentu.                                  | +Konto=\[1205\]-Konto=\[1210\]                                                                           |
-| Odejmij wartość segmentu zawierającą symbol wieloznaczny od wartości innego segmentu. | +Konto=\[1200\]-Konto=\[11??\]                                                                           |
-| Odejmij zakres kont w pełni kwalifikowanych.                                           | -Oddział=\[000:100\], Konto=\[1200:1205\], Dział=\[00:01\]                                           |
-| Odejmij zakres wartości segmentów.                                                     | -Konto=\[1200:1205\]                                                                                       |
-| Odejmij zakres wartości segmentów z symbolami wieloznacznymi.                    | -Konto=\[120?:130?\]                                                                                       |
+| Odejmij wartość jednego segmentu od wartości innego segmentu.          | +Konto=\[1205\]-Konto=\[1210\]                                                               |
+| Odejmij wartość segmentu zawierającą symbol wieloznaczny od wartości innego segmentu. | +Konto=\[1200\]-Konto=\[11??\]                                        |
+| Odejmij zakres kont w pełni kwalifikowanych.                               | -Oddział=\[000:100\], Konto=\[1200:1205\], Dział=\[00:01\]                   |
+| Odejmij zakres wartości segmentów.                   | -Konto=\[1200:1205\]                                                                                       |
+| Odejmij zakres wartości segmentów z symbolami wieloznacznymi.                    | -Konto=\[120?:130?\]                                               |
 
 Chociaż można modyfikować konta bezpośrednio, można również użyć okna dialogowego **Wymiary**, aby zastosować prawidłowe formatowanie do łącza danych finansowych. Każda z wartości może zawierać symbole wieloznaczne (? lub \*). Projektant raportów nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }.
 
@@ -457,7 +457,7 @@ Chociaż można modyfikować konta bezpośrednio, można również użyć okna d
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Dodawanie kont do innych kont i odejmowanie kont od innych kont
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. W odpowiednim wierszu kliknij dwukrotnie komórkę w kolumnie **Łącze do wymiarów finansowych**.
 3. W pierwszym wierszu okna dialogowego **Wymiary** wykonaj następujące kroki:
 
@@ -471,7 +471,7 @@ Chociaż można modyfikować konta bezpośrednio, można również użyć okna d
 > [!NOTE]
 > Operator ma zastosowanie do wszystkich wymiarów w wierszu.
 
-## <a name="description-of-the-dimensions-dialog-box"></a>Opis okna dialogowego Wymiary
+## <a name="description-of-the-dimensions-dialog-box"></a>Opis okna dialogowego wymiary
 W poniższej tabeli opisano pola w tym oknie dialogowym **Wymiary**.
 
 | Pozycja                | Opis |
@@ -485,7 +485,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="create-a-set-of-dimension-values"></a>Tworzenie zestawu wartości wymiarów
 
-1. W Projektancie raportów otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
 2. W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3. W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ zestawu wartości wymiarów do utworzenia, a następnie kliknij **Nowy**.
 4. W oknie dialogowym **Nowy** wprowadź nazwę i opis dla zestawu.
@@ -497,7 +497,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="update-a-set-of-dimension-values"></a>Aktualizowanie zestawu wartości wymiaru
 
-1. W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
 2. W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3. W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4. Na liście wymierz zestaw wartości wymiarów do aktualizacji, a następnie kliknij **Modyfikuj**.
@@ -511,7 +511,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="copy-a-dimension-set"></a>Kopiowanie zestawu wymiarów
 
-1. W Projektancie raportów otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
 2. W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3. W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4. Z listy wybierz zestaw do skopiowania i kliknij **Zapisz jako**.
@@ -519,7 +519,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="delete-a-dimension-set"></a>Usuwanie zestawu wymiarów
 
-1. W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
 2. W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3. W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4. Wybierz zestaw, który chcesz usunąć, a następnie kliknij przycisk **Usuń**. Kliknij przycisk **Tak**, aby trwale usunąć zestaw wartości wymiaru.

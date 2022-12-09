@@ -2,7 +2,7 @@
 title: Profile księgowania klientów
 description: Ten artykuł opisuje profile księgowania klientów, które kontrolują księgowanie transakcji klientów do księgi głównej.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891703"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799580"
 ---
 # <a name="customer-posting-profiles"></a>Profile księgowania klientów
 
@@ -58,15 +58,15 @@ Jeśli wszystkie transakcje klienta mają mieć ten sam profil księgowania, nal
 </thead>
 <tbody>
 <tr>
-<td>Profil księgowania</td>
+<td><strong>Profil księgowania</strong></td>
 <td>Umożliwia wprowadzenie kodu profilu księgowania. Można na przykład utworzyć 2 profile księgowania, aby korzystać z jednego konta dla sald odbiorcy w walucie krajowej, a z drugiego — dla sald odbiorcy w walucie zagranicznej. Jedno konto można nazwać Krajowe, a drugie Zagraniczne.</td>
 </tr>
 <tr>
-<td>Opis</td>
+<td><strong>Opis</strong></td>
 <td>Umożliwia wprowadzenie opisu profilu księgowania. To jest używane jedynie, aby lepiej określić profil księgowania, podczas przeglądania tej strony.</td>
 </tr>
 <tr>
-<td>Kod konta</td>
+<td><strong>Kod konta</strong></td>
 <td>Umożliwia określenie, czy profil księgowania dotyczy jednego odbiorcy, grupy odbiorców czy wszystkich odbiorców:
 <ul>
 <li><b>Tabela</b> — profil księgowania dotyczy jednego odbiorcy. Wybierz konto odbiorcy w polu <b>Numer konta/grupy</b>.</li>
@@ -76,33 +76,33 @@ Jeśli wszystkie transakcje klienta mają mieć ten sam profil księgowania, nal
 </td>
 </tr>
 <tr>
-<td>Numer konta/grupy</td>
+<td><strong>Numer konta/grupy</strong></td>
 <td>W przypadku wybrania opcji <b>Tabela</b> w polu <b>Kod konta</b> należy wybrać numer konta odbiorcy skojarzony z profilem księgowania. W przypadku wybrania opcji <b>Grupa</b> zaznacz grupę odbiorców. W przypadku wybrania opcji <b>Wszystko</b> należy pozostawić to pole puste.</td>
 </tr>
 <tr>
-<td>Konto rozrachunkowe</td>
+<td><strong>Konto rozrachunkowe</strong></td>
 <td>Wybierz konto główne, które będzie używane jako konto handlowe dla klientów, którzy są powiązani z profilem księgowania. To konto jest kontem typu księgowania <b>salda klienta</b>.</td>
 </tr>
 <tr>
-<td>Konto płynności dla płatności</td>
-<td>Umożliwia wybranie konta płynności używanego przy prognozowaniu przepływów pieniężnych. To pole będzie dostępne tylko wtedy, gdy prognozy przepływów gotówkowych są dozwolone.</td>
+<td><strong>Konto płynności dla płatności</strong></td>
+<td>Umożliwia wybranie <strong>Konta płynności księgi głównej</strong> używanego przy prognozowaniu przepływów pieniężnych. To pole będzie dostępne tylko wtedy, gdy prognozy przepływów gotówkowych są dozwolone.</td>
 </tr>
 <tr>
-<td>Przedpłaty podatku</td>
+<td><strong>Przedpłaty podatku</strong></td>
 <td><p>Wybierz konto dla płatności podatków z góry.</p>
 <p><strong>Uwaga:</strong> Aby określić profil księgowania używany, gdy płatność jest oznaczona jako przedpłata, należy użyć strony <b>parametrów rozrachunków z odbiorcami</b>.</p>
 </td>
 </tr>
 <tr>
-<td>Konto zobowiązań związanych z rabatami</td>
+<td><strong>Konto zobowiązań związanych z rabatami</strong></td>
 <td>Umożliwia wybranie konta księgowego dla księgowania rabatu.</td>
 </tr>
 <tr>
-<td>Kolejność ponagleń</td>
+<td><strong>Kolejność ponagleń</strong></td>
 <td>Umożliwia wybranie identyfikatora kolejności ponagleń dla odbiorców, do których jest przypisany profil księgowania.</td>
 </tr>
 <tr>
-<td>Kod odsetek</td>
+<td><strong>Kod odsetek</strong></td>
 <td>Umożliwia wstawienie kodu używanego do obliczeń odsetek dla odbiorców, do których jest przypisany profil księgowania.</td>
 </tr>
 </tbody>

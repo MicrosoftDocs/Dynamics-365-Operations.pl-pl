@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59ec6978d83f5c51309bc7d90d47366774cb2880
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f55fe1a23735d8631a5918fa49e08f74eee4d37
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898835"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802777"
 ---
 # <a name="generate-financial-reports"></a>Generowanie raportów finansowych
 
@@ -32,7 +32,7 @@ Aby wygenerować raport, otwórz definicję raportu, a następnie wybierz przyci
 
 W trakcie generowania raportu następujące wskaźniki stanu kolejki raportów mogą być widoczne na stronie **Stan kolejki raportów**.
 
-| Stan          | Stanowy | Opis|
+| Stan          | Stan | Opis|
 |-----------------|--------|--------------------|
 | Kolejkowanie        | Tymczasowe |Definicja raportu jest sprawdzana przed jego odłogowaniem w kolejce generowania.                    |
 | W kolejce          | Tymczasowe | Raport wprowadza kolejkę generowania raportu i czeka na przetworzenie.                      |
@@ -67,7 +67,7 @@ Aby wygenerować raport za pomocą **Projektanta raportów**, otwórz definicję
 
 Grupy raportów to efektywny sposób generowania kilku raportów jednocześnie. Przypuśćmy na przykład, że wiadomo, że na koniec miesiąca użytkownicy będą generować osiem raportów co miesiąc. Utwórz grupę raportów i zamiast wybierać opcję **Generuj** dla każdego z ośmiu raportów w grupie, możesz wybrać opcję **Generuj** dla grupy raportów, a w jednym kroku zostanie wygenerowanych osiem raportów. Po wygenerowaniu raportów z wybranej grupy raportów można przejść do widoku **Raporty finansowe** (**Księga główna > Zapytanie i raporty > Raporty finansowe**), aby wyświetlić poszczególne raporty. Wykonaj następujące kroki, aby skonfigurować grupę raportów.
 
-1. W Projektancie raportów wybierz **Grupy raportów**. 
+1. W **Report Designer** wybierz **Grupy raportów**. 
 2. Wybierz istniejące definicje raportów do dołączyć do grupy raportów. 
 3. Wybierz ustawienia zastępowania firmy, szczegółów i daty z każdego raportu, który zostanie uwzględniony w grupie.
    Zaleca się ustawienie poziomu **Firma**, **Okres**, **Rok** i **Szczegóły** dla każdego raportu. 
@@ -76,21 +76,21 @@ Grupy raportów to efektywny sposób generowania kilku raportów jednocześnie. 
 ## <a name="schedule-report-generation"></a>Planowanie generowania raportów
 W wielu przedsiębiorstwach istnieje pewien podstawowy zbiór raportów, które są tworzone według określonego harmonogramu dopasowanego do potrzeb procesów biznesowych. Można zaplanować raport do generowania regularnego, np. codziennie, co tydzień, co miesiąc lub co roku. Sesja może obejmować jeden raport albo grupę raportów dla kilku przedsiębiorstw. Dla każdej uwzględnionej firmy, na przykład wpisanej w definicji drzewa raportowania, trzeba wprowadzić poświadczenia dostępu. Jeśli poświadczenia nie są prawidłowe, raport wyświetli tylko informacje, że masz uprawnienia dostępu, takie jak firma w której jesteś zalogowany w danej chwili. Informacje o danych wyjściowych są odczytywane najpierw z grupy raportów, a następnie z poszczególnych raportów.
 
-Tworzone i zapisywane raporty są wyświetlane w okienku nawigacji w obszarze Harmonogramy raportów. W celu uporządkowania raportów można tworzyć foldery. Pominięcie generowania określonego raportu w harmonogramie nie wpływa w żaden sposób na pozostałe raporty.
+Tworzone i zapisywane raporty są wyświetlane w okienku nawigacji w obszarze **Harmonogramy raportów**. W celu uporządkowania raportów można tworzyć foldery. Pominięcie generowania określonego raportu w harmonogramie nie wpływa w żaden sposób na pozostałe raporty.
 
 > [!IMPORTANT]
 > Aby móc tworzyć, modyfikować i usuwać harmonogramy raportów, trzeba pełnić rolę projektanta lub administratora. Po uruchomieniu raportu poświadczenia użytkownika, który utworzył harmonogram, są używane do generowania raportu.
 
 ### <a name="create-a-report-schedule"></a>Tworzenie harmonogramu raportu
 
-1. W Projektancie raportów w menu **Plik** wybierz przycisk **Nowy**, a następnie wybierz opcję **Harmonogram raportu**. Zostanie otwarte okno dialogowe **Nowy harmonogram raportu**.
+1. W **Report Designer** w menu **Plik** wybierz przycisk **Nowy**, a następnie wybierz opcję **Harmonogram raportu**. Zostanie otwarte okno dialogowe **Nowy harmonogram raportu**.
 2. W obszarze **Ustawienia** wybierz pojedynczy raport lub grupę raportów do zaplanowania. Masz dostęp tylko do raportów/grup raportów dotyczących firmy lub zbioru modułów konstrukcyjnych, gdzie obecnie jesteś zalogowanym użytkownikiem.
 3. Wybierz pole wyboru **Aktywne**, aby włączyć funkcję harmonogramu raportów. Aktywacji i dezaktywacji harmonogramu raportu może dokonywać wyłącznie jego twórca lub administrator.
 4. Wybierz przycisk **Uprawnienia**, aby wprowadzić poświadczenia firmy. Domyślnie są używane poświadczenia logowania do firmy, gdzie obecnie jesteś zalogowanym użytkownikiem. Jeśli innych firm są uwzględnione, np. w definicjach drzewa raportowania, wybierz **Użyj osobnych poświadczeń**, a następnie wprowadź poświadczenia dla firmy, uwzględnionej w harmonogramie raportu. Można wybrać **Uwierzytelnianie systemu Windows** lub wpisać nazwę użytkownika i hasło dla każdej firmy. Zaznacz pole wyboru **Zapisz poświadczenia**, aby zapisać poświadczenia dla tych firm, a następnie wybierz przycisk **OK**, aby zamknąć okno dialogowe.
 5. W obszarze **Częstotliwość** w polu **Początek cyklu** wybierz dzień, gdy harmonogram ma się uruchomić. Domyślnie jest ustawiana bieżąca data systemowa z komputera klienckiego.
 6. W polu **Uruchomić raport o** wybierz godzinę uruchomienia raportu. Jeśli wprowadzisz godzinę wcześniejszą niż bieżąca godzina systemowa, raport zostanie po raz pierwszy wykonany w następnym zaplanowanym dniu.
-7. W obszarze **Wzorzec cyklu** określ częstotliwość uruchamiania raportu. Domyślnie wybrana jest opcja **Codziennie** z wartością 1 dla opcji Interwał (w dniach). Inne dostępne opcje to Co tydzień, Co miesiąc i Co rok.
-8. W obszarze Zakres cyklu określ długość okresu, przez jaki raport ma być generowany.
+7. W obszarze **Wzorzec cyklu** określ częstotliwość uruchamiania raportu. Domyślnie wybrana jest opcja **Codziennie** dla opcji **Interwał (w dniach)** z wartością **1**. Inne dostępne opcje to **Co tydzień**, **Co miesiąc** i **Co rok**.
+8. W obszarze **Zakres cyklu** wybierz, kiedy raport ma przestać być generowany.
 
     - **Brak daty zakończenia** — harmonogram raportu działa w nieskończoność.
     - **Ustawianie liczby wystąpień** — harmonogram raportu działa przez określoną ilość razy, a następnie jest dezaktywowany.
@@ -102,7 +102,7 @@ Do kopiowania harmonogramu raportu wymagana jest rola projektanta lub administra
 
 ### <a name="copy-a-report-schedule"></a>Kopiowanie harmonogramu raportu
 
-1. W Projektancie raportów, wybierz **Harmonogramy raportów** w okienku nawigacji i otwórz raport planowanie do skopiowania.
+1. W Report Designer, wybierz **Harmonogramy raportów** w okienku nawigacji i otwórz raport planowanie do skopiowania.
 2. W menu **Plik** wybierz **Zapisz jako**, a następnie wprowadź nową nazwę i opis dla harmonogramu w oknie dialogowym **Zapisz jako**. Wybierz **OK**, a nowy harmonogram jest wyświetlany w okienku nawigacji.
 3. W nowym harmonogramie zmień pola i informacje według potrzeb, a następnie wybierz **Zapisz** na pasku narzędzi lub wybierz **Zapisz** w menu **Plik**.
 
@@ -110,13 +110,13 @@ Aby usunąć harmonogram raportu, musisz być właścicielem harmonogramu raport
 
 ### <a name="delete-a-report-schedule"></a>Usuwanie harmonogramu raportu
 
-1. W Projektancie raportów wybierz **Harmonogramy raportów** w okienku nawigacji.
+1. W Report Designer wybierz **Harmonogramy raportów** w okienku nawigacji.
 2. Wybierz harmonogram raportu do usunięcia, a następnie wybierz przycisk **Usuń** lub naciśnij klawisz **Delete**.
 3. W oknie dialogowym weryfikacji usuwania wybierz **Tak**, aby trwale usunąć harmonogramu raportu. Jeśli nie masz uprawnień do usuwania harmonogramu, wyświetlany jest komunikat, a raport nie jest usuwany.
 
 ### <a name="credentials-and-report-schedules"></a>Poświadczenia i harmonogramy raportów
 
-Jeśli nie wprowadzisz poświadczeń, które są wymagane dla wszystkich firm uwzględnionych w raportach, podczas zapisywania harmonogramu raportu wyświetlony zostanie następujący komunikat: „Wprowadź poświadczenia dla firm, które są zawarte w harmonogramie tego raportu. Kliknij przycisk Uprawnienia i wprowadź poświadczenia”.
+Jeśli nie wprowadzisz poświadczeń, które są wymagane dla wszystkich firm uwzględnionych w raportach, podczas zapisywania harmonogramu raportu wyświetlony zostanie następujący komunikat: „Wprowadź poświadczenia dla firm, które są zawarte w harmonogramie tego raportu. Kliknij przycisk **Uprawnienia** i wprowadź poświadczenia”.
 
 Na przykład użytkownik loguje się w Firmie A przy użyciu swojej nazwy logowania i hasła. Użytkownik tworzy harmonogram dla raportu, który używa definicji drzewa raportowania do zbierania danych z wielu firm. Podczas zapisywania harmonogramu użytkownik zobaczy monit o wprowadzenie poświadczeń logowania do innych firm wymienionych w definicji drzewa raportowania. Po upływie limitu czasu poświadczenia, odpowiednie raporty w harmonogramie raportu nie są generowane do momentu aż poświadczenia zostaną zaktualizowane. O konieczności aktualizacji uprawnień informuje komunikat wyświetlany w kolejce raportów. Harmonogram raportu nie powiedzie się, jeśli wystąpi którykolwiek z następujących scenariuszy (ponieważ wymagają one poświadczeń):
 
@@ -141,7 +141,7 @@ W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo b
 
 ### <a name="run-missing-account-analysis"></a>Uruchamianie analizy brakujących kont
 
-1. W Projektancie raportów wybierz **Narzędzia**, a następnie wybierz **Analizy brakujących kont**.
+1. W Report Designer wybierz **Narzędzia**, a następnie wybierz **Analizy brakujących kont**.
 2. W polu **Filtr firmy** wybierz firmę, aby filtrować wyniki, lub wybierz **Wszystkie (bez filtrowania)**, aby wyświetlić wyniki z wszystkich dostępnych firm.
 3. W polu **Filtr wymiaru** wybierz wymiar, aby filtrować wyniki, lub wybierz **Wszystkie (bez filtrowania)**, aby wyświetlić wszystkie informacje dla wszystkich dostępnych wymiarów.
 4. W polu **Grupuj wg** wybierz opcję sortowania wyników. Wyniki można sortować zgodnie z modułem konstrukcyjnym, którego to dotyczy, lub według zestawów wymiarów i wartości.
@@ -151,7 +151,7 @@ W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo b
 8. Wybierz **Odśwież**, aby odświeżyć wyjątki, które zostały rozwiązane. Wybierz **Tak**, aby wykonać pełne odświeżenie wszystkich wyników, lub wybierz przycisk **Nie**, aby wykonać częściowe odświeżenie wskazanych elementów.
 
     > [!NOTE]
-    > Formularz jest automatycznie odświeżany przy otwieraniu, chyba że był otwarty w ciągu ostatnich 15 minut.
+    > Formularz jest automatycznie odświeżany po otwarciu, chyba że strona była otwierana w ciągu ostatnich 15 minut.
 
 9. Gdy problem zostanie rozwiązany, wybierz **OK**, aby zamknąć okno dialogowe.
 

@@ -1,8 +1,8 @@
 ---
 title: Interfejs Projektanta raportów
-description: Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb.
+description: Ten artykuł wyjaśnia, jak się poruszać w Report Designer i jak używać różnych opcji do własnych potrzeb.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274736"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802750"
 ---
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb.
+Ten artykuł wyjaśnia, jak się poruszać w Report Designer i jak używać różnych opcji do własnych potrzeb.
 
-## <a name="report-designer-menu-commands"></a>Polecenia menu Projektanta raportów
+## <a name="report-designer-menu-commands"></a>Polecenia menu Report Designer
 
 W poniższych tabelach opisano polecenia menu i opcje, których można używać podczas projektowania sprawozdań finansowych. Niektóre polecenia menu i opcje są dostępne tylko w określonych warunkach. Na przykład polecenia promocji i obniżanie poziomu jednostek raportowania są dostępne tylko podczas modyfikowania definicji drzewa raportowania.
 
@@ -50,7 +50,7 @@ Menu **Pliku** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 | Ostatnie definicje raportów         | Umożliwia wyświetlenie listy raportów, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać raport z listy. |
 | Ostatnie definicje wierszy            | Umożliwia wyświetlenie listy definicji wierszy, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać definicję wiersza z listy. |
 | Ostatnie definicje kolumn         | Umożliwia wyświetlenie listy definicji kolumn, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać definicję kolumny z listy. |
-| Ostatnie definicje drzew raportowania | Umożliwia wyświetlenie listy definicji drzew raportowania, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać definicję drzewa raportowania z listy. |
+| Ostatnie definicje drzewa raportowania | Umożliwia wyświetlenie listy definicji drzew raportowania, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać definicję drzewa raportowania z listy. |
 | Zakończ                              | Zamykanie projektanta raportów. |
 
 ### <a name="edit-menu"></a>Menu Edycja
@@ -69,9 +69,9 @@ Menu **Edycja** jest dostępne dla użytkowników, którzy mają role **Konstruk
 | Zamień                                | Otwieranie okna dialogowego **Znajdź i zastąp**, które umożliwia wyszukiwanie i zastępowanie tekstu w okienku widoku. |
 | Wstaw wiersze z wymiarów            | Otwieranie okna dialogowego **Wstawianie wierszy z wymiarów**, w którym można wybrać wartości wymiaru do uwzględnienia w definicji wiersza. To polecenie jest dostępne z definicji wiersza. |
 | Ponowne numerowanie wierszy                          | Ponowne numerowanie wszystkich kodów wiersza. To polecenie jest dostępne z definicji wiersza. |
-| Łącza wiersza                              | Otwieranie okna dialogowego **Łącza wiersza**, w którym można określić źródła dla łącza danych w definicje wierszy i raportowania drzewa. To polecenie jest dostępne z definicji wiersza. |
-| Korygowanie zaokrągleń                    | Otwieranie okna dialogowego **Korygowanie zaokrągleń**, w którym można określić parametry zaokrąglania. To polecenie jest dostępne z definicji wiersza. |
-| Zarządzanie zestawami wymiarów                  | Otwieranie okna dialogowego **Zestawy wymiarów**, w którym można tworzyć i modyfikować zestawy wymiarów. To polecenie jest dostępne z definicji wiersza lub definicji drzewa raportowania. |
+| Łącza wierszy                              | Otwieranie okna dialogowego **Łącza wiersza**, w którym można określić źródła dla łącza danych w definicje wierszy i raportowania drzewa. To polecenie jest dostępne z definicji wiersza. |
+| Korekta zaokrąglania                    | Otwieranie okna dialogowego **Korygowanie zaokrągleń**, w którym można określić parametry zaokrąglania. To polecenie jest dostępne z definicji wiersza. |
+| Zarządzaj zestawami wymiarów                  | Otwieranie okna dialogowego **Zestawy wymiarów**, w którym można tworzyć i modyfikować zestawy wymiarów. To polecenie jest dostępne z definicji wiersza lub definicji drzewa raportowania. |
 | Wstaw wiersz                             | Wstawianie pustego wiersza na w definicji wiersza lub pustego wiersza nagłówka w definicji kolumny. To polecenie jest dostępne z definicji wiersza lub definicji kolumny. |
 | Usuń wiersz                             | Usuwanie zaznaczonego wiersza z definicji wiersza lub zaznaczonego wiersza nagłówka z definicji kolumny. To polecenie jest dostępne z definicji wiersza lub definicji kolumny. |
 | Wstaw kolumnę                          | Wstawianie pustej kolumny w definicji kolumny. To polecenie jest dostępne z definicji kolumny. |
@@ -89,7 +89,7 @@ Menu **Widok** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 |-----------------|------------------------------------------------------------------------|
 | Okienko nawigacji | Wyświetlanie lub ukrywanie okienka nawigacji.                                      |
 | Paski narzędzi        | Wybieranie widocznych pasków narzędzi.                                  |
-| Pasek stanu      | Wyświetlanie lub ukrywanie informacji o stanie w oknie **Projektant raportów**. |
+| Pasek stanu      | Wyświetlanie lub ukrywanie informacji o stanie w oknie **Report Designer**. |
 | Strona powitalna    | Umożliwia otwarcie strony **Witamy**.                                             |
 
 ### <a name="format-menu"></a>Menu Format
@@ -110,7 +110,7 @@ Menu **Firma** jest dostępne dla użytkowników, którzy mają role **Konstrukt
 | Polecenie               | Opis                                                                                                            |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Firmy             | Otwieranie okna dialogowego **Firmy**, w którym można tworzyć i modyfikować firmy.                                          |
-| Grupy bloków konstrukcyjnych | Otwieranie okna dialogowego **Grupa bloków konstrukcyjnych**, gdzie można tworzyć, modyfikować, importować i eksportować grupy bloków konstrukcyjnych. |
+| Grupy modułów konstrukcyjnych | Otwieranie okna dialogowego **Grupa bloków konstrukcyjnych**, gdzie można tworzyć, modyfikować, importować i eksportować grupy bloków konstrukcyjnych. |
 
 ### <a name="go-menu"></a>Menu Przejdź
 
@@ -162,7 +162,7 @@ Menu **Pomoc** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 | Pomoc    | Otwórz stronę artykułu pomocy dotyczącego sprawozdawczości finansowej. |
 |         |                                                                          |
 
-## <a name="report-designer-toolbar-buttons"></a>Przyciski paska narzędzi Projektanta raportów
+## <a name="report-designer-toolbar-buttons"></a>Przyciski paska narzędzi Report Designer
 W poniższych tabelach opisano przyciski paska narzędzi, których można używać podczas projektowania raportów. Niektóre przyciski paska narzędzi są dostępne tylko w określonych warunkach. Na przykład przyciski promocji i obniżanie poziomu jednostek raportowania są dostępne tylko podczas modyfikowania definicji drzewa raportowania.
 
 ### <a name="standard-toolbar"></a>Standardowy pasek narzędzi
@@ -194,18 +194,18 @@ Standardowy pasek narzędzi zapewnia szybki dostęp do plików i poleceń edycji
 
 Pasek narzędzi formatowania zapewnia łatwy dostęp do poleceń stylów. Ten pasek narzędzi zawiera następujące przyciski.
 
-| Guzik                                                                                                       | opis                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Przycisk Styl czcionki.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Zastosuj wybrany styl czcionki do bieżącego tekstu.      |
-| [![Przycisk Czcionka.](./media/fonttype.png)](./media/fonttype.png)                                                 | Zastosuj wybraną czcionkę w bieżącym tekście.              |
+| Guzik                                                                                                       | opis                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Przycisk Styl czcionki.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Zastosuj wybrany styl czcionki do bieżącego tekstu.   |
+| [![Przycisk Czcionka.](./media/fonttype.png)](./media/fonttype.png)                                                 | Zastosuj wybraną czcionkę w bieżącym tekście.           |
 | [![Przycisk Rozmiar czcionki.](./media/fontsize.png)](./media/fontsize.png)                                            | Ustaw wybraną czcionkę w bieżącym tekście (w punktach). |
-| [![Przycisk Pogrubienie.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Zastosuj pogrubienie do bieżącego tekstu.                             |
-| [![Przycisk Kursywa.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Zastosuj kursywę do bieżącego tekstu.                           |
-| [![Przycisk Podkreślenie.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podkreśl bieżący tekst.                             |
-| [![Przycisk Zmniejsz wcięcie.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmniejszenie wcięcia bieżącego tekstu.                |
-| [![Przycisk Zwiększ wcięcie.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zwiększenie wcięcia bieżącego tekstu.                |
-| [![Przycisk Kolor tła.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Zmiana koloru tła bieżącej komórki.        |
-| [![Przycisk Kolor czcionki.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Zmiana koloru bieżącego tekstu.                   |
+| [![Przycisk Pogrubienie.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Zastosuj pogrubienie do bieżącego tekstu.                          |
+| [![Przycisk Kursywa.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Zastosuj kursywę do bieżącego tekstu.                        |
+| [![Przycisk Podkreślenie.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podkreśl bieżący tekst.                          |
+| [![Przycisk Zmniejsz wcięcie.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmniejszenie wcięcia bieżącego tekstu.             |
+| [![Przycisk Zwiększ wcięcie.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zwiększenie wcięcia bieżącego tekstu.             |
+| [![Przycisk Kolor tła.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Zmiana koloru tła bieżącej komórki.     |
+| [![Przycisk Kolor czcionki.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Zmiana koloru bieżącego tekstu.                |
 
 ### <a name="report-designer-toolbar"></a>Pasek narzędzi projektanta raportów
 
@@ -213,9 +213,9 @@ Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigow
 
 | Guzik                                                                                              | opis |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Przycisk Definicja raportu.](./media/reportc130389.png)](./media/reportc130389.png)                 | Wyświetlanie definicji raportu, która jest wyświetlana w menu **Okno**. |
-| [![Przycisk Definicja wiersza.](./media/rowc130389.png)](./media/rowc130389.png)                          | Umożliwia wyświetlenie definicji wiersza, która jest przypisana do definicji aktywnego raportu. |
-| [![Przycisk Definicja kolumny.](./media/columnc130389.png)](./media/columnc130389.png)                 | Umożliwia wyświetlenie definicji kolumny, która jest przypisana do definicji aktywnego raportu. |
+| [![Przycisk Definicja raportu.](./media/reportc130389.png)](./media/reportc130389.png)            | Wyświetlanie definicji raportu, która jest wyświetlana w menu **Okno**. |
+| [![Przycisk Definicja wiersza.](./media/rowc130389.png)](./media/rowc130389.png)             | Umożliwia wyświetlenie definicji wiersza, która jest przypisana do definicji aktywnego raportu. |
+| [![Przycisk Definicja kolumny.](./media/columnc130389.png)](./media/columnc130389.png)  | Umożliwia wyświetlenie definicji kolumny, która jest przypisana do definicji aktywnego raportu. |
 | [![Przycisk Definicja drzewa raportowania.](./media/treec130389.png)](./media/treec130389.png)             | Umożliwia wyświetlenie definicji drzewa raportowania, która jest przypisana do definicji aktywnego raportu. |
 | [![Przycisk Report Viewer.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Uruchom Report Viewer i pokaż najnowszą wersję generowanego raportu. Ten przycisk jest dostępny z definicji raportu po wygenerowaniu co najmniej jednego raportu. |
 | [![Przycisk Generuj raport.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generowanie raportu na podstawie aktywnej definicji raportu. Ten przycisk jest dostępny w oknie definicji raportu. |

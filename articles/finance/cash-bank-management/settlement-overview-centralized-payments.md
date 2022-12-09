@@ -2,7 +2,7 @@
 title: Omówienie rozliczeń w płatnościach scentralizowanych
 description: W tym artykule opisano rozliczanie scentralizowanych płatności w Microsoft Dynamics 365 Finance.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151184"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804234"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Omówienie rozliczeń w płatnościach scentralizowanych
 
@@ -84,11 +84,11 @@ Rabaty gotówkowe generowane w trakcie procesu rozliczeń międzyfirmowych są k
 
 Dopuszczalne rozbieżności różnic groszowych oraz nadpłaty i niedopłaty są uzależnione od firmy dokonującej płatności dla nadpłat i firmy wystawiającej fakturę dla niedopłat. Używane konto księgowania zależy od wartości w polu **Zarządzanie rabatami gotówkowymi** na stronie **Parametry modułu rozrachunków z odbiorcami** i w polu **Zarządzanie rabatami gotówkowymi** na stronie **Parametry modułu rozrachunków z dostawcami** dla dostawców.
 
--   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość Określony albo ma wartość Nieokreślony, a odnośny rabat gotówkowy zaksięgowano w innej firmie niż nadpłatę, wówczas jest używane automatyczne konto rabatu gotówkowego odbiorcy, rabatu gotówkowego dostawcy lub różnic groszowych w walucie rozliczeniowej. Konta te można określić na stronie **Konta dla transakcji automatycznych**.
--   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość Nieokreślony i rabat gotówkowy jest księgowany w tej samej firmie co nadpłata (firma dokonująca płatności jest także firmą wystawiającą fakturę), to jest korygowane konto tego rabatu. Na przykład, jeśli fakturę o wartości 100,00 z dostępnym rabatem gotówkowym 3,00 rozliczono z płatnością 98,00, to konto rabatu gotówkowego zostaje skorygowane o 1,00. Kwota rabatu netto wynosi 2,00.
--   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość Nieokreślony, rabat gotówkowy jest księgowany w tej samej firmie co nadpłata, a nadpłata lub niedopłata jest rozliczana kilkoma fakturami z rabatami gotówkowymi, to jest korygowane konto rabatu gotówkowego ostatniej faktury.
+-   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość **Określony** albo ma wartość **Nieokreślony**, a odnośny rabat gotówkowy zaksięgowano w innej firmie niż nadpłatę, wówczas jest używane automatyczne konto rabatu gotówkowego odbiorcy, rabatu gotówkowego dostawcy lub różnic groszowych w walucie rozliczeniowej. Konta te można określić na stronie **Konta dla transakcji automatycznych**.
+-   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość **Nieokreślony** i rabat gotówkowy jest księgowany w tej samej firmie co nadpłata (firma dokonująca płatności jest także firmą wystawiającą fakturę), to jest korygowane konto tego rabatu. Na przykład, jeśli fakturę o wartości 100,00 z dostępnym rabatem gotówkowym 3,00 rozliczono z płatnością 98,00, to konto rabatu gotówkowego zostaje skorygowane o 1,00. Kwota rabatu netto wynosi 2,00.
+-   Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość **Nieokreślony**, rabat gotówkowy jest księgowany w tej samej firmie co nadpłata, a nadpłata lub niedopłata jest rozliczana kilkoma fakturami z rabatami gotówkowymi, to jest korygowane konto rabatu gotówkowego ostatniej faktury.
 
-Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość Nieokreślony, to zasady rozliczania nieokreślonych płatności obowiązują tylko w następujących sytuacjach:
+Jeśli ustawienie zarządzania rabatami gotówkowymi ma wartość **Nieokreślony**, to zasady rozliczania nieokreślonych płatności obowiązują tylko w następujących sytuacjach:
 -   istnieje nadpłata,
 -   nadpłata jest rozliczana za pomocą faktury lub kilku faktur z rabatem gotówkowym,
 -   rabat gotówkowy jest księgowany w tej samej firmie, co nadpłata.

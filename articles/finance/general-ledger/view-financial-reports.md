@@ -2,7 +2,7 @@
 title: Wyświetlanie raportów finansowych
 description: W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w Microsoft Dynamics 365 Finance. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907900"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802399"
 ---
 # <a name="view-financial-reports"></a>Wyświetlanie raportów finansowych
 
@@ -31,7 +31,7 @@ W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finanso
 ## <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 
 ## <a name="open-a-financial-report"></a>Otwieranie raportu finansowego
-Aby otworzyć raport, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2015, jest generowany raport na 31 lipca 2015 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
+Aby otworzyć raport, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2020, jest generowany raport na 31 lipca 2020 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
 
 ## <a name="drill-down-on-a-financial-report"></a>Przechodzenie do raportu finansowego
 Raporty finansowe mogą zawierać wiele poziomów szczegółów. Poziom finansowy to pierwszy poziom widoczny po otwarciu raportu finansowego. Aby przejść do poziomu kont, należy wybrać dane do wglądu. Na przykład aby wyświetlić szczegóły konta sprzedaży, wybierz dane sprzedaży, które chcesz zbadać. Z poziomu konta można wyświetlać bardziej szczegółowe dane transakcji składowych salda konta. Istnieją dwa sposoby wyświetlania transakcji: zgłaszane transakcje i transakcje na załączniku.
@@ -46,12 +46,12 @@ Możesz dodać atrybuty i filtry wymiarów lub zmienić scenariusz budżetu w ra
 
 -   Aby zastosować filtry atrybutu do raportu, zaznacz **Dodaj filtr atrybutu**. Wybierz atrybut, wpisz wartość atrybutu, a następnie kliknij **OK**. Na przykład, jeśli wybierzesz atrybut **kategoria konta**, wprowadź **sprzedaż** jako wartość atrybutu. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
 -   Aby zastosować filtry wymiarów do raportu, zaznacz opcję **Dodaj filtr wymiarów**. Wybierz wymiar, a następnie wpisz identyfikator wymiaru lub wybierz wymiar z listy. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
--   Aby zmienić scenariusz w raporcie **Wartości rzeczywiste i budżet**, wybierz nowy scenariusz, a następnie kliknij **OK**. Jeśli jest wybrany scenariusz dla innego roku obrachunkowego, nie zostaną zwrócone żadne wyniki. Na przykład jeśli raport jest generowany dla FY2015 i bieżący scenariusz jest dla FY2015, a wybrano nowy scenariusz dla FY2016, system nie zwróci żadnych wyników. Jeśli wymagany jest nowy scenariusz dla innego roku obrachunkowego, wygeneruj nową wersję raportu dla roku obrachunkowego związanego z tym scenariuszem.
+-   Aby zmienić scenariusz w raporcie **Wartości rzeczywiste i budżet**, wybierz nowy scenariusz, a następnie kliknij **OK**. Jeśli jest wybrany scenariusz dla innego roku obrachunkowego, nie zostaną zwrócone żadne wyniki. Na przykład jeśli raport jest generowany dla FY2015 i bieżący scenariusz jest dla FY2020, a wybrano nowy scenariusz dla FY2016, system nie zwróci żadnych wyników. Jeśli wymagany jest nowy scenariusz dla innego roku obrachunkowego, wygeneruj nową wersję raportu dla roku obrachunkowego związanego z tym scenariuszem.
 
 Po kliknięciu przycisku **OK**, wybrane opcje są stosowane do raportu. Jeśli nie chcesz zastosować wybranych opcji, kliknij przycisk **Anuluj**.
 
 ## <a name="update-a-financial-report"></a>Aktualizacja raportu finansowego
-Można odświeżyć raport (aktualizacja) finansowy, aby zawierał dane dla okresu i rok, za który wygenerowano raport. Na przykład w przypadku aktualizacji raportu finansowego, który został wygenerowany za październik 2015 r., raport będzie zawierał wszystkie nowe transakcje zaksięgowane w październiku 2015 r. Aby zaktualizować raport finansowy, w okienku akcji kliknij **Odśwież**. Zaktualizowany raport jest dostępny tylko dla osoby, która go zaktualizowała. Aby inne osoby mogły zobaczyć takie same dane, należy opublikować raportu.
+Można odświeżyć raport (aktualizacja) finansowy, aby zawierał dane dla okresu i rok, za który wygenerowano raport. Na przykład w przypadku aktualizacji raportu finansowego, który został wygenerowany za październik 2020 r., raport będzie zawierał wszystkie nowe transakcje zaksięgowane w październiku 2020 r. Aby zaktualizować raport finansowy, w okienku akcji kliknij **Odśwież**. Zaktualizowany raport jest dostępny tylko dla osoby, która go zaktualizowała. Aby inne osoby mogły zobaczyć takie same dane, należy opublikować raportu.
 
 ## <a name="publish-a-financial-report"></a>Publikowanie raportu finansowego
 Po dokonaniu aktualizacji raportu finansowego, można go opublikować. Inne osoby w organizacji będzie mogły go wyświetlać. Aby opublikować raport, w okienku akcji kliknij przycisk **Opublikuj**.

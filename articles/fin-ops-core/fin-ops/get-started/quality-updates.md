@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
-ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "9775409"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805322"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -105,19 +105,19 @@ Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych region
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.29
 **Wersja aplikacji: 10.0.1326.70**  
-**Odpowiedni najnowszy artykuł z bazy wiedzy: 748926**
+**Odpowiedni najnowszy artykuł z bazy wiedzy: 750332**
 
 | Stacja | Regiony | Zakończony harmonogram | Nadchodzący harmonogram piaskownicy|
 |---|---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 13 listopada do 16 listopada 2022 roku |
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 r., od 2 listopada do 5 listopada 2022 r. | Od 15 listopada do 18 listopada 2022 roku |
+| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
+| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
+| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
+| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 15 listopada do 18 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
 | Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.30
-**Wersja aplikacji: DO USTALENIA**
-**Odpowiedni najnowszy artykuł z bazy wiedzy: DO USTALENIA**
+**Wersja aplikacji: 10.0.1362.77**
+**Odpowiedni najnowszy artykuł z bazy wiedzy: 767597**
 
 | Stacja | Regiony | Nadchodzący harmonogram piaskownicy |
 |---|---|---|
@@ -147,14 +147,14 @@ Firma Microsoft stara się, by proces zwalniania potoku był wystarczająco wyda
 Nie. Głównym celem aktualizacji jakości jest zapewnienie podstawowych zabezpieczeń, prywatności, niezawodności, dostępności i wydajności oraz ciągle usprawnianie dla naszych klientów. Opóźnienie lub wstrzymanie aktualizacji, zabezpieczeń, dostępności i niezawodności będzie stanowiło zagrożenie.
 
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>W jaki sposób mogę się dowiedzieć, jaki zestaw zmian wszedł w ładunek aktualizacji jakości?
-Poniższe kroki są tymczasowym rozwiązaniem, w związku z tym, że nadal pracujemy nad rozwiązaniem lepiej dostępnym, aby zidentyfikować listę zmian, które zostaną wprowadzone w ładunku aktualizacji jakości. 
+Aby zidentyfikować listę zmian, które zostaną wprowadzone w ładunku aktualizacji jakości, należy wykonać poniższe kroki. 
 
-Użyj artykułu z bazy wiedzy 745340 dla szkolenia aktualizacji jakości 10.0.28 i powiązanej wersji 10.0.1265.89.
+Użyj pociągu aktualizacji jakości 10.0.28 i powiązanej wersji aplikacji 10.0.1265.89.
 
 1. W Lifecycle Services i otwórz stronę **Szczegóły środowiska** dla piaskownicy. 
 2. W sekcji **Dostępne aktualizacje** wybierz pozycję **Wyświetl aktualizację** dla najnowszej kompilacji aktualizacji jakości. 
 3. Wyeksportuj kompilację do formatu CSV lub pliku Microsoft Excel.
-4. W eksportowanym pliku sortuj informacje na podstawie czasu (poczynając od najstarszego), a następnie wyszukaj numer artykułu z bazy wiedzy numer 745340 w kolumnie **Identyfikator aktualizacji**. Powinna teraz istnieć możliwość wybaczenia listy delta bazy wiedzy.
+4. W eksportowanych plikach przefiltruj i wybierz **Wersję kompilacji** o numerze kompilacji mniejszym lub równym 10.0.1265.89. Powinieneś być teraz w stanie zobaczyć ładunek delta.
  
 > [!NOTE]
 > Eksport do pliku CSV lub Excel musi nastąpić przed zaktualizowaniem środowiska. W przeciwnym razie możesz użyć środowiska o podobnej konfiguracji, w którym nie zainstalowano aktualizacji, i wykonać kroki powyżej.
@@ -185,8 +185,8 @@ Jeśli istnieje konflikt ze wstępnie zaplanowaną akcją, na przykład przywró
 ## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Czy środowisko może zostać przywrócone do poprzedniego stanu, jeśli po zastosowaniu aktualizacji jakości wystąpią problemy?
 Po zastosowaniu aktualizacji jakości nie ma możliwości wycofywania w żadnych okolicznościach. Dostępne są tylko opcje poprawiania, aby zminimalizować problemy.
 
-## <a name="what-about-fda-regulation-and-gpx"></a>Co to są przepisy FDA i GPX?
-Plan dla odbiorców podlegających weryfikacji i przepisom FDA jest nadal rozwijany. Należy oczekiwać wkrótce większej liczby aktualizacji w tym miejscu. Na razie wszyscy tego typu odbiorcy są zwolnieni z aktualizacji jakości. Aby zapewnić, że odbiorca podlega przepisom ustawy FDA, odwiedź [Ofertę Microsoft Azure GPX](/azure/compliance/offerings/offering-gxp).
+## <a name="what-about-fda-regulation-and-gxp"></a>Co to są przepisy FDA i GxP?
+Plan dla odbiorców podlegających weryfikacji i przepisom FDA jest nadal rozwijany. Należy oczekiwać wkrótce większej liczby aktualizacji w tym miejscu. Na razie wszyscy tego typu odbiorcy są zwolnieni z aktualizacji jakości. Aby zapewnić, że odbiorca podlega przepisom ustawy FDA, odwiedź [Ofertę Microsoft Azure GxP](/azure/compliance/offerings/offering-gxp).
 
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Które wersje aktualizacji usług są obsługiwane w przypadku tych aktualizacji jakości?
 Klienci wszystkich obsługiwanych wersji usługi kwalifikują się do aktualizacji jakości. 

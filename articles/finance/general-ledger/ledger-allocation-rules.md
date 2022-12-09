@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901292"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787561"
 ---
 # <a name="ledger-allocation-rules"></a>Reguły alokacji księgi
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901292"
 
 Ten artykuł zawiera informacje o regułach alokacji księgi. Opisano w nim różne składniki tych reguł alokacji oraz metody alokacji, których można do nich używać.
 
-Reguły alokacji księgi są używane do automatycznego obliczania i generowania arkuszy alokacji i zapisów na kontach dla alokacji sald księgi lub kwot stałych. Metody alokacji mogą być stałe lub zmienne. Dla reguł alokacji księgi można użyć następujących metod alokacji:
+Reguły alokacji księgi są używane do automatycznego obliczania i generowania arkuszy alokacji i zapisów na kontach dla alokacji sald księgi lub kwot stałych. Metody alokacji mogą być stałe lub zmienne. Alokacja jest oparta na wartości waluty transakcji. Na przykład wpisy księgowania zysków/strat w walucie obcej są księgowane w celu skorygowania kwot w walucie rozliczeniowej i raportowania. Te wpisy nie podlegają regułom alokacji, ponieważ ich wartość waluty transakcji wynosi 0,00. Dla reguł alokacji księgi można użyć następujących metod alokacji:
 
 -   **Podstawy** — ta zmienna metoda jest używana, gdy alokacja zależy od rzeczywistego salda księgi na podstawie kryteriów filtra. Na przykład można alokować wydatki firmy na reklamę proporcjonalnie do udziału wielkości sprzedaży poszczególnych działów w łącznej wielkości sprzedaży.
 -   **Stały procent** i **Stała waga** — dla tych metod procent alokacji lub waga są zdefiniowane bezpośrednio dla reguły. Na przykład wydatki na reklamę można alokować w taki sposób, by Dział A miał przypisane 70 procent wydatków na reklamę, a Dział B miał 30 procent.

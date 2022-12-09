@@ -2,7 +2,7 @@
 title: Wyświetlanie i projektowanie raportów finansowych
 description: Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w rozwiązaniu Microsoft Dynamics 365 Finance.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273434"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799526"
 ---
 # <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
@@ -51,30 +51,30 @@ W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten rap
     > [!NOTE]
     > Pojawi się monit o pobranie i kliknięcie projektanta raportów w celu zalogowania się. Zaloguj się za pomocą swoich poświadczeń.
 
-7. Zmień rok bazowy 2012 i wybierz **Generuj**. Jeżeli raport jest generowany z projektanta raportów, zostanie otwarty na nowej karcie przeglądarki. Raport można przejrzeć na nowej karcie przeglądarki lub przejść do oryginalnej karty przeglądarki i otworzyć tam raport, wybierając go z listy **Raporty finansowe**.
+7. Zmień rok bazowy 2021 i wybierz **Generuj**. Jeżeli raport jest generowany z projektanta raportów, zostanie otwarty na nowej karcie przeglądarki. Raport można przejrzeć na nowej karcie przeglądarki lub przejść do oryginalnej karty przeglądarki i otworzyć tam raport, wybierając go z listy **Raporty finansowe**.
 8. W otwartym raporcie wybierz jedną z kwot, aby wyświetlić szczegóły konta dla raportu.
 9. Po wyświetleniu szczegółów konta wybierz konto z danymi i **przejdź niżej do poziomu transakcji raportu**. Na poziomie transakcji raportu widać właściwości (atrybuty), które zostały dołączone do projektu tego raportu. W zależności od transakcji i konta mogą być wyświetlane niektóre lub wszystkie atrybuty.
 10. Zamknij poziom transakcji raportu.
-11. Wybierz to samo lub inne konto i **otwórz transakcje załącznika**. Transakcje załącznika są filtrowane według okresu, roku oraz kombinacji konta i wymiaru dla wybranego konta. Z poziomu transakcji załącznika możesz przeglądać inne informacje o transakcji.
-12. Zamknij transakcje załącznika. W raporcie finansowym można wyświetlać dane dla innego okresu i roku lub po zastosowaniu różnych atrybutów i wymiarów. Służą do tego **Opcje raportowania**.
+11. Wybierz to samo lub inne konto i **otwórz transakcje załącznika**. Transakcje załącznika są filtrowane według okresu, roku oraz kombinacji konta i wymiaru dla wybranego konta. Z poziomu **Transakcji załącznika** możesz przeglądać inne informacje o transakcji.
+12. Zamknij **Transakcje załącznika**. W raporcie finansowym można wyświetlać dane dla innego okresu i roku lub po zastosowaniu różnych atrybutów i wymiarów. Służą do tego **Opcje raportowania**.
 13. Wybierz **Opcje raportowania**.
 14. Wybierz **Dodaj filtr wymiaru** i wybierz polecenie **Jednostka biznesowa**.
-15. Typ 001 w polu i wybierz **OK**. Teraz w raporcie widać tylko dane dla jednostki biznesowej 001. To jest spersonalizowany widok raportu, który jest niedostępny dla innych użytkowników.
+15. Wpisz **001** w polu i wybierz **OK**. Teraz w raporcie widać tylko dane dla jednostki biznesowej 001. To jest spersonalizowany widok raportu, który jest niedostępny dla innych użytkowników.
 16. Zamknij filtrowany raport. Raporty finansowe mogą być wyświetlane w dowolnej walucie, która została dodana do aplikacji.
 17. Wybierz opcję **Waluta**, a następnie wybierz **EUR**. Teraz raport jest wyświetlany w euro. Wszelkie kody i symbole waluty uwzględnione w projekcie raportu są teraz wyświetlane w zastosowanej walucie. Jeśli dla waluty nie zdefiniowano symbolu, symbol waluty nie jest wyświetlany.
 18. Zamknij raport **Szczegóły KG**.
 19. Zamknij **Projektanta raportów**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Ćwiczenie 2: Dodawanie dodatkowych właściwości konta do projektu raportu
-W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zarówno definicję wiersza, tak aby zawierała wszystkie konta, jak i definicję kolumny, tak aby zawierała atrybuty konta. Po zakończeniu aktualizacji wygenerujesz nowo utworzony raport i przejrzysz jego treść. Zaczniemy od listy Raporty finansowe.
+W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zarówno definicję wiersza, tak aby zawierała wszystkie konta, jak i definicję kolumny, tak aby zawierała atrybuty konta. Po zakończeniu aktualizacji wygenerujesz nowo utworzony raport i przejrzysz jego treść. Zaczniemy od listy **Raporty finansowe**.
 
-1. Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
+1. Przejdź do opcji **Raporty finansowe** w sekcji **Zapytania i raporty** w księdze głównej.
 2. Wybierz wiersz dla raportu o nazwie **Sumaryczny bilans próbny — domyślny**.
 3. Wybierz opcję **Edycja**. **Sumaryczny bilans próbny — domyślny** zostanie otwarty w Projektancie raportów.
-4. Wybierz **Plik**, a następnie **Zapisz jako** i nazwij raport „Szczegółowy bilans próbny z atrybutami”.
+4. Wybierz **Plik**, a następnie **Zapisz jako** i nazwij raport **Szczegółowy bilans próbny z atrybutami**.
 
     > [!NOTE]
-    > Za każdym razem, gdy tworzony jest nowy raport w projektancie raportów, lista raportów finansowych jest aktualizowana.
+    > Za każdym razem, gdy tworzony jest nowy raport w Report Designer, lista **Raportów finansowych** jest aktualizowana.
 
 5. Z poziomu definicji raportu wybierz ikonę definicji wiersza, aby otworzyć **Bilans próbny — domyślna definicja wiersza**.
 6. Zapisz definicję wiersza jako **Szczegółowy bilans próbny z atrybutami**.
@@ -107,7 +107,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zar�
 26. Zamknij **Projektanta raportów**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Ćwiczenie 3: Tworzenie wielowymiarowego raportu za pomocą drzewa raportowania
-W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli drzewo raportowania i dodawali do definicji raportu, aby wygenerować Rachunek wyników dla centrum kosztu/wymiaru. Po wprowadzeniu zmian wygenerujemy Rachunek wyników dla centrum kosztu/wymiaru i zapoznamy się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy Raporty finansowe.
+W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli drzewo raportowania i dodawali do definicji raportu, aby wygenerować **Rachunek wyników dla centrum kosztu/wymiaru**. Po wprowadzeniu zmian wygenerujemy **Rachunek wyników dla centrum kosztu/wymiaru** i zapoznamy się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy **Raporty finansowe**.
 
 1. Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
 2. Wybierz wiersz dla raportu o nazwie **Rachunek wyników — domyślny**.
@@ -117,7 +117,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli 
 6. Wyczyść pola wyboru dla wszystkich wymiarów z wyjątkiem **Centrum kosztu**.
 7. Kliknij pole **Z wymiaru** dla wymiaru Centrum kosztu, wpisz **007**, a następnie naciśnij klawisz Tab. W polu **Do wymiaru** wpisz **018**.
 8. **Zapisz** otrzymane drzewo pod nazwą **Centra kosztu wg działu**. Teraz, gdy drzewo raportowania jest już utworzone, trzeba je zmodyfikować, by zawierało trzy jednostki akumulacji; Marketing, Operacje i Sieć sprzedaży.
-9. W menu **Okno** kliknij **Centra kosztu wg działu**. (Jeśli drzewo raportowania zostało zamknięte, wybierz je z Definicji drzew raportowania w okienku nawigacji).
+9. W menu **Okno** kliknij **Centra kosztu wg działu**. (Jeśli drzewo raportowania zostało zamknięte, wybierz je z **Definicji drzew raportowania** w okienku nawigacji).
 10. Kliknij numer jednostki, **Targi** i kliknij ikonę **Wstaw jednostkę raportowania**.
 11. Kliknij dwukrotnie kolumnę jednostki w pustym wierszu i wybierz **USMF**.
 12. W kolumnach B i C wpisz **Marketing**.
@@ -131,13 +131,13 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli 
 20. Wybierz **Obliż poziom jednostkę raportowania**. Zwróć uwagę, że teraz jednostka wyświetla się jako podrzędna dla **Marketingu**.
 21. Kliknij jednostkę 4 — **Kampania marketingowa** — i kliknij prawym przyciskiem myszy.
 22. Wybierz **Obliż poziom jednostkę raportowania**.
-23. Kliknij **Operacje usług** w widoku graficznym. Naciśnij i przytrzymaj lewy przycisk myszy podczas przeciągania jednostki do **Operacji**. Zwolnij lewy przycisk myszy, aby umieścić jednostkę w zestawieniu Operacji. Powtórz dla **Produkcji, Kontroli jakości, Logistyki, Zaopatrzenia i Administracji**.
+23. Kliknij **Operacje usług** w widoku graficznym. Naciśnij i przytrzymaj lewy przycisk myszy podczas przeciągania jednostki do **Operacji**. Zwolnij lewy przycisk myszy, aby umieścić jednostkę w zestawieniu Operacji. Powtórz dla **Produkcji**, **Kontroli jakości**, **Logistyki**, **Zaopatrzenia** i **Administracji**.
 24. Ustaw **Outlet**, **Super**, **Centrum handlowe** i **Online** jako podrzędne dla **Sieci sprzedaży**, obniżając poziom lub przeciągając i upuszczając.
 25. Zapisz otrzymaną nową organizację. Teraz, gdy mamy utworzone i zorganizowane drzewo raportowania, można je dodać do definicji raportu.
 26. W menu **Okno** wybierz **Rachunek wyników — domyślny**, aby otworzyć definicję raportu.
 27. Kliknij strzałkę rozwijaną **Typ drzewa** i wybierz **Drzewo raportowania**.
 28. Kliknij strzałkę rozwijaną drzewa i wybierz **Centra kosztu wg działu**.
-29. Zmienia rok podstawowy na **2012**, **zapisz** zmiany i **wygeneruj** raport. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
+29. Zmienia rok podstawowy na **2021**, **zapisz** zmiany i **wygeneruj** raport. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 30. Wybierz menu rozwijane **Drzewo raportowania**, aby wyświetlić jednostki raportowania. Możesz też wyświetlić szczegóły w wierszu raportu, aby zobaczyć wszystkie salda dla wszystkich jednostek drzewa raportowania.
 31. Zamknij **Raport wyników — domyślny**.
 32. Zamknij **Projektanta raportów**.
@@ -145,11 +145,11 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli 
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Ćwiczenie 4: Tworzenie skonsolidowanego raportu przy użyciu hierarchii organizacyjnej
 W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię organizacyjną do definicji raportu, aby wygenerować raporty Skonsolidowany rachunek wyników i bilans Po wprowadzeniu zmian wygenerujesz skonsolidowany raport i zapoznasz się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy Raporty finansowe.
 
-1. Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
+1. Przejdź do opcji **Raporty finansowe** w sekcji **Zapytania i raporty** w księdze głównej.
 2. Wybierz wiersz raportu o nazwie **Bilans i rachunek wyników obok siebie — domyślny**.
 3. Wybierz opcję **Edycja**. Raport **Bilans i rachunek wyników obok siebie — domyślny** otworzy się w projektancie raportów.
 4. Wybierz kolejno opcje **Plik** &gt; **Zapisz jako** i nazwij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
-5. Zmień rok podstawowy na 2012.
+5. Zmień rok podstawowy na 2021.
 6. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Hierarchie organizacyjne**.
 7. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Holdingi Contoso**.
 8. Zapisz zmiany i wygeneruj raport. Po wyświetleniu monitu wybierz wszystkie jednostki raportowania. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
@@ -162,16 +162,16 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 15. Zamknij **Projektanta raportów**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
-W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu wyświetlanym obok siebie. Użyjemy istniejącej definicji wiersza, ale utworzymy nową definicję raportu i nową definicję kolumny, które będą korzystały z filtrów wymiarów. Zaczniemy od listy Raporty finansowe.
+W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu wyświetlanym obok siebie. Użyjemy istniejącej definicji wiersza, ale utworzymy nową definicję raportu i nową definicję kolumny, które będą korzystały z filtrów wymiarów. Zaczniemy od listy **Raporty finansowe**.
 
-1. Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
+1. Przejdź do opcji **Raporty finansowe** w sekcji **Zapytania i raporty** w księdze głównej.
 2. Wybierz **Nowy**. Projektant raportów otworzy się z otwartą pustą definicją raportu. Najpierw utworzysz definicję kolumny.
 3. Utwórz nową definicję kolumny, klikając **Plik**, następnie **Nowy**, a następnie **Definicja kolumny**.
 4. W **Kolumnie A** wybierz **DESC** jako typ kolumny.
 5. W **Kolumnie B** wybierz **FD** jako typ kolumny.
 6. Kliknij dwukrotnie w polu **Filtr wymiaru**.
 7. W oknie **Wymiar** kliknij dwukrotnie kolumnę **Dział**.
-8. W sekcji Pojedynczy lub zakres okna dialogowego kliknij **wielokropek** dla pola **Z**, aby wyświetlić listę działów.
+8. W sekcji **Pojedynczy lub zakres** okna dialogowego kliknij **wielokropek** dla pola **Z**, aby wyświetlić listę działów.
 9. Wybierz dział **022**, **Sprzedaż i marketing**, a następnie kliknij **OK**.
 10. Powtórz kroki od 5 do 8 dla działów 23-25.
 11. W wierszu **Nagłówek 2** dla każdej kolumny FD, wpisz następujące opisy działów:
@@ -185,7 +185,7 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 13. W menu **Okno** wybierz **Nowa definicja raportu**, aby otworzyć definicję raportu.
 14. Wybierz **Rachunek wyników — domyślny** jako definicję wiersza i **Działy obok siebie** jako definicję kolumny.
 15. Zapisz definicję raportu jako **Rachunek wyników działu obok siebie**.
-16. Zmień rok podstawowy na **2012**.
+16. Zmień rok podstawowy na **2021**.
 17. Zmień poziom szczegółów na **Finanse, konto i transakcja**.
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 

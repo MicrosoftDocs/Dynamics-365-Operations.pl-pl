@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.form: FinancialReports
-ms.openlocfilehash: d23d6afde0daa44b8527c624305bdfd0fb4cbd53
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 97f6c869e8d05e37ec3001d5de262ab8927d735a
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291897"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802804"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -34,24 +34,24 @@ Definicja kolumny może zawierać do dwóch do 255 kolumn.
 
 ### <a name="create-a-column-definition"></a>Tworzenie definicji kolumny
 
-1. W Projektancie raportów w okienku nawigacji kliknij **Definicje kolumn**.
+1. W Report Designer w okienku nawigacji kliknij **Definicje kolumn**.
 2. W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja kolumny**.
 3. Dodaj zawartość definicji kolumny.
 
 ### <a name="open-a-column-definition"></a>Otwieranie definicji kolumny
 
-1. W Projektancie raportów w okienku nawigacji kliknij **Definicje kolumn**.
+1. W Report Designer w okienku nawigacji kliknij **Definicje kolumn**.
 2. Kliknij dwukrotnie definicję kolumny, aby ją otworzyć.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Dodawanie kolumny do definicji kolumny
 
-1. W Projektancie raportów kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
+1. W Report Designer kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
 2. Wybierz kolumnę, w której chcesz wstawić nową kolumnę.
 3. W menu **Edycja** kliknij **Wstaw kolumnę**. Nowa kolumna pojawi się na lewo od zaznaczonej kolumny.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Usuwanie kolumny z definicji kolumny
 
-1. W Projektancie raportów kliknij pozycję **Definicje kolumn**, a następnie otwórz definicję kolumny, którą chcesz zmodyfikować.
+1. W Report Designer kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
 2. Zaznacz kolumnę, którą chcesz usunąć.
 3. W menu **Edycja** kliknij polecenie **Usuń kolumnę**.
 
@@ -72,19 +72,19 @@ Te informacje są wyświetlane w następujących obszarach w definicji kolumny:
 
 - Wiersze szczegółów kolumny to wiersze w obszarze wierszy nagłówka w definicji kolumny. Wiersze szczegółów kolumny definiują informacje uwzględniona w raporcie. W poniższej tabeli wymieniono i opisano wiersze szczegółów kolumny.
 
-    | Nazwa wiersza szczegółów kolumny                                                | Opis                                                                                            |
-    |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-    | Typ kolumny                                                           | (Wymagane) Umożliwia określenie typu danych w kolumnie.                                                     |
-    | Kod księgi/Atrybut kategorii                                          | Umożliwia określenie informacji o danych finansowych dla kolumn typu **FD** i **ATTR**.                       |
-    | Okres roku obrachunkowego Objęte okresy                                    | Umożliwia określenie informacji o danych finansowych dla kolumn typu **FD**.                                     |
-    | Wzór                                                               | Umożliwia określenie formuły obliczania dla kolumn typu **CALC**.                                        |
-    | Szerokość kolumny Dodatkowe odstępy przed kolumną Zmiana formatu Sterowanie wydrukiem | Umożliwia określenie specjalnych opcji formatu.                                                                        |
-    | Ograniczenia kolumny                                                   | Umożliwia ograniczenie danych.                                                                                         |
-    | Jednostka raportowania                                                        | Umożliwia ograniczenie kolumny, aby zawierała dane tylko dla określonej jednostki raportowania.                      |
-    | Sposób wyświetlania waluty Filtr waluty                                      | Umożliwia formatowanie waluty.                                                                                       |
-    | Filtr wymiaru                                                      | Umożliwia określenie filtru w celu ograniczenia danych do określonych jednostek raportowania danych finansowych.                           |
-    | Filtr atrybutu                                                      | Umożliwia określenie filtru w celu ograniczenia danych finansowych.                                                       |
-    | Data początkowa Data końcowa                                                   | Umożliwia ograniczenie danych finansowych do określonych dat.                                                         |
+    | Nazwa wiersza szczegółów kolumny                                                | Opis                                                    |
+    |-----------------------------------------------------------------------|-------------------------------------------------------------------------|
+    | Typ kolumny                                                           | (Wymagane) Umożliwia określenie typu danych w kolumnie.                                      |
+    | Kod księgi/Atrybut kategorii                                          | Umożliwia określenie informacji o danych finansowych dla kolumn typu **FD** i **ATTR**.     |
+    | Okres roku obrachunkowego Objęte okresy                                    | Umożliwia określenie informacji o danych finansowych dla kolumn typu **FD**.              |
+    | Wzór                                                               | Umożliwia określenie formuły obliczania dla kolumn typu **CALC**.                  |
+    | Szerokość kolumny Dodatkowe odstępy przed kolumną Zmiana formatu Sterowanie wydrukiem | Umożliwia określenie specjalnych opcji formatu.                                               |
+    | Ograniczenia kolumny                                                   | Umożliwia ograniczenie danych.                                                                        |
+    | Jednostka raportowania                                                        | Umożliwia ograniczenie kolumny, aby zawierała dane tylko dla określonej jednostki raportowania.      |
+    | Sposób wyświetlania waluty Filtr waluty                                      | Umożliwia formatowanie waluty.                                                                      |
+    | Filtr wymiaru                                                      | Umożliwia określenie filtru w celu ograniczenia danych do określonych jednostek raportowania danych finansowych.           |
+    | Filtr atrybutu                                                      | Umożliwia określenie filtru w celu ograniczenia danych finansowych.                                      |
+    | Data początkowa Data końcowa                                                   | Umożliwia ograniczenie danych finansowych do określonych dat.                                    |
     | Uzasadnienie                                                         | Umożliwia wyrównanie do lewej, wyrównanie do środka lub wyrównanie do prawej tekst opisu, który jest określony w definicji wiersza. |
 
 ## <a name="column-restrictions-in-a-column-definition"></a>Ograniczenia kolumny w definicji kolumny
@@ -99,7 +99,7 @@ Komórka **Ograniczenia kolumny** może zawierać kody, które ograniczają lub 
 
 #### <a name="add-a-column-restriction-in-a-column-definition"></a>Dodawanie ograniczeń kolumny do definicji kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Ograniczenia kolumny** dla kolumny, którą chcesz ograniczyć.
 3. W oknie dialogowym **Ograniczenia kolumny** wybierz jeden lub więcej kodów z listy, a następnie kliknij **OK**.
 
@@ -121,7 +121,7 @@ W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Ograniczanie kolumny do jednostki raportowania
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Jednostka raportowania** dla kolumny, którą chcesz ograniczyć.
 3. W oknie dialogowym **Raportowania wyboru jednostki** na liście **Drzewo raportowania** wybierz drzewo.
 4. Rozwiń lub zwiń listy jednostek, wybierz jednostkę raportowania, a następnie kliknij **OK**.
@@ -135,24 +135,24 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 | Pole                 | Opis |
 |-----------------------|-------------|
-| Tekst nagłówka kolumny    | Ten tekst pojawia się w nagłówku kolumny. Możesz wpisać tekst bezpośrednio w tym polu lub kliknąć przycisk **Wstaw autotekst**, aby wybrać opcję aktualizacji nagłówka kolumny po każdym wygenerowaniu raportu. Aby uwzględnić wiele kodów autotekstu, kliknij ponownie przycisk **Wstaw autotekst**, a następnie kliknij inny kod na liście. |
+| Tekst nagłówka kolumny    | Ten tekst pojawia się w nagłówku kolumny. Możesz wpisać tekst bezpośrednio w tym polu lub kliknąć przycisk **Wstaw autoText**, aby wybrać opcję aktualizacji nagłówka kolumny po każdym wygenerowaniu raportu. Aby uwzględnić wiele kodów autotekstu, kliknij ponownie przycisk **Wstaw autoText**, a następnie kliknij inny kod na liście. |
 | Opcje formatu        | Umożliwia zastosowanie formatowania w nagłówku kolumny, np. pole lub podkreślenie. |
 | Rozszerz od Rozszerz do | Umożliwia zdefiniowanie kolumny lub kolumn, do których odnosi się tekst nagłówka. |
 | Uzasadnienie         | Umożliwia określenie, jak tekst nagłówka powinien być wyrównany dla kolumny lub zakresu kolumn, które są określone w polach **Rozszerz od** i **Rozszerz do**. |
 
 ### <a name="create-a-column-header"></a>Tworzenie nagłówka kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę nagłówka.
-3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst**, a następnie wybierz opcję.
+3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autoText**, a następnie wybierz opcję.
 4. W polu **Opcje formatu** wybierz format dla nagłówka.
 5. W polu **Rozszerz od** wprowadź literę kolumny, od której nagłówek kolumny powinien się zaczynać. W polu **Rozszerz do** wprowadź literę kolumny, od której nagłówek kolumny powinien się kończyć.
 6. W obszarze **Uzasadnienie** można ustawić, czy tekst nagłówka kolumny powinien być wyrównany do lewej krawędzi, do środka lub do prawej krawędzi.
-7. Kliknij przycisk **OK**
+7. Kliknij przycisk **OK**.
 
 ### <a name="add-a-column-header-row"></a>Dodawanie wiersza nagłówka kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Zaznacz komórkę w wierszu nagłówka.
 3. W menu **Edycja** kliknij **Wstaw wiersz**. Nowy wiersz jest wstawiany powyżej wiersza wybranego w punkcie 2.
 
@@ -161,7 +161,7 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 ### <a name="delete-a-column-header-row"></a>Usuwanie wiersza nagłówka kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W wierszu nagłówka zaznacz komórkę do usunięcia.
 3. W menu **Edycja** kliknij **Usuń wiersz**.
 
@@ -199,9 +199,9 @@ Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określo
 
 #### <a name="create-a-conditional-spanning-header"></a>Tworzenie warunkowego nagłówka rozszerzonego
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę nagłówka.
-3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst**, a następnie wybierz opcję.
+3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autoText**, a następnie wybierz opcję.
 4. W polu **Opcje formatu** wybierz styl formatowania dla nagłówka.
 5. Określ okres w stosunku do okresu podstawowego, który jest określany podczas generowania raportu. W polach **Rozszerz od** i **Rozszerz do** wpisz jedną z następujących wartości: **BASE**, **BASE-X** lub **BASE+X**, gdzie X oznacza liczbę okresów z okresu podstawowego. Na przykład po wprowadzeniu **BASE** w polu **Rozszerz od** tekst warunkowego nagłówka rozszerzone kolumny zaczyna się w nagłówku kolumny, gdzie wartość **Okres podstawowy** z definicji raportu jest równy wartości **Okres** z definicji kolumny . Kończy się w kolumnie, która jest wskazana w polu **Rozszerz do**. W związku z tym jeśli rozszerzenie zostało zdefiniowane jako BASE do M i wartość **Okres podstawowy** w definicji raportu wynosi **4**, nagłówek zaczyna się w kolumnie, w której okres jest ustawiony na **4** i kończy się w kolumnie M. Nagłówki zaczynają się i rozpoczynają tylko w kolumnach przeznaczonych do drukowania.
 6. W obszarze **Uzasadnienie** można ustawić, czy tekst nagłówka kolumny powinien być wyrównany do lewej krawędzi, do środka lub do prawej krawędzi.
@@ -211,18 +211,18 @@ Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określo
 
 Pewien użytkownik tworzy raport dla dynamicznej prognozy sześciu miesięcy. Użytkownik chce, aby słowo „Rzeczywiste” było drukowane nad kolumnami zawierającymi dane rzeczywiste, a słowo „Budżet” — nad kolumnami zawierającymi prognozy budżetu. Każdy kolejny generowany raport zawiera o jedną kolumnę z danymi rzeczywistymi więcej i o jedną kolumnę budżetu mniej. Chociaż użytkownik może zmodyfikować definicję kolumny ręcznie za każdym razem, gdy raport jest generowany, aby dopasować nagłówki, to aby przyspieszyć i uprościć tę procedurę, postanawia utworzyć warunkowe nagłówki rozszerzone, które będą automatycznie tworzyły nagłówki nad odpowiednimi kolumnami w każdym kolejnym raporcie. Użytkownik otwiera Projektanta raportów, klika opcję **Definicja kolumny** w panelu nawigacyjnym i otwiera definicję kolumny dla raportu. Użytkownik wpisuje następujące informacje. Wartość okresu podstawowego w definicji raportu wynosi 4.
 
-|      Format         |  A   | mld             | C             | D             | E             | P             | G             | H             | I             | J             | tys.             | L             | P             |
-|---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Nagłówek 1            |      | Wartość rzeczywista        | Budżet        |               |               |               |               |               |               |               |               |               |               |
-| Nagłówek 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Nagłówek 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Typ kolumny         | OPIS | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | FD            | FD            |
+|  Format   |  A   | mld     | C      | D       | E        | P       | G       | H      | I             | J             | tys.             | L             | P             |
+|-----------|------|-------|--------|---------|----------|---------|---------|---------|-------------|---------------|---------------|---------------|---------------|
+| Nagłówek 1   |    | Wartość rzeczywista    | Budżet        |         |         |        |       |          |        |               |               |               |               |
+| Nagłówek 2   |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Nagłówek 3    |      |       |        |        |        |         |        |          |               |               |               |               |               |
+| Typ kolumny  | OPIS | WF   | WF     | WF    | WF   | WF    | WF      | WF            | WF            | WF            | WF            | FD            | FD            |
 | Kod/atrybut księgi |      | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    |
-| Rok obrachunkowy         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
-| Okres              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
+| Rok obrachunkowy |  | BASE   | BASE   | BASE   | BASE   | BASE    | BASE    | BASE     | BASE          | BASE          | BASE          | BASE          | BASE          |
+| Okres  |     | 1      | 1       | 2      | 2      | 3       | 3       | 4        | 4             | 5             | 5             | 6             | 6             |
 | Uwzględnione okresy     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
-| Szerokość kolumna        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
-| Sterowanie wydrukiem       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
+| Szerokość kolumna   | 30   | 10    | 10     | 10     | 10    | 10    | 10    | 10     | 10            | 10            | 10            | 10            | 10            |
+| Sterowanie wydrukiem  |    | P&lt;=B    | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B   | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B       | P&gt;B        |
 
 Następnie użytkownik dwukrotnie klika komórkę nagłówka w kolumnie B, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
 
@@ -251,7 +251,7 @@ Teraz za każdym razem gdy jest generowany ten raport, słowo „Rzeczywiste” 
 ## <a name="apply-column-justification"></a>Stosowanie uzasadnienia kolumny
 Komórka **Uzasadnienie** służy do zastosowania formatowania uzasadnienia do kolumny opisu w raporcie. Ta opcja dotyczy tylko opisów kolumn, a nie rzeczywistych wartości.
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Uzasadnienie**.
 3. Z listy wybierz jedną z następujących wartości:
 
@@ -274,8 +274,8 @@ Komórka **Szerokość kolumny** określa liczbę znaków na potrzeby szerokoś�
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Określ szerokości kolumny w raporcie
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2. W komórce **Szerokość kolumny** wpisz liczbę odstępów dla szerokości kolumny. Maksymalna szerokość każdej kolumny to 255 znaków (to obejmuje procenty, przecinku i nawiasy). Alternatywnie, aby włączyć w projektancie raportów opcję wybierania odpowiedniej szerokości kolumny na podstawie zawartości komórki, kliknij dwukrotnie komórkę **Szerokość kolumny**, a następnie **Autodopasowanie**.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
+2. W komórce **Szerokość kolumny** wpisz liczbę odstępów dla szerokości kolumny. Maksymalna szerokość każdej kolumny to 255 znaków (to obejmuje procenty, przecinku i nawiasy). Alternatywnie, aby włączyć w Report Designer opcję wybierania odpowiedniej szerokości kolumny na podstawie zawartości komórki, kliknij dwukrotnie komórkę **Szerokość kolumny**, a następnie **Autodopasowanie**.
 
 ### <a name="add-space-between-columns"></a>Dodawanie odstępu między kolumnami
 
@@ -283,7 +283,7 @@ Komórka **Dodatkowe odstępy przed kolumną** określa szerokość separatora p
 
 #### <a name="specify-the-space-between-columns"></a>Ustalanie odstępów między kolumnami
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W komórce **Dodatkowe odstępy przed kolumną** wpisz, ile odstępów chcesz wstawić pomiędzy kolumnami.
 
 ### <a name="specify-a-format-currency-override"></a>Określanie zamiany formatu waluty
@@ -292,7 +292,7 @@ Komórka **Zmiana formatu/waluty** określa formatowanie wartości dziesiętnych
 
 #### <a name="assign-a-format-currency-override-to-a-report-column"></a>Przypisywanie formatu/waluty zastępczej do kolumny raportu
 
-1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Format/waluta zastępcza** w kolumnie kwoty.
 3. W oknie dialogowym **Zmiana formatu** wybierz opcje formatowania.
 
@@ -306,7 +306,7 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Niedrukowane                                     | Pozwala wykluczyć kwoty w tej kolumnie z drukowanego raportu oraz z obliczeń. Aby uwzględnić kolumnie niedrukowaną, należy odwołać się do niej bezpośrednio w formule obliczania. Na przykład kolumna niedrukowana C jest uwzględniona w następującym obliczeniu: **B+C+D**. Nie jest ona jednak uwzględniona w następującym obliczeniu: **B:D**. |
 | XCR                | Zmienianie znaku, jeśli zwykłe saldo wiersza jest po stronie kredytowej | Utwórz budżet lub raport porównawczy, jeśli jakiekolwiek niekorzystne odchylenia (takie jak niedobór przychodów lub przekroczenie wydatków) ma zawsze wartość ujemną. Zastosuj ten kod do kolumny **CALC**, aby odwrócić znak kwoty w kolumnie, jeśli zwykłe saldo danego wiersza jest po stronie kredytowej (na co wskazuje **C** w kolumnie **Zwykłe saldo** w definicji wiersza).<p><strong>Uwaga:</strong> dla wierszy <strong>TOT</strong> i </strong>CAL</strong>, które zwykle uwzględniają saldo kredytu, należy pamiętać o wprowadzeniu litery <strong>C</strong> w kolumnie <strong>Zwykłe saldo</strong> w definicji wiersza.</p> |
-| X0                 | Pomijanie kolumny, jeśli występując same zera lub puste pola          | Wyklucz kolumnę **FD** z raportu, jeśli wszystkie komórki w tej kolumnie są puste lub zawierają zera. |
+| X0            | Pomijanie kolumny, jeśli występując same zera lub puste pola   | Wyklucz kolumnę **FD** z raportu, jeśli wszystkie komórki w tej kolumnie są puste lub zawierają zera. |
 | SR                 | Pomijanie zaokrąglania                               | Zapobiegaj zaokrąglaniu kwoty w tej kolumnie. |
 | XR                 | Pomijanie akumulacji                                 | Pomijaj akumulację. Jeśli raport używa trzeba raportowania, kwoty w tej kolumnie nie są akumulowane w następnych węzłach nadrzędnych. |
 | RP                 | Powtarzanie kolumny na każdej stronie                      | Powtórz określoną kolumnę na każdej stronie raportu. Na przykład można użyć kodu sterowania wydrukiem **RP**, aby uwzględnić kolumnę typu **ROW**, która wstawia kody wiersza na każdej stronie. |
@@ -325,11 +325,11 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Dodawanie kodów sterowania wydrukiem do kolumny raportu
 
-1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Sterowanie wydrukiem**.
 3. W oknie dialogowym **Sterowanie wydrukiem** wybierz kod na liście **Wybierz opcje sterowania wydrukiem**. Aby wybrać więcej niż jeden kod, przytrzymaj klawisz Ctrl i zaznaczaj kolejne kody.
 4. Wybierz opcję w polu **Opcje drukowania warunkowego**. Domyślnie zaznaczona jest opcja **(brak)**. W tym samym czasie może być wybrany tylko jeden kod drukowania warunkowego.
-5. Kliknij przycisk **OK**
+5. Kliknij przycisk **OK**.
 
 > [!TIP]
 > Można również wprowadzić kody drukowania bezpośrednio w komórce **Sterowanie wydrukiem**. Kolejne kody sterowania wydrukiem należy oddzielić przecinkami.
@@ -342,7 +342,7 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
 
 ### <a name="specify-a-column-type"></a>Określanie typu kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W odpowiedniej kolumnie kliknij dwukrotnie komórkę w wierszu **Typu kolumny**.
 3. Wybierz typ kolumny z listy. W poniższej tabeli opisano różne typy kolumn.
 
@@ -436,7 +436,7 @@ W każdej specyfikacji okresu można wyjść poza zakres roku obrachunkowego i m
 
 ### <a name="specify-the-periods-for-an-fd-column"></a>Określanie okresów dla kolumny WF
 
-1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Okres**, a następnie wybierz odpowiednią opcję z listy.
 3. Na pasku formuły powyżej okienka nawigacji lub w komórce **Okres** uzupełnij formułę. Zamień wszystkie znaki numeru (\#) na odpowiednią wartość.
 
@@ -453,19 +453,19 @@ Komórka **Objęte okresy** określa kwotę, jaka powinna być wyświetlana w ko
 
 ### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a>Określanie objętych okresów dla kolumny FD
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Objęte okresy**, a następnie wybierz odpowiednią opcję z listy.
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Filtr atrybutu w definicji kolumny
 
-Atrybuty są wartościami danych finansowych, które pomogą dokładniej określić konta lub transakcje. Atrybuty kont obejmują **Składnik aktywów**, **Zobowiązanie**, **Przychód** i **Wydatek**. Atrybuty transakcji obejmują **Opisu transakcji** i **Data zastosowania transakcji**. Obsługa atrybutów może się różnić w zależności od systemu Microsoft Dynamics ERP. Komórka **Filtr atrybutu** ogranicza dane w kolumnie **FD** do określonych wartości lub zakresów dla kategorii atrybutów. Chociaż ta funkcja może być używana razem z kolumną **ATTR**, kolumna **ATTR** nie jest wymagana. W kolumnie **FD** występuje limit kont lub transakcji, które będą zawarte w raporcie na podstawie filtra atrybutu.
+Atrybuty są wartościami danych finansowych, które pomogą dokładniej określić konta lub transakcje. Atrybuty kont obejmują **Składnik aktywów**, **Zobowiązanie**, **Przychód** i **Wydatek**. Atrybuty transakcji obejmują **Opisu transakcji** i **Data zastosowania transakcji**. Obsługa atrybutów może się różnić w zależności od systemu Microsoft Dynamics 365 Finanace. Komórka **Filtr atrybutu** ogranicza dane w kolumnie **FD** do określonych wartości lub zakresów dla kategorii atrybutów. Chociaż ta funkcja może być używana razem z kolumną **ATTR**, kolumna **ATTR** nie jest wymagana. W kolumnie **FD** występuje limit kont lub transakcji, które będą zawarte w raporcie na podstawie filtra atrybutu.
 
 > [!NOTE]
 > Aby dowiedzieć się, które atrybuty obsługuje dany system ERP, zobacz podręcznik integracji dołączony do tego systemu.
 
 #### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Stosowanie filtra atrybutu dla kolumny FD w raporcie
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Filtr atrybutów** dla kolumny **WF**.
 3. W oknie dialogowym **Filtr atrybutów** kliknij dwukrotnie komórkę w kolumnie **Atrybut**, a następnie wybierz typ filtru.
 4. Aby jeszcze bardziej ograniczyć liczbę wyników, należy wprowadzić zakres w kolumnach **Od** i **Do**. Komórka **Od** musi zawierać wartość.
@@ -498,7 +498,7 @@ Można także użyć dowolnej kombinacji znaków alfanumerycznych dla dokładneg
 
 #### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a>Stosowanie filtra wymiaru dla kolumny w raporcie
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Filtr wymiaru** dla kolumny **FD**.
 3. W oknie dialogowym **Wymiary** wpisz filtry, które mają być stosowane.
 4. Kliknij przycisk **OK**
@@ -510,21 +510,21 @@ Raport wielu walut może wyświetlać kwoty w walucie rozliczeniowej księgi, ra
 - **Sposób wyświetlania waluty** — pozwala określić typ waluty (księgowania, raportowania, transakcji lub przeliczonego raportowania) używany do wyświetlania transakcji. Przeliczanie na walutę raportowania to funkcja nazywana czasem przeliczeniem waluty. Przeliczania waluty polega na raportowaniu kwot księgi głównej w walucie, która nie musi być walutą funkcjonalną firmy lub walutą raportowania, w której wprowadzono transakcję.
 - **Filtr waluty** — pozwala określić filtr waluty. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w wybranej walucie.
 
-> 
+
 Aby określić walutę rozliczeniową firmy, należy wykonać następujące czynności.
 
-1. W Projektancie raportów w menu **Firma** kliknij polecenie **Firmy**.
+1. W Report Designer w menu **Firma** kliknij polecenie **Firmy**.
 2. W oknie dialogowym **Firmy** wybierz firmę, a następnie kliknij **Widok**.
 3. W oknie dialogowym **Przeglądanie firm** w obszarze **Opcje regionalne** można wyświetlić walutę zdefiniowaną dla wybranej firmy.
 
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Określanie waluty w raporcie z wieloma walutami
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Wyświetlanie waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz opcję wyświetlania danych waluty: **Wyświetlanie waluty**, **Raportowanie księgi**, waluta transakcji lub wybierz przeliczenie waluty na inną walutę raportowania.
 3. Kliknij dwukrotnie komórkę **Filtr waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz odpowiedni kod waluty na liście. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w tej walucie.
 
 
-### <a name="example-for-currency-display-and-currency-filter-cells"></a>Przykład komórek Sposób wyświetlania waluty i Filtr waluty
+### <a name="example-for-currency-display-and-currency-filter-cells"></a>Przykład wyświetlania waluty i komórek filtra waluty
 
 Użytkownik wybrała następujące waluty w definicji kolumny:
 
@@ -541,8 +541,8 @@ W poniższej tabeli przedstawiono wyniki raportu, które mogą pojawić się dla
 | Komórka Sposób wyświetlania waluty                        | Komórka Filtr waluty | Wynik raportu |
 |----------------------------------------------|----------------------|---------------|
 | Waluta transakcji                 | **YEN**              | **Y6,000** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY. |
-| Waluta rozliczeniowa księgi | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<p><strong>Uwaga:</strong> kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</p> |
-| Waluta rozliczeniowa księgi | Pusty                | **2310 USD** — wynik pokazuje wszystkie dane w walucie rozliczeniowej określonej w księdze.<p><strong>Uwaga:</strong> Ta kwota jest sumą wszystkich transakcji w walucie rozliczeniowej.</p> |
+| Waluta księgowa z księgi | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<p><strong>Uwaga:</strong> kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</p> |
+| Waluta księgowa z księgi | Puste                | **2310 USD** — wynik pokazuje wszystkie dane w walucie rozliczeniowej określonej w księdze.<p><strong>Uwaga:</strong> Ta kwota jest sumą wszystkich transakcji w walucie rozliczeniowej.</p> |
 | Waluta transakcji                 | Pusty                | **2250 USD** — wynik pokazuje wszystkie kwoty w walucie, w której transakcja została przeprowadzona. Oznacza to, że suma jest zsumowaniem kwot w różnych walutach. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Kolumna obliczania w definicji kolumny
@@ -566,7 +566,7 @@ Aby dodać, odjąć, pomnożyć lub podzielić kolumny, wpisz litery kolumn w ko
 
 #### <a name="use-a-calculation-formula-in-a-column-definition"></a>Używanie formuły obliczania w definicji kolumny
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Report Designer otwórz definicję kolumny do zmodyfikowania.
 2. W odpowiedniej kolumnie **CALC** wpisz formułę w komórce **Formuła**.
 
 #### <a name="complex-calculations"></a>Złożone obliczenia

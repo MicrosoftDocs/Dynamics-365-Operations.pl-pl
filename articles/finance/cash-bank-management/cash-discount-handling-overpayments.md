@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715532"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804163"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Rabaty gotówkowe w przypadku nadpłat
 
@@ -53,7 +53,9 @@ Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznani
 | Płatność       | -95,00 | 0,00    |
 | Rabat gotówkowy | -10,50 | 0,00    |
 
-Poniższe zapisy księgowe są generowane dla płatności i rozliczeń. **Płatność**
+Poniższe zapisy księgowe są generowane dla płatności i rozliczeń.
+
+**Płatność**
 
 | Konto             | Kwota debetu | Kwota kredytu |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznani
 | Płatność       | -95,00 | -0,50   |
 | Rabat gotówkowy | -10,50 | 0,00    |
 
-Kwota nadpłaty w wysokości 0,50 pozostanie jako otwarte saldo płatności i można ją rozliczyć według innej faktury. Poniższe zapisy księgowe są generowane dla płatności i rozliczeń. **Płatność**
+Kwota nadpłaty w wysokości 0,50 pozostanie jako otwarte saldo płatności i można ją rozliczyć według innej faktury. Poniższe zapisy księgowe są generowane dla płatności i rozliczeń. 
+
+**Płatność**
 
 | Konto             | Kwota debetu | Kwota kredytu |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Odbiorca dokonuje płatności na kwotę 95,00 w dniu gwarantującym przyznanie r
 | Płatność       | -95,00 | -0,00   |
 | Rabat gotówkowy | -10,00 | 0,00    |
 
-Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i faktura są uznawane za rozliczone. **Płatność**
+Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i faktura są uznawane za rozliczone. 
+
+**Płatność**
 
 | Konto             | Kwota debetu | Kwota kredytu |
 |---------------------|--------------|---------------|

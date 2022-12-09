@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.openlocfilehash: 6c819e8cf9f5dcb7895ac2633decf0a925c08f2d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 58d88e023b73ce19331bd6f54644a62d8f6f35af
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785000"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812094"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Dynamics 365 Payment Connector dla Adyen — omówienie
 
@@ -280,7 +280,7 @@ W przypadku transakcji kartami nie są obsługiwane następujące kraje. [Skonta
 | Tajwan |
 | Tanzania |
 | Tajlandia |
-| Turcja |
+| Türkiye |
 | Zjednoczone Emiraty Arabskie (ZEA) |
 | Zjednoczone Królestwo |
 | Stany Zjednoczone Ameryki z Portoryko  |

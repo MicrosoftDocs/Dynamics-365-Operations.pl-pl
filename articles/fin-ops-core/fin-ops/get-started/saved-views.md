@@ -2,7 +2,7 @@
 title: Zapisane widoki
 description: W tym artykule opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757229"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799499"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -55,7 +55,7 @@ Istnieją dwa warianty wielkości selektora widoków:
  
 Wybór nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony.
 
-**Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku dostępne widoki są wyświetlane w dwóch sekcjach. W pierwszej sekcji są przedstawiane wszystkie widoki specyficzne dla bieżącej firmy, a w drugiej widoki dostępne dla wszystkich firm. Pierwsza sekcja jest widoczna tylko wtedy, gdy istnieją widoki specyficzne dla firmy dla strony.
+Jeśli funkcja **Ulepszona obsługa osób prawnych dla zapisanych widoków** jest włączona, selektor widoków pokazuje dostępne widoki w dwóch sekcjach. W pierwszej sekcji są przedstawiane wszystkie widoki specyficzne dla bieżącej firmy, a w drugiej widoki dostępne dla wszystkich firm. Pierwsza sekcja jest widoczna tylko wtedy, gdy istnieją widoki specyficzne dla firmy dla strony.
 
 - **Widok standardowy** - widok **Standardowy** jest gotowym widokiem strony bez zastosowania personalizacji.
 - **Widoki osobiste** - widoki bez kłódki przedstawiają widoki osobiste danego użytkownika. Są to widoki utworzone przez tego użytkownika lub otrzymane przez niego od administratora.
@@ -81,7 +81,7 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
     1. Wybierz opcję **Zapisz jako**. 
     2. W okienku **Zapisz widok jako** wprowadź nazwę oraz, opcjonalnie, opis widoku.
     3. Jeśli ten widok ma być domyślnym widokiem, wybierz pozycję **Przypnij jako domyślny**. Więcej informacji o widokach domyślnych zawiera następna sekcja [Zmienianie widoku domyślnego](#changing-the-default-view). 
-    4. **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, można wybrać, czy dany widok będzie dostępny dla wszystkich firm czy tylko ich podzbioru.
+    4. Jeśli włączona jest funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, możesz wybrać, czy ten widok ma być dostępny dla wszystkich podmiotów prawnych, czy tylko dla ich części.
     5. Wybierz opcję **Zapisz**.
 
 ## <a name="changing-the-default-view"></a>Zmienianie domyślnego widoku
@@ -90,7 +90,7 @@ Widok domyślny to widok, który system próbuje otworzyć po pierwszym otwarciu
 
 > [!NOTE]
 > - W podstawowej funkcji **Zapisane widoki** istnieje jeden globalny widok domyślny dla wszystkich firm. Jeśli zmienisz widok domyślny, ten widok zostanie domyślnie otwarty, niezależnie od firmy, w której się znajdujesz.
-> - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, każda firma ma własny domyślny widok danej strony.
+> - Gdy włączona jest funkcja **Ulepszona obsługa zapisanych widoków osób prawnych**, każda osoba prawna może mieć własny widok domyślny dla każdej strony.
 
 Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 
@@ -101,7 +101,7 @@ Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
 
 > [!WARNING]
-> W niektórych przypadkach zapytanie skojarzone z widokiem domyślnym nie jest uruchamiane przy pierwszym otwarciu strony. Na przykład, jeśli otworzysz stronę za pomocą kafelka, zapytanie kafelka zostanie uruchomione niezależnie od zapytania skojarzonego z widokiem domyślnym. Ponadto, jeśli otworzysz stronę z widokiem **Standardowym**, który ma już zdefiniowane zapytanie, oryginalne zapytanie zostanie uruchomione zamiast zapytania widoku domyślnego. W takim przypadku po załadowaniu widoku zostanie wyświetlony komunikat informacyjny. Jeśli użytkownik przełączy widoki po załadowaniu strony, zapytanie o widok powinno być możliwe do uruchomienia zgodnie z oczekiwaniami. W wersji 10.0.10 i nowszych otrzymany komunikat informacyjny będzie zawierał osadzoną akcję, która umożliwia bezpośrednie załadowanie zapytania widoku domyślnego.
+> W niektórych przypadkach zapytanie skojarzone z widokiem domyślnym nie jest uruchamiane przy pierwszym otwarciu strony. Na przykład, jeśli otworzysz stronę za pomocą kafelka, zapytanie kafelka zostanie uruchomione niezależnie od zapytania skojarzonego z widokiem domyślnym. Ponadto, jeśli otworzysz stronę z widokiem **Standardowym**, który ma już zdefiniowane zapytanie, oryginalne zapytanie zostanie uruchomione zamiast zapytania widoku domyślnego. W takim przypadku otrzymasz komunikat informacyjny, gdy widok zostanie załadowany za pomocą wbudowanej akcji, która pozwala załadować zapytanie domyślnego widoku bezpośrednio. Jeśli użytkownik przełączy widoki po załadowaniu strony, zapytanie o widok powinno być możliwe do uruchomienia zgodnie z oczekiwaniami. 
 
 ## <a name="managing-personal-views"></a>Zarządzanie widokami osobistymi
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680366"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799634"
 ---
 # <a name="financial-dimensions"></a>Wymiary finansowe
 
@@ -136,6 +136,12 @@ Istnieje możliwość konfigurowania segmentów i wartości wymiarów pochodnych
 - Jednostka Wartości wymiarów pochodnych umożliwia zaimportowanie wartości, które powinny zostać utworzone jako pochodne dla każdego wymiaru sterującego.
 
 Jeżeli podczas używania jednostki do importowania danych ta jednostka importuje wymiary, podczas importowania są stosowane reguły wymiarów pochodnych, chyba że jednostka jednoznacznie spowoduje zastąpienie tych wymiarów.
+
+## <a name="financial-dimension-service"></a>Usługa wymiarów finansowych
+
+Dodatek usługi wymiaru finansowego jest dostępny w środowisku usługi Microsoft Dynamics Lifecycle Services. Dzięki tej funkcji można zaimportować arkusz z dużą liczbą wierszy przy użyciu struktury zarządzania danymi. Aby można było korzystać z tej usługi, należy ją włączyć na stronie **Parametry usługi wymiaru finansowego**. Obecnie usługa działa tylko na importowanych arkuszach, które mają co najmniej 500 wierszy. Ponadto obecnie można przetwarzać tylko arkusze finansowe, dla których w wierszach arkusza ustawiono typ **konta księgowego**. Inne typy kont w wierszach arkusza, takie jak **Klient**, **Dostawca** i **Bank**, nie są obecnie obsługiwane. Ta usługa nie będzie wywoływana, gdy w systemie są ustawione wymiary pochodne.
+
+Usługa wymiaru finansowego zapewnia lepszą wydajność podczas importowania arkuszy przy użyciu nowej usługi uruchamianej równolegle do importu danych. Działa tylko na koncie głównym i danych wymiarów finansowych w arkuszu i generuje kombinacje wymiarów, które są określone w polu ciągu konta księgowego w wierszach arkusza. Przetwarzanie konwertuje ten ciąg na strukturalny magazyn danych używany przez strukturę wymiarów finansowych w pozostałej części produktu do sprawdzania poprawności, raportowania zbiorczego i zapytań. Aby uzyskać więcej informacji o raportowaniu zbiorczym danych wymiarów finansowych, zobacz [zestawy wymiarów finansowych](financial-dimension-sets.md).
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 

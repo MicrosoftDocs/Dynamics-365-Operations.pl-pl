@@ -2,7 +2,7 @@
 title: Przepływ pracy obsługi dostawcy
 description: Można zmodyfikować informacje o dostawcy, a następnie użyć przepływu pracy do ich zatwierdzenia.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735675"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799472"
 ---
 # <a name="vendor-workflow"></a>Przepływ pracy obsługi dostawcy
 

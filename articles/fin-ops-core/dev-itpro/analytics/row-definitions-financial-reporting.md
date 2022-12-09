@@ -2,7 +2,7 @@
 title: Definicje wierszy w Projektancie raportów finansowych
 description: Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274702"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802453"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
 
@@ -30,18 +30,18 @@ Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zaw
 
 ## <a name="create-a-row-definition"></a>Tworzenie definicji wierszy
 
-1. W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
+1. W Report Designer w okienku nawigacji kliknij **Definicje wierszy**.
 2. W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja wiersza**. Aby uzyskać więcej informacji dotyczących zawartości każdej komórki, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="open-a-row-definition"></a>Otwieranie definicji wiersza
-1. W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
+1. W Report Designer w okienku nawigacji kliknij **Definicje wierszy**.
 2. Kliknij dwukrotnie nazwę definicji wiersza, którą chcesz otworzyć.
 3. Aby wyświetlić podstawowe elementy skojarzone z definicja wiersza, kliknij definicję wiersz prawym przyciskiem myszy, a następnie wybierz **Skojarzenia**.
 
 ## <a name="contents-of-a-row-definition"></a> Zawartość definicji wiersza
 Definicja wiersza może zawierać maksymalnie 20 000 wierszy wymiarów finansowych i uwzględniać następujące informacje:
 
-- Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**.
+- Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**
 - Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 Finance
 
     > [!NOTE]
@@ -71,7 +71,7 @@ Wymiar jest częścią wspólną danych i wartości. W projektancie raportów mo
 
 Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
 
-1. W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. W menu **Edycja** kliknij **Wstaw wiersze z wymiarów**.
 3. W oknie dialogowym **Wstaw wiersze z wymiarów** w wierszu **Wymiary** wybierz komórki dla wymiaru, który ma zostać przeniesiony do definicji wiersza, a następnie kliknij przycisk **Wszystkie &&&**.
 4. Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru**, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste.
@@ -94,7 +94,7 @@ W przypadku bilansu, w którym kwoty są zaokrąglane, sumy mogą się nie bilan
 
 Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1. W Report Designer kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. W menu **Edycja** kliknij polecenie **Doksięgowanie zaokrągleń**.
 3. W oknie dialogowym **Korygowanie zaokrągleń** wpisz następujące wartości:
 
@@ -124,7 +124,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <td><strong>Tworzenie stylu czcionki</strong></td>
 <td>
 <ol>
-<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
+<li>W Report Designer w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
 <li>W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, po czym nadaj nowemu stylowi unikatową nazwę.</li>
 <li>Zaznacz parametry czcionki i kliknij przycisk <strong>OK</strong>.</li>
 </ol>
@@ -134,7 +134,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <td><strong>Modyfikowanie stylu czcionki</strong></td>
 <td>
 <ol>
-<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
+<li>W Report Designer w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
 <li>W oknie dialogowym <strong>Style i formatowanie</strong> zaznacz styl, który chcesz zmodyfikować, i kliknij przycisk <strong>Modyfikuj</strong>.</li>
 <li>Zaznacz parametry czcionki i kliknij przycisk <strong>OK</strong>.</li>
 </ol>
@@ -144,7 +144,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <td><strong>Stosowanie stylu czcionki</strong></td>
 <td>
 <ol>
-<li>W Projektancie raportów, w definicji lub definicji kolumny albo w nagłówkach i stopkach, wybierz jedną lub więcej komórek.</li>
+<li>W Report Designer, w definicji lub definicji kolumny albo w nagłówkach i stopkach, wybierz jedną lub więcej komórek.</li>
 <li>Na pasku narzędzi na liście <strong>Styl</strong> zaznacz styl czcionki.</li>
 </ol>
 </td>
@@ -156,7 +156,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 
 Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu. Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania. Są to standardowe formanty systemu Microsoft Windows.
 
-1. W Projektancie raportów otwórz definicję wierszy, którą chcesz zmodyfikować.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
 3. Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie kliknij **Zwiększ wcięcie** ![Zwiększ wcięcie.](media/indent.gif "Zwiększ wcięcie") na pasku narzędzi.
 
@@ -166,19 +166,19 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Zmienianie szerokości kolumny w okienku widoku
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. W menu **Format** wybierz **Szerokość kolumny**.
 3. W oknie dialogowym **Szerokość kolumny** wprowadź wartość, a następnie kliknij przycisk **OK**. Alternatywnie można przeciągać prawą granicę komórki nagłówka kolumny, aby zmienić szerokość kolumny.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Ukrywanie kolumn w okienku widoku
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. Zaznacz kolumnę lub kolumny, które chcesz zminimalizować.
 3. Kliknij prawym przyciskiem myszy, a następnie kliknij **Ukryj**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Pokazywanie wszystkich ukrytych kolumn w okienku widoku
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Report Designer otwórz definicję wiersza do zmodyfikowania.
 2. Kliknij prawym przyciskiem myszy zminimalizowaną kolumnę, którą chcesz wyświetlać, a następnie kliknij **Odkryj**.
 
 

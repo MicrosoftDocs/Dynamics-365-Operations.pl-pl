@@ -2,7 +2,7 @@
 title: Składniki raportu finansowego
 description: W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej.
 author: aprilolson
-ms.date: 10/27/2017
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: af5cd63c2dbd531b4c8097b6149d7e67fe112259
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280040"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802723"
 ---
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
@@ -28,7 +28,7 @@ ms.locfileid: "9280040"
 
 W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. W tym artykule opisano sposób organizowania i blokowania modułów konstrukcyjnych.
 
-Filozofia projektowania stosowana w Projektancie raportów finansowych przewiduje podział informacji na jak najmniejsze składniki, lub bloki konstrukcyjne, a następnie ich mieszanie i łączenie zgodnie z wymaganiami. W związku z tym formatowania raportu jest oddzielone od danych finansowych i projekt raportu można zmienić bez modyfikowania danych finansowych w systemie Microsoft Dynamics ERP. Dzięki metodzie bloków konstrukcyjnych można łączyć tekst, kwoty i obliczenia, aby tworzyć dokładnie potrzebne raporty. Ponadto ta elastyczność zachęca do kreatywności poprzez ułatwienie wyświetlania operacji na różne sposoby. Poszczególne bloki konstrukcyjne definicji raportu są podobne do trójwymiarowego arkusza kalkulacyjnego, ale oferują więcej możliwości. Definicja raportu określa definicję wiersza, definicję kolumny i opcjonalną definicję drzewa raportowania, które mają być używane w raporcie. Zawiera także informacje dotyczące miejsca przechowywania generowanego raportu i sposobu jego formatowania.
+Filozofia projektowania stosowana w Projektancie raportów finansowych przewiduje podział informacji na jak najmniejsze składniki, lub bloki konstrukcyjne, a następnie ich mieszanie i łączenie zgodnie z wymaganiami. W związku z tym formatowania raportu jest oddzielone od danych finansowych i projekt raportu można zmienić bez modyfikowania danych finansowych w Microsoft Dynamics 365 Finance. Dzięki metodzie bloków konstrukcyjnych można łączyć tekst, kwoty i obliczenia, aby tworzyć dokładnie potrzebne raporty. Ponadto ta elastyczność zachęca do kreatywności poprzez ułatwienie wyświetlania operacji na różne sposoby. Poszczególne bloki konstrukcyjne definicji raportu są podobne do trójwymiarowego arkusza kalkulacyjnego, ale oferują więcej możliwości. Definicja raportu określa definicję wiersza, definicję kolumny i opcjonalną definicję drzewa raportowania, które mają być używane w raporcie. Zawiera także informacje dotyczące miejsca przechowywania generowanego raportu i sposobu jego formatowania.
 
 ## <a name="building-blocks-of-a-report"></a>Moduły konstrukcyjne raportu
 
@@ -42,22 +42,22 @@ Filozofia projektowania stosowana w Projektancie raportów finansowych przewiduj
 Jeśli dopiero zaczynasz projektować raporty, warto skorzystać z kreatora raportów, aby szybko utworzyć definicje raportowania, które można dostosować później. Jeśli masz doświadczenie w projektowaniu raportów i chcesz mieć większą elastyczność w projektowaniu raportów, można łączyć nowe lub istniejące bloki konstrukcyjne, aby utworzyć nową definicję raportu. Aby tworzyć raporty wysokiej jakości, nie musisz dokładnie znać wszystkich dostępnych opcji definicji raportu. Gdy już nabierzesz wprawy w projektowaniu raportów, możesz rozszerzać swoje definicje raportów, aby korzystać z bardziej zaawansowanych funkcji. Po utworzeniu podstawowego raportu możesz dostosować definicję raportu i wszelkie bloki konstrukcyjne w definicji raportu.
 
 ## <a name="organize-the-building-blocks"></a>Organizowanie bloków konstrukcyjnych
-Za pomocą folderów można organizować bloki konstrukcyjne w Projektancie raportów. Wszystkie foldery są specyficzne dla typu bloku konstrukcyjnego, który zawierają. Na przykład wszystkie foldery, które zawierają definicje wierszy, znajdują się w okienku **Definicje wierszy** w Projektancie raportów.
+Za pomocą folderów można organizować bloki konstrukcyjne w Projektancie raportów. Wszystkie foldery są specyficzne dla typu bloku konstrukcyjnego, który zawierają. Na przykład wszystkie foldery, które zawierają definicje wierszy, znajdują się w okienku **Definicje wierszy** w Report Designer.
 
 ### <a name="create-a-folder"></a>Tworzenie folderu
 
-1. W Projektancie raportów wybierz typ bloku konstrukcyjnego do sortowania w okienku nawigacji. Na przykład, aby posortować definicję wiersza, kliknij przycisk **Definicje wierszy**.
+1. W Report Designer wybierz typ bloku konstrukcyjnego do sortowania w okienku nawigacji. Na przykład, aby posortować definicję wiersza, kliknij przycisk **Definicje wierszy**.
 2. W okienku nawigacji wybierz istniejący folder, w którym chcesz utworzyć nowy folder, a następnie wykonaj jedną z następujących czynności:
 
     - Kliknij prawym przyciskiem myszy folder nadrzędny i wybierz polecenie **Nowy folder**.
     - Zaznacz folder nadrzędny i kliknij **Plik**, a następnie wybierz **Nowy folder**.
 
-3. Gdy pojawi się nowy folder, nadaj mu nazwę, a następnie naciśnij klawisz Enter.
+3. Gdy pojawi się nowy folder, nadaj mu nazwę, a następnie naciśnij klawisz **Enter**.
 
 ## <a name="lock-a-building-block"></a>Blokowanie bloków konstrukcyjnych
 Można utworzyć hasło, aby zablokować i chronić blok konstrukcyjny. W ten sposób można dodać pewne zabezpieczenie do składnika raportu bez zabezpieczania całego systemu. Hasło może pomóc chronić informacje zawarte w bloku konstrukcyjnym, które są ważne dla procesu raportowania na koniec miesiąca. Użytkownik w dowolnej roli może zablokować blok konstrukcyjny. Jednak inni użytkownicy zawsze mają dostęp tylko do odczytu do zablokowanego składnika. Użytkownicy mogą otworzyć, zmienić i zapisać zablokowany składnik pod nową nazwą. Użytkownik z rolą administratora zawsze może uzyskać dostęp i zmienić zablokowany blok konstrukcyjny.
 
-1. W Projektancie raportów otwórz składnik raportu, który chcesz zablokować, np. definicję wiersza, kolumny, raportu lub drzewa raportowania.
+1. W Report Designer otwórz składnik raportu, który chcesz zablokować, np. definicję wiersza, kolumny, raportu lub drzewa raportowania.
 2. Z menu **Narzędzia** wybierz polecenie **Chroń/Nie chroń**. Można także kliknąć ikonę **Chroń/Nie chroń** (kłódkę) na pasku narzędzi.
 3. W oknie dialogowym **Ochrona** wpisz i potwierdź hasło, a następnie kliknij przycisk **OK**. Ikona kłódki na pasku narzędzi jest podświetlona, gdy otwarty blok konstrukcyjny jest zablokowany.
 
@@ -71,7 +71,7 @@ Bloki konstrukcyjne są definicjami wierszy, kolumn, drzew raportowania i defini
 
 Wszystkie moduły konstrukcyjne przypisane do grupy modułów konstrukcyjnych można wyświetlić. Grupę modułów konstrukcyjnych można także wyeksportować lub zaimportować.
 
-1. W Projektancie raportów w menu **Firma** kliknij polecenie **Grupy modułów konstrukcyjnych**.
+1. W Report Designer w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy bloków konstrukcyjnych** wybierz opcję blok konstrukcyjny, który chcesz wyświetlić.
 3. Kliknij przycisk **Widok**, aby wyświetlić okno dialogowe **Wyświetlanie grupy bloków konstrukcyjnych**, gdzie można obejrzeć zawartość grupy.
 4. Po obejrzeniu zawartości kliknij przycisk **Zamknij**, aby zamknąć okno.
@@ -80,7 +80,7 @@ Wszystkie moduły konstrukcyjne przypisane do grupy modułów konstrukcyjnych mo
 
 Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między instalacjami. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
 
-1. W Projektancie raportów w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
+1. W Report Designer w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz grupę modułów konstrukcyjnych, którą chcesz wyeksportować, i kliknij przycisk **Eksport**.
 3. W oknie dialogowym **Eksportowanie** wybierz definicje raportów do wyeksportowania:
 
@@ -99,7 +99,7 @@ Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyj
 
 Grupę modułów konstrukcyjnych można zaimportować do istniejącej grupy modułów konstrukcyjnych. Wszystkie zaimportowane grupy bloków konstrukcyjnych zachowują swoje oryginalne style czcionek i odwołania do firmy oraz zawierają odpowiednie zestawy wymiarów.
 
-1. W Projektancie raportów w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
+1. W Report Designer w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz moduł konstrukcyjny, do którego chcesz zaimportować grupę modułów konstrukcyjnych, i kliknij przycisk **Import**.
 3. W oknie dialogowym **Otwieranie** zaznacz grupę modułów konstrukcyjnych, którą chcesz zaimportować, i kliknij przycisk **Otwórz**.
 4. W oknie dialogowym **Importowanie** wybierz definicje raportów do zaimportowania:
@@ -116,7 +116,7 @@ Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko
 > [!NOTE]
 > Ewidencjonowania modułów konstrukcyjnych z poziomu okna dialogowego **Elementy wyewidencjonowane** mogą dokonywać wyłącznie administratorzy.
 
-1. W Projektancie raportów w menu **Narzędzia** kliknij **Elementy wyewidencjonowane**.
+1. W Report Designer w menu **Narzędzia** kliknij **Elementy wyewidencjonowane**.
 2. W oknie dialogowym **Elementy wyewidencjonowane** zaznacz opcję **Pokaż elementy od innych użytkowników**. Na liście pojawią się wszystkie wyewidencjonowane moduły konstrukcyjne wraz z nazwami użytkowników, którzy dokonali wyewidencjonowania.
 3. Zaznacz żądany moduł konstrukcyjny i kliknij przycisk **Cofnij wyewidencjonowanie**.
 4. Kliknij przycisk **Tak**. Moduł konstrukcyjny zostanie zaewidencjonowany.

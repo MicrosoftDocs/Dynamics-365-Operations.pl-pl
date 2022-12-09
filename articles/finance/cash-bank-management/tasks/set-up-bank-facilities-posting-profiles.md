@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 0987ae1e9cfbb1e2d2a957a5fd1ad82257292c0a
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779888"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804109"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Konfigurowanie instrumentów bankowych i profilów księgowania dla poręczeń
 
@@ -58,7 +58,7 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 10. W polu **Grupa instrumentów** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 11. Na liście znajdź i zaznacz odpowiedni rekord.
 12. Na liście kliknij łącze w wybranym wierszu.
-13. W polu **Charakter instrumentu wybierz opcję.
+13. W polu **Charakter instrumentu** wybierz opcję.
 14. Kliknij przycisk **Zapisz**.
 15. Zamknij stronę.
 

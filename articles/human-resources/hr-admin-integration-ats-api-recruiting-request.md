@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872276"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806383"
 ---
 # <a name="recruiting-request"></a>Wniosek o rekrutację
 
@@ -68,7 +68,7 @@ Opisuje żądanie rekrutacji na stanowisko.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Opisuje żądanie rekrutacji na stanowisko.
 | **Stan**<br>mshr_status<br>Zestaw opcji *RecruitingRequestStatus* | Czytaj/zapisz<br>Potrzebne<br> | Wskazuje stan wniosku o rekrutację. |
 | **Opis**<br>mshr_description<br>*Ciąg* | Czytaj/zapisz<br>Potrzebne | Opisuje żądanie. |
 | **Identyfikator lokalizacji wniosku o rekrutację**<br>mshr_recruitingrequestlocationid<br>*Ciąg* | Czytaj/zapisz<br>Opcjonalny | Czytelny przez użytkownika unikatowy identyfikator lokalizacji zadania skojarzonej z tym żądaniem. |
-| **Wartość identyfikatora lokalizacji rekrutacji**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Tylko do odczytu<br>Opcjonalny<br>Klucz obcy: mshr_hcmrecruitingrequestlocationentityid należący do jednostki mshr_hcmrecruitingrequestlocationentity | Wygenerowana przez system wartość identyfikatora GUID służąca do identyfikacji lokalizacji żądania rekrutacji wybranej dla żądania. |
+| **Wartość identyfikatora lokalizacji rekrutacji**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Tylko do odczytu<br>Opcjonalnie<br>Klucz obcy: mshr_hcmrecruitingrequestlocationentityid należący do jednostki mshr_hcmrecruitingrequestlocationentity | Wygenerowana przez system wartość identyfikatora GUID służąca do identyfikacji lokalizacji żądania rekrutacji wybranej dla żądania. |
 | **Komentarze**<br>mshr_comments<br>*Ciąg* | Czytaj/zapisz<br>Opcjonalny | Komentarze dotyczące wniosku, do użycia przez menedżerów rekrutacji i rekruterów. |
 | **Identyfikator stanowiska**<br>mshr_jobid<br>*Ciąg* | Odpisz raz<br>Potrzebne |   Czytelny dla użytkownika unikalny identyfikator zadania współdzielonego przez wszystkie stanowiska powiązane z tym żądaniem. |
 | **Wartość identyfikatora zadania**<br>_mshr_fk_job_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_hcmjobentityid jednostki mshr_hcmjobentity | Wygenerowany przez system unikatowy identyfikator stanowiska, współdzielony przez wszystkie stanowiska powiązane z wnioskiem rekrutacyjnym. |

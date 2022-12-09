@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-07-12
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 24aed03172446fd97865b719497c51281231cf69
-ms.sourcegitcommit: b37596f943f6469af6c1590d74211a66a2900ece
+ms.openlocfilehash: 54d1aa9e20470b55c8085b41b65804b948846b7a
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9138728"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806526"
 ---
 # <a name="supply-chain-management-troubleshooting-and-faqs"></a>Rozwiązywanie problemów związanych z Supply Chain Management i najczęściej zadawane pytania
 
@@ -46,6 +46,7 @@ Poniższe artykuły FAQ omawiają zagadnienia związane z Supply Chain Managemen
 - [Zarządzanie informacjami o produktach — często zadawane pytania](pim/product-information-faq.md)
 - [Zamówienie sprzedaży — często zadawane pytania](sales-marketing/sales-orders-faq.md)
 - [Planowanie czyszczenia danych historii sprzedaży](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
+- [DDMRP — często zadawane pytania](master-planning/planning-optimization/ddmrp-faqs.md)
 
 Poniższe artykuły z odpowiedziami na najczęściej zadawane pytania dotyczą kwestii związanych z platformą wspólną dla wszystkich aplikacji finansowych i operacyjnych, w tym Supply Chain Management:
 

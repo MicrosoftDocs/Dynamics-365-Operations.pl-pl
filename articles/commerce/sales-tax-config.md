@@ -9,18 +9,18 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 5936d16039927812dabf99bd770afcc0e827f1ca
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c899bd020ec9536a906a98635a6c70fac1355789
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276724"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819277"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurowanie podatku dla zamówień online
 
@@ -33,6 +33,8 @@ Możesz chcieć, aby Twój kanał handlu elektronicznego obsługiwał takie opcj
 ## <a name="destination-based-taxes-for-online-orders"></a>Podatki oparte na lokalizacji docelowej dla zamówień online
 
 Na ogół podatki dla zamówień w trybie online, które są wysyłane na adresy odbiorców, są definiowane przez miejsce docelowe. Każda grupa podatków ma konfigurację podatku według lokalizacji docelowej sieci sprzedaży, w której firma może definiować szczegóły docelowe, takie jak powiat lub region, województwo i miasto w postaci hierarchicznej.
+
+Konfigurację dla **Podatku na podstawie miejsca docelowego sprzedaży detalicznej** można znaleźć w sekcji **Moduł podatkowy > Podatki pośrednie > Podatek od sprzedaży > Grupy podatków**.
 
 ### <a name="orders-delivered-to-customer-address"></a>Zamówienia dostarczane na adres klienta
 

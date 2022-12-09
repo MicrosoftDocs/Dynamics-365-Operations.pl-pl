@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715648"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804055"
 ---
 # <a name="set-up-centralized-payments"></a>Konfigurowanie scentralizowanych płatności
 
@@ -34,7 +34,10 @@ Wykonaj następujące kroki, aby przygotować się do przetwarzania płatności 
 -   Skonfiguruj księgowanie międzyfirmowe.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Konfigurowanie hierarchii organizacyjnej na potrzeby płatności scentralizowanych
-Konfigurowanie hierarchii organizacyjnej na potrzeby płatności scentralizowanych jest konieczne. Do przetwarzania scentralizowanych płatności dostawców i odbiorców jest używana ta sama hierarchia organizacyjna. **Uwaga:** Struktura hierarchii nie ma znaczenia w przypadku scentralizowanych płatności. Dowolna firma w hierarchii będzie mogła przetwarzać płatności w imieniu dowolnej innej firmy w hierarchii. Na stronie **hierarchii organizacyjnych** można utworzyć nową hierarchię organizacyjną. W polu **Cel** musisz wybrać **Płatności scentralizowane**. 
+Konfigurowanie hierarchii organizacyjnej na potrzeby płatności scentralizowanych jest konieczne. Do przetwarzania scentralizowanych płatności dostawców i odbiorców jest używana ta sama hierarchia organizacyjna. 
+
+>[!Note] 
+>Struktura hierarchii nie ma znaczenia w przypadku scentralizowanych płatności. Dowolna firma w hierarchii będzie mogła przetwarzać płatności w imieniu dowolnej innej firmy w hierarchii. Na stronie **hierarchii organizacyjnych** można utworzyć nową hierarchię organizacyjną. W polu **Cel** musisz wybrać **Płatności scentralizowane**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Konfigurowanie księgowania międzyfirmowego na potrzeby płatności scentralizowanych
 Gdy transakcje płatności w bieżącej firmie są rozliczane za pomocą faktur w innych firmach, dla każdej firmy są tworzone odpowiednie transakcje zobowiązań i należności. Należy określić firmę, dla której są księgowane kwoty rabatu gotówkowego oraz zrealizowane dodatnie lub ujemne różnice kursowe. Przed rozpoczęciem określ firmę używaną w przetwarzaniu płatności odbiorcy i dostawcy. Jeśli jedna firma przetwarza płatności dostawcy, a inna płatności odbiorcy, trzeba będzie przełączyć na każdą z firm. Na stronie **Księgowanie międzyfirmowe** można wybrać rekord relacji międzyfirmowej firmy, w imieniu której będą przetwarzane płatności. 

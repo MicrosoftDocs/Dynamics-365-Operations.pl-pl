@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779942"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803972"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Transakcja poręczenia
 
@@ -43,7 +43,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 1. Wybierz kolejno opcje **Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia sprzedaży**.
 2. Kliknij przycisk **Nowy**.
 3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość.
-4. Rozwiń sekcję Ogólne.
+4. Rozwiń sekcję **Ogólne**.
 5. W polu **Oddział** wprowadź lub wybierz wartość.
 6. Na liście kliknij łącze w wybranym wierszu.
 7. W polu **Magazyn** wprowadź lub wybierz wartość.
@@ -52,9 +52,12 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 10. Kliknij przycisk **OK**.
 11. W polu **Kod towaru** wpisz lub wprowadź wartość.
 12. W polu **Cena jednostkowa** wpisz liczbę.
-13. Rozwiń sekcję Szczegóły wiersza.
-14. Kliknij kartę Dostawa.
-    * Uwaga: W polu Kontrola daty dostawy wybierz wartość Brak.  
+13. Rozwiń sekcję **Szczegóły wiersza**.
+14. Kliknij kartę **Dostawa**.
+
+>[!Note] 
+>W polu **Kontrola daty dostawy** = **Brak**  
+
 15. W polu **Żądana data wysyłki** wpisz datę.
 16. W polu **Potwierdzona data wysyłki** wpisz datę.
 
@@ -83,7 +86,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 2. W polu **Kod banku** wpisz wartość.
     * Sprawdź wartości w polach obliczeniowych **Marża** i **Wydatki**.  
 3. Kliknij przycisk **OK**.
-4. Rozwiń sekcję Akcje.
+4. Rozwiń sekcję **Akcje**.
     * Sprawdź rekord „Otrzymaj z banku”.  
 5. Kliknij, aby otworzyć łącze znajdujące się w polu **Arkusz z numerem partii**.
 6. Kliknij przycisk **Wiersze**.
@@ -102,7 +105,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 9. Na liście znajdź i zaznacz odpowiedni rekord.
 10. Kliknij przycisk **Przekaż beneficjentowi**, aby otworzyć rozwijane okno dialogowe.
 11. Kliknij przycisk **OK**.
-12. Rozwiń sekcję Akcje.
+12. Rozwiń sekcję **Akcje**.
     * Sprawdź rekord „Przekaż beneficjentowi”.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Przetwarzanie poręczenia_Zwiększ wartość
@@ -118,7 +121,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 10. Na liście znajdź i zaznacz odpowiedni rekord.
 11. Kliknij przycisk **Zwiększ wartość**, aby otworzyć rozwijane okno dialogowe.
 12. Kliknij przycisk **OK**.
-13. Rozwiń sekcję Akcje.
+13. Rozwiń sekcję **Akcje**.
     * Sprawdź rekord „Zwiększ wartość”.  
 14. Na liście znajdź i zaznacz odpowiedni rekord.
 15. Kliknij, aby otworzyć łącze znajdujące się w polu **Arkusz z numerem partii**.
@@ -137,7 +140,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 9. Na liście znajdź i zaznacz odpowiedni rekord.
 10. Kliknij przycisk **Zlikwiduj**, aby otworzyć rozwijane okno dialogowe.
 11. Kliknij przycisk **OK**.
-12. Rozwiń sekcję Akcje.
+12. Rozwiń sekcję **Akcje**.
     * Sprawdź rekord „Zlikwiduj”.  
 13. Na liście znajdź i zaznacz odpowiedni rekord.
 14. Kliknij, aby otworzyć łącze znajdujące się w polu **Arkusz z numerem partii**.

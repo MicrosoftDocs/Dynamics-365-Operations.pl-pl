@@ -2,7 +2,7 @@
 title: Rozliczenia księgi
 description: W tym artykule wyjaśniono, jak na stronie Rozliczenia księgi rozliczać transakcji księgi i wycofywać rozliczenia.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902495"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800639"
 ---
 # <a name="ledger-settlements"></a>Rozliczenia księgi
 
@@ -33,7 +33,7 @@ Rozliczone transakcje mogą być wyłączone z zapytań i raportów. W ten spos�
 
 ## <a name="ledger-settlement-features"></a>Cechy rozliczenia księgi
 W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.21 opcja **Włącz zaawansowane rozliczanie księgi** została usunięta ze strony **Parametry księgi głównej**. Zaawansowane rozliczanie księgi głównej jest teraz zawsze włączone.
-W wersji finansów 10.0.25 wprowadzono funkcję **Świadomość między rozliczeniem księgi a zamknięciem na koniec roku**. Ta funkcja zmienia fundamentalną funkcjonalność zarówno rozliczenia księgi głównej, jak i zamknięcia rocznego księgi głównej. Zanim włączysz tę funkcję w przestrzeni roboczej **Zarządzanie funkcjami**, zobacz: [Świadomość między rozliczeniem księgi a zamknięciem roku](awareness-between-ledger-settlement-year-end-close.md).
+W wersji finansów 10.0.25 wprowadzono funkcję **Świadomość między rozliczeniem księgi a zamknięciem na koniec roku**. Ta funkcja zmienia fundamentalną funkcjonalność zarówno rozliczenia księgi głównej, jak i zamknięcia rocznego księgi głównej. Zanim włączysz tę funkcję w przestrzeni roboczej **Zarządzanie funkcjami**, zobacz [Świadomość między rozliczeniem księgi a zamknięciem roku](awareness-between-ledger-settlement-year-end-close.md).
 
 ## <a name="set-up-ledger-settlement"></a>Tworzenie rozliczenia księgi głównej
 Musisz wybrać konta główne, dla których chcesz przeprowadzić rozliczenie księgi. Istnieją dwa sposoby na wybranie tych głównych kont.
@@ -90,7 +90,12 @@ Można cofnąć rozliczenie, która nastąpiło przez pomyłkę.
     > [!IMPORTANT]
     > Wszystkie transakcje, które mają ten sam identyfikator rozliczenia, zostaną odwrócone, nawet jeśli nie są oznaczone. Na przykład cztery wiersze zostały oznaczone i rozliczone. Wszystkie cztery wiersze mają ten sam identyfikator rozliczenia. Jeśli oznaczysz jeden z czterech wierszy i wybierzesz opcję **Odwróć zaznaczone transakcje**, wszystkie cztery wiersze zostaną wycofane.
 
+## <a name="unmark-for-selected-users"></a>Usuń oznaczenie dla wybranych użytkowników
+Wybierz opcję **Odznacz dla wybranych użytkowników**, aby rozliczyć transakcje księgi dla wszystkich firm według identyfikatorów użytkowników. Umożliwi to na przykład kierownikowi ds. księgowości rozsyłanie transakcji dla użytkownika, który pozostawił urlop przed zakończeniem rozliczania, lub dla użytkownika, który opuścił organizację. Akcja pozwoli na oznaczenie tych transakcji do rozliczenia przez innego użytkownika.
 
+
+## <a name="unmark-all-transactions"></a>Usuń zaznaczenie wszystkich transakcji
+Wybierz opcję **Odznacz wszystkie transakcje**, aby usunąć zaznaczenie wszystkich transakcji rozliczanych w księdze dla wszystkich użytkowników i wszystkich podmiotów prawnych. Ta czynność jest dostępna dla roli Administrator.
 
 
 

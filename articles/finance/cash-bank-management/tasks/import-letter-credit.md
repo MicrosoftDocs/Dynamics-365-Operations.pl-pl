@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779446"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803999"
 ---
 # <a name="import-letter-of-credit"></a>Akredytywa importowa
 
@@ -42,7 +42,10 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 10. Na liście kliknij łącze w wybranym wierszu.
 11. W polu **Data księgowania** wpisz datę.
 12. W polu **Data dostawy** wpisz datę.
-    * Uwaga: W polu **Typ dokumentu bankowego** należy wybrać **Akredytywa**.  
+
+>[!Note] 
+>W polu **Typ dokumentu bankowego** należy wybrać **Akredytywa**.  
+
 13. Kliknij przycisk **OK**.
 14. W polu **Kod towaru** wpisz lub wprowadź wartość.
 15. Na liście znajdź i zaznacz odpowiedni rekord.
@@ -97,7 +100,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 1. W okienku akcji kliknij pozycję **Odbierz.**
 2. Kliknij opcję **Dokument przyjęcia produktów.**
 3. W polu **PurchParmTable_Num** wpisz wartość.
-    * Wybierz numer wysyłki utworzonej z odniesieniem do akredytywy.  
+    * Wybierz **Numer wysyłki** utworzonej z odniesieniem do akredytywy.  
 4. Na liście kliknij łącze w wybranym wierszu.
 5. W polu **Data dokumentu przyjęcia produktów** wpisz datę.
 6. Kliknij przycisk **OK**.
@@ -108,7 +111,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 1. Wybierz kolejno opcje **Zarządzanie gotówką i bankami > Akredytywy > Akredytywa importowa i inkaso importowe**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Na liście kliknij łącze w wybranym wierszu.
-    * Zweryfikuj stan akredytywy importowej.     
+    * Zweryfikuj **Stan akredytywy importowej**.     
 4. Zamknij stronę.
 5. Zamknij stronę.
 
@@ -152,10 +155,10 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 6. W polu **Data** wprowadź datę.
 7. W polu **Konto** podaj żądane wartości.
 8. Kliknij opcję **Rozlicz transakcje**.
-9. Rozwiń sekcję Sumy.
+9. Rozwiń sekcję **Sumy**.
 10. W polu **Pokaż** wybierz opcję.
     * Sprawdź, czy pola **Numer dokumentu banku** i **Numer wysyłki** zostały zaktualizowane.  
-11. Zaznacz pole wyboru **Zaznacz.**
+11. Zaznacz pole wyboru **Zaznacz**.
 12. Kliknij przycisk **OK**.
 13. Kliknij kartę Płatność.
     * Sprawdź, czy pola **Numer dokumentu banku** i **Numer wysyłki** zostały zaktualizowane.  
@@ -167,12 +170,12 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 1. Wybierz kolejno opcje **Zarządzanie gotówką i bankami > Akredytywy > Akredytywa importowa i inkaso importowe**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Na liście kliknij łącze w wybranym wierszu.
-    * Zweryfikuj stan akredytywy importowej.   
+    * Zweryfikuj **Stan akredytywy importowej**.   
 4. Zamknij stronę.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Weryfikacja raportu o limicie i wykorzystaniu instrumentu bankowego
 1. Wybierz kolejno opcje **Zarządzanie gotówką i bankami > Zapytania i raporty > Akredytywy lub poręczenia > Raport produktów bankowych i wykorzystania**.
-2. Rozwiń sekcję Rekordy do uwzględnienia.
+2. Rozwiń sekcję **Rekordy do uwzględnienia**.
 3. Kliknij przycisk **Filtr**.
     * W polu **Kryteria** wpisz wymagane konto bankowe.  
 4. W polu **Kryteria** wprowadź lub wybierz wartość.

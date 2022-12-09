@@ -2,7 +2,7 @@
 title: Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 description: W tym artykule opisano sposób konfigurowania i używania funkcji drukowania etykiet grup czynności w oparciu o zadania.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889465"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822370"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 
@@ -32,7 +32,6 @@ W przypadku korzystania z funkcji *drukowania etykiet grupy czynności opartej n
 
 Aby korzystać z funkcji opisanych w tym artykule, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
 
-1. *Drukowanie etykiety grupy czynności* – funkcja wymagana do włączenia metody przetwarzania grupy czynności na potrzeby drukowania etykiet grupy czynności.
 1. *Blokowanie pracy w całej organizacji* — wymagana funkcja zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac. (W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
 1. *Drukowanie etykiet grupy czynności opartych na zadaniu* — ta funkcja jest wymagana do rozdzielenia drukowania etykiet grupy czynności na oddzielny zakres transakcji.
 

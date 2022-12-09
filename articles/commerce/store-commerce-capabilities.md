@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725641"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788521"
 ---
 # <a name="store-commerce-app-capabilities"></a>Możliwości aplikacji Store Commerce
 
@@ -41,7 +41,7 @@ Ten artykuł stanowi omówienie możliwości aplikacji Store Commerce.
 
 | Możliwość | Opis | Dokumentacja | Zawartość uzupełniająa |
 |---|---|---|---|
-| Wiele kształtów | Aplikacja Store Commerce jest obsługiwana przez wiele kształtów urządzenia, takich jak komputery, tablety i urządzenia przenośne. Interfejs użytkownika (UI) umożliwia automatyczne zmienianie rozmiaru układu i korygowanie go zgodnie z rozmiarem ekranu. | [Konfiguracje wizualne](pos-screen-layouts.md) | |
+| Wiele kształtów | Aplikacja Store Commerce jest obsługiwana przez wiele kształtów urządzenia, takich jak komputery, tablety i urządzenia przenośne. Interfejs użytkownika (UI) umożliwia automatyczne zmienianie rozmiaru układu i korygowanie go zgodnie z rozmiarem ekranu. | [Konfiguracje wizualne](pos-screen-layouts.md) |  |
 | Między platformami | Aplikacja Store Commerce jest obsługiwana w sieci web, platformach Windows, iOS i Android. | [Platformy](dev-itpro/hybridapp.md) | |
 | Marka | Konstruktor ekranu umożliwia dostosowanie układów ekranu, tak aby spełniały wymagania biznesowe. Oprócz tego na podstawie ról pracowników etatowych można tworzyć motywy, układy, kolory i obrazy, a następnie można je udostępnić innym użytkownikom w celu zachowania spójności marki i ułatwienia ich używania. | [Konfiguracje wizualne](pos-screen-layouts.md) | [Wideo](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topologia | Różne topologie w sklepie są obsługiwane na podstawie dostępności sieci. | <p>[Topologia](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infografika](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Ten artykuł stanowi omówienie możliwości aplikacji Store Commerce.
 | Wyszukiwanie produktu | Wyszukuj produkty według nazw i zawężaj wyszukiwanie, używając atrybutów produktów, takich jak marka, cena czy materiały. Ta funkcja jest zasilana przez usługę Azure Cognitive Search. | [Zaawansowane wyszukiwanie w chmurze](cloud-powered-search-overview.md) | |
 | Strona Szczegóły produktu | Strony szczegółów produktów sformatowanych mogą zawierać obrazy, opis, atrybuty produktu i zalecane produkty. Rekomendacje są obsługiwane przez usługę Rekomendacje. | | |
 | Porównanie produktów | Porównanie wielu produktów i pomaganie klientom w ich wybraniu i dodaniu do transakcji. | | |
-| Nieskończone przejście | Można łatwo szukać zapasów w innych sklepach i tworzyć zamówienia. | [Wyszukiwanie w magazynie](pos-inventory-lookup-operation.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Nieskończone przejście | Można łatwo szukać zapasów w innych sklepach i tworzyć zamówienia. | [Wyszukiwanie w magazynie](pos-inventory-lookup-operation.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Rekomendacje | Produkty w sprzedaży do góry i równoległej za pomocą usługi Rekomendacje. Ta usługa używa technologii patentowanej do proponowania rekomendacji na podstawie trendów zakupów oraz cech, takich jak nowości, podobny wygląd i najpopularniejsze. Te rekomendacje są dostępne na stronach szczegółów produktu, stronach **Szczegóły odbiorcy** i **Transakcje**. | [Rekomendacje](product-recommendations.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Relacja odbiorcy
@@ -88,8 +88,8 @@ Ten artykuł stanowi omówienie możliwości aplikacji Store Commerce.
 | Atrybuty klienta | Struktura atrybutów odbiorcy umożliwia przechwytywanie dodatkowych danych związanych z klientem na podstawie wymagań biznesowych. | [Atrybuty](dev-itpro/customer-attributes.md) | |
 | Strona szczegółów na temat klienta | Strona rozbudowanych szczegółów dotyczących klienta umożliwia wyświetlenie widoku kanału informacji o interakcjach odbiorcy we wszystkich kanałach. Te interakcje obejmują zakupy, listy życzeń i punkty lojalnościowe. | | |
 | Omówienie wyszukiwania odbiorców | Wyszukaj odbiorców według nazwiska, numeru telefonu, adresu e-mail, karty lojalnościowej, adresu itp. | [Zaawansowane wyszukiwanie w chmurze](pos-search-improvements.md#customer-search) | |
-| Nagrody i program lojalnościowy | Odbiorcy mogą przystąpić do programów lojalnościowych oraz uzyskać i zrealizować punkty lojalnościowe w różnych kanałach. | [Lojalność](set-up-customer-loyalty-program.md) | |
-| Obsługa relacji z klientami | Zarządzanie głównymi klientami przy użyciu księgi klienta oraz śledzić działania i notatki w profilu odbiorcy. Integracja Dynamics 365 Customer Insights umożliwia pracowników sklepu mogą uzyskać informacje o następnej najlepszej akcji dla każdego odbiorcy. | [Obsługa relacji z klientami](clienteling-overview.md#activities-and-notes) | |
+| Nagrody i program lojalnościowy | Odbiorcy mogą przystąpić do programów lojalnościowych oraz uzyskać i zrealizować punkty lojalnościowe w różnych kanałach. | [Lojalność](set-up-customer-loyalty-program.md) | [Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Obsługa relacji z klientami | Zarządzanie głównymi klientami przy użyciu księgi klienta oraz śledzić działania i notatki w profilu odbiorcy. Integracja Dynamics 365 Customer Insights umożliwia pracowników sklepu mogą uzyskać informacje o następnej najlepszej akcji dla każdego odbiorcy. | [Obsługa relacji z klientami](clienteling-overview.md#activities-and-notes) | [Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Ceny i rabaty
 
@@ -132,8 +132,8 @@ Ten artykuł stanowi omówienie możliwości aplikacji Store Commerce.
 | Atrybuty zamówienia | Struktura atrybutów zamówienia umożliwia przechwytywanie dodatkowych danych związanych z zamówieniem na podstawie wymagań biznesowych. | [Atrybuty](dev-itpro/order-attributes.md) | |
 | Dostawa bezpośrednia | Towary mogą być oznaczone przez dostawcę do dostawy bezpośredniej pod adres odbiorcy. Jest to dostawa bezpośrednia. | [Dostawa bezpośrednia](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Oferta | Pracownicy etatowi sklepu mogą tworzyć oferty dla odbiorców oraz określać specjalną cenę, ręczne rabaty i datę ważności oferty. | [Oferta](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Realizacja | Sklepy mogą odbierać, pakować i wysyłać zamówienia. Do paczek gotowych do wysyłki można dodać dokument dostawy. | [Realizacja](order-fulfillment-overview.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Zarządzanie zamówieniami rozdzielonymi | Aplikacja Store Commerce obsługuje inteligentną optymalizację realizacji zamówień, w której można konfigurować strategie biznesowe w oparciu o charakter firmy, typ odbiorcy, pochodzenie zamówienia i metodę dostawy dla zamówienia. | [DOM](dom.md) | |
+| Realizacja | Sklepy mogą odbierać, pakować i wysyłać zamówienia. Do paczek gotowych do wysyłki można dodać dokument dostawy. | [Realizacja](order-fulfillment-overview.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[Wideo](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Zarządzanie zamówieniami rozdzielonymi | Aplikacja Store Commerce obsługuje inteligentną optymalizację realizacji zamówień, w której można konfigurować strategie biznesowe w oparciu o charakter firmy, typ odbiorcy, pochodzenie zamówienia i metodę dostawy dla zamówienia. | [DOM](dom.md) | [Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>Zarządzanie zapasami
 
@@ -141,12 +141,12 @@ Ten artykuł stanowi omówienie możliwości aplikacji Store Commerce.
 |---|---|---|---|
 | Dystrybucja na zamówienie | Usprawnij dystrybucję dostępnych zapasów z centrum dystrybucji do wielu sklepów lub magazynów. | [Dystrybucja na zamówienie](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Przeładunek kompletacyjny | Usprawnij dystrybucję zapasów w przychodzących zamówieniach zakupu do wielu sklepów lub magazynów. | [Przeładunek kompletacyjny](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Zapasy przychodzące | Odbieraj zapasy od dostawcy za pośrednictwem zamówienia zakupu lub z innego magazynu za pośrednictwem zamówienia przeniesienia. Tworzenie przychodzącego zamówienia zakupu lub żądania zamówienia przeniesienia. | [Przychodzące](pos-inbound-inventory-operation.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Zapasy wychodzące | Wysyłaj zapasy do innego magazynu za pośrednictwem zamówienia przeniesienia i twórz żądanie wychodzącego zamówienia przeniesienia. | [Wychodzące](pos-outbound-inventory-operation.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Wyszukiwanie w magazynie | Sprawdź dostępne zapasy produktów w sklepach i magazynach i sprawdź dostępne zapasy (ATP) w przyszłych datach. | [Wyszukiwanie w magazynie](pos-inventory-lookup-operation.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Korekta zapasów | Korygowanie zapasów w lub poza magazynem sklepu w celu spełnienia określonych wymagań biznesowych bez używania sprzedaży, przychodu ani ponownego konta. | [Korekta zapasów](work-with-store-inventory.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Stany zapasów z inwentaryzacji | Zlicz zapas fizyczny i dostosuj systemowy zapas księgowy, tak aby był do niego dopasowany. | [Inwentaryzacja](work-with-store-inventory.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Przesunięcie magazynowe | Przenoszenie zapasów między lokalizacjami w sklepie. | [Przeniesienie](work-with-store-inventory.md) | [Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Zapasy przychodzące | Odbieraj zapasy od dostawcy za pośrednictwem zamówienia zakupu lub z innego magazynu za pośrednictwem zamówienia przeniesienia. Tworzenie przychodzącego zamówienia zakupu lub żądania zamówienia przeniesienia. | [Przychodzące](pos-inbound-inventory-operation.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Zapasy wychodzące | Wysyłaj zapasy do innego magazynu za pośrednictwem zamówienia przeniesienia i twórz żądanie wychodzącego zamówienia przeniesienia. | [Wychodzące](pos-outbound-inventory-operation.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Wyszukiwanie w magazynie | Sprawdź dostępne zapasy produktów w sklepach i magazynach i sprawdź dostępne zapasy (ATP) w przyszłych datach. | [Wyszukiwanie w magazynie](pos-inventory-lookup-operation.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Korekta zapasów | Korygowanie zapasów w lub poza magazynem sklepu w celu spełnienia określonych wymagań biznesowych bez używania sprzedaży, przychodu ani ponownego konta. | [Korekta zapasów](work-with-store-inventory.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Stany zapasów z inwentaryzacji | Zlicz zapas fizyczny i dostosuj systemowy zapas księgowy, tak aby był do niego dopasowany. | [Inwentaryzacja](work-with-store-inventory.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Przesunięcie magazynowe | Przenoszenie zapasów między lokalizacjami w sklepie. | [Przeniesienie](work-with-store-inventory.md) | <p>[Informacje dotyczące technologii](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Finanse
 

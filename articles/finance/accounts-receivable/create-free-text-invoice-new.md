@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780571"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788548"
 ---
 # <a name="create-a-free-text-invoice"></a>Tworzenie faktury niezależnej
 
@@ -69,6 +69,8 @@ W tym artykule opisano sposób tworzenia faktur niezależnych. Ta procedura wyko
     * Możesz zmienić harmonogram drukowania faktur. Zaznacz opcję **Bieżąca**, aby drukować każdą fakturę po jej aktualizacji. Zaznacz opcję **Po**, aby drukować po zaktualizowaniu wszystkich faktur.
     * Aby zmienić sposób weryfikowania limitu kredytowego odbiorcy przed zaksięgowaniem faktury, zmień wartość w pola **Typ limitu kredytu**.
     * Na karcie **Aktualizacje** na stronie **Parametry rozrachunków z odbiorcami** (**Rozrachunki z odbiorcami > Ustawienia > Parametry rozrachunków z odbiorcami**) możesz zatrzymać księgowanie faktury niezależnej po wystąpieniu błędu. Wybierz opcję **Tak**, aby **zatrzymać księgowanie** faktur wolnych dla pierwszego parametru błędu, aby zatrzymać księgowanie faktur wolnych w przypadku wystąpienia błędu. W przypadku zaksięgowania w partii błąd spowoduje zatrzymanie procesu księgowania, a stan partii będzie ustawiony na **Błąd**. Jeśli ta opcja nie zostanie wybrana, proces księgowania pominie fakturę z błędem księgowania i będzie kontynuował księgowanie dodatkowych faktur. Jeśli księgowanie w partii, błąd księgowania nie zapobiegnie zaksięgowaniu innych faktur. Stan partii będzie **zakończony**. Szczegółowy raport procesu księgowania będzie dostępny do przeglądu w historii zadań wsadowych.
+    * W Microsoft Dynamics 365 Finance 10.0.30 funkcja **Ulepszenie księgowania faktur niezależnych do obliczania sum** poprawia wydajność księgowania, umożliwiając jego wydajniejsze działanie. Gdy ta funkcja jest włączona, księgowanie spowoduje zapisanie obliczonych sum, a nie ponowne obliczanie sum wielokrotnie podczas procesu księgowania. 
+    * W Microsoft Dynamics 365 Finance 10.0.31 funkcja **Usprawnienie procesu księgowania wsadowego faktur wolnotekstowych** poprawia wydajność księgowania, umożliwiając jego wydajniejsze działanie. Gdy ta funkcja jest włączona, księgowanie używa wzorca, który samoczynnie zarządza obciążeniem związanym z księgowaniem wsadowym na stałej liczbie wątków, zamiast przypisywać stałą liczbę dokumentów na nieograniczonej liczbie wątków.
     * Aby wydrukować fakturę, zaznacz w tej opcji wartość **Tak**.
     * Aby zaksięgować fakturę, zaznacz w tej opcji wartość **Tak**. Fakturę można wydrukować bez księgowania.
 

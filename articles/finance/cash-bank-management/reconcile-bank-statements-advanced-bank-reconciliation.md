@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151370"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803918"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
@@ -37,7 +37,10 @@ Można przekazać wyciąg bankowy zawierający informacje dla jednego konta lub 
 -   Aby zaimportować jeden plik wyciągu bankowego dla jednego konta, w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Nie**, a następnie wybierz konto bankowe skojarzone z wyciągiem. Kliknij przycisk **Przeglądaj**, zaznacz powiązany plik wyciągu bankowego i kliknij przycisk **Przekaż**.
 -   Aby zaimportować jeden plik wyciągu bankowego dla wielu kont, w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Tak**. Kliknij przycisk **Przeglądaj**, zaznacz powiązany plik wyciągu bankowego i kliknij przycisk **Przekaż**.
 
-Jeśli któregokolwiek wyciągu w pliku elektronicznym nie można powiązać z kontem bankowym przy użyciu pól identyfikujących lub jeżeli jest ono powiązane z wieloma kontami bankowymi, nie zostaną one zaimportowane. Jednak pozostałe wyciągi w pliku nadal można zaimportować. Użytkownik otrzyma komunikat informujący, że import wyciągów bankowych nie powiódł się dla określonych kont bankowych. Należy zauważyć, że użytkownik importujący plik wyciągów bankowych musi mieć dostęp do firmy będącej posiadaczem kont bankowych, których wyciągi chce zaimportować. 
+Jeśli któregokolwiek wyciągu w pliku elektronicznym nie można powiązać z kontem bankowym przy użyciu pól identyfikujących lub jeżeli jest ono powiązane z wieloma kontami bankowymi, nie zostaną one zaimportowane. Jednak pozostałe wyciągi w pliku nadal można zaimportować. Użytkownik otrzyma komunikat informujący, że import wyciągów bankowych nie powiódł się dla określonych kont bankowych. 
+
+>[!Note] 
+>Użytkownik importujący plik wyciągów bankowych musi mieć dostęp do firmy będącej posiadaczem kont bankowych, których wyciągi chce zaimportować. 
 
 Można użyć pliku .zip i przekazać wiele plików wyciągów do programu Finance w jednym procesie. Aby zaimportować wiele plików wyciągów bankowych dla wielu kont, należy połączyć wszystkie pliki wyciągów bankowych w jeden plik zip. W oknie dialogowym **Import wyciągów bankowych** w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Tak**. Kliknij przycisk **Przeglądaj**, zaznacz plik zip zawierający pliki wyciągów bankowych i kliknij przycisk **Przekaż**. Proces importu rozpozna plik .zip i przekaże każdy znajdujący się w nim wyciąg, niezależnie od firmy będącej posiadaczem konta bankowego.
 

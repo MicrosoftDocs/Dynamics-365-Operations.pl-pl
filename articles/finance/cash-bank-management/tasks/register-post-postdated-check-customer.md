@@ -12,18 +12,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f89adfc3055da346cfe9b6951076094b133c842
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 06846141aff993dbcc9654d81a3e267343e925c0
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779724"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803864"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy
 
 [!include [banner](../../includes/banner.md)]
 
-Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe. Przed zarejestrowaniem i zaksięgowaniem postdatowanego czeku otrzymanego od odbiorcy należy wykonać następujące zadania:  * Konfigurowanie czeku postdatowanego na stronie Zarządzanie gotówką i bankami * Konfigurowanie metody płatności dla czeków postdatowanych   Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstracyjną USMF.
+Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe. Aby zarejestrować i zaksięgować czek postdatowany otrzymany od klienta, należy najpierw wykonać następujące czynności:  
+ - Konfigurowanie czeków postdatowanych na stronie **Zarządzanie gotówką i bankami** 
+ - Konfigurowanie metody płatności dla czeków postdatowanych   
+  
+ Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 
 1. Wybierz kolejno opcje **Rozrachunki z odbiorcami > Płatności > Arkusz płatności**.
 2. Kliknij przycisk **Nowy**.

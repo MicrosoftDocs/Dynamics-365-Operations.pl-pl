@@ -2,21 +2,21 @@
 title: Raporty wartości zapasów
 description: W tym artykule wyjaśniono, jak konfigurować, generować i używać raportów wartości zapasów. Te raporty zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334934"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806414"
 ---
 # <a name="inventory-value-reports"></a>Raporty wartości zapasów
 
@@ -129,7 +129,7 @@ Strona **Raporty wartości zapasów** zawiera informacje o zawartości zawartej 
     - **Outsourcing bezpośredni** – Ustaw tę opcję na Wartość *Tak*, aby pokazać bezpośrednie koszty outsourcingu PWT. Informacje te są przydatne w przypadku podwykonawstwa.
     - **Poziom szczegółowości** — umożliwia wybór opcji wyświetlania raportu:
 
-        - *Transakcje* — umożliwia wyświetlanie wszystkich odpowiednich transakcji w raporcie. Należy zauważyć, że mogą wystąpić problemy z wydajnością podczas wyświetlania raportów, które obejmują dużą liczbę transakcji. Dlatego, aby użyć tej opcji widoku, zaleca się użycie **raportu magazynowego o wartości zapasów**.
+        - *Transakcje* — umożliwia wyświetlanie wszystkich odpowiednich transakcji w raporcie. Mogą wystąpić problemy z wydajnością podczas wyświetlania raportów, które obejmują dużą liczbę transakcji. Dlatego, aby użyć tej opcji widoku, zaleca się użycie **raportu magazynowego o wartości zapasów**.
         - *Sumy* — umożliwia wyświetlenie sumy wyników.
 
     - **Uwzględnij saldo rozpoczęcia** – Ustaw dla tej opcji wartość *Tak*, aby wyświetlić saldo rozpoczęcia. Ta opcja jest dostępna tylko wtedy, gdy pole **Poziom szczegółów** jest ustawione na *Transakcje*.
@@ -172,7 +172,7 @@ Po wygenerowaniu raportu można go przeglądać i eksplorować w dowolnym momenc
     - Pole **Filtr** umożliwia filtrowanie raportu według dowolnej wartości w dowolnej z kilku dostępnych kolumn.
     - Aby zapisać i załadować Ulubione kombinacje opcji sortowania i filtrowania, należy skorzystać z menu Widok (powyżej pola **Filtr**).
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Eksportuj raport przechowywania raportu wartości zapasów
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Eksportuj raport przechowywania raportu wartości zapasów
 
 Każdy generowany raport jest przechowywany w jednostce danych **Wartości zapasów**. Za pomocą standardowych funkcji Supply Chain Management można eksportować dane z tej jednostki do dowolnego obsługiwanego formatu danych, w tym także do pliku CSV lub programu Excel.
 
@@ -203,6 +203,34 @@ W poniższym przykładzie przedstawiono sposób eksportowania raportu dotyczące
 1. Zostanie otwarta strona **podsumowanie wykonania**, na której możesz zobaczyć stan zadania eksportowania oraz listę wyeksportowanych jednostek. W obszarze **Stan przetwarzania jednostki** wybierz jednostkę **Wartość zapasów** z listy, a następnie wybierz opcję **Pobierz plik**, aby pobrać dane wyeksportowane z tej jednostki.
 
 Aby uzyskać więcej informacji o używaniu funkcji zarządzania danymi do eksportowania danych, patrze [omówienie importowania i eksportowania danych](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Usuń zapisane raporty wartości zapasów
+
+Wraz ze wzrostem liczby raportowanych wartości zapasów mogą one ostatecznie rozpocząć za dużo miejsca w bazie danych. Taka sytuacja może wpłynąć na wydajność systemu i spowodować wyższe koszty magazynowania danych. W związku z tym prawdopodobnie od czasu do czasu musisz usuwać raporty, usuwając starsze raporty.
+
+> [!IMPORTANT]
+> Zdecydowanie zalecamy, aby przed usunięciem któregokolwiek z wcześniej wygenerowanych raportów dotyczących wartości [zapasów najpierw wyeksportować raporty](#export-stored-report) i przechowywać je na zewnątrz, ponieważ ich późniejsze ponowne wygenerowanie może nie być możliwe. Ograniczenie to występuje, ponieważ podczas generowania raportu wartości zapasów system działa wstecz od dnia dzisiejszego i przetwarza każdy rekord transakcji magazynowej w kolejności odwrotnej. Jeśli podczas generowania raportu spróbujesz za bardzo zawczasu sprawdzić, liczba transakcji do przetwarzania może ostatecznie spowodować tak duże, że przesunie się w czasie, zanim będzie mógł zakończyć generowanie raportu. Odległość do przeszłości, dla których można generować nowe raporty, zależy od liczby transakcji magazynowych w systemie w odpowiednim okresie.
+
+### <a name="delete-one-report-at-a-time"></a>Usuwanie jednego raportu na raz
+
+Aby jednocześnie usunąć jeden zapisany raport, należy wykonać następujące kroki.
+
+1. [Wyeksportuj raport](#export-stored-report), który ma być usunięty, i przechowaj go w lokalizacji zewnętrznej, gdzie będzie można do niego w przyszłości.
+1. Przejdź do **Zarządzanie kosztami \> Zapytania i raporty \> Magazyn raportów wartości zapasów**.
+1. W okienku listy wybierz raport do usunięcia.
+1. W okienku akcji wybierz opcję **Usuń**.
+1. Komunikat ostrzegawczy przypomina o generowaniu kopii zapasowej wygenerowanych raportów. Wybierz **Tak**, jeśli chcesz kontynuować usuwanie.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Usuwanie kilku raportów jednocześnie
+
+Wykonaj poniższe czynności, aby usunąć jednocześnie kilka zapisanych raportów.
+
+1. [Wyeksportuj wszystkie raporty](#export-stored-report), który ma być usunięty, i przechowaj go w lokalizacji zewnętrznej, gdzie będzie można do niego w przyszłości.
+1. Przejdź do **Zarządzanie kosztami \> Księgowanie zapasów \> Czyszczenie \> Czyszczenie danych raportu wartości zapasów**.
+1. W oknie dialogowym **Czyszczenie danych raportu wartości zapasów**, w polu **Usuń raport wartości zapasów wykonany przed** wybierz datę, przed którą mają zostać usunięte wszystkie raporty wartości zapasów.
+1. W **Rekordy do uwzględnienia**, można ustawić dodatkowe warunki filtrowania, aby ograniczyć zestaw raportów, które zostaną usunięte. Wybierz **Filtruj**, aby otworzyć standardowy edytor zapytań, w którym możesz zdefiniować właściwości raportów do usunięcia.
+1. Na skróconej karcie **Uruchom w tle** określ sposób, możesz określić, jak, kiedy i jak często raporty mają być usuwane. Pola działają w ten sam sposób, jak działają w przypadku innych typów [zadań w tle](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) w module Supply Chain Management. Jednak to zadanie jest zazwyczaj uruchamiane ręcznie za każdym razem, gdy jest to wymagane.
+1. Wybierz przycisk **OK**, aby usunąć określone raporty.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Wygeneruj standardowy raport o wartości zapasów
 

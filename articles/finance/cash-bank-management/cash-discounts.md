@@ -15,30 +15,30 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db95720d56cc538f2d702137889467a9892d99c
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b75637bfb38c13591223ff11be36d958b3972d4f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715192"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804144"
 ---
 # <a name="cash-discounts"></a>Rabaty gotówkowe
 
 [!include [banner](../includes/banner.md)]
 
-Rabaty gotówkowe są skonfigurowane i udostępnione dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami.  Dostępny rabat gotówkowy można zdefiniować na fakturze dla odbiorcy lub fakturze od dostawcy. Zostanie on uwzględniony w przypadku zapłaty faktury w terminie obowiązywania rabatu gotówkowego. 
+Rabaty gotówkowe są skonfigurowane i udostępnione dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Dostępny rabat gotówkowy można zdefiniować na fakturze dla odbiorcy lub fakturze od dostawcy. Zostanie on uwzględniony w przypadku zapłaty faktury w terminie obowiązywania rabatu gotówkowego. 
 
 ## <a name="cash-discounts"></a>Rabaty gotówkowe
 
-Rabaty gotówkowe, które będą obowiązywały dla odbiorców lub dostawców można tworzyć na stronie Rabaty gotówkowe. Ponadto w polu Następny kod rabatu można zdefiniować serię rabatów gotówkowych następujących po sobie w zależności od terminu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Seria rabatów gotówkowych” dalej w tym artykule. Jeśli faktura i/lub transakcja kredytowa (płatność lub faktura korygująca) zostały wprowadzone w walucie innej niż waluta rozliczeniowa firmy, rabat gotówkowy jest obliczany według kursu wymiany, na podstawie daty płatności lub faktury korygującej. Jeśli faktura i dokument kredytowy zostały wprowadzone w innych firmach i jeśli waluty księgowania dla firm są różne, kurs wymiany jest brany z firmy na fakturze, począwszy od daty dokumentu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Kursy wymiany dla rabatów gotówkowych” dalej w tym artykule.
+Rabaty gotówkowe, które będą obowiązywały dla odbiorców lub dostawców można tworzyć na stronie **Rabaty gotówkowe**. Ponadto w polu **Następny kod rabatu** można zdefiniować serię rabatów gotówkowych następujących po sobie w zależności od terminu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Seria rabatów gotówkowych” dalej w tym artykule. Jeśli faktura i/lub transakcja kredytowa (płatność lub faktura korygująca) zostały wprowadzone w walucie innej niż waluta rozliczeniowa firmy, rabat gotówkowy jest obliczany według kursu wymiany, na podstawie daty płatności lub faktury korygującej. Jeśli faktura i dokument kredytowy zostały wprowadzone w innych firmach i jeśli waluty księgowania dla firm są różne, kurs wymiany jest brany z firmy na fakturze, począwszy od daty dokumentu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Kursy wymiany dla rabatów gotówkowych” dalej w tym artykule.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Kolejność domyślności dla rabatów gotówkowych na koncie głównym
 
 Jeśli faktura rozliczana jest w czasie, w którym można uzyskać rabat gotówkowy, rabat ten jest automatycznie księgowany na koncie głównym rabatów gotówkowych zgodnie z następującą kolejnością domyślności:
-1.  Konto główne określone w polu Alternatywne konto rabatu gotówkowego na stronie Rozliczanie otwartych transakcji dla odbiorcy lub Rozliczanie otwartych transakcji dla dostawcy.
-2.  Konto główne określone w polu Rabat gotówkowy odbiorcy lub w polu Rabat gotówkowy dostawcy grupy księgowania w księdze przypisanej do kodu podatków faktury. Ustaw grupy księgowania na stronie Grupy księgowania księgi i przypisz je do kodów podatku na stronie Kody podatków.
-3.  Konto główne księgowania na stronie Rabaty gotówkowe w polu Konto główne rabatów odbiorcy lub Konto główne rabatów dostawcy dla kodu rabatu gotówkowego na rozliczonej fakturze.
-4.  Konto główne rabatów gotówkowych według definicji na stronie Konta dla transakcji automatycznych.
+1.  Konto główne określone w polu **Alternatywne konto rabatu gotówkowego** na stronie **Rozliczanie otwartych transakcji dla odbiorcy** lub **Rozliczanie otwartych transakcji dla dostawcy**.
+2.  Konto główne określone w polu **Rabat gotówkowy odbiorcy** lub w polu **Rabat gotówkowy dostawcy grupy księgowania** w księdze przypisanej do kodu podatków faktury. Ustaw grupy księgowania na stronie **Grupy księgowania księgi** i przypisz je do kodów podatku na stronie **Kody podatków**.
+3.  Konto główne księgowania na stronie **Rabaty gotówkowe** w polu **Konto główne rabatów odbiorcy** lub **Konto główne rabatów dostawcy** dla kodu rabatu gotówkowego na rozliczonej fakturze.
+4.  Konto główne rabatów gotówkowych według definicji na stronie **Konta dla transakcji automatycznych**.
 
 ## <a name="example-series-of-cash-discounts"></a> Przykład: Seria rabatów gotówkowych
 Konfiguruj następujące trzy kody rabatów gotówkowych:
@@ -46,7 +46,7 @@ Konfiguruj następujące trzy kody rabatów gotówkowych:
 -   Kod 10D5% — 5% rabat gotówkowy przy zapłacie w ciągu 10 dni.
 -   Kod 14D2% — 2% rabat gotówkowy przy zapłacie w ciągu 14 dni.
 
-W polu Następny kod rabatu:
+W polu **Następny kod rabatu**:
 -   Dla kodu 5D10% wybierz opcję 10D5%.
 -   Dla kodu 10D5% wybierz opcję 14D2%.
 -   Dla kodu 14D2% pole Następny kod rabatu należy zostawić puste.
@@ -61,7 +61,7 @@ Waluta rozliczeniowa firmy to EUR i obowiązuj następujący kurs wymiany do USD
 15 lutego zostanie zaksięgowana faktura za 1000 USD z warunkami rabatu gotówkowego 20D2%. Kwota faktury w walucie rozliczeniowej wynosi 1100 EUR. Płatność na kwotę 980 USD jest rozliczana z fakturą w dniu 1 marca. Kwota rabatu gotówkowego wynosi 20 USD. Kwota płatności w walucie rozliczeniowej wynosi 784 EUR. Kwota rabatu gotówkowego w walucie rozliczeniowej jest obliczana przy użyciu kursu wymiany z dnia 1 marca: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Oblicz na stronach Parametry modułu rozrachunków z odbiorcami lub Parametry modułu rozrachunków z dostawcami wybrana jest opcja Oblicz rabaty gotówkowe dla częściowych zapłat, stosowany jest kurs wymiany z dnia dokonania płatności częściowej. 
+> Oblicz na stronach **Parametry modułu rozrachunków z odbiorcami** lub **Parametry modułu rozrachunków z dostawcami** wybrana jest opcja **Oblicz rabaty gotówkowe dla częściowych zapłat**, stosowany jest kurs wymiany z dnia dokonania płatności częściowej. 
 
 
 

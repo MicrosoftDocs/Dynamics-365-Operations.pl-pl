@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cdfd8db68647623e2b5f1b9eca93b57776e1bfe9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 84f1190301e67b49535530f85784561b2e51a2df
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067070"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812168"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -158,7 +158,7 @@ Aplikacja Dynamics 365 Human Resources w Teams obsługuje następujące języki:
 | it-IT | Włoski (Włochy) |
 | nl-NL | Holenderski (Holandia) |
 | pt-BR | Portugalski (Brazylia) |
-| tr-TR | Turecki (Turcja) |
+| tr-TR | Turecki (Türkiye) |
 | zh-CN | Chiński (Uproszczony) |
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
