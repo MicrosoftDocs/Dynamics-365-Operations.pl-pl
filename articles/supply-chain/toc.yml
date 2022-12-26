@@ -1809,6 +1809,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Planowanie produkcji
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Konfigurowanie odpadków w celu obliczenia wymagań dotyczących surowców
+                  href: master-planning/scrap-calculations.md
                 - name: Planowanie główne dla produktów o ograniczonym okresie trwałości
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Planowanie z nieskończoną zdolnością produkcyjną
@@ -2355,7 +2357,7 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Tworzenie zwolnionego produktu dla jednej firmy
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Użycie jednostek danych
+                - name: Jednostki danych produktu
                   href: pim/data-entities.md
                 - name: Stan cyklu życia produktu
                   items:

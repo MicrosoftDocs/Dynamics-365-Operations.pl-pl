@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Co nowego w rozwiązaniu Dynamics 365 Human Resources (autonomicznym)
                   items:
+                    - name: Co nowego w rozwiązaniu Dynamics 365 Human Resources (autonomicznym) — grudzień 2022
+                      href: hr-whats-new-2022-12-12.md
                     - name: Co nowego w rozwiązaniu Dynamics 365 Human Resources (autonomicznym) — archiwa 2021
                       href: hr-admin-whats-new.md
                     - name: 29 listopada 2021 r.
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Tabele wirtualne usługi Human Resources — często zadawane pytania
                   href: hr-admin-virtual-entity-faq.md
+                - name: Konfigurowanie integracji z usługą Dataverse
+                  href: hr-dataverse-integration.md
                 - name: Konfigurowanie integracji z rozwiązaniem Finance
                   href: hr-admin-integration-finance.md
                 - name: Konfigurowanie integracji z rozwiązaniem Dayforce
@@ -530,7 +534,7 @@
                       href: ../human-resources/hr-personnel-set-up-positions.md
                     - name: Zatrudnianie kandydatów przez rekrutację
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                    - name: Zatrudnianie istniejących pracowników etatowych przez rekrutację
+                    - name: Zatrudnianie istniejącego pracownika etatowego przez rekrutację
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                     - name: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
                       href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
