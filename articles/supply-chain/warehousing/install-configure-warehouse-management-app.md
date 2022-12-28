@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714770"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838480"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Warehouse Management
 
@@ -58,10 +58,10 @@ Najłatwiejszym sposobem zainstalowania aplikacji na jednym urządzeniu jest zai
 
 Alternatywą dla instalacji ze sklepu z aplikacjami jest pobranie aplikacji z Microsoft App Center. Centrum aplikacji udostępnia pakiety do zainstalowania, które można załadować. Oprócz bieżącej wersji App Center umożliwia również pobieranie poprzednich wersji i może udostępniać wersje zapoznawcze z nadchodzącymi funkcjami, które można wypróbować. Aby pobrać bieżące, poprzednie lub podglądowe wersje aplikacji mobilnej Zarządzanie magazynem z Microsoft App Center, użyj jednego z poniższych łączy:
 
-- **Windows (UWP):** [Zarządzanie magazynem (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Zarządzanie magazynem (Windows)](https://aka.ms/wma-windows-official-release)  
     Aby uzyskać instrukcje dotyczące instalowania pobranego pakietu na urządzeniu z systemem Windows, a następnie konfigurowania wymaganych certyfikatów, zobacz [Instalowanie kompilacji z witryny App Center](/appcenter/distribution/installation).
 
-- **Android:** [Zarządzanie magazynem (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Zarządzanie magazynem (Android)](https://aka.ms/wma-android-official-release)  
     Jeśli pobierasz wersję zapoznawczą, musisz wykonać kilka dodatkowych czynności, aby ją zainstalować. Aby uzyskać szczegółowe informacje, zobacz temat [Testowanie aplikacji dla systemu Android](/appcenter/distribution/testers/testing-android).
 
 Aby uzyskać informacje dotyczące instalowania kompilacji pobranej z aplikacji App Center, zobacz [Instalowanie kompilacji](/appcenter/distribution/installation).
@@ -74,7 +74,7 @@ Aby umożliwić aplikacji mobilnej Zarządzanie magazynem interakcję z konkretn
 1. Wprowadź nazwę i hasło użytkownika z dostępem do subskrypcji platformy Azure.
 1. W witrynie Azure Portal w lewym okienku nawigacji wybierz pozycję **Azure Active Directory**.
 
-    ![Azure Active Directory.](media/app-connect-azure-aad.png "Usługa Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Upewnij się, że pracujesz z wystąpieniem usługi Azure AD używanym przez aplikację Supply Chain Management.
 1. Na liście **Zarządzaj** wybierz pozycję **Rejestracje aplikacji**.

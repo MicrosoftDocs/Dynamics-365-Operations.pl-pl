@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764247"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843688"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym artykule wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20390"></a>Wersja 2.0.39.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+- Większa stabilności. 
+- Pola na stronie **Niestandardowe** nie są już automatycznie sortowane na podstawie ustawień priorytetu i podpriorytetu.  
+- Aplikacja używa teraz ustawień priorytetu i podpriorytetu dla każdego pola, aby określić pole podstawowe dla strony. Pole podstawowe jest pokazane w nagłówku kroku. 
+- Naprawiono problem, który powodował, że miękka klawiatura nie chowała się w systemie Android.
+- Naprawiono błąd, który powodował, że spinner ilości pokazywał niepoprawną wartość przy otwieraniu w przepływie *ruch*. 
+- Naprawiono problem, który powodował, że wartość spinnera ilości tylko do odczytu nie była poprawnie wyśrodkowana. 
+- Naprawiono problem, który powodował, że strony internetowe nie otwierały się ze strony **Informacje**. 
+- Motyw kolorystyczny *Auto* przyjmuje teraz swój domyślny wygląd (jasny lub ciemny) na podstawie globalnego motywu ustawionego w systemie operacyjnym urządzenia mobilnego.
 
 ## <a name="version-20370"></a>Wersja 2.0.37.0
 

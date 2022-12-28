@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762708"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831782"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Używanie aplikacji Inventory Visibility
 
@@ -106,7 +106,7 @@ Aby włączyć stronę **Podsumowanie zapasów** i ustawić częstotliwość syn
 
 1. Otwórz stronę **Konfiguracja**.
 1. Otwórz kartę **Zarządzanie funkcjami i ustawienia**.
-1. Ustaw przełącznik dla funkcji **OnHandMostSpecificBackgroundService** na wartość *Tak*.
+1. Ustaw przełącznik dla funkcji *OnHandMostSpecificBackgroundService* na wartość *Tak*.
 1. Gdy ta funkcja jest włączona, sekcja **Konfiguracja usługi** staje się dostępna i zawiera wiersz do konfigurowania usługi **OnHandMostSpecificBackgroundService**. To ustawienie umożliwia wybranie częstotliwości synchronizacji danych zbiorczych zapasów. Przyciski **W górę** i **W dół** w kolumnie **Wartość** umożliwiają zmianę czasu między synchronizacjami (czas do 5 minut). Następnie kliknij przycisk **Zapisz**.
 
     ![Ustawienie OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.png "Ustawienie OnHandMostSpecificBackgroundService")
@@ -125,10 +125,10 @@ W rozwiązaniu Supply Chain Management przechowywanych jest wiele informacji o b
 
 Strona **Wstępne załadowanie podsumowania widoczności magazynu** zawiera widok jednostki *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów*. W przeciwieństwie do jednostki *Podsumowanie zapasów*, jednostka *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów* zawiera listę dostępnych zapasów produktów wraz z wybranymi wymiarami. Widoczność magazynu synchronizuje wstępnie załadowane dane zbiorcze co 15 minut.
 
-Aby wyświetlić dane na karcie **Wstępne załadowanie podsumowania widoczności magazynu**, należy włączyć funkcję *OnHandIndexQueryPreloadBackgroundService* na karcie **Zarządzanie funkcjami** na stronie **Konfiguracja**, a następnie wybrać opcję **Aktualizuj konfigurację** (zobacz również [Konfiguracja widoczności zagazynu](inventory-visibility-configuration.md)).
+Aby wyświetlić dane na zakładce **Wstępne załadowanie podsumowania widoczności zapasów**, musisz włączyć i skonfigurować funkcję *OnHandIndexQueryPreloadBackgroundService*. Patrz [Włączanie i konfigurowanie wstępnie załadowanych zapytań z ręki](inventory-visibility-configuration.md#query-preload-configuration) , aby uzyskać instrukcje.
 
 > [!NOTE]
-> Podobnie jak w przypadku funkcji *OnhandMostSpecificBackgroudService*, funkcja *OnHandIndexQueryPreloadBackgroundService* śledzi tylko zmiany dostępnych zapasów, które wystąpiły po włączeniu tej funkcji. Dane produktów, które nie zostały zmienione od czasu włączeniu tej funkcji, nie będą synchronizowane z pamięci podręcznej usługi magazynowej do środowiska Dataverse. Jeśli strona **Podsumowanie zapasów** nie pokazuje wszystkich oczekiwanych informacji o stanie zapasów, przejdź do menu **Zarządzanie zapasami > Zadania okresowe > Integracja widoczności zapasów**, wyłącz zadanie wsadowe i włącz je ponownie. W ciągu najbliższych 15 minut wszystkie dane zostaną zsynchronizowane z jednostką *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów*. Jeśli chcesz korzystać z tej funkcji, zalecamy jej włączenie przed utworzeniem jakichkolwiek zmian w stanie inwentaryzacji oraz włączenie zadania wsadowego **Integracja widoczności zapasów**.
+> Podobnie jak w przypadku funkcji *OnHandMostSpecificBackgroundService*, funkcja *OnHandIndexQueryPreloadBackgroundService* śledzi tylko zmiany dostępnych zapasów, które wystąpiły po włączeniu tej funkcji. Dane produktów, które nie zostały zmienione od czasu włączeniu tej funkcji, nie będą synchronizowane z pamięci podręcznej usługi magazynowej do środowiska Dataverse. Jeśli strona **Podsumowanie zapasów** nie pokazuje wszystkich oczekiwanych informacji o stanie zapasów, przejdź do menu **Zarządzanie zapasami > Zadania okresowe > Integracja widoczności zapasów**, wyłącz zadanie wsadowe i włącz je ponownie. W ciągu najbliższych 15 minut wszystkie dane zostaną zsynchronizowane z jednostką *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów*. Jeśli chcesz korzystać z tej funkcji, zalecamy jej włączenie przed utworzeniem jakichkolwiek zmian w stanie inwentaryzacji oraz włączenie zadania wsadowego **Integracja widoczności zapasów**.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtrowanie i przeglądanie podsumowań zapasów
 

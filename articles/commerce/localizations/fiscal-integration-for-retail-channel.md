@@ -2,19 +2,19 @@
 title: Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 description: Ten artykuł zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631248"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831867"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 
@@ -172,19 +172,17 @@ Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie 
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji](./emea-swe-fi-sample.md)
 - [Przykład integracji usługi rejestracji fiskalnej (Niemcy)](./emea-deu-fi-sample.md)
 - [Przykładowa integracja drukarki fiskalnej dla Rosji](./rus-fpi-sample.md)
+- [Podpis cyfrowy dla Norwegii – próbka](./emea-nor-cash-registers.md)
 
 Następujące funkcje integracji fiskalnej są także implementowane przy użyciu schematu integracji fiskalnej, ale nie są gotowe do użycia ani nie są zawarte w zestawie SDK Commerce:
 
 - [Rejestracja fiskalna w Brazylii](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Podpis cyfrowy dla Francji](./emea-fra-cash-registers.md)
 
-Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Commerce, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
-
-- [Podpis cyfrowy dla Norwegii](./emea-nor-cash-registers.md)
-
 Następujące starsze funkcje integracji fiskalnej, które są dostępne w zestawie SDK modułu Commerce, nie używają platformy integracji fiskalnej i zostaną wycofane w późniejszych aktualizacjach:
 
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji (starsza wersja)](./retail-sdk-control-unit-sample.md)
 - [Podpis cyfrowy we Francji (starego typu)](./emea-fra-deployment.md)
+- [Podpis cyfrowy dla Norwegii – starsza wersja](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

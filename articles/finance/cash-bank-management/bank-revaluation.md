@@ -2,23 +2,23 @@
 title: Bank — przeszacowanie w walucie obcej
 description: Ten artykuł zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Zawiera informacje dotyczące programu instalacyjnego, procesu, obliczenia dla procesu i wycofywania transakcji przeszacowania.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151440"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887268"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank — przeszacowanie w walucie obcej
 
@@ -39,17 +39,8 @@ Przed uruchomieniem procesu przeszacowania potrzebne jest wykonanie następując
 - Na stronie **Księga** określ typ kursu wymiany. Jeśli typ kursu wymiany nie jest określony na koncie głównym, ten typ kursu wymiany będzie używany podczas przeszacowywania w walucie obcej.
 - Na stronie **Księga** określ konta zrealizowanej dodatnią różnicę kursową, zrealizowanej ujemną różnicę kursową oraz niezrealizowanej różnicy kursowej dla przeszacowania waluty. Zrealizowana dodatnia różnica kursowa i zrealizowana ujemna różnica kursowa kont są używane podczas transakcji rozrachunków z dostawcami i rozrachunków z odbiorcami. Niezrealizowana dodatnia różnica kursowa i niezrealizowana ujemna różnica kursowa są używane do przeszacowywania otwartych transakcji i głównego konta księgi głównej.
 - Na stronie **Konta przeszacowania waluty** wybierz walutę inną niż waluta konta przeszacowania dla każdej waluty i firmy. Jeśli nie zdefiniowano żadnych kont, używane są konta ze strony **Księga**.
+- Na stronie **Parametry zarządzania gotówką i bankiem** dodaj sekwencję numerów dodanie sekwencji numerów dla aktualizacji wyceny waluty obcej **Sekwencje numerów**.
 
-## <a name="enable-foreign-currency-revaluation"></a>Włącz przeszacowanie w walucie obcej
-
-Musisz włączyć funkcję przeszacowania w walucie obcej, aby wykonać przeszacowanie w walucie obcej.
-
-1. Wybierz kolejno opcje **Zarządzanie gotówką i bankami \> Ustawienia \> Parametry modułu Zarządzanie gotówką i bankami**.
-2. Na karcie **Ogólne**, w obszarze **przeszacowania w walucie obcej**, ustaw **Włącz przeszacowanie bankowe** jako **tak**, aby włączyć tę funkcję dla bieżącej firmy. 
-3. Na karcie **sekwencje numerów** dodaj sekwencję numerów dla przeszacowania w walucie obcej.
-4. Odśwież przeglądarkę, aby zobaczyć **przeszacowania w walucie obcej** w części **zadania okresowe** strony obszaru.
-
-Należy włączyć tę funkcję dla każdej firmy, dla której będzie używane przeszacowanie w walucie obcej. Jeśli użytkownik jest przypisany do roli administratora systemu lub Menedżera funkcji, można pominąć ten krok, włączając funkcję o nazwie **Włącz przeszacowanie konta bankowego bez parametru** w obszarze roboczym **zarządzanie funkcjami**.
 
 > [!NOTE]
 > Jeśli firma używa rosyjskiego/polskiego lub węgierskiego kodu kraju/regionu, możesz już robić przeszacowanie w walucie obcej. Nie można używać przeszacowania w walucie obcej, używanego w innych krajach lub regionach.

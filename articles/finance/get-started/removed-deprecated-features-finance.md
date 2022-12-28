@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643802"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854087"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 
@@ -124,21 +124,20 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatu ER **Deklaracja VAT (AT)** w **modelu deklaracji VAT**. Wprowadzono nowe formaty **XML — deklaracja VAT (AT)** i **Excel — deklaracja VAT (AT)** w modelu **Deklaracja podatkowa**. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Deklaracja ELSTER dla Niemiec (projekt oparty na kodach raportowania)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>Deklaracja ELSTER dla Niemiec (wzór oparty na kodach zgłoszeniowych), pozycja i strona menu \"Elektroniczna deklaracja podatkowa\", pozycja i strona menu \"Elektroniczna deklaracja podatkowa\", układ raportu dla Niemiec (TaxReport_DE) format SSRS
 
 [Sprawozdanie podatku VAT](../localizations/emea-de-vat-declaration.md)</br>
 [Konfigurowanie elektronicznej deklaracji podatkowej dla Niemiec](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[Elektroniczne przesyłanie deklaracji podatku VAT (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Niemiec](../localizations/emea-deu-vat-declaration-germany.md) |
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Zgłoszenie |
-| **Opcja wdrażania**              | Wszystko |
-| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatów raportowania elektronicznego ER **Elster (DE)** i **Model Elster**. Wprowadzono nowe formaty **XML — deklaracja VAT (DE)** i **Excel — deklaracja VAT (DE)** w modelu **Deklaracja podatkowa**. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe: Do 1 grudnia 2022 roku nie będziemy już wspierać formatu **Elster (DE)** Electronic Reporting (ER) oraz **modelu Elster**. Wprowadzono nowe formaty ER **XML — deklaracja VAT (DE)** i **Excel — deklaracja VAT (DE)** w modelu **Deklaracja podatkowa**. Nie będziemy również dłużej wspierać pozycji i strony menu **Podatek** \> **Deklaracje** \> **Podatek od sprzedaży** \> **Dziennik deklaracji podatku elektronicznego**, pozycji i strony menu **Podatek** \> **Ustawa** \> **Podatek od sprzedaży** \> **Ustawa deklaracji podatku elektronicznego**, **Podatek** \> **Ustawa** \> **Podatek od sprzedaży** \> **Elektroniczne zaświadczenia podatkowe** pozycja menu i strona, oraz niemiecki układ raportu (TaxReport\_DE) w formacie SQL Server Reporting Services (SSRS). Proces zgłaszania podatku VAT w Niemczech jest obsługiwany przez funkcjonalność [Przesyłanie wiadomości elektronicznych](../general-ledger/electronic-messaging.md). Więcej informacji znajdziesz na stronie [Deklaracja VAT dla Niemiec](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Deklaracja OB dla Holandii (projekt oparty na kodach raportowania)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>Deklaracja OB dla Holandii (projekt oparty na kodach sprawozdawczych), pozycja i strona menu \"Elektroniczna deklaracja OB\", układ raportu holenderskiego (TaxReport_NL) w formacie SSRS
 
 [Deklaracja OB](../localizations/emea-nl-vat-declaration.md)
 
@@ -147,8 +146,8 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Holandii](../localizations/emea-nl-vat-declaration-netherlands.md) |
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Zgłoszenie |
-| **Opcja wdrażania**              | Wszystko |
-| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatów ER **Deklaracja OB (NL)** i **Model deklaracji OB**. Wprowadzono nowe formaty **XML — deklaracja VAT (NL)** i **Excel — deklaracja VAT (NL)** w modelu **Deklaracja podatkowa**. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatów ER **Deklaracja OB (NL)** i **Model deklaracji OB**. Wprowadzono nowe formaty ER **XML — deklaracja VAT (NL)** i **Excel — deklaracja VAT (NL)** w modelu **Deklaracja podatkowa**. Nie będziemy również dłużej wspierać pozycji i strony menu **Podatek** \> **Deklaracje** \> **Podatek od sprzedaży** \> **Elektroniczna deklaracja OB** oraz holenderskiego układu raportu (TaxReport_NL) w formacie SSRS. Proces zgłaszania podatku VAT w Holandii jest obsługiwany przez funkcjonalność [Przesyłanie wiadomości elektronicznych](../general-ledger/electronic-messaging.md). Więcej informacji znajdziesz na stronie [Deklaracja VAT dla Holandii](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.20
 

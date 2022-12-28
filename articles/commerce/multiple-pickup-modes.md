@@ -2,7 +2,7 @@
 title: Włączanie wielu metod dostawy dla zamówień klientów
 description: W tym artykule opisano funkcje rozwiązania Microsoft Dynamics 365 Commerce, które umożliwiają tworzenie zamówień odbiorcy do odebrania w sklepie.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858915"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831592"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Włączanie wielu metod dostawy dla zamówień klientów
 
 [!include [banner](includes/banner.md)]
 
 
-W Microsoft Dynamics 365 Commerce w wersji 10.0.16 i nowszej organizacje mogą definiować wiele trybów dostawy, które klienci lub współpracownicy mogą wybrać podczas tworzenia zamówienia, które będzie odebrane w sklepie. W ten sposób organizacje mogą oferować klientom wiele opcji odbioru. Na przykład wielu sprzedawców oferuje klientom możliwość wyboru odbioru w sklepie lub odbioru „przy krawężniku”. System Commerce obsługuje konfigurację różnych trybów odbioru. Użytkownicy mogą korzystać z nich podczas tworzenia zamówień dla klientów w ramach dowolnego kanału handlowego (elektroniczny, call center, sklep).
+W Microsoft Dynamics 365 Commerce mogą definiować wiele trybów dostawy, które klienci lub współpracownicy mogą wybrać podczas tworzenia zamówienia, które będzie odebrane w sklepie. W ten sposób organizacje mogą oferować klientom wiele opcji odbioru. Na przykład wielu sprzedawców oferuje klientom możliwość wyboru odbioru w sklepie lub odbioru „przy krawężniku”. System Commerce obsługuje konfigurację różnych trybów odbioru. Użytkownicy mogą korzystać z nich podczas tworzenia zamówień dla klientów w ramach dowolnego kanału handlowego (elektroniczny, call center, sklep).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Włączanie i konfiguracja wielu metod dostawy dla odbiorów
 
-Aby można było skorzystać z tej funkcji, należy włączyć **Obsługę wielu trybów dostawy** w obszarze roboczym **Zarządzanie funkcjami** w module Commerce Headquarter. Po włączeniu tej funkcji wymagana jest dodatkowa konfiguracja.
+Funkcja **Obsługa wielu sposobów dostarczania przesyłek pobraniowych** w przestrzeni roboczej **Zarządzanie funkcjami** w Commerce headquarters stała się obowiązkowa i powinna być włączona w środowisku.
 
-W wersji Commerce 10.0.15 i starszej organizacje mogą definiować tylko jedną metodę dostawy jako metodę odbioru. Tę definicję należy wykonać na stronie **parametry Commerce**. W wersji 10.0.16 lub nowszych, w przypadku włączenia funkcji **Obsługi wielu trybów odbioru**, metoda dostawy, która została wcześniej zdefiniowana jako odbiór na stronie **parametrów Commerce**, jest automatycznie kopiowana do nowej konfiguracji dla trybów odbioru.
+Jeśli wcześniej zdefiniowałeś tryb dostawy po odbiór na stronie **Parametry Commerce**, tryb ten pojawi się w bieżącej konfiguracji trybów dostawy po odbiór.
 
 ![Metody odbioru na stronie parametrów Commerce.](media/multiplepickupparameter.png)
 
-Po włączeniu **Obsługi wielu trybów odbioru** można zdefiniować wiele trybów dostawy w ramach odbioru, korzystając z siatki **Metoda dostawy — odbiór** na skróconej karcie **Metody dostawy** na karcie **Zamówienia odbiorcy** na stronie **parametry Commerce**.
+Możesz zdefiniować wiele trybów dostawy przy odbiorze na siatce **Tryb dostawy przy odbiorze** w zakładce **Parametry handlu** > **Zamówienia klientów** > **Tryb dostawy**.  
 
 Pola **Sposób realizacji dostawy — odbiór** i **Elektroniczny tryb dostawy** oraz opcja **Pokazuj tylko metody dostawy przewoźnika** zostały przeniesione na tą skróconą kartę.
 
@@ -47,8 +47,6 @@ Po zdefiniowaniu dodatkowych trybów odbioru należy dodać je do siatki **Metod
 > [!NOTE]
 > Poza istniejącym trybem dostawy, który jest kopiowany do siatki **Metody dostawy — odbiór** po włączeniu **Obsługi wielu metod dostawy** dla każdej dodatkowej konfiguracji metody odbioru, należy skonfigurować nowe metody dostawy. Po dodaniu metod dostawy do **Metody odbioru — odbiór**, Commerce sprawdza, czy są już używane aktywne otwarte wiersze sprzedaży. Jeśli zostaną znalezione otwarte wiersze sprzedaży, zostanie wyświetlony komunikat o błędzie. Metody dostawy nie są uznawane za metody dostawy — odbioru, dopóki wszystkie otwarte wiersze sprzedaży, w których są używane, nie zostały zamknięte (zafakturowane lub anulowane).
 
-> [!IMPORTANT]
-> Po zdefiniowaniu więcej niż jednego trybu dostawy na stronie **parametrów Commerce**, **Obsługa wielu trybów odbioru** jest obowiązkowa i nie może być już wyłączona. Jeśli konieczne jest wyłączenie funkcji, należy usunąć wszystkie tryby dostawy z wyjątkiem jednego z siatki **Metoda dostawy — odbiór**. Po zdefiniowaniu tylko jednego trybu dostawy funkcja nie jest już uważana za obowiązkową i może być wyłączona.
 
 ### <a name="e-commerce-site-configurations"></a>Konfiguracje witryny handlu elektronicznego
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802723"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831618"
 ---
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
@@ -65,7 +65,7 @@ Aby odblokować zablokowany blok konstrukcyjny, otwórz go, a następnie na pask
 
 ## <a name="building-block-groups"></a>Grupy bloków konstrukcyjnych
 
-Bloki konstrukcyjne są definicjami wierszy, kolumn, drzew raportowania i definicjami raportów, które można utworzyć dla raportu. Grupy modułów konstrukcyjnych to kolekcje definicji i zestawów wymiarów.
+Bloki konstrukcyjne są definicjami wierszy, kolumn, drzew raportowania i definicjami raportów, które można utworzyć dla raportu. Grupy modułów konstrukcyjnych to kolekcje definicji i zestawów wartości wymiarów.
 
 ### <a name="view-a-building-block-group"></a>Wyświetlanie grupy modułów konstrukcyjnych
 
@@ -78,17 +78,17 @@ Wszystkie moduły konstrukcyjne przypisane do grupy modułów konstrukcyjnych mo
 
 ### <a name="export-a-building-block-group"></a>Eksportowanie grupy modułów konstrukcyjnych
 
-Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między instalacjami. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
+Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między instalacjami. Report designer zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wartości wymiarów, do których grupa się odwołuje.
 
 1. W Report Designer w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz grupę modułów konstrukcyjnych, którą chcesz wyeksportować, i kliknij przycisk **Eksport**.
 3. W oknie dialogowym **Eksportowanie** wybierz definicje raportów do wyeksportowania:
 
     - Aby wyeksportować wszystkie definicje raportów i powiązane bloki konstrukcyjne, kliknij **Zaznacz wszystko**.
-    - Aby wyeksportować wybrane raporty, wiersze, kolumny, drzewa lub zestawy wymiarów, kliknij odpowiednią kartę i wybierz elementy do wyeksportowania. Naciśnij i przytrzymaj klawisz Ctrl, aby wybrać wiele elementów na karcie.
+    - Aby wyeksportować wybrane raporty, wiersze, kolumny, drzewa lub zestawy wartości wymiarów, kliknij odpowiednią kartę i wybierz elementy do wyeksportowania. Naciśnij i przytrzymaj klawisz Ctrl, aby wybrać wiele elementów na karcie.
 
     > [!NOTE]
-    > Zaznaczenie raportów spowoduje automatyczne zaznaczenie powiązanych wierszy, kolumn, drzew i zestawów wymiarów.
+    > Zaznaczenie raportów spowoduje automatyczne zaznaczenie powiązanych wierszy, kolumn, drzew i zestawów wartości wymiarów.
 
 4. Po zakończeniu wybierania elementów do wyeksportowania kliknij przycisk **Eksport**.
 5. W oknie dialogowym **Zapisz jako** wybierz miejsce docelowe eksportu grupy bloków konstrukcyjnych.
@@ -97,7 +97,7 @@ Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyj
 
 ### <a name="import-a-building-block-group"></a>Importowanie grupy bloków konstrukcyjnych
 
-Grupę modułów konstrukcyjnych można zaimportować do istniejącej grupy modułów konstrukcyjnych. Wszystkie zaimportowane grupy bloków konstrukcyjnych zachowują swoje oryginalne style czcionek i odwołania do firmy oraz zawierają odpowiednie zestawy wymiarów.
+Grupę modułów konstrukcyjnych można zaimportować do istniejącej grupy modułów konstrukcyjnych. Wszystkie zaimportowane grupy bloków konstrukcyjnych zachowują swoje oryginalne style czcionek i odwołania do firmy oraz zawierają odpowiednie zestawy wartości wymiarów.
 
 1. W Report Designer w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz moduł konstrukcyjny, do którego chcesz zaimportować grupę modułów konstrukcyjnych, i kliknij przycisk **Import**.
@@ -105,7 +105,7 @@ Grupę modułów konstrukcyjnych można zaimportować do istniejącej grupy modu
 4. W oknie dialogowym **Importowanie** wybierz definicje raportów do zaimportowania:
 
     - Aby zaimportować wszystkie definicje raportów i wspierające je bloki konstrukcyjne, kliknij opcję **Zaznacz wszystko**.
-    - Aby zaimportować konkretne raporty, wiersze, kolumny lub zestawy wymiarów, wybierz raporty, wiersze, kolumny, drzewa lub zestawy wymiarów do zaimportowania.
+    - Aby zaimportować konkretne raporty, wiersze, kolumny lub zestawy wartości wymiarów, wybierz raporty, wiersze, kolumny, drzewa lub zestawy wartości wymiarów do zaimportowania.
 
 5. Po zakończeniu wybierania elementów do zaimportowania kliknij przycisk **Import**.
 

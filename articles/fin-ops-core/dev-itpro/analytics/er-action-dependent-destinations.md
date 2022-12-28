@@ -2,7 +2,7 @@
 title: Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 description: Ten artykuł objaśnia konfigurowanie miejsc docelowych zależnych od akcji dla formatu raportowania elektronicznego (ER) skonfigurowanych do generowania dokumentów wychodzących.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286256"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843805"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
@@ -32,7 +32,7 @@ W wersji rozwiązania Microsoft Dynamics 365 Finance **10.0.17 i nowszej** forma
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Udostępnianie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
-Aby skonfigurować miejsca docelowe ER zależne od akcji w bieżącym wystąpieniu aplikacji Finance i włączyć [nowy](er-apis-app10-0-17.md) interfejs API ER, otwórz obszar roboczy [Zarządzanie funkcjami](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) i włącz funkcję **Konfiguruj określone miejsca docelowe ER, które mają być używane dla różnych akcji PM**. Aby użyć skonfigurowanych miejsc docelowych ER do [określonych](#reports-list-wave1) raportów w czasie wykonywania, włącz funkcję **Przekieruj dane wyjściowe raportów PM na podstawie miejsc docelowych ER charakterystycznych dla akcji użytkownika (grupa czynności 1)**.
+Aby skonfigurować miejsca docelowe ER zależne od akcji w bieżącym wystąpieniu aplikacji Finance i włączyć [nowy](er-apis-app10-0-17.md) interfejs API ER, otwórz obszar roboczy [Zarządzanie funkcjami](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) i włącz funkcję **Konfiguruj określone miejsca docelowe ER, które mają być używane dla różnych akcji PM**. Aby użyć skonfigurowanych miejsc docelowych ER do określonych raportów w czasie wykonywania, włącz funkcję **Przekieruj dane wyjściowe raportów PM na podstawie miejsc docelowych ER charakterystycznych dla akcji użytkownika (grupa czynności 1)**.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
@@ -89,6 +89,51 @@ Na poniższej ilustracji przedstawiono przykład okna dialogowego **Miejsca doce
 > [!NOTE]
 > W przypadku skonfigurowania miejsc docelowych ER dla kilku składników uruchomionego formatu ER, opcja będzie dostępna oddzielnie dla każdego skonfigurowanego składnika formatu ER.
 
+Jeśli kilka formatów ER ma zastosowanie jako szablony raportów dla wybranego dokumentu, wszystkie miejsca docelowe ER dla wszystkich mających zastosowanie szablonów raportów ER są pokazane w oknie dialogowym i dostępne do ręcznego dostosowania w czasie pracy.
+
+Jeśli do wybranego dokumentu nie mają zastosowania szablony raportów [SQL Server Reporting Services (SSRS)](SSRS-report.md), standardowy wybór miejsc docelowych zarządzania drukowaniem jest dynamicznie ukrywany.
+
+Od wersji Finance **10.0.31** możesz ręcznie zmienić przypisane miejsca docelowe ER w czasie pracy dla następujących dokumentów biznesowych:
+
+- Wyciąg z konta odbiorcy
+- Nota odsetkowa
+- Tekst ponaglenia
+- Wskazówka dotycząca płatności przez klienta
+- Zawiadomienie o płatności dostawcy
+
+Aby aktywować możliwość zmiany miejsc docelowych ER w czasie rzeczywistym, włącz funkcję **Umożliwienie dostosowania miejsc przeznaczenia ER w czasie uruchomienia** w przestrzeni roboczej [Zarządzanie funkcjami](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+
+> [!IMPORTANT]
+> W przypadku raportów **Deklaracja płatności klienta** i **Deklaracja płatności dostawcy** możliwość ręcznej zmiany miejsc docelowych ER jest dostępna tylko wtedy, gdy włączone jest **ForcePrintJobSettings**.
+
+[![Dostosowanie miejsc docelowych ER w czasie biegu.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Gdy opcja **Użyj miejsca docelowego zarządzania drukiem** jest ustawiona na **Tak**, system używa domyślnych miejsc docelowych ER, które są skonfigurowane dla określonych raportów ER. Wszystkie ręczne zmiany dokonywane w oknie dialogowym są ignorowane. Ustaw opcję **Użyj miejsc docelowych zarządzania drukiem** na **Nie**, aby przetwarzać dokumenty w miejscach docelowych ER, które są zdefiniowane w oknie dialogowym bezpośrednio przed uruchomieniem raportów.
+
+Poniższe dokumenty biznesowe nie zakładają jawnego wyboru akcji przez użytkownika podczas ich uruchamiania:
+
+- Wyciąg z konta odbiorcy
+- Nota odsetkowa
+- Tekst ponaglenia
+- Wskazówka dotycząca płatności przez klienta
+- Zawiadomienie o płatności dostawcy
+
+W celu określenia, które działanie jest wykorzystywane podczas przetwarzania poprzednich raportów, stosuje się następującą logikę:
+
+- Jeśli jest włączone **ForcePrintJobSettings**:
+
+    - Jeśli opcja **Użyj miejsca docelowego zarządzania drukiem** jest ustawiona na **Tak**, używana jest akcja **Drukuj**.
+    - Jeśli opcja **Użyj miejsca docelowego zarządzania drukiem** jest ustawiona na **Nie**, używana jest akcja **Wyświetl**.
+
+- Jeśli nie jest włączone **ForcePrintJobSettings**:
+
+    - Jeśli opcja **Użyj miejsca docelowego zarządzania drukiem** jest ustawiona na **Tak**, akcja **Drukuj** jest używana dla raportów **Deklaracja płatności klienta** i **Deklaracja płatności dostawcy**.
+    - Jeśli opcja **Użyj miejsca docelowego zarządzania drukiem** jest ustawiona na **Nie**, domyślny szablon raportu SSRS jest zawsze używany dla raportów **Deklaracja płatności klienta** i **Deklaracja płatności dostawcy**, niezależnie od jakichkolwiek skonfigurowanych ustawień ER.
+    - Akcja **Drukuj** jest zawsze używana dla raportów **Wyciąg z konta klienta**, **Nota odsetkowa** oraz **Nota listowa do inkasenta**.
+
+W przypadku logiki poprzedniej akcje **Drukowania** lub **Wyświetlania** mogą być używane do konfigurowania lokalizacji docelowych raportów ER zależnych od akcji. W czasie pracy w oknie dialogowym filtrowane są tylko miejsca docelowe ER, które są skonfigurowane dla określonej akcji.
+
 ## <a name="verify-the-provided-user-action"></a>Weryfikowanie podanej akcji użytkownika
 
 Podczas wykonywania określonej akcji użytkownika można sprawdzić, jaka akcja użytkownika ma być uruchomiona w formacie ER (jeśli ma to zastosowanie). Ta weryfikacja jest ważna, jeśli trzeba skonfigurować miejsca docelowe ER zależne od akcji, ale nie masz pewności, który kod akcji użytkownika zostanie podany (jeśli istnieje). Na przykład, gdy rozpoczniesz księgowanie faktury niezależnej i ustawisz opcję **Drukuj fakturę** na wartość **Tak** w oknie dialogowym **Księgowanie faktury niezależnej**, możesz ustawić opcję **Użyj miejsca docelowego zarządzania drukowaniem** na wartość **Tak** lub **Nie**.
@@ -104,20 +149,6 @@ Aby sprawdzić podany kod akcji użytkownika, należy wykonać następujące kro
 7. Przejrzyj wpisy dziennika, które muszą zawierać rekord prezentujący podany kod akcji użytkownika, jeśli na potrzeby uruchomienia formatu ER wybrano dowolną akcję.
 
     ![Raportowanie elektroniczne uruchamia stronę dzienników zawierającą informacje o kodzie akcji użytkownika podanym dla odfiltrowanego uruchomienia formatu ER.](./media/er-destination-action-dependent-03.png)
-
-## <a name=""></a><a name="reports-list-wave1">Lista dokumentów biznesowych (grupa czynności 1)</a>
-
-Poniższa lista dokumentów biznesowych jest kontrolowane przez funkcję **Przekieruj dane wyjściowe raportów PM na podstawie miejsc docelowych ER charakterystycznych dla akcji użytkownika (grupa czynności 1)**:
-
-- Faktura klienta (faktura niezależna)
-- Faktura klienta (faktura sprzedaży)
-- Zamówienie zakupu
-- Zamówienie zakupu — zapytanie dotyczące zakupu
-- Potwierdzenie dla zamówienia sprzedaży
-- Ponaglenie
-- Nota odsetkowa
-- Zawiadomienie o płatności dostawcy
-- Zapytanie ofertowe
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

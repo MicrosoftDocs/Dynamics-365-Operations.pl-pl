@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765713"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850031"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
@@ -32,6 +32,7 @@ Przed rozpoczęciem pracy z dodatkiem Widoczność magazynu należy wykonać nas
 - [Konfiguracja partycji](#partition-configuration)
 - [Konfiguracja hierarchii indeksów produktów](#index-configuration)
 - [Konfiguracja rezerwacji (opcjonalna)](#reservation-configuration)
+- [Konfiguracja zapytania o ładunek wstępny (opcjonalnie)](#query-preload-configuration)
 - [Przykład konfiguracji standardowej](#default-configuration-sample)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -40,7 +41,7 @@ Przed rozpoczęciem należy zainstalować i skonfigurować dodatek Widoczność 
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Strona konfiguracji aplikacji Widoczność magazynu
 
-W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Ponadto na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach. Pozostałe sekcje tego artykułu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
+W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Dodatkowo, w zależności od wymagań biznesowych i wymagań dotyczących księgowania zapasów w systemie zewnętrznym, możesz zmodyfikować konfigurację, aby ujednolicić sposób księgowania, organizowania i wyszukiwania zmian zapasów w wielu systemach. Pozostałe sekcje tego artykułu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
 
 Po zakończeniu konfigurowania pamiętaj o wybraniu pozycji **Aktualizuj konfigurację** w aplikacji.
 
@@ -52,10 +53,13 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 |---|---|
 | *OnHandReservation* | Ta funkcja umożliwia tworzenie rezerwacji, rezerwacje zużycia i/lub anulowanie rezerwacji określonych ilości zapasów za pomocą funkcji Widoczność zapasów. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Domyślna częstotliwość synchronizacji jest ustawiana co 15 minut i może być ustawiana tak wysoko, jak co 5 minut. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Ta funkcja umożliwia wstępne ładowanie zapytań dotyczących dostępnych zapasów w celu stworzenia list dostępnych zapasów ze wstępnie wybranymi wymiarami. Domyślna częstotliwość synchronizacji jest raz na 15 minut. Aby uzyskać więcej informacji, zobacz [Wstępnie załaduj ujednolicone zapytanie dostępnych zapasów](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Ta funkcja okresowo pobiera i przechowuje zestaw danych podsumowujących stan zapasów na podstawie skonfigurowanych wcześniej wymiarów. Zapewnia podsumowanie stanu zapasów, które obejmuje tylko wymiary istotne dla codziennej działalności i jest zgodne z pozycjami włączonymi do procesów zarządzania magazynem (WMS). Więcej informacji można znaleźć w sekcjach [Włączanie i konfigurowanie wstępnie załadowanych zapytań](#query-preload-configuration) oraz [Wprowadzanie usprawnionych zapytań ręcznych](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Ta opcjonalna funkcja umożliwia korzystanie z funkcji harmonogramu zmian w stanie gotowości do pracy oraz dostępności do przyrzeczenia (ATP). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogram i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
 | *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ring fencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
 | *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do procesów magazynowych (pozycje WMS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WMS](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> Zaleca się korzystanie z funkcji *OnHandIndexQueryPreloadBackgroundService* lub *OnHandMostSpecificBackgroundService*, ale nie obydwu z nich. Włączenie obu funkcji będzie miało wpływ na wydajność.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
 
@@ -178,6 +182,15 @@ Jeśli źródłem danych jest Supply Chain Management, nie trzeba ponownie tworz
 1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
 1. Na karcie **Źródło danych** wybierz źródło danych, do których chcesz dodać miary fizyczne (na przykład źródło danych `ecommerce`). Następnie w sekcji **Miary fizyczne** wybierz opcję **Dodaj** i określ nazwę miary (na przykład `Returned` jeśli chcesz rejestrować zwracane ilości z tego źródła danych do widoczności zapasów). Zapisz zmiany.
+
+### <a name="extended-dimensions"></a>Rozszerzone wymiary
+
+Klienci, którzy chcą korzystać z zewnętrznych źródeł danych w źródle danych, mogą skorzystać z rozszerzalności, jaką oferuje Dynamics 365, tworząc [Rozszerzenia klas](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) dla klas `InventOnHandChangeEventDimensionSet` i `InventInventoryDataServiceBatchJobTask`.
+
+Pamiętaj, aby po utworzeniu rozszerzeń zsynchronizować się z bazą danych, aby pola własne zostały dodane do tabeli `InventSum`. Następnie możesz odwołać się do rozdziału Wymiary we wcześniejszej części tego artykułu, aby zmapować wymiary niestandardowe do któregoś z ośmiu wymiarów rozszerzonych w `BaseDimensions` w Inventory.
+
+> [!NOTE] 
+> Więcej szczegółów na temat tworzenia rozszerzeń znajdziesz na stronie [Strona główna rozszerzenia](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Obliczone miary
 
@@ -496,6 +509,30 @@ Prawidłowa sekwencja wymiarów musi ściśle naśladować hierarchię rezerwacj
 ## <a name="available-to-promise-configuration-optional"></a>Konfiguracja dostępności zapasów (opcjonalnie)
 
 Widoczność zapasów można skonfigurować, aby było można zaplanować przyszłe zmiany dostępnych zapasów i obliczyć ilości ATP. ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji może znacznie zwiększyć twoje możliwości realizacji zamówień. Aby można było korzystać z tej funkcji, należy ją włączyć na karcie **Zarządzanie funkcjami**, a następnie skonfigurować na **karcie Ustawienia ATP**. Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogramy i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Włącz i skonfiguruj wstępnie załadowane zapytania (opcjonalnie)
+
+Funkcja widoczności magazynu może okresowo pobierać i przechowywać zestaw danych podsumowujących stan zapasów w oparciu o skonfigurowane wcześniej wymiary. Oferuje to następujące korzyści:
+
+- Czysty widok, który przechowuje podsumowanie zapasów, zawierające tylko te wymiary, które są istotne dla Twojej codziennej działalności.
+- Podsumowanie zasobów, które jest zgodne z pozycjami włączonymi do procesów zarządzania magazynem (WMS).
+
+Więcej informacji na temat pracy z tą funkcją po jej skonfigurowaniu można znaleźć w części [Wstępne załadowanie usprawnionego zapytania o dostepność](inventory-visibility-power-platform.md#preload-streamlined-onhand-query).
+
+> [!IMPORTANT]
+> Zaleca się korzystanie z funkcji *OnHandIndexQueryPreloadBackgroundService* lub *OnHandMostSpecificBackgroundService*, ale nie obydwu z nich. Włączenie obu funkcji będzie miało wpływ na wydajność.
+
+Wykonaj poniższe kroki, aby skonfigurować tę funkcję:
+
+1. Zaloguj się do aplikacji widoczność magazynu.
+1. Przejdź do **Konfiguracji \> Zarządzanie funkcjami i ustawieniami**.
+1. Jeśli funkcja *OnHandIndexQueryPreloadBackgroundService* jest już włączona, zalecamy jej wyłączenie, ponieważ proces czyszczenia może trwać bardzo długo. W dalszej części procedury włączysz go ponownie.
+1. Otwórz zakładkę **Ustawienie wstępnie załadowanych danych**.
+1. W sekcji **Krok 1: Wyczyść magazyn wstępnie załadowanych** wybierz **Wyczyść**, aby wyczyścić bazę danych i przygotować ją do przyjęcia nowych ustawień grupowania.
+1. W sekcji **Krok 2: Ustawianie wartości według grup**, w polu **Grupuj wyniki według** wprowadź oddzieloną przecinkami listę nazw pól, według których mają być grupowane wyniki zapytania. Po umieszczeniu danych w bazie danych preload nie będziesz mógł zmienić tego ustawienia, dopóki nie wyczyścisz bazy danych, co zostało opisane w poprzednim kroku.
+1. Przejdź do **Konfiguracji \> Zarządzanie funkcjami i ustawieniami**.
+1. Włącz *OnHandIndexQueryPreloadBackgroundService*.
+1. Wybierz **Uaktualnij konfigurację** w prawym górnym rogu strony **Konfiguracja**, aby zatwierdzić zmiany.
 
 ## <a name="complete-and-update-the-configuration"></a>Kończenie i aktualizowanie konfiguracji
 

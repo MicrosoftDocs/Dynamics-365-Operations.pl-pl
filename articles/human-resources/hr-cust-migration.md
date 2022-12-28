@@ -2,7 +2,7 @@
 title: Migracja klienta rozwiązania Dynamics 365 Human Resources do infrastruktury finansowej i operacyjnej
 description: W tym artykule opisano migrację klienta między z rozwiązania Microsoft Dynamics 365 Human Resources do infrastruktury finansowej i operacyjnej.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760370"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831728"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Migracja klienta rozwiązania Dynamics 365 Human Resources
 
@@ -43,7 +43,7 @@ Migracja klientów jest migracją metodą „lift-and-shift” (przeniesienie) b
  - Skopiuj istniejące środowisko Dataverse, które jest połączone ze autonomiczną aplikacją Human Resources, do środowiska utworzonego w poprzednim kroku.
 
 > [!NOTE]
-> Podczas dodawania bazy danych upewnij się, że opcja **Włącz aplikacje Dynamics 365** ma wartość **Tak**. Aby uzyskać szczegółowe informacje, zobacz temat [Przygotowywanie środowiska Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment)
+> Podczas dodawania bazy danych upewnij się, że opcja **Włącz aplikacje Dynamics 365** ma wartość **Tak**. Aby uzyskać szczegółowe informacje, zobacz temat [Przygotowywanie środowiska Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### <a name="dataverse-capacity"></a>Pojemność Dataverse
 
@@ -158,6 +158,7 @@ Po zakończeniu migracji i sprawdzania poprawności środowiska piaskownicy wyko
 
 - Narzędzie do szacowania subskrypcji powinno być zakończone.
 - [Ocena gotowości do pracy](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) powinna być zakończona.
+- Użytkownik inicjujący migrację produkcyjną w Lifecycle Services powinien mieć rolę administratora systemu w Power Platform. 
 
 #### <a name="migrate-the-production-environment"></a>Migracja środowiska produkcyjnego
 

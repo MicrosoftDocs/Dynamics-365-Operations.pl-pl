@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846865"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831841"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -64,7 +64,7 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Konsolidacja 
 - Konsolidacje obejmujące różne waluty raportowania
 
 ## <a name="legal-entity-setup"></a>Konfiguracja firmy
-Przed rozpoczęciem przetwarzania konsolidacji należy skonfigurować firmę. Konsolidację można uruchamiać dowolną potrzebną liczbę razy, a wszystkie dane zostaną przeliczone z waluty rozliczeniowej firmy źródłowej na walutę zdefiniowaną dla konsolidowanej firmy. Dlatego dla poniższej struktury organizacyjnej należy przeliczyć wszystkie spółki w Ameryce Północnej najpierw na dolary amerykańskie (USD), a następnie na euro (EUR), czyli walutę firmy nadrzędnej, muszą istnieć co najmniej dwie konsolidowane firmy.
+Przed rozpoczęciem przetwarzania konsolidacji należy skonfigurować firmę. Konsolidację można uruchamiać dowolną potrzebną liczbę razy, a wszystkie dane zostaną przeliczone z waluty rozliczeniowej lub sprawozdawczej firmy źródłowej na walutę zdefiniowaną dla konsolidowanej firmy. Dlatego dla poniższej struktury organizacyjnej należy przeliczyć wszystkie spółki w Ameryce Północnej najpierw na dolary amerykańskie (USD), a następnie na euro (EUR), czyli walutę firmy nadrzędnej, muszą istnieć co najmniej dwie konsolidowane firmy.
 
 ![Struktura organizacyjna.](./media/organizational-structure.png "Struktura organizacyjna")
 

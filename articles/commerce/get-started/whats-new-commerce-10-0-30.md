@@ -2,7 +2,7 @@
 title: Wersja zapoznawcza Dynamics 365 Commerce 10.0.30 (listopad 2022)
 description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w Microsoft Dynamics 365 Commerce 10.0.30.
 author: josaw1
-ms.date: 08/31/2022
+ms.date: 12/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-09-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 0149c9671e8baeb26965b4f136ed91d09e2d039b
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: a449c7eff21c059555f9659ea932705858d26275
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405560"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831755"
 ---
 # <a name="preview-of-dynamics-365-commerce-10030-november-2022"></a>Wersja zapoznawcza Dynamics 365 Commerce 10.0.30 (listopad 2022)
 
@@ -35,7 +35,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---------|------------------|----------------|--------------| 
 | Obsługa klienta   | Czat w witrynie handlu elektronicznego przy użyciu bota Power Virtual Agents. | Ta funkcja spowoduje, że użytkownicy witryny handlu elektronicznego będą mieć możliwość używania bota czatu Power Virtual Agents w żądaniach pomocy technicznej. | Włączone przez administratora/twórców dla użytkowników końcowych |
-| Szczegółowe informacje  |  Przesyłaj dane operacyjne punktu sprzedaży do swojego konta Application Insights. | [Dzienniki dostępu w Application Insights](../dev-itpro/retail-component-events-diagnostics-troubleshooting.md#enable-diagnostic-events-in-application-insights)   |  Zgody profesjonalisty/dewelopera IT   |
+| Szczegółowe informacje  |  Przesyłaj dane operacyjne punktu sprzedaży do swojego konta Application Insights. | [Dzienniki dostępu w Application Insights](../dev-itpro/operational-insights.md#enable-diagnostic-events-in-application-insights)   |  Zgody profesjonalisty/dewelopera IT   |
 |  Płatności  | Obsługa zamówień PayPal poza 29-dniowym okresem autoryzacji. | Maksymalny okres autoryzacji dla usługi PayPal to 29 dni, po upływie którego musi zostać wygenerowany nowy identyfikator autoryzacji i zamówienia. Jako alternatywę, system PayPal oferuje opcję, w której zamówienie PayPal może być odwołaniem do zamówienia ogólnego, umożliwiając wiele autoryzacji i przechwytywanie dla tego samego identyfikatora zamówienia zamiast generowania nowej autoryzacji i identyfikatora zamówienia po 29 dniach). | Podczas konfigurowania łącznika płatności PayPal w programie Commerce Headquarters dodano pole **OrderIntent** i może ono mieć dwie wartości:<p><p>- **Autoryzuj** — ta konfiguracja jest domyślna (jeśli pole jest puste, opcja **Autoryzuj** działa jako domyślna). Konfigurowanie usługi **OrderIntent** do **Autoryzuj** koreluje wartość **processing_instruction** usługi PayPal **NO_INSTRUCTION**. Zamówienie zostanie autoryzowane przy użyciu usługi PayPal, a autoryzacji nie można zmodyfikować, jeśli jest używana ta wartość.<p>- **Zapisz** — jeśli ustawienie **OrderIntent** ma wartość **Zapisz**, skoreluje to wartość właściwości PayPal **processing_instruction** wartości **ORDER_SAVED_EXPLICITLY**. Gdy będzie używana ta wartość, odwołania do zamówień zostaną zapisane w usłudze PayPal.  |
 | Logowanie do punktu sprzedaży  | [Włącz samoobsługowe możliwości diagnozy przy logowanie w punkcie sprzedaży](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-self-serve-diagnosis-capabilities-pos-sign-in)  |  Ta funkcja udostępnia samoobsługowe funkcje diagnostyki w punkcie sprzedaży i centrali Commerce Headquarters, aby ułatwić pracownikom etatowym i menedżerom szybkie identyfikowanie i rozwiązywanie głównych przyczyn problemów z logowaniem się do punktu sprzedaży.<p><p>- komunikaty o błędzie wyświetlane na ekranie logowania do punktu sprzedaży zostały poprawione, aby zostały podane konkretne informacje na temat powodu błędu, które mogą pomóc pracownikom sklepu, używającym aplikacji, w zrozumieniu, co poszło nie tak, dzięki czemu mogą wykonać niezbędne akcje w celu rozwiązania problemu.<p>- funkcja **logowania testowego** jest dostępna na stronie **Pracownicy** w programie Commerce headquarters, dzięki czemu kierownicy sklepów, którzy skonfigurują urządzenia w punkcie sprzedaży, mogą symulować logowanie do punktu sprzedaży. W przypadku awarii logowania ta funkcja udostępnia przewodniki dotyczące rozwiązywania problemów, dzięki czemu menedżerowie mogą sprawdzać odpowiednie konfiguracje, poprawiać problemy i sprawdzać poprawność poprawek.  | Domyślnie włączona |
 

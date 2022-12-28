@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135466"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843635"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Globalne księgowanie zapasów — strona główna
 
@@ -40,11 +40,17 @@ Konwencja jest zbiorem zasad księgowania zapasów, które mogą być powiązane
 
 Globalne księgowanie zapasów jest obecnie dostępne w następujących regionach geograficznych firmy Azure:
 
-- Stany Zjednoczone
-- Europa
-- Wielka Brytania
 - Australia
 - Kanada
+- Chiny
+- Europa
+- Francja
+- Norwegia
+- Republika Południowej Afryki
+- Szwajcaria
+- Zjednoczone Emiraty Arabskie
+- Zjednoczone Królestwo
+- Stany Zjednoczone
 
 W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi Microsoft Dynamics Lifecycle Services LCS wyświetlą komunikat informujący, że Twój region geograficzny nie jest obsługiwany. Globalne księgowanie zapasów nie obsługuje lokalnych wdrożeń Supply Chain Management.
 

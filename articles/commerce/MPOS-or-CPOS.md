@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276462"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831565"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Wybierz między rozwiązaniem Store Commerce i Cloud POS
 
@@ -61,7 +61,7 @@ Store Commerce to aplikacja na urządzenia stacjonarne, która jest instalowana 
 
 #### <a name="cpos"></a>Punkt sprzedaży w chmurze (CPOS)
 
-Punkt CPOS jest uruchamiany w przeglądarce, dlatego aplikacja nie jest zainstalowana na urządzeniu. Zamiast tego to przeglądarka przechodzi do kodu aplikacji z serwera CPOS> Dlatego punkt CPOS nie ma bezpośredniego dostępu do sprzętu punktu sprzedaży ani nie może pracować w trybie offline.
+Punkt CPOS jest uruchamiany w przeglądarce, dlatego aplikacja nie jest zainstalowana na urządzeniu. Zamiast tego to przeglądarka przechodzi do kodu aplikacji z serwera CPOS Dlatego punkt CPOS nie ma bezpośredniego dostępu do sprzętu punktu sprzedaży ani nie może pracować w trybie offline.
 
 ### <a name="store-deployment-considerations"></a>Zagadnienia dotyczące wdrażania w sklepie
 
@@ -70,9 +70,9 @@ Oprócz platformy i wyglądu formularza, sprzedawcy detaliczni muszą również 
 | Aplikacja punktu sprzedaży            | Commerce Scale Unit | Dostępne w trybie offline | Lokalna pomoc techniczna HWS |
 |----------------------------|---------------------|-------------------|-------------------|
 | Aplikacja Store Commerce w Windows | Chmura lub RSSU       | Tak               | Tak               |
-| Aplikacja Store Commerce w Android | Chmura lub RSSU       | Nie                | Tak               |
-| Aplikacja Store Commerce w iOS     | Chmura lub RSSU       | Nie                | Nie                |
-| Cloud POS                  | Chmura lub RSSU       | Nie                | Nie                |
+| Aplikacja Store Commerce w Android | Chmura lub RSSU       | Nr                | Tak               |
+| Aplikacja Store Commerce w iOS     | Chmura lub RSSU       | Nr                | Tak               |
+| Cloud POS                  | Chmura lub RSSU       | Nr                | Nr                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
 
@@ -89,9 +89,9 @@ Sprzedawcy detaliczni muszą również wziąć pod uwagę dostęp punktu sprzeda
 | Aplikacja punktu sprzedaży            | Lokalny HWS OPOS | Sieciowe urządzenia peryferyjne | Wspólne wsparcie HWS |
 |----------------------------|----------------|---------------------|--------------------|
 | Aplikacja Store Commerce w Windows | Tak            | Tak                 | Tak                |
-| Aplikacja Store Commerce w Android | Nie             | Tak                 | Tak                |
-| Aplikacja Store Commerce w iOS     | Nie             | Nie                  | Tak                |
-| Cloud POS                  | Nie             | Nie                  | Tak                |
+| Aplikacja Store Commerce w Android | Nr             | Tak                 | Tak                |
+| Aplikacja Store Commerce w iOS     | Nr             | Tak                 | Tak                |
+| Cloud POS                  | Nr             | Nr                  | Tak                |
 
 Aby uzyskać więcej informacji na temat stacji sprzętowych, zobacz [Konfigurowanie i instalowanie stacji sprzętowej handlu detalicznego](retail-hardware-station-configuration-installation.md).
 

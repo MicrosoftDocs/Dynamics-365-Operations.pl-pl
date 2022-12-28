@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805322"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887138"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -28,16 +28,24 @@ To założenie jest potwierdzone przez wyniki: mniejsza liczba problemów w nasz
 
 ## <a name="what-you-need-to-know"></a>Czego potrzeba wiedzieć
 
-- Prewencyjne aktualizacje jakości są stosowane co miesiąc.
-- Firma Microsoft będzie stosować prewencyjne aktualizacje jakości w każdym środowisku [piaskownicy](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), w którym jest uruchamiana aktualizacja usługi, która była uruchomiona podczas tworzenia prewencyjnych aktualizacji jakości.
+- Prewencyjne aktualizacje jakości (PQU) są stosowane co miesiąc.
 - Wyjątki dotyczące proaktywnych aktualizacji jakości będą dozwolone w przypadku klientów podlegających regulacjom Amerykańskiej Agencji ds. Żywności i Leków (FDA).
+- Proaktywne aktualizacje jakości nigdy nie spowodują obniżenia jakości środowiska lub automatycznego przejścia z jednej wersji aktualizacji do drugiej. 
 - Firma Microsoft ustala, jak prewencyjne aktualizacje jakości będą zarządzane w środowiskach regulowanych oraz w przypadku odbiorców w chmurze i w chmurze rządowej.
-- Powiadomienia związane z prewencyjnym aktualizacją jakości są księgowane w [Centrum komunikatów Microsoft 365](https://admin.microsoft.com/AdminPortal/) i na transparentze w projekcie usługi Microsoft Dynamics Lifecycle Services odbiorcy.
+- Powiadomienia dotyczące proaktywnych aktualizacji jakości są umieszczane w [Centrum wiadomości Microsoft 365](https://admin.microsoft.com/AdminPortal/).
 - Pięć dni przed zastosowaniem proaktywnej aktualizacji jakości w środowisku klienci są powiadamiani, że nastąpi aktualizacja.
 - Odbiorcy nie mogą anulować ani opóźnić prewencyjnych aktualizacji jakości.
 - Prewencyjne aktualizacje jakości są instalowane w oknie konserwacji specyficznej dla [regionu](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Aktualizacje jakości są tak opracowane, aby mieć niskie ryzyko wystąpienia problemów lub przemów, i są one obsługiwane przez dane firmy Microsoft.
 - Firma Microsoft zaleca testowanie na poziomie docelowym w przypadku określonych problemów lub określonych poprawek związanych z prewencyjną aktualizacją jakości.
+- WSZYSTKIE środowiska piaskownicy, z wyjątkiem tych, które mają ograniczony czasowo wyjątek ze względu na przepisy, zostaną włączone do 7 stycznia 2023 roku.
+- Wprowadzanie do produkcji aktualizacji proaktywnej jakości rozpocznie się 21 stycznia 2023 roku. 
+- Włączenie produkcyjne rozpocznie się tylko w przypadku projektów Lifecycle Services, które mają włączoną piaskownicę (piaskownice) i do tej pory regularnie otrzymują proaktywne aktualizacje jakości dla wszystkich wspieranych wersji aktualizacji usług. Dotyczy to tylko środowisk klientów, którym nie zapewniono żadnych wyjątków ze względu na przepisy lub inne przyczyny prawne.
+- Pełny harmonogram proaktywnych aktualizacji jakości dla środowisk piaskownicowych i produkcyjnych w ciągu 2023 roku znajduje się poniżej.
+- Przy każdej aktualizacji serwisu trwa lub ma się rozpocząć co najmniej jedna wersja do wydania PQU. Kiedy twoje środowiska zostaną włączone do procesu PQU, możesz otrzymać zaplanowaną wcześniej proaktywną aktualizację jakości dla wszystkich z nich, kiedy przejdziesz na nowszą wersję aktualizacji usługi. Jeśli planujesz aktualizację do nowszej wersji, sprawdź harmonogram, aby ustalić, kiedy jest zaplanowany PQU dla aktualizacji serwisowej. 
+
+> [!Note]
+> Standardowy test wydajności (tier4), test wydajności Premium (tier5) sandboxy i środowiska produkcyjne będą otrzymywać PQUs w weekendy. 
 
 ## <a name="focus-on-quality-updates"></a>Skupienie się na aktualizacjach jakości
 
@@ -75,33 +83,22 @@ Zestaw zmian procesów jest implementowany przed aktywacją wdrożenia aktywnej 
     > Zespół ds. komunikacji Microsoft bada postępującą degradację narzędzi poczty e-mail, która uniemożliwia dostarczanie powiadomień e-mail. Kontynuuj monitorowanie Centrum wiadomości Microsoft 365 pod kątem wiadomości powiązanych z dołączaniem i powiadomieniami.
 
 - **Zabezpieczenie awarii za pomocą dystrybucji testowej** – Funkcja obowiązuje w celu zmiany kodu w razie zastosowania w poprawce aktualizacji jakości lub do użycia istniejących dystrybucji testowych funkcji właściwych dla tej poprawki. Jeśli po proaktywnym wdrożeniu wymagane jest wycofanie lub wyłączenie zmiany, można to zrobić za pośrednictwem systemu lotów, aby uniknąć dalszych awarii.
-- **Wyznaczenie synchronizacji piaskownicy** — poniżej 20% odbiorców ma obecnie wiele piaskownic i jedna piaskownica jest wdrożona tam, gdzie wersja odpowiada wersji produkcyjnej, co pomaga w rozwiązywaniu problemów. Jeśli klient używa piaskownicy do testowania nowszej wersji niż w wersji produkcyjnej, ta piaskownica będzie otrzymywać aktualizacje jakości w nowszej wersji.
+- **Oznaczenie synchronizacji w piaskownicy** – Rozłozona w czasie aktualizacja do wyizolowanej piaskownicy do wyboru wraz z produkcją nie jest obecnie obsługiwana. W projekcie Lifecycle Services wszystkie piaskownice warstwy 2 i 3 będą otrzymywać proaktywne aktualizacje co najmniej 7 dni przed uruchomieniem środowiska produkcyjnego. Dotyczy to tylko środowisk klientów, dla których nie przewidziano żadnych wyjątków ze względu na przepisy lub inne przyczyny prawne.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Co to jest rozszerzenie planowania dla aktualizacji jakości?
 
-Dystrybucję aktywnych aktualizacji jakości dla środowisk piaskownicy można rozpocząć pod koniec września lub października 2022 dla odbiorców w chmurze publicznej Azure. Środowiska w wersji próbnej również rozpoczną otrzymywanie wdrożenia aktywnej aktualizacji w tym czasie. We wrześniu do każdego klienta zostanie wysłane powiadomienie, aby poinformować go o oczekiwanym harmonogramie dla swojego środowiska. Wyjątki w procesie aktywnej aktualizacji dystrybucji będą dozwolone tylko dla odbiorców podlegających regulacjom z FDA. Nadal pracujemy nad zarządzaniem środowiskami regulowanymi oraz ich odbiorców w chmurze rządowej.
+Dystrybucja proaktywnych aktualizacji jakości dla środowisk piaskownicy rozpoczęła się we wrześniu 2022 roku dla klientów chmury publicznej Azure. Do 1 stycznia 2023 roku zakończymy włączanie 99% piaskownic do proaktywnych aktualizacji jakości.
 
-W ciągu następnych sześciu miesięcy będziemy stopniowo zwiększać wartość procentową środowisk piaskownicy, które otrzymują aktywne aktualizacje, dopóki nie zostaną uwzględnione wszystkie wskazane środowiska i nie rozpoczniemy aktualizowania środowisk produkcyjnych. Przez cały okres będziemy monitorować, aby zagwarantować, że proces wdrażania będzie bezproblemowy i że możemy ponownie osiągnąć cel, który nie przerwie obciążeń.
+Wyjątki w procesie aktywnej aktualizacji dystrybucji będą dozwolone tylko dla odbiorców podlegających regulacjom z FDA. Nadal pracujemy nad zarządzaniem środowiskami regulowanymi oraz ich odbiorców w chmurze rządowej. 
 
-Ponieważ odbiorcy będą regularnie obierać mniejsze obciążenia, oczekujemy, że bieżący proces będzie prostszy. Dostosujemy częstotliwość wdrażania aktualizacji, ponieważ wykazujemy możliwość uruchamiania procesu bez przerwy. Ten proces działa już efektywnie w naszej platformie Dataverse i aplikacjach oraz dostarcza przewidywanych usprawnień jakości usług. Planujemy podjęcie tego samego kroku w przypadku aplikacji finansowych i operacyjnych.
+Ponieważ odbiorcy będą regularnie obierać mniejsze obciążenia, oczekujemy, że bieżący proces będzie prostszy. Dostosujemy częstotliwość wdrażania aktualizacji, ponieważ wykazujemy możliwość uruchamiania procesu bez przerwy. Ten proces działa już efektywnie w naszej platformie Dataverse i aplikacjach oraz dostarcza przewidywanych usprawnień jakości usług. Robimy ten sam krok naprzód dla aplikacji finansowych i operacyjnych.
+
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Kiedy rozpocznie się aktualizacja jakości w środowiskach produkcyjnych?
-W tej chwili aktualizacje jakości są przeznaczone tylko do środowisk piaskownicy. Zaktualizujemy tę przestrzeń o datę rozpoczęcia dla środowisk produkcyjnych, gdy będziemy mieć bardziej konkretne dane i metryki, od proaktywnych aktualizacji dla piaskownic po ocenę gotowości do produkcji.
+W ciągu kilku pierwszych miesięcy 2023 roku, począwszy od 15 stycznia, rozpoczniemy włączanie środowisk produkcyjnych do aktualizacji proaktywnych i stopniowo będziemy zwiększać odsetek środowisk produkcyjnych, które otrzymują aktualizacje proaktywne. W projekcie Lifecycle Services wybierzemy tylko środowisko produkcyjne, w którym znajdują się już środowiska piaskownicowe, aby otrzymywać proaktywne aktualizacje. Przed aktualizacją klienci, których środowiska produkcyjne są włączane do systemu, zostaną o tym powiadomieni poprzez centrum wiadomości lub baner Lifecycle Services. Pełny harmonogram proaktywnych aktualizacji jakości dla środowisk piaskownicowych i produkcyjnych w ciągu 2023 roku znajduje się poniżej.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Co to jest harmonogram dla aktywnych aktualizacji jakości piaskownicy?
 Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych regionach, zobacz [Czym są okna planowanej konserwacji według regionów?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Aktywna aktualizacja jakości, wydanie: 10.0.28
-**Wersja aplikacji: 10.0.1265.89**  
-**Odpowiedni najnowszy artykuł z bazy wiedzy: 745340**
-
-| Stacja | Regiony | Zakończony harmonogram| Nadchodzący harmonogram piaskownicy
-|---|---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 15 września do 18 września 2022, od 19 września do 22 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 25 września do 28 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 26 września do 29 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 28 września do 1 października 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
-| Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.29
 **Wersja aplikacji: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych region
 
 | Stacja | Regiony | Zakończony harmonogram | Nadchodzący harmonogram piaskownicy|
 |---|---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 13 listopada do 16 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 r., od 2 listopada do 5 listopada 2022 roku, 15 listopada do 18 listopada 2022 roku | Od 5 grudnia do 8 grudnia|
+| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | 14–17 października 2022 r., 2–5 listopada 2022 r., 13–16 listopada 2022 r., 5–8 grudnia 2022 r. | 2–5 stycznia 2023 r. |
+| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | 15–18 października 2022 r., 2–5 listopada 2022 r., 13–16 listopada 2022 r., 5–8 grudnia 2022 r. | 2–5 stycznia 2023 r. |
+| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | 16–19 października 2022 r., 2–5 listopada 2022 r., 13–16 listopada 2022 r., 5–8 grudnia 2022 r. | 2–5 stycznia 2023 r. |
+| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | 17–20 października 2022 r., 2–5 listopada 2022 r., 15–18 listopada 2022 r., 5–8 grudnia 2022 r. | 2–5 stycznia 2023 r. |
 | Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.30
 **Wersja aplikacji: 10.0.1362.77**
 **Odpowiedni najnowszy artykuł z bazy wiedzy: 767597**
 
-| Stacja | Regiony | Nadchodzący harmonogram piaskownicy |
+| Stacja | Regiony | Zakończony harmonogram | Nadchodzący harmonogram piaskownicy |
+|---|---|---|---|
+| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 1 grudnia do 4 grudnia 2022 |  Od 13 grudnia do 16 grudnia 2022 | 
+| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 2 grudnia do 5 grudnia 2022 |  Od 13 grudnia do 16 grudnia 2022 | 
+| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Północna, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 3 grudnia do 6 grudnia 2022 |  Od 13 grudnia do 16 grudnia 2022 | 
+| Stacja 4 | Europa Zachodnia, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 4 grudnia do 7 grudnia 2022 |  Od 13 grudnia do 16 grudnia 2022 | 
+| Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Proaktywna aktualizacja jakości – Harmonogram na rok kalendarzowy 2023
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Mapowanie stacji na region
+
+| Stacje | Regiony |
+|---|---|
+| Stacja 1 | Do wykonania |
+| Stacja 2 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia |
+| Stacja 3 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia |
+| Stacja 4 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Północna, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie |
+| Stacja 5 | Europa Zachodnia, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone |
+| Stacja 6 | DoD, Government Community Cloud, Chiny |
+
+
+> [!IMPORTANT]
+> Jest to ogólny harmonogram na rok 2023. Bardziej konkretny harmonogram znajdziesz w poniższym przykładzie dla styczniowego 2 wydania wersji aplikacji 10.0.30. Dokładny harmonogram i wersja aplikacji zostaną zaktualizowane na 7 dni przed rozpoczęciem pociągu do aktualizacji jakości.
+
+> [!Note]
+> Tylko środowiska produkcyjne znajdujące się na pokładzie otrzymają aktualizację do 2 wydania wersji 10.0.30, środowiska znajdujące się na pokładzie otrzymają wyraźny komunikat.
+
+| Aktualizacja jakości – wdrożenie | Wersja | Czas trwania wdrożenia |
 |---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 1 grudnia do 4 grudnia 2022 |
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 2 grudnia do 5 grudnia 2022 |
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Północna, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 3 grudnia do 6 grudnia 2022 |
-| Stacja 4 | Europa Zachodnia, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 4 grudnia do 7 grudnia 2022 |
-| Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane |
+| 2 wydanie 10.0.30 | 16 grudnia 2022 r. | 2–29 stycznia 2023 r. |
+| 3 wydanie wersji 10.0.30 | 13 stycznia 2023 r. | 30 stycznia do 25 lutego 2023 r. |
+| 4 wydanie 10.0.30 | 24 lutego 2023 | 6 marca do 8 kwietnia 2023 r. |
+| 1 wydanie wersji 10.0.31 | 3 lutego 2023 | 13 lutego 2023 r. do 18 marca 2023 r.|
+| 2 wydanie wersji 10.0.31 | 3 marca 2023 | 13 marca 2023 r. do 15 kwietnia 2023 r.|
+| 3 wydanie wersji 10.0.31 | 14 kwietnia 2023 r. | 24 kwietnia 2023 r. do 27 maja 2023 r.|
+| 1 wydanie wersji 10.0.32 | 31 marca 2023 | 10 kwietnia 2023 r. do 13 maja 2023 r.|
+| 2 wydanie wersji 10.0.32 | 28 kwietnia 2023 r. | 8 maja 2023 r. do 10 czerwca 2023 r.|
+| 3 wydanie wersji 10.0.32 | 26 maja 2023 r. | 5 czerwca 2023 r. do 8 lipca 2023 r.|
+| 1 wydanie wersji 10.0.33 | 28 kwietnia 2023 r. | 8 maja 2023 r. do 10 czerwca 2023 r.|
+| 2 wydanie wersji 10.0.33 | 26 maja 2023 r. | 5 czerwca 2023 r. do 8 lipca 2023 r.|
+| 3 wydanie wersji 10.0.33 | 14 lipca 2023 r. | 24 lipca 2023 r. do 26 sierpnia 2023 r.|
+| 1 wydanie wersji 10.0.34 | 23 czerwca 2023 r. | 3 lipca 2023 r. do 5 sierpnia 2023 r.|
+| 2 wydanie wersji 10.0.34 | 21 lipca 2023 r. | 31 lipca 2023 r. do 2 września 2023 r.|
+| 3 wydanie wersji 10.0.34 | 1 września 2023 r. | 11 września 2023 r. do 14 października 2023 r.|
+| 1 wydanie wersji 10.0.35 | 28 lipca 2023 r. | 7 sierpnia 2023 r. do 9 września 2023 r.|
+| 2 wydanie wersji 10.0.35 | 25 sierpnia 2023 r. | 4 września 2023 r. do 7 października 2023 r.|
+| 3 wydanie wersji 10.0.35 | 20 października 2023 r. | 30 października 2023 r. do 16 grudnia 2023 r.|
+| 1 wydanie wersji 10.0.36 | 29 września 2023 r. | 9 października 2023 r. do 11 listopada 2023 r.|
+| 2 wydanie wersji 10.0.36 | 27 października 2023 r. | 6 listopada 2023 r. do 16 grudnia 2023 r.|
+| 3 wydanie wersji 10.0.36 | 12 stycznia 2024 | 22 stycznia 2023 r. do 24 lutego 2024 r.|
+| 1 wydanie wersji 10.0.37 | 3 listopada 2023 r. | 13 listopada 2023 r. do 6 stycznia 2024 r.|
+| 2 wydanie wersji 10.0.37 | 30 grudnia 2023 r. | 8 stycznia 2024 r. do 10 lutego 2024 r.|
+| 3 wydanie wersji 10.0.37 | 27 stycznia 2024 | 5 lutego 2024 r. do 9 marca 2024 r.|
+| 4 wydanie wersji 10.0.37 | 23 lutego 2024 | 4 marca 2024 r. do 6 kwietnia 2024 r.|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Proaktywna aktualizacja jakości – nadchodzący harmonogram wydań 2 wersji 10.0.30
+**Wersja aplikacji: 10.0.1362.99**
+
+| Stacje | Nadchodzący harmonogram piaskownicy | Najbliższy harmonogram produkcji |
+|---|---|---|
+| Stacja 1 | ND | ND |
+| Stacja 2 | 2–5 stycznia 2023 r. | 21–22 stycznia 2023 r. |
+| Stacja 3 | 3–6 stycznia 2023 r. | 28–29 stycznia 2023 r. |
+| Stacja 4 | 9–12 stycznia 2023 r. | ND |
+| Stacja 5 | 16–19 stycznia 2023 r. | ND |
+| Stacja 6 | ND | ND |
 
 > [!IMPORTANT] 
 > Pięć dni wcześniej firma Microsoft zaktualizuje poprzedni harmonogram i wysyła powiadomienia do zestawu środowisk, które mają otrzymać te aktualizacje jakości. Poprzedni harmonogram ma zastosowanie tylko do środowisk, które zostały powiadomione o nadchodzącej aktualizacji. Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych regionach, zobacz [Czym są okna planowanej konserwacji według regionów?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

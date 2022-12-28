@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405473"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852392"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -225,6 +225,7 @@ Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki
 ### <a name="open-issues"></a>Otwarte problemy
 - Po włączeniu funkcji **Kontrolka nowej siatki** niektóre strony będą nadal korzystać z istniejącej kontrolki siatki. Ma to miejsce w następujących sytuacjach:
  
+    - [Rozwiązany] Problem 762533: Nieoczekiwany błąd klienta podczas wybierania wiersza na liście kart.
     - [Rozwiązane] Na stronie, która jest renderowana w wielu kolumnach, istnieje lista kart.
         - Ten typ listy kart jest obsługiwany przez **Nowy formant siatki** od wersji 10.0.30. W tym celu można usunąć dowolne użycia właściwości forceLegacyGrid(). 
     - [Rozwiązane] Na stronie istnieje lista zgrupowanych kart.
